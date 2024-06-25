@@ -12,6 +12,17 @@ var BaseTreeTable = (function () {
         var collapsibleElements = this.getContext().querySelectorAll(parentSelector);
         return collapsibleElements;
     };
+    BaseTreeTable.prototype.getChildren = function (parentId) {
+        if (parentId == null || parentId == "")
+            return new Array();
+        var nodes = this.getContext().querySelectorAll("tr");
+        var matches = new Array();
+        for (var i = 0; i < nodes.length; i++) {
+            if (nodes[i].getAttribute("data-parentid") == parentId)
+                matches.push(nodes[i]);
+        }
+        return matches;
+    };
     BaseTreeTable.prototype.hasClass = function (element, cls) {
         return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
     };
@@ -19,7 +30,7 @@ var BaseTreeTable = (function () {
         var treeNode = this.getContext().querySelector('[data-id="' + parentId + '"]');
         if (treeNode != undefined)
             treeNode.className = treeNode.className.replace(" collapsed", "");
-        var collapsibleElements = this.getElements(parentId);
+        var collapsibleElements = this.getChildren(parentId);
         for (var i = 0; i < collapsibleElements.length; i++) {
             var currentElementId = collapsibleElements[i].dataset["id"];
             var selector = '[data-id="' + currentElementId + '"] td';
@@ -45,7 +56,7 @@ var BaseTreeTable = (function () {
         }
     };
     BaseTreeTable.prototype.hideUnderlyingElements = function (parentId) {
-        var collapsibleElements = this.getElements(parentId);
+        var collapsibleElements = this.getChildren(parentId);
         for (var i = 0; i < collapsibleElements.length; i++) {
             var currentElementId = collapsibleElements[i].dataset["id"];
             this.hideUnderlyingElements(currentElementId);
@@ -63,7 +74,7 @@ var BaseTreeTable = (function () {
             var localDepth = depth;
             var currentElementId = children[i].dataset.id;
             var tdElement = children[i].getElementsByTagName('td')[0];
-            var currentElementChildren = this.getElements(currentElementId);
+            var currentElementChildren = this.getChildren(currentElementId);
             var hasChildren = currentElementChildren.length > 0;
             var isLast = i === children.length - 1;
             if (isLast) {
@@ -112,7 +123,7 @@ var BaseTreeTable = (function () {
         for (var i = 0; i < roots.length; i++) {
             var depth = 1;
             var parentId = roots[i].dataset["id"];
-            var children = this.getElements(parentId);
+            var children = this.getChildren(parentId);
             var isParentLast = i === roots.length - 1;
             var identationDictionary = [];
             if (isParentLast) {

@@ -73,3 +73,23 @@ html, body {
     height: 155px;
     position: relative;
     padding-top: 40px; }
+
+
+.dynamic {
+    display: none;
+    background-color: transparent;
+    color: transparent;
+    padding: 5px;
+    text-align: center;
+    height: 30px;
+}
+
+    .dynamic.versions-banner.not-latest {
+        background-color: #f0ad4e;
+        color: #fff;
+    }
+
+    .dynamic.versions-banner.latest {
+        background-color: #5cb85c;
+        color: #fff;
+    }

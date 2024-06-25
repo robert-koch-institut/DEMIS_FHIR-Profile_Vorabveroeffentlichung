@@ -26,6 +26,9 @@
         #operation-outcome #issues table tr.issue td.issue-icon .fa.fa-info-circle {
           color: #007EC6;
           font-size: 1.5em; }
+        #operation-outcome #issues table tr.issue td.issue-icon .fa.fa-check-circle {
+          color: green;
+          font-size: 1.5em; }
     #operation-outcome #issues table tr.issue td.issue-conding-code {
       padding: 13px;
       vertical-align: top; }
@@ -63,6 +66,8 @@
         background-color: #CC5555; }
       #operation-outcome #issues table tr.issue td.issue-row-head.Information {
         background-color: #007EC6; }
+      #operation-outcome #issues table tr.issue td.issue-row-head.Success {
+        background-color: green; }
       #operation-outcome #issues table tr.issue td.issue-row-head.Skipped {
         background-color: #999; }
 
@@ -138,6 +143,51 @@ Bootstrap overridden variables
           border-bottom-left-radius: 3px;
           border-top-left-radius: 3px; }
         .stu3-treetable .treetable-buttons .tree-control .tree-button:last-child {
+          border-bottom-right-radius: 3px;
+          border-top-right-radius: 3px; }
+    .stu3-treetable .treetable-buttons .tree-settings {
+      float: right;
+      margin-right: 12px; }
+      .stu3-treetable .treetable-buttons .tree-settings .tree-button {
+        color: #2589C5;
+        border: none;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        vertical-align: middle;
+        background-color: #eef5f9;
+        font-size: 12px;
+        border-radius: 0;
+        display: inline-block;
+        margin-bottom: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-weight: normal;
+        text-align: center;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        white-space: nowrap;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        outline: none; }
+        .stu3-treetable .treetable-buttons .tree-settings .tree-button:focus-visible {
+          outline: -webkit-focus-ring-color auto 1px; }
+        .stu3-treetable .treetable-buttons .tree-settings .tree-button:hover {
+          background-color: #ADD7F0; }
+        .stu3-treetable .treetable-buttons .tree-settings .tree-button.active {
+          background-color: #2589C5;
+          color: white; }
+        .stu3-treetable .treetable-buttons .tree-settings .tree-button:disabled:not(.active) {
+          background-color: #e6e6e6;
+          color: #ababab;
+          pointer-events: none; }
+        .stu3-treetable .treetable-buttons .tree-settings .tree-button:disabled.active {
+          color: #e6e6e6;
+          background-color: #ababab;
+          pointer-events: none; }
+        .stu3-treetable .treetable-buttons .tree-settings .tree-button:first-child {
+          border-bottom-left-radius: 3px;
+          border-top-left-radius: 3px; }
+        .stu3-treetable .treetable-buttons .tree-settings .tree-button:last-child {
           border-bottom-right-radius: 3px;
           border-top-right-radius: 3px; }
   .stu3-treetable .hidden {
@@ -271,6 +321,8 @@ Bootstrap overridden variables
           background-position: -48px -32px; }
         .stu3-treetable .treetable-wrapper .treetable-left-panel .treetable .complexExtension {
           background-position: -16px 0; }
+        .stu3-treetable .treetable-wrapper .treetable-left-panel .treetable .complexModifierExtension {
+          background-position: -48px -16px; }
         .stu3-treetable .treetable-wrapper .treetable-left-panel .treetable .reference {
           background-position: -32px 0; }
         .stu3-treetable .treetable-wrapper .treetable-left-panel .treetable .backboneElement {
@@ -289,6 +341,10 @@ Bootstrap overridden variables
           background-color: #4cff00 !important; }
         .stu3-treetable .treetable-wrapper .treetable-left-panel .treetable .hidden {
           display: none; }
+      .stu3-treetable .treetable-wrapper .treetable-left-panel table.instance-tree span:not(.constraints) {
+        color: inherit !important; }
+      .stu3-treetable .treetable-wrapper .treetable-left-panel table.instance-tree td:first-child span:last-child {
+        vertical-align: initial !important; }
     .stu3-treetable .treetable-wrapper .treetable-right-panel {
       width: auto;
       overflow: hidden; }
@@ -422,8 +478,6 @@ Bootstrap overridden variables
       color: #006400;
       background-color: #FFF7F7;
       border-color: black; }
-    .stu3-treetable .treetable-wrapper table.instance-tree span:not(.constraints) {
-      color: inherit !important; }
 
 .fhirtree ul, .fhirtree li {
   padding: 2px 4px;

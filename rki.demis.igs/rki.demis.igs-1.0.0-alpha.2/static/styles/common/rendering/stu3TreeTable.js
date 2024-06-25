@@ -24,9 +24,16 @@ var Cookies;
     }
     Cookies.get = get;
 })(Cookies || (Cookies = {}));
+var TreeSettings = (function () {
+    function TreeSettings() {
+    }
+    TreeSettings.ShowCommonResourceElements = "ShowCommonResourceElements";
+    return TreeSettings;
+}());
 var Stu3TreeTable = (function () {
     function Stu3TreeTable(isRootCollapsible) {
         this.TreeFlavourCookie = "tree";
+        this.TreeSettingsCookie = "tree-settings";
         this.eventHandlerDictionary = [];
         this.isRootCollapsible = false;
         this.hasDetailsPinned = false;
@@ -43,19 +50,21 @@ var Stu3TreeTable = (function () {
         this.hasDetails = this.elementExists(".treetable-right-panel");
         this.getContext().querySelector(".treetable").setAttribute("tabindex", "0");
         var mode = this.getTreeRenderingMode();
+        var settings = this.getTreeRenderingSettings();
+        this.initSettingButtons(settings);
         if (this.hasFlavourButtons() === true) {
             var buttonElement = this.getContext().querySelectorAll("[data-mode='" + mode + "']")[0];
             this.switchTreeMode(buttonElement);
         }
         else {
-            this.renderTree(mode);
+            this.renderTree(mode, settings);
         }
     };
     Stu3TreeTable.prototype.expandNode = function (currentNode, currentLevel, levelsToExpand) {
         var _this = this;
         if (currentLevel === levelsToExpand)
             return;
-        var visibleElements = this.getVisibleElements(currentNode.getAttribute("data-id"));
+        var visibleElements = this.getVisibleChildren(currentNode.getAttribute("data-id"));
         visibleElements.forEach(function (node, index) {
             var isCollapsed = TreeHelper.hasClass(node, "collapsed");
             if (isCollapsed) {
@@ -77,93 +86,92 @@ var Stu3TreeTable = (function () {
             this.expandNode(rootNode, 1, levelsToExpand);
         }
     };
-    Stu3TreeTable.prototype.renderTree = function (mode) {
+    Stu3TreeTable.prototype.renderTree = function (mode, settings) {
         this.cleanPreviousMode();
         var tree = this.getContext().querySelector(".treetable-wrapper");
         tree.className = "treetable-wrapper " + mode;
         switch (mode) {
             case "snapshot":
-                this.renderSnapshotMode();
+                this.renderSnapshotMode(settings);
                 break;
             case "diff":
-                this.renderDiffMode();
+                this.renderDiffMode(settings);
                 break;
             case "hybrid":
-                this.renderHybridMode();
+                this.renderHybridMode(settings);
                 break;
         }
         ;
-        Cookies.set(this.TreeFlavourCookie, mode, 30);
+        this.indentTree();
+        this.registerForEvents();
         this.expandTree();
+        Cookies.set(this.TreeFlavourCookie, mode, 30);
+        Cookies.set(this.TreeSettingsCookie, this.getSettingsCookieValue(settings), 30);
     };
-    Stu3TreeTable.prototype.renderSnapshotMode = function () {
-        this.cleanIndentation();
-        var root = this.getContext().querySelector(".treetable tr[data-id]:not([data-ParentId])");
-        var childrenOfRoot = this.getVisibleElements(root.dataset["id"]);
-        this.checkSnapshotRows(childrenOfRoot);
-        this.indentTree();
-        this.registerForEvents();
+    Stu3TreeTable.prototype.renderSnapshotMode = function (settings) {
+        var handlers = [this.hideStripedElement];
+        if (!this.hasTreeRenderingSetting(settings, TreeSettings.ShowCommonResourceElements))
+            handlers = handlers.concat(this.hideCommonElement);
+        this.visitTree(handlers);
     };
-    Stu3TreeTable.prototype.renderDiffMode = function () {
-        this.cleanIndentation();
-        var root = this.getContext().querySelector(".treetable tr[data-id]:not([data-ParentId])");
-        var childrenOfRoot = this.getVisibleElements(root.dataset["id"]);
-        this.checkDiffRows(childrenOfRoot);
-        this.indentTree();
-        this.registerForEvents();
+    Stu3TreeTable.prototype.renderDiffMode = function (settings) {
+        var handlers = [this.hideNonConstrainedElement];
+        this.visitTree(handlers);
     };
-    Stu3TreeTable.prototype.renderHybridMode = function () {
-        this.cleanIndentation();
-        this.indentTree();
-        this.registerForEvents();
+    Stu3TreeTable.prototype.renderHybridMode = function (settings) {
+        var handlers = [];
+        if (!this.hasTreeRenderingSetting(settings, TreeSettings.ShowCommonResourceElements))
+            handlers = handlers.concat(this.hideCommonElement);
+        this.visitTree(handlers);
     };
-    Stu3TreeTable.prototype.cleanIndentation = function () {
-        var children = this.getContext().querySelectorAll('.treetable tr[data-parentid]');
-        for (var i = 0; i < children.length; i++) {
-            children[i].style.display = "table-row";
-            var tdElement = children[i].getElementsByTagName('td')[0];
+    Stu3TreeTable.prototype.cleanPreviousMode = function () {
+        var elements = this.getContext().querySelectorAll(".treetable tr");
+        for (var i = 0; i < elements.length; i++) {
+            // Show element
+            elements[i].style.display = "table-row";
+            if (TreeHelper.hasClass(elements[i], "mode-hidden")) {
+                TreeHelper.removeClass(elements[i], "mode-hidden");
+            }
+            // Clean indentation
+            var tdElement = elements[i].getElementsByTagName('td')[0];
+            if (tdElement == null)
+                continue;
             var spansToClear = tdElement.querySelectorAll("span.base");
             for (var j = 0; j < spansToClear.length; j++) {
                 tdElement.removeChild(spansToClear[j]);
             }
         }
     };
-    Stu3TreeTable.prototype.cleanPreviousMode = function () {
-        var elements = this.getContext().querySelectorAll(".treetable tr");
+    Stu3TreeTable.prototype.visitTree = function (handlers) {
+        if (handlers.length == 0)
+            return;
+        var root = this.getContext().querySelector(".treetable tr[data-id]:not([data-ParentId])");
+        var childrenOfRoot = this.getChildren(root.dataset["id"]);
+        this.visitElements(childrenOfRoot, handlers);
+    };
+    Stu3TreeTable.prototype.visitElements = function (elements, handlers) {
         for (var i = 0; i < elements.length; i++) {
-            elements[i].style.display = "table-row";
-            if (TreeHelper.hasClass(elements[i], "mode-hidden")) {
-                TreeHelper.removeClass(elements[i], "mode-hidden");
-            }
+            var element = elements[i];
+            for (var j = 0; j < handlers.length; j++)
+                handlers[j](element);
+            var childElements = this.getChildren(element.dataset["id"]);
+            if (childElements.length > 0)
+                this.visitElements(childElements, handlers);
         }
     };
-    Stu3TreeTable.prototype.checkSnapshotRows = function (rows) {
-        for (var i = 0; i < rows.length; i++) {
-            var currentRow = rows[i];
-            if (TreeHelper.hasClass(currentRow, "striped")) {
-                currentRow.style.display = "none";
-                TreeHelper.addClass(currentRow, "mode-hidden");
-            }
-            var childRows = this.getVisibleElements(currentRow.dataset["id"]);
-            this.checkSnapshotRows(childRows);
-        }
+    Stu3TreeTable.prototype.hideStripedElement = function (element) {
+        TreeHelper.hideElement(element, "striped", true);
     };
-    Stu3TreeTable.prototype.checkDiffRows = function (rows) {
-        for (var i = 0; i < rows.length; i++) {
-            var currentRow = rows[i];
-            if (!TreeHelper.hasClass(currentRow, "constraints")) {
-                currentRow.style.display = "none";
-                TreeHelper.addClass(currentRow, "mode-hidden");
-            }
-            var childRows = this.getVisibleElements(currentRow.dataset["id"]);
-            this.checkDiffRows(childRows);
-        }
+    Stu3TreeTable.prototype.hideNonConstrainedElement = function (element) {
+        TreeHelper.hideElement(element, "constraints", false);
+    };
+    Stu3TreeTable.prototype.hideCommonElement = function (element) {
+        TreeHelper.hideElement(element, "common", true);
     };
     Stu3TreeTable.prototype.getTreeRenderingMode = function () {
         var mode = null;
-        if (this.hasFlavourButtons() === true) {
+        if (this.hasFlavourButtons() === true)
             mode = Cookies.get(this.TreeFlavourCookie);
-        }
         if (mode == null) {
             var treetableWrapper = this.getContext().querySelector(".treetable-wrapper");
             var isDiff = TreeHelper.hasClass(treetableWrapper, "diff");
@@ -176,8 +184,23 @@ var Stu3TreeTable = (function () {
         }
         return mode;
     };
-    Stu3TreeTable.prototype.shouldHideElement = function (element) {
-        var mode = this.getTreeRenderingMode();
+    Stu3TreeTable.prototype.getTreeRenderingSettings = function () {
+        if (this.hasFlavourButtons() === true) {
+            var mode = Cookies.get(this.TreeSettingsCookie);
+            if (mode != null && mode != "")
+                return mode.split(",");
+        }
+        return [];
+    };
+    Stu3TreeTable.prototype.hasTreeRenderingSetting = function (settings, settingName) {
+        return settings.filter(function (s) { return s == settingName; }).length > 0;
+    };
+    Stu3TreeTable.prototype.getSettingsCookieValue = function (settings) {
+        if (settings.length == 0)
+            return "";
+        return settings.filter(function (s) { return s != ""; }).join();
+    };
+    Stu3TreeTable.prototype.shouldHideElement = function (element, mode) {
         if (mode === "hybrid") {
             return false;
         }
@@ -189,7 +212,7 @@ var Stu3TreeTable = (function () {
             var localDepth = depth;
             var currentElementId = children[i].dataset.id;
             var tdElement = children[i].getElementsByTagName('td')[0];
-            var currentElementChildren = this.getVisibleElements(currentElementId);
+            var currentElementChildren = this.getVisibleChildren(currentElementId);
             var hasChildren = currentElementChildren.length > 0;
             var isLast = i === children.length - 1;
             if (isLast) {
@@ -234,20 +257,64 @@ var Stu3TreeTable = (function () {
         }
     };
     Stu3TreeTable.prototype.toggleActiveButton = function (element) {
-        var currentlyActiveButton = this.getContext().querySelector(".treetable-buttons .tree-button.active");
+        var currentlyActiveButton = this.getContext().querySelector(".treetable-buttons .tree-control .tree-button.active");
         TreeHelper.removeClass(currentlyActiveButton, "active");
         TreeHelper.addClass(element, "active");
+    };
+    Stu3TreeTable.prototype.toggleActive = function (element, isActive) {
+        if (isActive)
+            TreeHelper.removeClass(element, "active");
+        else
+            TreeHelper.addClass(element, "active");
+    };
+    Stu3TreeTable.prototype.toggleSettingButton = function (element) {
+        var isActive = TreeHelper.hasClass(element, "active");
+        this.toggleActive(element, isActive);
+        return !isActive;
+    };
+    Stu3TreeTable.prototype.setSettingButton = function (element, setActive) {
+        var isActive = TreeHelper.hasClass(element, "active");
+        if (isActive != setActive)
+            this.toggleActive(element, isActive);
+    };
+    Stu3TreeTable.prototype.initSettingButtons = function (settings) {
+        var buttons = this.getContext().querySelectorAll(".treetable-buttons .tree-settings .tree-button");
+        for (var i = 0; i < buttons.length; i++) {
+            var button = buttons[i];
+            var settingName = button.dataset["settings"];
+            var setActive = this.hasTreeRenderingSetting(settings, settingName);
+            this.setSettingButton(button, setActive);
+        }
     };
     Stu3TreeTable.prototype.switchTreeMode = function (element) {
         if (this.hasFlavourButtons() === true) {
             var mode = element.dataset["mode"];
+            var settings_1 = this.getTreeRenderingSettings();
             this.toggleActiveButton(element);
-            this.renderTree(mode);
-            if (this.hasDetailsPinned === true) {
-                this.pinRootNode();
-            }
-            this.resizeRightPanel();
+            this.updateTree(mode, settings_1);
         }
+    };
+    Stu3TreeTable.prototype.toggleTreeSettings = function (element) {
+        if (this.hasFlavourButtons() === true) {
+            var settingName = element.dataset["settings"];
+            var mode = this.getTreeRenderingMode();
+            var settings_2 = this.getTreeRenderingSettings().filter(function (s) { return s !== settingName; });
+            var isSet = this.toggleSettingButton(element);
+            if (isSet)
+                settings_2 = settings_2.concat(settingName);
+            this.updateTree(mode, settings_2);
+        }
+    };
+    Stu3TreeTable.prototype.updateTree = function (mode, settings) {
+        this.renderTree(mode, settings);
+        if (this.hasDetailsPinned === true) {
+            this.pinRootNode();
+        }
+        this.resizeRightPanel();
+        this.updateSettingButtons(mode);
+    };
+    Stu3TreeTable.prototype.updateSettingButtons = function (mode) {
+        $("#" + TreeSettings.ShowCommonResourceElements).prop("disabled", mode == "diff");
     };
     Stu3TreeTable.prototype.pinRootNode = function () {
         this.hasDetailsPinned = true;
@@ -323,6 +390,9 @@ var Stu3TreeTable = (function () {
         };
         me.eventHandlerDictionary['switchmode'] = function () {
             me.switchTreeMode(this);
+        };
+        me.eventHandlerDictionary['togglesettings'] = function () {
+            me.toggleTreeSettings(this);
         };
         me.eventHandlerDictionary['hideDetails'] = function () {
             if (me.hasDetailsPinned === false) {
@@ -421,10 +491,11 @@ var Stu3TreeTable = (function () {
         };
     };
     Stu3TreeTable.prototype.showChildren = function (parentId, element, className, newClassName) {
-        var collapsibleElements = this.getVisibleElements(parentId);
+        var collapsibleElements = this.getVisibleChildren(parentId);
+        var mode = this.getTreeRenderingMode();
         for (var i = 0; i < collapsibleElements.length; i++) {
             var currentElement = collapsibleElements[i];
-            if (!this.shouldHideElement(currentElement)) {
+            if (!this.shouldHideElement(currentElement, mode)) {
                 var currentElementId = currentElement.dataset["id"];
                 var selector = '[data-id="' + currentElementId + '"] td';
                 var span = currentElement.querySelector(selector + " .vjoinendcollapsible, " + selector + ' .vjoincollapsible');
@@ -445,9 +516,8 @@ var Stu3TreeTable = (function () {
         this.setRightPanelHeightSameAsLeftPanelHeight();
         this.recalculateDetailsPopupPosition();
     };
-    Stu3TreeTable.prototype.getVisibleElements = function (parentId) {
-        var parentSelector = '[data-ParentId="' + parentId + '"]';
-        var collapsibleElements = this.getContext().querySelectorAll(parentSelector);
+    Stu3TreeTable.prototype.getVisibleChildren = function (parentId) {
+        var collapsibleElements = this.getChildren(parentId);
         var visibleElements = [];
         var increment = 0;
         for (var i = 0; i < collapsibleElements.length; i++) {
@@ -457,6 +527,10 @@ var Stu3TreeTable = (function () {
             }
         }
         return visibleElements;
+    };
+    Stu3TreeTable.prototype.getChildren = function (parentId) {
+        var parentSelector = '[data-ParentId="' + parentId + '"]';
+        return this.getContext().querySelectorAll(parentSelector);
     };
     Stu3TreeTable.prototype.getParentElementId = function (element) {
         var parent = element.parentElement.parentElement;
@@ -473,7 +547,7 @@ var Stu3TreeTable = (function () {
         }
     };
     Stu3TreeTable.prototype.hideUnderlyingElements = function (parentId) {
-        var collapsibleElements = this.getVisibleElements(parentId);
+        var collapsibleElements = this.getVisibleChildren(parentId);
         for (var i = 0; i < collapsibleElements.length; i++) {
             var currentElement = collapsibleElements[i];
             if (TreeHelper.hasClass(currentElement, "detailsexpanded")) {
@@ -492,7 +566,7 @@ var Stu3TreeTable = (function () {
             var depth = 1;
             var parent = roots[i];
             var parentId = parent.dataset["id"];
-            var children = this.getVisibleElements(parentId);
+            var children = this.getVisibleChildren(parentId);
             var isParentLast = i === roots.length - 1;
             var identationDictionary = [];
             if (isParentLast) {
@@ -510,6 +584,7 @@ var Stu3TreeTable = (function () {
         this.registerEvent('.vjoinendcollapsible', 'click', this.eventHandlerDictionary['vjoinendcollapsible']);
         this.registerEvent('.vjoinendexpandable', 'click', this.eventHandlerDictionary['vjoinendexpandable']);
         this.registerEvent('.treetable-buttons .tree-control .tree-button', 'click', this.eventHandlerDictionary['switchmode']);
+        this.registerEvent('.treetable-buttons .tree-settings .tree-button', 'click', this.eventHandlerDictionary['togglesettings']);
         this.registerEvent('.treetable', 'keydown', this.eventHandlerDictionary['keydown']);
         this.registerEvent('.treetable tr', 'click', this.eventHandlerDictionary['selectRow']);
         if (this.hasDetails) {
@@ -723,8 +798,8 @@ var InstanceTree = (function () {
         var _this = this;
         if (currentLevel === levelsToExpand)
             return;
-        var visibleElements = this.getVisibleElements(currentNode.getAttribute("data-id"));
-        visibleElements.forEach(function (node, index) {
+        var visibleNodes = this.getVisibleNodes(currentNode.getAttribute("data-id"));
+        visibleNodes.forEach(function (node, index) {
             var isCollapsed = TreeHelper.hasClass(node, "collapsed");
             if (isCollapsed) {
                 var button = node.querySelector(".vjoinexpandable");
@@ -738,18 +813,18 @@ var InstanceTree = (function () {
             _this.expandNode(node, (currentLevel + 1), levelsToExpand);
         });
     };
-    InstanceTree.prototype.getVisibleElements = function (parentId) {
+    InstanceTree.prototype.getVisibleNodes = function (parentId) {
         var parentSelector = '[data-ParentId="' + parentId + '"]';
-        var collapsibleElements = this.getContext().querySelectorAll(parentSelector);
-        var visibleElements = [];
+        var childNodes = this.getContext().querySelectorAll(parentSelector);
+        var visibleNodes = [];
         var increment = 0;
-        for (var i = 0; i < collapsibleElements.length; i++) {
-            if (!TreeHelper.hasClass(collapsibleElements[i], "mode-hidden")) {
-                visibleElements[increment] = collapsibleElements[i];
+        for (var i = 0; i < childNodes.length; i++) {
+            if (!TreeHelper.hasClass(childNodes[i], "mode-hidden")) {
+                visibleNodes[increment] = childNodes[i];
                 increment++;
             }
         }
-        return visibleElements;
+        return visibleNodes;
     };
     InstanceTree.prototype.getContext = function () {
         return document.getElementById(this.parentContainerId);
@@ -1088,6 +1163,13 @@ var TreeHelper;
         return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
     }
     TreeHelper.hasClass = hasClass;
+    function hideElement(element, cls, hasClass) {
+        if (TreeHelper.hasClass(element, cls) == hasClass && element.style.display != "none") {
+            element.style.display = "none";
+            TreeHelper.addClass(element, "mode-hidden");
+        }
+    }
+    TreeHelper.hideElement = hideElement;
     function createSpan(className) {
         var span = document.createElement('SPAN');
         span.className = className;
