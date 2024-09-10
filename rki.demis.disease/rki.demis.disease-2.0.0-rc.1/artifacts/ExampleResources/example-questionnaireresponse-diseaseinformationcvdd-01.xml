@@ -1,0 +1,154 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="ac836050-4c18-3316-8a61-79a4a64bfd4a"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationCVDD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCVDD"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/b6bb7aa4-e298-3b4e-83a1-32aaf7407eb0"></reference>
+   </subject>
+   <item>
+      <linkId value="infectionSource"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"></system>
+            <code value="ASKU"></code>
+            <display value="asked but unknown"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="infectionEnvironmentSetting"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="infectionEnvironmentSettingGroup"></linkId>
+            <item>
+               <linkId value="infectionEnvironmentSettingKind"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="http://snomed.info/sct"></system>
+                     <code value="257698009"></code>
+                     <display value="Schule"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="infectionEnvironmentSettingBegin"></linkId>
+               <answer>
+                  <valueDate value="2023-02-27"></valueDate>
+               </answer>
+            </item>
+            <item>
+               <linkId value="infectionEnvironmentSettingEnd"></linkId>
+               <answer>
+                  <valueDate value="2023-03-31"></valueDate>
+               </answer>
+            </item>
+         </item>
+         <item>
+            <linkId value="infectionEnvironmentSettingGroup"></linkId>
+            <item>
+               <linkId value="infectionEnvironmentSettingKind"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="http://snomed.info/sct"></system>
+                     <code value="14468000"></code>
+                     <display value="Sport"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="infectionEnvironmentSettingBegin"></linkId>
+               <answer>
+                  <valueDate value="2023-04-08"></valueDate>
+               </answer>
+            </item>
+            <item>
+               <linkId value="infectionEnvironmentSettingEnd"></linkId>
+               <answer>
+                  <valueDate value="2023-04-09"></valueDate>
+               </answer>
+            </item>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="immunization"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/d2b298cf-8d43-3035-849f-fc6ed0bb8b02"></reference>
+               </valueReference>
+            </answer>
+         </item>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/474fefa4-62b1-3610-91d2-e4f9cd8a5ee7"></reference>
+               </valueReference>
+            </answer>
+         </item>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/50537107-1c3c-345c-832c-9781078185a2"></reference>
+               </valueReference>
+            </answer>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="reason"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/hospitalizationReason"></system>
+            <code value="becauseOfDisease"></code>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="infectionRiskKind"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="413839001"></code>
+            <display value="Chronische Lungenerkrankung (z.B. COPD)"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="infectionRiskKind"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="46635009"></code>
+            <display value="Diabetes Typ 1"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>
