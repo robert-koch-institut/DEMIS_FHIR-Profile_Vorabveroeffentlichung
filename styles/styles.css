@@ -150,3 +150,17 @@ ul {
 address {
 font-style:normal;
  }
+
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+
+th, td {
+  padding: 1px;
+  text-align: left;
+}
+th{
+    font-weight: normal;
+}

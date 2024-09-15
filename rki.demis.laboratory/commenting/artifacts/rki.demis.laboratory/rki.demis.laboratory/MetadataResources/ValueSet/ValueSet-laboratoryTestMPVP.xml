@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestMPVP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestMPVP" />
+  <version value="1.6.0" />
+  <name value="LaboratoryTestMPVP" />
+  <title value="Labortest für Mumpsvirus" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-08-26" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet LaboratoryTestMPVP enthält die Codes der Labortests für Mumpsvirus." />
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.78" />
+      <concept>
+        <code value="101202-0" />
+        <display value="Mumps virus IgG Ab index [Units/volume] in Serum and CSF" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgG-Antikörperindex [Einheiten/Volumen] in Serum und Liquor" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="13266-2" />
+        <display value="Mumps virus IgG Ab [Units/volume] in Cerebral spinal fluid" />
+      </concept>
+      <concept>
+        <code value="13267-0" />
+        <display value="Mumps virus IgM Ab [Units/volume] in Cerebral spinal fluid" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgM-Antikörper [Einheiten/Volumen] in Liquor" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22415-4" />
+        <display value="Mumps virus IgG Ab [Presence] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgG-Antikörper [Nachweis] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22416-2" />
+        <display value="Mumps virus IgG Ab [Titer] in Cerebral spinal fluid" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgG-Antikörper [Titer] in Liquor" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22417-0" />
+        <display value="Mumps virus IgG Ab [Titer] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgG-Antikörper [Titer] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22418-8" />
+        <display value="Mumps virus IgM Ab [Presence] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgM-Antikörper [Nachweis] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22419-6" />
+        <display value="Mumps virus IgM Ab [Titer] in Cerebral spinal fluid" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgM-Antikörper [Titer] in Liquor" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22420-4" />
+        <display value="Mumps virus IgM Ab [Titer] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgM-Antikörper [Titer] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="25418-5" />
+        <display value="Mumps virus IgG Ab [Units/volume] in Serum by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgG-Antikörper [Einheiten/Volumen] in Serum mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="25419-3" />
+        <display value="Mumps virus IgM Ab [Units/volume] in Serum by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgM-Antikörper [Einheiten/Volumen] in Serum mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="31900-4" />
+        <display value="Mumps virus Ag [Presence] in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus Antigen [Nachweis] in Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="39011-2" />
+        <display value="Mumps virus IgG Ab [Presence] in Cerebral spinal fluid" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgG-Antikörper [Nachweis] in Liquor" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41131-4" />
+        <display value="Mumps virus IgM Ab [Presence] in Cerebral spinal fluid" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgM-Antikörper [Nachweis] in Liquor" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41852-5" />
+        <display value="Microorganism or agent identified in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mikroorganismus oder Erreger identifiziert in Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="47532-7" />
+        <display value="Mumps virus RNA [Presence] in Specimen by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus RNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="6478-2" />
+        <display value="Mumps virus IgM Ab [Presence] in Serum by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgM-Antikörper [Nachweis] in Serum mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="7966-5" />
+        <display value="Mumps virus IgG Ab [Units/volume] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgG-Antikörper [Einheiten/Volumen] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="7967-3" />
+        <display value="Mumps virus IgM Ab [Units/volume] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus IgM-Antikörper [Einheiten/Volumen] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="85807-6" />
+        <display value="Mumps virus genotype in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mumps-Virus Genotyp in Probenmaterial" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="sequencingStrategy" />
+  <url value="https://demis.rki.de/fhir/igs/ValueSet/sequencingStrategy" />
+  <version value="2.0.0" />
+  <name value="SequencingStrategy" />
+  <title value="Sequenzierungsstrategie" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-07-24" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet SequencingStrategy enthält die Codes der Sequenzierstrategien (angelehnt an ENA)." />
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/igs/CodeSystem/sequencingStrategy" />
+      <version value="2.0.0" />
+    </include>
+  </compose>
+</ValueSet>

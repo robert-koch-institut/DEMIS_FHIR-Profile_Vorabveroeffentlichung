@@ -1,0 +1,435 @@
+<Parameters xmlns="http://hl7.org/fhir">
+   <parameter>
+      <name value="content"></name>
+      <resource>
+         <Bundle xmlns="http://hl7.org/fhir">
+            <meta>
+               <lastUpdated value="2024-09-04T22:38:04.000+01:00"></lastUpdated>
+               <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundleLaboratory"></profile>
+            </meta>
+            <identifier>
+               <system value="https://demis.rki.de/fhir/NamingSystem/NotificationBundleId"></system>
+               <value value="fdcbcc7a-4bb7-33cf-bef6-69e5a8617308"></value>
+            </identifier>
+            <type value="document"></type>
+            <timestamp value="2024-09-04T22:38:04.000+01:00"></timestamp>
+            <entry>
+               <fullUrl value="urn:uuid:af2a431d-078b-3894-8cb6-60a347d56ccc"></fullUrl>
+               <resource>
+                  <Composition xmlns="http://hl7.org/fhir">
+                     <id value="af2a431d-078b-3894-8cb6-60a347d56ccc"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationLaboratory"></profile>
+                     </meta>
+                     <identifier>
+                        <system value="https://demis.rki.de/fhir/NamingSystem/NotificationId"></system>
+                        <value value="6d11e8f6-95ef-49fe-9e30-6a5bc4a216d0"></value>
+                     </identifier>
+                     <status value="final"></status>
+                     <type>
+                        <coding>
+                           <system value="http://loinc.org"></system>
+                           <code value="34782-3"></code>
+                           <display value="Infectious disease Note"></display>
+                        </coding>
+                     </type>
+                     <category>
+                        <coding>
+                           <system value="http://loinc.org"></system>
+                           <code value="11502-2"></code>
+                           <display value="Laboratory report"></display>
+                        </coding>
+                     </category>
+                     <subject>
+                        <reference value="urn:uuid:b6888c67-0297-3512-ad6e-2a05481e5a0f"></reference>
+                     </subject>
+                     <date value="2024-09-04T22:38:03.000+01:00"></date>
+                     <author>
+                        <reference value="urn:uuid:2d3dd667-bf71-31ca-810f-2e657dfb7ebd"></reference>
+                     </author>
+                     <title value="Erregernachweismeldung"></title>
+                     <section>
+                        <code>
+                           <coding>
+                              <system value="http://loinc.org"></system>
+                              <code value="11502-2"></code>
+                              <display value="Laboratory report"></display>
+                           </coding>
+                        </code>
+                        <entry>
+                           <reference value="urn:uuid:50e8724c-73f5-3798-a90b-4fa6058ac896"></reference>
+                        </entry>
+                     </section>
+                  </Composition>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:b6888c67-0297-3512-ad6e-2a05481e5a0f"></fullUrl>
+               <resource>
+                  <Patient xmlns="http://hl7.org/fhir">
+                     <id value="b6888c67-0297-3512-ad6e-2a05481e5a0f"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson"></profile>
+                     </meta>
+                     <name>
+                        <use value="official"></use>
+                        <family value="Tester"></family>
+                        <given value="Testus"></given>
+                     </name>
+                     <gender value="male"></gender>
+                     <birthDate value="1978-12-12"></birthDate>
+                     <address>
+                        <extension url="https://demis.rki.de/fhir/StructureDefinition/AddressUse">
+                           <valueCoding>
+                              <system value="https://demis.rki.de/fhir/CodeSystem/addressUse"></system>
+                              <code value="primary"></code>
+                           </valueCoding>
+                        </extension>
+                        <line value="Teststr. 123"></line>
+                        <city value="Berlin"></city>
+                        <postalCode value="13055"></postalCode>
+                        <country value="DE"></country>
+                     </address>
+                  </Patient>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:2d3dd667-bf71-31ca-810f-2e657dfb7ebd"></fullUrl>
+               <resource>
+                  <PractitionerRole xmlns="http://hl7.org/fhir">
+                     <id value="2d3dd667-bf71-31ca-810f-2e657dfb7ebd"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifierRole"></profile>
+                     </meta>
+                     <organization>
+                        <reference value="urn:uuid:c6ae70e0-8746-3079-b6b8-2d62eaeb4e39"></reference>
+                     </organization>
+                  </PractitionerRole>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:c6ae70e0-8746-3079-b6b8-2d62eaeb4e39"></fullUrl>
+               <resource>
+                  <Organization xmlns="http://hl7.org/fhir">
+                     <id value="c6ae70e0-8746-3079-b6b8-2d62eaeb4e39"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifierFacility"></profile>
+                     </meta>
+                     <identifier>
+                        <system value="https://demis.rki.de/fhir/NamingSystem/DemisParticipantId"></system>
+                        <value value="12345"></value>
+                     </identifier>
+                     <identifier>
+                        <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"></system>
+                        <value value="987654300"></value>
+                     </identifier>
+                     <type>
+                        <coding>
+                           <system value="https://demis.rki.de/fhir/CodeSystem/organizationType"></system>
+                           <code value="laboratory"></code>
+                           <display value="Erregerdiagnostische Untersuchungsstelle"></display>
+                        </coding>
+                     </type>
+                     <name value="Primärlabor"></name>
+                     <telecom>
+                        <system value="phone"></system>
+                        <value value="0309876543210"></value>
+                        <use value="work"></use>
+                     </telecom>
+                     <address>
+                        <line value="Dingsweg 321"></line>
+                        <city value="Berlin"></city>
+                        <postalCode value="13055"></postalCode>
+                        <country value="DE"></country>
+                     </address>
+                  </Organization>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:48d76ed6-403b-3eff-81c6-e93091c8d708"></fullUrl>
+               <resource>
+                  <PractitionerRole xmlns="http://hl7.org/fhir">
+                     <id value="48d76ed6-403b-3eff-81c6-e93091c8d708"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingRole"></profile>
+                     </meta>
+                     <organization>
+                        <reference value="urn:uuid:723c32fa-6c80-303b-a396-f3f0318e8a34"></reference>
+                     </organization>
+                  </PractitionerRole>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:723c32fa-6c80-303b-a396-f3f0318e8a34"></fullUrl>
+               <resource>
+                  <Organization xmlns="http://hl7.org/fhir">
+                     <id value="723c32fa-6c80-303b-a396-f3f0318e8a34"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingFacility"></profile>
+                     </meta>
+                     <identifier>
+                        <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"></system>
+                        <value value="123456780"></value>
+                     </identifier>
+                     <name value="Einsendepraxis ABC"></name>
+                     <telecom>
+                        <system value="phone"></system>
+                        <value value="030 1234567890"></value>
+                        <use value="work"></use>
+                     </telecom>
+                     <address>
+                        <line value="Teststr. 123"></line>
+                        <city value="Berlin"></city>
+                        <postalCode value="13055"></postalCode>
+                        <country value="DE"></country>
+                     </address>
+                  </Organization>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:50e8724c-73f5-3798-a90b-4fa6058ac896"></fullUrl>
+               <resource>
+                  <DiagnosticReport xmlns="http://hl7.org/fhir">
+                     <id value="50e8724c-73f5-3798-a90b-4fa6058ac896"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportEBCP"></profile>
+                     </meta>
+                     <basedOn>
+                        <type value="ServiceRequest"></type>
+                        <identifier>
+                           <system value="https://demis.rki.de/fhir/NamingSystem/ServiceRequestId"></system>
+                           <value value="2021-031223394"></value>
+                        </identifier>
+                     </basedOn>
+                     <status value="final"></status>
+                     <code>
+                        <coding>
+                           <system value="https://demis.rki.de/fhir/CodeSystem/notificationCategory"></system>
+                           <code value="ebcp"></code>
+                           <display value="Enterobacterales bei Nachweis einer Carbapenemase-Determinante oder mit verminderter Empfindlichkeit gegenüber Carbapenemen außer bei natürlicher Resistenz; Meldepflicht nur bei Infektion oder Kolonisation"></display>
+                        </coding>
+                     </code>
+                     <subject>
+                        <reference value="urn:uuid:b6888c67-0297-3512-ad6e-2a05481e5a0f"></reference>
+                     </subject>
+                     <issued value="2024-09-04T12:12:03.000+01:00"></issued>
+                     <result>
+                        <reference value="urn:uuid:1b8030e7-b4ea-3ced-8ae6-dc04adbd7fed"></reference>
+                     </result>
+                     <result>
+                        <reference value="urn:uuid:637bd0ac-8036-39da-9ce0-e9fe8f52bafe"></reference>
+                     </result>
+                     <result>
+                        <reference value="urn:uuid:aed1c721-eb21-3647-b97a-eb1474ed364a"></reference>
+                     </result>
+                     <conclusionCode>
+                        <coding>
+                           <system value="https://demis.rki.de/fhir/CodeSystem/conclusionCode"></system>
+                           <code value="pathogenDetected"></code>
+                           <display value="Meldepflichtiger Erreger nachgewiesen"></display>
+                        </coding>
+                     </conclusionCode>
+                  </DiagnosticReport>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:1b8030e7-b4ea-3ced-8ae6-dc04adbd7fed"></fullUrl>
+               <resource>
+                  <Observation xmlns="http://hl7.org/fhir">
+                     <id value="1b8030e7-b4ea-3ced-8ae6-dc04adbd7fed"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionEBCP"></profile>
+                     </meta>
+                     <status value="final"></status>
+                     <category>
+                        <coding>
+                           <system value="http://terminology.hl7.org/CodeSystem/observation-category"></system>
+                           <code value="laboratory"></code>
+                        </coding>
+                     </category>
+                     <code>
+                        <coding>
+                           <system value="http://loinc.org"></system>
+                           <version value="2.78"></version>
+                           <code value="41852-5"></code>
+                           <display value="Microorganism or agent identified in Specimen"></display>
+                        </coding>
+                     </code>
+                     <subject>
+                        <reference value="urn:uuid:b6888c67-0297-3512-ad6e-2a05481e5a0f"></reference>
+                     </subject>
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://snomed.info/sct"></system>
+                           <version value="http://snomed.info/sct/11000274103/version/20240515"></version>
+                           <code value="56415008"></code>
+                           <display value="Klebsiella pneumoniae (organism)"></display>
+                        </coding>
+                     </valueCodeableConcept>
+                     <interpretation>
+                        <coding>
+                           <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"></system>
+                           <code value="POS"></code>
+                           <display value="Positive"></display>
+                        </coding>
+                     </interpretation>
+                     <method>
+                        <coding>
+                           <system value="http://snomed.info/sct"></system>
+                           <version value="http://snomed.info/sct/11000274103/version/20240515"></version>
+                           <code value="83581000052107"></code>
+                           <display value="Matrix assisted laser desorption ionization time of flight mass spectrometry technique (qualifier value)"></display>
+                        </coding>
+                     </method>
+                     <specimen>
+                        <reference value="urn:uuid:fd1c81b6-be1c-39ab-93c6-8b45f4431830"></reference>
+                     </specimen>
+                  </Observation>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:637bd0ac-8036-39da-9ce0-e9fe8f52bafe"></fullUrl>
+               <resource>
+                  <Observation xmlns="http://hl7.org/fhir">
+                     <id value="637bd0ac-8036-39da-9ce0-e9fe8f52bafe"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionEBCP"></profile>
+                     </meta>
+                     <status value="final"></status>
+                     <category>
+                        <coding>
+                           <system value="http://terminology.hl7.org/CodeSystem/observation-category"></system>
+                           <code value="laboratory"></code>
+                        </coding>
+                     </category>
+                     <code>
+                        <coding>
+                           <system value="http://loinc.org"></system>
+                           <version value="2.78"></version>
+                           <code value="18943-1"></code>
+                           <display value="Meropenem [Susceptibility]"></display>
+                        </coding>
+                     </code>
+                     <subject>
+                        <reference value="urn:uuid:b6888c67-0297-3512-ad6e-2a05481e5a0f"></reference>
+                     </subject>
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://snomed.info/sct"></system>
+                           <version value="http://snomed.info/sct/11000274103/version/20240515"></version>
+                           <code value="30714006"></code>
+                           <display value="Resistant (qualifier value)"></display>
+                        </coding>
+                     </valueCodeableConcept>
+                     <interpretation>
+                        <coding>
+                           <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"></system>
+                           <code value="R"></code>
+                           <display value="Resistant"></display>
+                        </coding>
+                     </interpretation>
+                     <method>
+                        <coding>
+                           <system value="http://snomed.info/sct"></system>
+                           <version value="http://snomed.info/sct/11000274103/version/20240515"></version>
+                           <code value="39334004"></code>
+                           <display value="Broth microdilution susceptibility test (procedure)"></display>
+                        </coding>
+                     </method>
+                     <specimen>
+                        <reference value="urn:uuid:fd1c81b6-be1c-39ab-93c6-8b45f4431830"></reference>
+                     </specimen>
+                  </Observation>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:aed1c721-eb21-3647-b97a-eb1474ed364a"></fullUrl>
+               <resource>
+                  <Observation xmlns="http://hl7.org/fhir">
+                     <id value="aed1c721-eb21-3647-b97a-eb1474ed364a"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionEBCP"></profile>
+                     </meta>
+                     <status value="final"></status>
+                     <category>
+                        <coding>
+                           <system value="http://terminology.hl7.org/CodeSystem/observation-category"></system>
+                           <code value="laboratory"></code>
+                        </coding>
+                     </category>
+                     <code>
+                        <coding>
+                           <system value="http://loinc.org"></system>
+                           <version value="2.78"></version>
+                           <code value="35802-8"></code>
+                           <display value="Ertapenem [Susceptibility]"></display>
+                        </coding>
+                     </code>
+                     <subject>
+                        <reference value="urn:uuid:b6888c67-0297-3512-ad6e-2a05481e5a0f"></reference>
+                     </subject>
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://snomed.info/sct"></system>
+                           <version value="http://snomed.info/sct/11000274103/version/20240515"></version>
+                           <code value="131196009"></code>
+                           <display value="Susceptible (qualifier value)"></display>
+                        </coding>
+                     </valueCodeableConcept>
+                     <interpretation>
+                        <coding>
+                           <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"></system>
+                           <code value="S"></code>
+                           <display value="Susceptible"></display>
+                        </coding>
+                     </interpretation>
+                     <method>
+                        <coding>
+                           <system value="http://snomed.info/sct"></system>
+                           <version value="http://snomed.info/sct/11000274103/version/20240515"></version>
+                           <code value="39334004"></code>
+                           <display value="Broth microdilution susceptibility test (procedure)"></display>
+                        </coding>
+                     </method>
+                     <specimen>
+                        <reference value="urn:uuid:fd1c81b6-be1c-39ab-93c6-8b45f4431830"></reference>
+                     </specimen>
+                  </Observation>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:fd1c81b6-be1c-39ab-93c6-8b45f4431830"></fullUrl>
+               <resource>
+                  <Specimen xmlns="http://hl7.org/fhir">
+                     <id value="fd1c81b6-be1c-39ab-93c6-8b45f4431830"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/SpecimenEBCP"></profile>
+                     </meta>
+                     <status value="available"></status>
+                     <type>
+                        <coding>
+                           <system value="http://snomed.info/sct"></system>
+                           <code value="878861003"></code>
+                           <display value="Blood specimen in blood culture bottle (specimen)"></display>
+                        </coding>
+                     </type>
+                     <subject>
+                        <reference value="urn:uuid:b6888c67-0297-3512-ad6e-2a05481e5a0f"></reference>
+                     </subject>
+                     <receivedTime value="2024-09-04T12:12:03.000+01:00"></receivedTime>
+                     <collection>
+                        <collector>
+                           <reference value="urn:uuid:48d76ed6-403b-3eff-81c6-e93091c8d708"></reference>
+                        </collector>
+                        <collectedDateTime value="2024-09-04T12:12:03.000+01:00"></collectedDateTime>
+                     </collection>
+                     <note>
+                        <text value="Ich bin eine interessante Zusatzinformation ..."></text>
+                     </note>
+                  </Specimen>
+               </resource>
+            </entry>
+         </Bundle>
+      </resource>
+   </parameter>
+</Parameters>

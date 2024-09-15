@@ -1,0 +1,21 @@
+<Immunization xmlns="http://hl7.org/fhir">
+   <id value="38d2d6c2-e979-33ec-85cf-20cbdd04cf30"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/ImmunizationInformationMPXD"></profile>
+   </meta>
+   <status value="completed"></status>
+   <vaccineCode>
+      <coding>
+         <system value="http://snomed.info/sct"></system>
+         <code value="871727001"></code>
+         <display value="MVA-Impfstoff (Imvanex oder Jynneos; Drittgenerationsimpfstoff)"></display>
+      </coding>
+   </vaccineCode>
+   <patient>
+      <reference value="Patient/a4f04326-3a2a-3a57-bf40-58a37b29f064"></reference>
+   </patient>
+   <occurrenceDateTime value="2022-11-15"></occurrenceDateTime>
+   <note>
+      <text value="-"></text>
+   </note>
+</Immunization>

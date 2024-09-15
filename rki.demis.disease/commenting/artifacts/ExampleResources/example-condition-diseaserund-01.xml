@@ -1,0 +1,63 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="5ca823d7-e357-3efa-b9af-a8def954c807"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseRUND"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="rund"></code>
+         <display value="Röteln (konnatal)"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/277cd938-ec55-3b4f-aea0-c5062a341b46"></reference>
+   </subject>
+   <onsetDateTime value="2022-12-05"></onsetDateTime>
+   <recordedDate value="2022-12-07"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="232297009+272033007"></code>
+            <display value="Innenohrtaubheit"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="13213009"></code>
+            <display value="Herzfehler, kongenital"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="193570009"></code>
+            <display value="Katarakt"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="1148757008"></code>
+            <display value="Mikrozephalus"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="Frühgeburt nach starken Wehen in SSW 35, hängt zusammen mit Fall RUVD_IG_01 mit ID 74a5b0de-b9b7-11ed-afa1-0242ac120002"></text>
+   </note>
+</Condition>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceNEID" />
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceNEID" />
+  <version value="1.2.2" />
+  <name value="EvidenceNEID" />
+  <title value="Meningokokken, invasive Erkrankung -Symptom und -Manifestation" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-08-30" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet EvidenceNEID enthält die Codes der Meningokokken, invasive Erkrankung-Symptome und -Manifestationen." />
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20240515" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="24" />
+        </extension>
+        <code value="103019006" />
+        <display value="aufgetriebene Fontanelle" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Bulging fontanelle (finding)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="13" />
+        </extension>
+        <code value="13507004" />
+        <display value="Purpura fulminans" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Purpura fulminans (disorder)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="14" />
+        </extension>
+        <code value="161882006" />
+        <display value="Nackensteifigkeit" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Stiff neck (finding)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="16" />
+        </extension>
+        <code value="233604007" />
+        <display value="Lungenentzündung (Pneumonie)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Pneumonia (disorder)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="15" />
+        </extension>
+        <code value="247471006" />
+        <display value="makulopapulöses Exanthem" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Maculopapular eruption (disorder)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="17" />
+        </extension>
+        <code value="25064002" />
+        <display value="Kopfschmerzen" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Headache (finding)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="20" />
+        </extension>
+        <code value="271813007" />
+        <display value="Hauteinblutung, Petechien" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Petechiae (finding)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="11" />
+        </extension>
+        <code value="3006004" />
+        <display value="veränderte Bewusstseinslage" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Disturbance of consciousness (finding)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="21" />
+        </extension>
+        <code value="302227002" />
+        <display value="Hauteinblutung, Ekchymosen" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Ecchymosis (finding)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="18" />
+        </extension>
+        <code value="308921004:{47429007=271719001}" />
+        <display value="Hirndruckzeichen, andere" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="1119454002" />
+          </use>
+          <value value="308921004 | Neurological symptom (finding) | : {47429007 | Associated with (attribute) | = 271719001 | Raised intracranial pressure (finding) |}" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="10" />
+        </extension>
+        <code value="36102002" />
+        <display value="Waterhouse-Friderichsen-Syndrom" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Acute adrenal insufficiency with meningococcemia (disorder)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="22" />
+        </extension>
+        <code value="386661006" />
+        <display value="Fieber" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Fever (finding)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="19" />
+        </extension>
+        <code value="410430005" />
+        <display value="Herz-/Kreislaufversagen" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Cardiorespiratory arrest (disorder)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="23" />
+        </extension>
+        <code value="422400008" />
+        <display value="Erbrechen" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Vomiting (disorder)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="12" />
+        </extension>
+        <code value="447931005" />
+        <display value="septisches Krankheitsbild" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Clinical sepsis (disorder)" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

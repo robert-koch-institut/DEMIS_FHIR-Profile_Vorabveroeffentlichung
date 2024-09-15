@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="materialADVP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/materialADVP" />
+  <version value="1.7.0" />
+  <name value="MaterialADVP" />
+  <title value="Material für Adenoviren; Meldepflicht nur für den direkten Nachweis im Konjunktivalabstrich" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-08-27" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet MaterialADVP enthält die Codes der Materialien für Adenoviren; Meldepflicht nur für den direkten Nachweis im Konjunktivalabstrich." />
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20240515" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="119400006" />
+        <display value="Specimen from cornea (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Specimen from cornea (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Probe der Kornea" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="119401005" />
+        <display value="Specimen from conjunctiva (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Specimen from conjunctiva (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Probe der Bindehaut" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="123038009" />
+        <display value="Specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Anderes Untersuchungsmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="258498002" />
+        <display value="Conjunctival swab (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Conjunctival swab (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Konjunktivalabstrich" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="445160003" />
+        <display value="Swab of eye (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Swab of eye (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Augenabstrich" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="472894002" />
+        <display value="Swab from cornea (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Swab from cornea (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Kornealabstrich" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
