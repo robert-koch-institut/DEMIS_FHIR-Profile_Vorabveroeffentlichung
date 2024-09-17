@@ -19,7 +19,7 @@
         <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
         <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
 
-        <link rel="stylesheet" href="static/styles/treetable/style.css?v=1db06c7c15e4580" />
+        <link rel="stylesheet" href="static/styles/treetable/style.css?v=1db09199c610900" />
 
     </head>
 
@@ -49,7 +49,7 @@
 <div class="tree-content">
     <div>
 
-        <input data-val="true" data-val-required="The Id field is required." id="GuideId" name="Guide.Id" type="hidden" value="5819" />
+        <input data-val="true" data-val-required="The Id field is required." id="GuideId" name="Guide.Id" type="hidden" value="5838" />
 
         <table id="treetable" class="treetable ig-treetable hidden">
 
@@ -69,12 +69,51 @@
                         data-is-folder="False"
                         data-filepath="Home/Zielgruppe-dieses-Leitfadens.guide.md"
                         data-parentId="Home"
-                        data-serial-nr="10"
+                        data-serial-nr="5"
                         class="treenode">
                         <td>
                             <a href="Home-Zielgruppe-dieses-Leitfadens.html">
                                 <span class="baseIcon dataType"></span>
                                 <span title="Zielgruppe dieses Leitfadens">Zielgruppe dieses Leitfadens</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/Grundlagen-und-Ueberblick"
+                        data-is-folder="True"
+                        data-filepath="Home/Grundlagen-und-Ueberblick"
+                        data-parentId="Home"
+                        data-serial-nr="6"
+                        class="treenode">
+                        <td>
+                            <a href="Home-Grundlagen-und-Ueberblick.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Grundlagen und &#xDC;berblick">Grundlagen und &#xDC;berblick</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/Grundlagen-und-Ueberblick/guide-model.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/Grundlagen-und-Ueberblick/guide-model.guide.md"
+                        data-parentId="Home/Grundlagen-und-Ueberblick"
+                        data-serial-nr="9"
+                        class="treenode">
+                        <td>
+                            <a href="Home-Grundlagen-und-Ueberblick-guide-model.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Ressourcenmodell">Ressourcenmodell</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/Grundlagen-und-Ueberblick/guide-terminology.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/Grundlagen-und-Ueberblick/guide-terminology.guide.md"
+                        data-parentId="Home/Grundlagen-und-Ueberblick"
+                        data-serial-nr="10"
+                        class="treenode">
+                        <td>
+                            <a href="Home-Grundlagen-und-Ueberblick-guide-terminology.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Terminologien">Terminologien</span>
                             </a>
                         </td>
                     </tr>
@@ -766,7 +805,7 @@
 <p><a href="https://simplifier.net/rki.demis.igs/%7Eresources?canonical=https://demis.rki.de/fhir/igs/structuredefinition/sequencedocumentreference&amp;category=Profile&amp;sortBy=RankScore_desc">https://demis.rki.de/fhir/igs/StructureDefinition/SequenceDocumentReference</a></p>
 <p>Die SequenceDocumentReference verweist auf das SequenceDocument, in dem die Sequenzdaten im FASTA- oder FASTQ-Format referenziert werden.</p>
 <p><strong>Profilansicht</strong>
-<div class="stu3-treetable" id="2642845af0004ff68a69ffe08dc28cc8" data-level="1"><div class="treetable-wrapper hybrid"><div class="treetable-left-panel"><table class="treetable"><tr class="collapsed constraints" data-id="3270eefead8f4e188fe4aec48fc62ece"><td class="profile"><span class="baseIcon resource" title="Resource"></span><span class="constraints" title="SequenceDocumentReference is the name of the resource
+<div class="stu3-treetable" id="f61c1bcca6f3421fb6b08af449ce091f" data-level="1"><div class="treetable-wrapper hybrid"><div class="treetable-left-panel"><table class="treetable"><tr class="collapsed constraints" data-id="f37f74f8eea94eb9a516caffdf146d4c"><td class="profile"><span class="baseIcon resource" title="Resource"></span><span class="constraints" title="SequenceDocumentReference is the name of the resource
 Extension is the type of the resource
 Extension is the name of the parent resource"><b>SequenceDocumentReference</b><span class="constraints"> (</span><a title="Extension
 hl7.fhir.r4.core 4.0.1
@@ -775,25 +814,25 @@ hl7.fhir.r4.core 4.0.1
 StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Extension</pre></p></div><span><b>Short description </b></span><p><span>Optional Extensions Element</span></p><span><b>Definition </b></span><div class="markdown"><p>Optional Extension Element - found in all resources.</p>
 </div><span><b>Data type </b></span><p><a title="Extension
 hl7.fhir.r4.core 4.0.1
-StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ext-1: </b>Must have either extensions or value[x], not both<br><code>extension.exists() != value.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="common" id="Extension.id" data-id="ece5f02f02454ed5ae4625f0990cf523" data-parentId="3270eefead8f4e188fe4aec48fc62ece"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span>id</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></p><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ext-1: </b>Must have either extensions or value[x], not both<br><code>extension.exists() != value.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="common" id="Extension.id" data-id="a52dddc71b7d45789318a0278e21c133" data-parentId="f37f74f8eea94eb9a516caffdf146d4c"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span>id</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
 hl7.fhir.r4.core 4.0.1
 StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Extension.id</pre></p></div><span><b>Short description </b></span><p><span>Unique id for inter-element referencing</span></p><span><b>Definition </b></span><div class="markdown"><p>Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
 </div><span><b>Data type </b></span><p><a title="string
 hl7.fhir.r4.core 4.0.1
-StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li></ul></td></tr><tr class="common sliced" id="Extension.extension" data-id="d06f08e723f742d58261c86ceff98ead" data-parentId="3270eefead8f4e188fe4aec48fc62ece"><td class="profile"><span class="baseIcon extension" title="Extension"></span><span>extension</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="Extension
+StructureDefinition-string.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-string.json" >string</a></p><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li></ul></td></tr><tr class="common sliced" id="Extension.extension" data-id="ea0756433c454cac82c0fbe59b97d9f2" data-parentId="f37f74f8eea94eb9a516caffdf146d4c"><td class="profile"><span class="baseIcon extension" title="Extension"></span><span>extension</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="Extension
 hl7.fhir.r4.core 4.0.1
 StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Extension.extension</pre></p></div><span><b>Short description </b></span><p><span>Additional content defined by implementations</span></p><span><b>Alternate names </b></span><p><span>extensions</span><span>, </span><span>user content</span></p><span><b>Definition </b></span><div class="markdown"><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </div><span><b>Comments </b></span><div class="markdown"><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </div><span><b>Data type </b></span><p><a title="Extension
 hl7.fhir.r4.core 4.0.1
-StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></p><span><b>Sliced: </b></span><p><span>Unordered, Open, by url(Value)</span></p><div><span>Extensions are always sliced by (at least) url</span></div><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ext-1: </b>Must have either extensions or value[x], not both<br><code>extension.exists() != value.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="constraints" id="Extension.url" data-id="2eabf4dc0cf641a0b5acb247e5dba391" data-parentId="3270eefead8f4e188fe4aec48fc62ece"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span class="constraints">url</span></td><td class="profile"></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="uri
+StructureDefinition-Extension.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Extension.json" >Extension</a></p><span><b>Sliced: </b></span><p><span>Unordered, Open, by url(Value)</span></p><div><span>Extensions are always sliced by (at least) url</span></div><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li><li><b>ext-1: </b>Must have either extensions or value[x], not both<br><code>extension.exists() != value.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="constraints" id="Extension.url" data-id="06df4387dbcf46dca35a97ec43de8c94" data-parentId="f37f74f8eea94eb9a516caffdf146d4c"><td class="profile"><span class="baseIcon primitive" title="Primitive Data Type"></span><span class="constraints">url</span></td><td class="profile"></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="uri
 hl7.fhir.r4.core 4.0.1
 StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a><span class="fixed-label constraints">Fixed Value</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Element id</b></span><div><p><pre>Extension.url</pre></p></div><span><b>Short description </b></span><p><span>identifies the meaning of the extension</span></p><span><b>Definition </b></span><div class="markdown"><p>Source of the definition for the extension code - a logical name or a URL.</p>
 </div><span><b>Comments </b></span><div class="markdown"><p>The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.</p>
 </div><span><b>Data type </b></span><p><a title="uri
 hl7.fhir.r4.core 4.0.1
-StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></p><span class="constraints"><b>Fixed value </b></span><div><p><pre class="constraints">https://demis.rki.de/fhir/igs/StructureDefinition/SequenceDocumentReference</pre></p></div><span><b>Mappings</b></span><ul><li><b>rim: </b>N/A</li></ul></td></tr><tr class="collapsed constraints" id="Extension.value[x]" data-id="8067b586f08d4c8e9713eb97f36e2ab6" data-parentId="3270eefead8f4e188fe4aec48fc62ece"><td class="profile"><span class="baseIcon valueX" title="Choice of Types"></span><span class="constraints">value[x]</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>1</span></td><td class="profile"></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Extension.value[x]</pre></p></div><span><b>Short description </b></span><p><span>Value of extension</span></p><span><b>Definition </b></span><div class="markdown"><p>Value of extension - must be one of a constrained set of the data types (see <a href="extensibility.html">Extensibility</a> for a list).</p>
-</div><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="constraints" id="Extension.valueReference" data-id="dc50c2f7ab524d668930e87fa2c2427d" data-parentId="8067b586f08d4c8e9713eb97f36e2ab6"><td class="profile"><span class="baseIcon reference" title="Reference to another Resource"></span><span class="constraints">valueReference</span></td><td class="profile"></td><td></td><td class="profile"><a title="Reference
+StructureDefinition-uri.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-uri.json" >uri</a></p><span class="constraints"><b>Fixed value </b></span><div><p><pre class="constraints">https://demis.rki.de/fhir/igs/StructureDefinition/SequenceDocumentReference</pre></p></div><span><b>Mappings</b></span><ul><li><b>rim: </b>N/A</li></ul></td></tr><tr class="collapsed constraints" id="Extension.value[x]" data-id="b16f4c0977cc4a4eae17bad0755d93ce" data-parentId="f37f74f8eea94eb9a516caffdf146d4c"><td class="profile"><span class="baseIcon valueX" title="Choice of Types"></span><span class="constraints">value[x]</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>1</span></td><td class="profile"></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element id</b></span><div><p><pre>Extension.value[x]</pre></p></div><span><b>Short description </b></span><p><span>Value of extension</span></p><span><b>Definition </b></span><div class="markdown"><p>Value of extension - must be one of a constrained set of the data types (see <a href="extensibility.html">Extensibility</a> for a list).</p>
+</div><span><b>Constraints</b></span><div><ul><li><b>ele-1: </b>All FHIR elements must have a @value or children<br><code>hasValue() or (children().count() &gt; id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li><b>rim: </b>n/a</li><li><b>rim: </b>N/A</li></ul></td></tr><tr class="constraints" id="Extension.valueReference" data-id="e0474154d4ab492597af81502229c34e" data-parentId="b16f4c0977cc4a4eae17bad0755d93ce"><td class="profile"><span class="baseIcon reference" title="Reference to another Resource"></span><span class="constraints">valueReference</span></td><td class="profile"></td><td></td><td class="profile"><a title="Reference
 hl7.fhir.r4.core 4.0.1
 StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=hl7.fhir.r4.core@4.0.1&filepath=package/StructureDefinition-Reference.json"  class="constraints">Reference</a><span class="constraints">(</span><a title="Das SequenceDocument referenziert die Sequenzdaten im FASTA oder FASTQ Format." href="artifacts/rki.demis.igs/rki.demis.igs/MetadataResources/StructureDefinition/DocumentReference/StructureDefinition-SequenceDocument.xml"  class="constraints">SequenceDocument</a><span class="constraints">)</span></td><td class="details hidden"><span class="pin-control"></span><span class="constraints"><b>Data type </b></span><p><a title="Reference
 hl7.fhir.r4.core 4.0.1
@@ -801,8 +840,8 @@ StructureDefinition-Reference.json" href="https://simplifier.net/resolve?scope=h
 (function() {
 var isTreetableVisible = document.querySelector(".treetable") != null;
 if (isTreetableVisible) {
-var resourceTreeTable2642845af0004ff68a69ffe08dc28cc8 = new Stu3TreeTable(false);
-resourceTreeTable2642845af0004ff68a69ffe08dc28cc8.init("2642845af0004ff68a69ffe08dc28cc8");
+var resourceTreeTablef61c1bcca6f3421fb6b08af449ce091f = new Stu3TreeTable(false);
+resourceTreeTablef61c1bcca6f3421fb6b08af449ce091f.init("f61c1bcca6f3421fb6b08af449ce091f");
 }
 })();
 </script></p>
