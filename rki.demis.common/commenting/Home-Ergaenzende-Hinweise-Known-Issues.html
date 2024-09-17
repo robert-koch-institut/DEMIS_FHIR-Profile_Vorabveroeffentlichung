@@ -174,7 +174,7 @@
                         data-filepath="Home/Ergaenzende-Hinweise/Known-Issues.page.md"
                         data-parentId="Home/Ergaenzende-Hinweise"
                         data-serial-nr="17"
-                        class="treenode">
+                        class="treenode selected">
                         <td>
                             <a href="Home-Ergaenzende-Hinweise-Known-Issues.html">
                                 <span class="baseIcon dataType"></span>
@@ -187,7 +187,7 @@
                         data-filepath="Home/guide-links.guide.md"
                         data-parentId="Home"
                         data-serial-nr="18"
-                        class="treenode selected">
+                        class="treenode">
                         <td>
                             <a href="Home-guide-links.html">
                                 <span class="baseIcon dataType"></span>
@@ -1204,16 +1204,27 @@
                             <div id="preview-content" class="preview-panel full-width" role="main" aria-label="Main content">
                                 
 
-<h1 id="page-title">Weiterführende Informationen</h1>
-<p>Diese Seite verlinkt Inhalte, die dem Leser dieses Implementierungsleitfadens weiterführende Informationen bzgl. der elektronischen Erregernachweismeldung an die Hand geben:</p>
-<h2 id="demis-spezifische-informationen">DEMIS spezifische Informationen</h2>
-<ul>
-<li><strong><a href="https://wiki.gematik.de/x/fICAB">DEMIS-Wissensdatenbank</a></strong> - Offizielles Wiki mit Inhalten bzgl. der Anbindung an das DEMIS-Backend.</li>
-</ul>
-<h2 id="allgemeine-informationen">Allgemeine Informationen</h2>
-<ul>
-<li><strong><a href="http://hl7.org/fhir/R4/index.html">HL7 FHIR</a></strong> - Beschreibung des für die DEMIS-Erregernachweismeldung genutzten Basisstandards.</li>
-</ul>
+<h1 id="page-title">Known Issues</h1>
+<p>Die folgende Seite gibt einen Überblick über bekannte Probleme mit den beschriebenen Profilen bzw. den von diesen verwendeten Dependencies:</p>
+<h2 id="meldevorgangs-id-meldungs-id-widerspruche-zur-hl7-fhir-spezifikation-bzgl.der-verwendung-von-uuids-innerhalb-von-identifiern">Meldevorgangs-Id / Meldungs-Id - Widersprüche zur HL7 FHIR Spezifikation bzgl. der Verwendung von UUIDs innerhalb von Identifiern</h2>
+<p>HL7 definiert im FHIR Standard Vorgaben bezüglich der Nutzung global eindeutiger Identifier wie UUIDs oder OIDs innerhalb des Datentyps &quot;<a href="https://www.hl7.org/fhir/datatypes.html#Identifier">Identifier</a>&quot;. DEMIS nutzt UUIDs im Zusammenhang mit der Gewährleistung einer eindeutigen Referenzierbarkeit von Meldevorgängen und Meldungen. Die derzeitige Ausgestaltung innerhalb der definierten Profile widerspricht den Vorgaben des Standards.</p>
+<p>Der Standard definiert folgende Anforderung: <em>&quot;If the identifier value itself is naturally a globally unique URI (e.g. an OID, a UUID, or a URI with no trailing local part), then the system SHALL be &quot;urn:ietf:rfc:3986&quot;, and the URI is in the value (OIDs and UUIDs using urn:oid: and urn:uuid: - see note on the V3 mapping and the examples). Naturally globally unique identifiers are those for which no system has been assigned and where the value of the identifier is reasonably expected to not be re-used. Typically, these are absolute URIs of some kind.&quot;</em></p>
+<p>In DEMIS werden Meldevorgangs- und Meldungs-Id jedoch wie folgt als Identifier abgebildet:</p>
+<h3 id="beispiel-melungs-id">Beispiel Melungs-Id:</h3>
+<div class="lang-xml editor-colors"><div style="color:Black;background-color:White;"><pre>
+<span style="color:Blue;">&lt;</span><span style="color:#A31515;">Composition</span> <span style="color:Red;">xmlns</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">http://hl7.org/fhir</span><span style="color:Black;">&quot;</span><span style="color:Blue;">&gt;</span>
+  ...
+  <span style="color:Blue;">&lt;</span><span style="color:#A31515;">identifier</span><span style="color:Blue;">&gt;</span>
+    <span style="color:Blue;">&lt;</span><span style="color:#A31515;">system</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">https://demis.rki.de/fhir/NamingSystem/NotificationId</span><span style="color:Black;">&quot;</span><span style="color:Blue;">/&gt;</span>
+    <span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">c13cd356-f147-5901-859d-31e6b2772465</span><span style="color:Black;">&quot;</span><span style="color:Blue;">/&gt;</span>
+  <span style="color:Blue;">&lt;/</span><span style="color:#A31515;">identifier</span><span style="color:Blue;">&gt;</span>
+  ...
+<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">Composition</span><span style="color:Blue;">&gt;</span>
+
+</pre></div>
+</div>
+<p>Der entsprechende Fehler blieb über mehrere Jahre unentdeckt und wurde innerhalb dieser Zeit in vielen IT-Systemen &quot;umgesetzt&quot;. Eine zeitnahe Korrektur ist derzeit nicht möglich, da sowohl Systeme der Melder (z.B. LIS), Systeme der Gesundheitsämter (z.B. SurvNet) und das DEMIS Backend selbst von entsprechenden Anpassungen betroffen wären und in diesem Zusammenhang die Gefahr bestünde, dass Meldungen im System nicht abgesetzt oder nicht verarbeitet werden könnten.</p>
+<p>Derzeit gehen wir davon aus, dass erst in eng aufeinander abgestimmten, zukünftigen Major Releases der betroffenen Profilpakete (Labormeldungen, Arztmeldungen, Bettenbelegungsstatistik) eine Korrektur erfolgen kann. Darüber hinaus wird an Lösungsstrategien gearbeitet, die potentiell auch ein fließende Identifier-Migration ermöglichen. Bis zum Abschluss der entsprechenden Arbeiten muss der Fehler leider ignoriert/akzeptiert werden. Auch derzeit laufenden Integrationsarbeiten müssen den Fehler in einer ersten Iteration &quot;umsetzen&quot;.</p>
 
                             </div>
                         </div>
