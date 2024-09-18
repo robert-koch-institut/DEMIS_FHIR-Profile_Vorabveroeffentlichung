@@ -2,12 +2,12 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="material"/>
   <url value="https://demis.rki.de/fhir/ValueSet/material"/>
-  <version value="1.24.0"/>
+  <version value="1.25.0"/>
   <name value="Material"/>
   <title value="Material"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-09-19"/>
+  <date value="2024-09-18"/>
   <publisher value="Robert Koch-Institut"/>
   <description value="Das ValueSet Material enthält die Codes der Materialien."/>
   <compose>
@@ -185,6 +185,9 @@
     <include>
       <valueSet value="https://demis.rki.de/fhir/ValueSet/materialMYTP"/>
     </include>
+	<include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/materialNCVP"/>
+    </include>	
     <include>
       <valueSet value="https://demis.rki.de/fhir/ValueSet/materialNEIP"/>
     </include>
