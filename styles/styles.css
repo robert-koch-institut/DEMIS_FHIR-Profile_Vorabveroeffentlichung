@@ -1,9 +1,9 @@
 
 /* Reset CSS, um Standard-Stile zu entfernen */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 head {
@@ -13,6 +13,15 @@ head {
 body {
     font: 400 16px/1.5 -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     letter-spacing: normal;
+}
+
+a {
+    color: #0969da;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -75,19 +84,18 @@ header .nav-header .title-container .title {
 
 
 header .nav-header .right-col {
-	display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
 header .nav-header .rki-logo-link {
-	left: 200;
-	margin-right: 10px;
+    margin-right: 10px;
 }
 
 header .nav-header .rki-logo-link .rki-logo {
-	max-height: 72px;
-	max-width: 100%;
+    max-height: 72px;
+    max-width: 100%;
 }
 
 
@@ -95,17 +103,17 @@ header .nav-header .rki-logo-link .rki-logo {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    
+
     max-width: 1300px;
-   
+
     padding: 24px 72px;
     box-sizing: border-box;
-    
+
     margin: 0 auto;
 }
 
 p {
-	    margin-top: 0;
+    margin-top: 0;
     margin-bottom: 16px;
 }
 
@@ -119,12 +127,11 @@ h2 {
     font-weight: 600;
     padding-bottom: 0.3em;
     font-size: 1.5em;
-    border-bottom: 1px solid hsl(210deg,18%,87%);
 }
 
 blockquote {
-	margin-top: 10px;
-    
+    margin-top: 10px;
+
     padding: 0 1em;
     color: #57606a;
     border-left: 0.25em solid #d0d7de;
@@ -132,35 +139,207 @@ blockquote {
 
 
 #iframe-container {
-	padding-top: 10px;
-	height: 100vh;
-	overflow-y: hidden;
+    padding-top: 10px;
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 iframe {
-	width: 100%;
-	height: 100%;
-	border: none;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
-ul { 
-   padding-left: 1em;
+ul {
+    padding-left: 1em;
 }
 
 address {
-font-style:normal;
- }
+    font-style:normal;
+}
 
 
 table {
-  border-collapse: collapse;
-  width: 60%;
+    border-collapse: collapse;
+    width: 60%;
 }
 
 th, td {
-  padding: 1px;
-  text-align: left;
+    padding: 1px;
+    text-align: left;
 }
 th{
     font-weight: normal;
+}
+
+.header {
+    background: #005db9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header .header-image-background {
+    background: #005db9;
+    padding: 90px 72px;
+    color: #fff;
+    background-image: url(../images/header_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1300px;
+    box-sizing: border-box;
+}
+
+.header .header-image-background .title-container .title {
+    flex: 1;
+    word-break: break-word;
+    font: 800 45px / 48px Roboto, Helvetica Neue, sans-serif;
+    letter-spacing: -.005em;
+    margin-bottom: 16px;
+}
+
+.icon {
+    max-height: 1em;
+    width: 1em;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 570px;
+    margin-top: 10px
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.card-content {
+    padding: 30px 30px 10px 30px;
+}
+
+.card-title {
+    margin-bottom: 16px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.mobile-nav {
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+
+.mobile-nav #nav-links {
+    display: none;
+}
+
+.mobile-nav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.mobile-nav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.mobile-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+.timeline-image {
+    margin: 16px 0;
+    display: flex;
+    justify-self: center;
+    max-width: 100%;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 10px;
+    background-color: #224365;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    text-decoration: none;
+}
+
+.abstract-tag-container {
+    scroll-margin-top: 100px;
+}
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #005db9;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+@media (max-width: 1050px) {
+    .mobile-nav {
+        display: block;
+    }
+    header .nav-header .link-container {
+        display: none;
+    }
+}
+
+@media (min-width: 1050px) {
+    .mobile-nav {
+        display: none;
+    }
+    .nav-header {
+        display: block;
+    }
 }

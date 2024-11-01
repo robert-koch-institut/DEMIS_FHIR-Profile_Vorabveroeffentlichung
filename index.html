@@ -1,106 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-	<title>DEMIS-Implementationguides</title>
-	<link rel="stylesheet" href="./styles/styles.css">
+    <title>DEMIS-Implementationguides</title>
+    <link rel="stylesheet" href="./styles/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-	<header>
-		<div class="nav-header">	
-			<div class="left-col">
-		      <div class="link-container">
-		        <a class="nav-link" href="./index.html">Vorabveroeffentlichung</a>
-				<a class="nav-link" href="./kommentierung.html">Kommentierung</a>
-		        <a class="nav-link" href="./impressum.html">Impressum</a>
-		        <a class="nav-link" href="./datenschutz.html">Datenschutzerklärung</a>
-		      </div>
-		      <div class="title-container">
-		      	<div class="title" title="Home">Vorabveroeffentlichung DEMIS-FHIR-Profile</div>
-		      </div>
-		    </div>
-			<div class="right-col">
-				<a href="https://www.rki.de" target="_blank" title="Externer Link - RKI Homepage" class="rki-logo-link">
-					<img src="./images/RKI_Logo.png" title="Logo Robert Koch - Institut" class="rki-logo"/>
-				</a>
-		    </div>
-		</div>
-	</header>
-	<div class="abstract-tag-container">
-		<div class="abstract-container">
-			<p>Auf dieser Seite werden kommende Profilanpassungen der jeweiligen DEMIS-Pakete vorab veröffentlich. 	Die Vorab-Versionen befinden sich in der alpha- bzw. rc-Entwicklungsstufe und bieten einen ersten Einblick in die kommenden Inhalte.
-				Die Simplifier-Seiten der FHIR-Profile beinhalten weiterhin den Profil-Stand, welcher aktuell vom DEMIS-Backend unterstützt wird.</p>
-			<p/>
-			<br/>
-			<h2>FHIR-Profile Basismeldeinhalte (rki.demis.common)</h2>
-			<p>Das Paket rki.demis.common beinhaltet eine Reihe an DEMIS-Basis-Ressourcen, welche bisher Bestandteil des rki.demis.r4.core-Paketes waren. Es handelt sich dabei um sogenannte Basis-Ressourcen wie z.B. betroffene Person oder Melder. Diese Ressourcen sind jetzt im separaten rki.demis.common-Paket gebündelt. Spezifische DEMIS-Pakete wie rki.demis.laboratory oder rki.demis.disease binden dieses als Dependency ein.</p>
-			<blockquote>
-				<font size="2" face="verdana" color="red">
-				<p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.common-Paket. Seit 09.07.2024 wird die Version rki.demis.common-1.0.2 durch das DEMIS-Backend unterstützt. Das entsprechende Simplifier-Projekt <a href="https://simplifier.net/rki.demis.common">https://simplifier.net/rki.demis.common</a> wurde aktualisiert.</p>
-				</font>
-			</blockquote>
-			<h2>FHIR-Profile Erregernachweismeldung (rki.demis.laboratory)</h2>
-			<p>Das Paket rki.demis.laboratory beinhaltet die Ressourcen für die Erregernachweismeldung.</p>
-			<blockquote>
-			<font size="2" face="verdana" color="red">
-			<p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.laboratory-Paket. Seit 25.08.2024 wird die Version rki.demis.laboratory-1.24.2 durch das DEMIS-Backend unterstützt. Das entsprechende Simplifier-Projekt <a href="https://simplifier.net/rki.demis.laboratory">https://simplifier.net/rki.demis.laboratory</a> wurde aktualisiert.</p>
-			</font>
-			</blockquote>
-			<h2>FHIR-Profile Integrierte Genomische Surveillance (rki.demis.igs)</h2>
-			<p>Das Paket rki.demis.igs erweitert die Ressourcen des rki.demis.laboratory-Paketes für die Integrierte Genomische Surveillance (IGS).</p>
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+<header>
+    <div class="nav-header">
+        <div class="left-col">
+            <div class="mobile-nav">
+                <a class="fa-solid fa-bars" onclick="expandSandwichMenu()"></a>
+                <div id="nav-links">
+                    <a class="nav-link" href="./index.html">Vorabveröffentlichung</a>
+                    <a class="nav-link" href="./kommentierung.html"><strong>Kommentierung</strong></a>
+                    <a class="nav-link" href="./impressum.html">Impressum</a>
+                    <a class="nav-link" href="./datenschutz.html">Datenschutzerklärung</a>
+                </div>
+            </div>
+            <div class="link-container">
+                <a class="nav-link" href="./index.html"><strong>Vorabveröffentlichung</strong></a>
+                <a class="nav-link" href="./kommentierung.html">Kommentierung</a>
+                <a class="nav-link" href="./impressum.html">Impressum</a>
+                <a class="nav-link" href="./datenschutz.html">Datenschutzerklärung</a>
+            </div>
+            <div class="title-container">
+                <div class="title" title="Home">Vorabveröffentlichung DEMIS-FHIR-Profile</div>
+            </div>
+        </div>
+        <div class="right-col">
+            <a href="https://www.rki.de" target="_blank" title="Externer Link - RKI Homepage" class="rki-logo-link">
+                <img src="./images/RKI_Logo.png" title="Logo Robert Koch - Institut" class="rki-logo"/>
+            </a>
+        </div>
+    </div>
+</header>
+<div class="header">
+    <div class="header-image-background">
+        <div class="title-container">
+            <div class="title">
+                Vorabveröffentlichung DEMIS-FHIR-Profile
+            </div>
+        </div>
+    </div>
+</div>
 
-			<blockquote>
-				
-																			
-					<h3>Version rki.demis.igs-1.0.0-alpha.2 (26.01.2024)</h3>
-					<a class="package-link" href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.2/Home.html">Leitfaden</a>
-					<a href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.2/IGS-1.0.0-alpha.2-vorab@current.zip">Download ZIP</a>
-					<br/>Change log (gegenüber rki.demis.igs-1.0.0-alpha.1):
-					<ul>
-						<li>Update auf SNOMED 20230901
-							<li>SNOMED-Code 58147004 (Clinical (qualifier value)) in ValueSet SequencingReason hinzugefügt
-								<li>Beispiele aktualisiert</li>
-									<li>Schärfung der Beschreibungstexte der Ressourcen und des Leitfadens</li>
-										<li>mustSupport-Markierungen für Unterelemente hinzugefügt</li>
-											<li>FHIR-technische Verbesserungen:</li>
-												<ul>
-												<li>meta-Tag ist verpflichtend</li>
-													<li>Kompatibilität der CodeSysteme und ValueSets mit Shareable CodeSystem bzw. Shareable ValueSet ist sichergestellt: publisher- und experimental-Tag wurden hinzugefügt</li>
-														<li>an Stelle von fixed Values werden pattern definiert</li>
-														</ul>
-														</ul><br/>
-					<h3>Version rki.demis.igs-1.0.0-alpha.1 (28.07.2023)</h3>
-					<a class="package-link" href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.1/Home.html">Leitfaden</a>
-					<a href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.1/Leitfaden Integrierte Genomische Surveillance@current.zip">Download ZIP</a>
-					<font size="2" face="verdana" color="red">
-					<br/>
-					Hinweise:
-					<ul>
-					<li>Diese Erstveröffentlichung als separates Paket rki.demis.igs beinhaltet eine Erweiterung der Ressourcen für die Integrierte Genomische Surveillance (IGS), welche als Bestandteil des rki.demis.r4.core-1.25.0-alpha.1-Paketes im Dezember 2022 vorab veröffentlicht wurde. Das rki.demis.r4.core mit Versionsnummer 1.25.X wird nicht fortgeführt, die Weiterentwicklung der IGS-Ressourcen erfolgt innerhalb des rki.demis.igs-Paketes.
-					<li>Dependencies: rki.demis.r4.core-1.24.0-alpha.2</p>				
-					</ul>
-					</font>
-					Change log (gegenüber rki.demis.r4.core-1.25.0-alpha.1):
-					<ul>
-						<li>Integrierte Molekulare Surveillance (IMS) in Integrierte Genomische Surveillance (IGS) umbenannt</li>
-							<li>Ressourcen für die Meldungsverarbeitung hinzugefügt (ProcessNotificationSequence, Parameters)</li>
-								<li>die Ressourcen Laborbericht, Erregernachweis und Probe der DEMIS-Labormeldung (https://simplifier.net/demis) werden nicht genutzt; an Stelle dessen wurden davon abgeleitete spezifische Ressourcen für die Sequenzmeldung angelegt</li>
-									<li>Ressourcen zur Angabe des Sequenzierungsgrundes, des Gerätenamens, des Sequenziermaterials (Primer Scheme) und des Formates der Sequenz hinzugefügt</li>
-										<li>Formatprüfung für die Transaktion-Id hinzugefügt; die Transaktion-Id kann als string oder als Identifier angegeben werden</li>
-											<li>SpecimenSequence.processing.time erlaubt nur dateTime</li>
-												<li>Leitfaden hinzugefügt, inklusive einer Beschreibung des Lifecyclemanagements und des Datenuploads</li>
-													<li>Beispiele hinzugefügt
-					</ul><br/>
-					
-				
-			</blockquote>
-			<h2>FHIR-Profile Erkrankungsmeldung (rki.demis.disease)</h2>
-			<p>Das Paket rki.demis.disease beinhaltet die Ressourcen für die Erkrankungsmeldung.</p>
-			<blockquote>
-					<font size="2" face="verdana" color="red">
-					<p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.disease-Paket. Seit 08.10.2024 wird die Version rki.demis.disease-2.0.0 durch das DEMIS-Backend unterstützt. Das entsprechende Simplifier-Projekt <a href="https://simplifier.net/rki.demis.disease">https://simplifier.net/rki.demis.disease</a> wurde aktualisiert.</p>
-					</font>
-			</blockquote>
-		</div>
-	<div>
+<div class="abstract-tag-container">
+    <div class="abstract-container">
+        <p>Auf dieser Seite werden kommende Profilanpassungen der jeweiligen DEMIS-Pakete vorab veröffentlich. Die
+            Vorab-Versionen befinden sich in der alpha- bzw. rc-Entwicklungsstufe und bieten einen ersten Einblick in
+            die kommenden Inhalte.
+            Die Simplifier-Seiten der FHIR-Profile beinhalten weiterhin den Profil-Stand, welcher aktuell vom
+            DEMIS-Backend unterstützt wird.</p>
+
+        <h2>FHIR-Profile Basismeldeinhalte (rki.demis.common)</h2>
+        <p>Das Paket rki.demis.common beinhaltet eine Reihe an DEMIS-Basis-Ressourcen, welche bisher Bestandteil des
+            rki.demis.r4.core-Paketes waren. Es handelt sich dabei um sogenannte Basis-Ressourcen wie z.B. betroffene
+            Person oder Melder. Diese Ressourcen sind jetzt im separaten rki.demis.common-Paket gebündelt. Spezifische
+            DEMIS-Pakete wie rki.demis.laboratory oder rki.demis.disease binden dieses als Dependency ein.</p>
+        <blockquote>
+            <font size="2" face="verdana" color="red">
+                <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.common-Paket. Seit 09.07.2024 wird
+                    die Version rki.demis.common-1.0.2 durch das DEMIS-Backend unterstützt. Das entsprechende
+                    Simplifier-Projekt <a href="https://simplifier.net/rki.demis.common">https://simplifier.net/rki.demis.common</a>
+                    wurde aktualisiert.</p>
+            </font>
+        </blockquote>
+        <h2>FHIR-Profile Erregernachweismeldung (rki.demis.laboratory)</h2>
+        <p>Das Paket rki.demis.laboratory beinhaltet die Ressourcen für die Erregernachweismeldung.</p>
+        <blockquote>
+            <font size="2" face="verdana" color="red">
+                <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.laboratory-Paket. Seit 25.08.2024
+                    wird die Version rki.demis.laboratory-1.24.2 durch das DEMIS-Backend unterstützt. Das entsprechende
+                    Simplifier-Projekt <a href="https://simplifier.net/rki.demis.laboratory">https://simplifier.net/rki.demis.laboratory</a>
+                    wurde aktualisiert.</p>
+            </font>
+        </blockquote>
+        <h2>FHIR-Profile Integrierte Genomische Surveillance (rki.demis.igs)</h2>
+        <p>Das Paket rki.demis.igs erweitert die Ressourcen des rki.demis.laboratory-Paketes für die Integrierte
+            Genomische Surveillance (IGS).</p>
+
+        <blockquote>
+
+
+            <h3>Version rki.demis.igs-1.0.0-alpha.2 (26.01.2024)</h3>
+            <a class="package-link" href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.2/Home.html">Leitfaden</a>
+            <a href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.2/IGS-1.0.0-alpha.2-vorab@current.zip">Download ZIP</a>
+            <br/>Change log (gegenüber rki.demis.igs-1.0.0-alpha.1):
+            <ul>
+                <li>Update auf SNOMED 20230901
+                <li>SNOMED-Code 58147004 (Clinical (qualifier value)) in ValueSet SequencingReason hinzugefügt
+                <li>Beispiele aktualisiert</li>
+                <li>Schärfung der Beschreibungstexte der Ressourcen und des Leitfadens</li>
+                <li>mustSupport-Markierungen für Unterelemente hinzugefügt</li>
+                <li>FHIR-technische Verbesserungen:</li>
+                <ul>
+                    <li>meta-Tag ist verpflichtend</li>
+                    <li>Kompatibilität der CodeSysteme und ValueSets mit Shareable CodeSystem bzw. Shareable ValueSet
+                        ist sichergestellt: publisher- und experimental-Tag wurden hinzugefügt
+                    </li>
+                    <li>an Stelle von fixed Values werden pattern definiert</li>
+                </ul>
+            </ul>
+            <br/>
+            <h3>Version rki.demis.igs-1.0.0-alpha.1 (28.07.2023)</h3>
+            <a class="package-link" href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.1/Home.html">Leitfaden</a>
+            <a href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.1/Leitfaden Integrierte Genomische Surveillance@current.zip">Download
+                ZIP</a>
+            <font size="2" face="verdana" color="red">
+                <br/>
+                Hinweise:
+                <ul>
+                    <li>Diese Erstveröffentlichung als separates Paket rki.demis.igs beinhaltet eine Erweiterung der
+                        Ressourcen für die Integrierte Genomische Surveillance (IGS), welche als Bestandteil des
+                        rki.demis.r4.core-1.25.0-alpha.1-Paketes im Dezember 2022 vorab veröffentlicht wurde. Das
+                        rki.demis.r4.core mit Versionsnummer 1.25.X wird nicht fortgeführt, die Weiterentwicklung der
+                        IGS-Ressourcen erfolgt innerhalb des rki.demis.igs-Paketes.
+                    <li>Dependencies: rki.demis.r4.core-1.24.0-alpha.2</p>
+                </ul>
+            </font>
+            Change log (gegenüber rki.demis.r4.core-1.25.0-alpha.1):
+            <ul>
+                <li>Integrierte Molekulare Surveillance (IMS) in Integrierte Genomische Surveillance (IGS) umbenannt
+                </li>
+                <li>Ressourcen für die Meldungsverarbeitung hinzugefügt (ProcessNotificationSequence, Parameters)</li>
+                <li>die Ressourcen Laborbericht, Erregernachweis und Probe der DEMIS-Labormeldung
+                    (https://simplifier.net/demis) werden nicht genutzt; an Stelle dessen wurden davon abgeleitete
+                    spezifische Ressourcen für die Sequenzmeldung angelegt
+                </li>
+                <li>Ressourcen zur Angabe des Sequenzierungsgrundes, des Gerätenamens, des Sequenziermaterials (Primer
+                    Scheme) und des Formates der Sequenz hinzugefügt
+                </li>
+                <li>Formatprüfung für die Transaktion-Id hinzugefügt; die Transaktion-Id kann als string oder als
+                    Identifier angegeben werden
+                </li>
+                <li>SpecimenSequence.processing.time erlaubt nur dateTime</li>
+                <li>Leitfaden hinzugefügt, inklusive einer Beschreibung des Lifecyclemanagements und des Datenuploads
+                </li>
+                <li>Beispiele hinzugefügt
+            </ul>
+            <br/>
+
+
+        </blockquote>
+        <h2>FHIR-Profile Erkrankungsmeldung (rki.demis.disease)</h2>
+        <p>Das Paket rki.demis.disease beinhaltet die Ressourcen für die Erkrankungsmeldung.</p>
+        <blockquote>
+            <font size="2" face="verdana" color="red">
+                <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.disease-Paket. Seit 08.10.2024 wird
+                    die Version rki.demis.disease-2.0.0 durch das DEMIS-Backend unterstützt. Das entsprechende
+                    Simplifier-Projekt <a href="https://simplifier.net/rki.demis.disease">https://simplifier.net/rki.demis.disease</a>
+                    wurde aktualisiert.</p>
+            </font>
+        </blockquote>
+    </div>
+</div>
+<script>
+    function expandSandwichMenu() {
+        let x = document.getElementById("nav-links");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+<script>
+    // Get the button
+    let mybutton = document.getElementById("scrollTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        // document.body.scrollTop = 0;
+        // document.documentElement.scrollTop = 0;
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+</script>
 </body>
 </html>

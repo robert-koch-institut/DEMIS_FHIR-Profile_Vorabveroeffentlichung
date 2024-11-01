@@ -1,102 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
 	<title>Kommentierung</title>
+	<link rel="stylesheet" href="./styles/font-awesome.min.css">
 	<link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-	<header>
-		<div class="nav-header">	
-			<div class="left-col">
-		      <div class="link-container">
-		        <a class="nav-link" href="./index.html">Vorabveroeffentlichung</a>
-				<a class="nav-link" href="./kommentierung.html">Kommentierung</a>
-		        <a class="nav-link" href="./impressum.html">Impressum</a>
-		        <a class="nav-link" href="./datenschutz.html">Datenschutzerklärung</a>
-		      </div>
-		      <div class="title-container">
-		      	<div class="title" title="Home">Kommentierungsverfahren	DEMIS-FHIR-Profile</div>
-		      </div>
-		    </div>
-			<div class="right-col">
-				<a href="https://www.rki.de" target="_blank" title="Externer Link - RKI Homepage" class="rki-logo-link">
-					<img src="./images/RKI_Logo.png" title="Logo Robert Koch - Institut" class="rki-logo"/>
-				</a>
-		    </div>
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+<header>
+	<div class="nav-header">
+		<div class="left-col">
+			<div class="mobile-nav">
+				<a class="fa-solid fa-bars" onclick="expandSandwichMenu()"></a>
+				<div id="nav-links">
+					<a class="nav-link" href="./index.html">Vorabveröffentlichung</a>
+					<a class="nav-link" href="./kommentierung.html"><strong>Kommentierung</strong></a>
+					<a class="nav-link" href="./impressum.html">Impressum</a>
+					<a class="nav-link" href="./datenschutz.html">Datenschutzerklärung</a>
+				</div>
+			</div>
+			<div class="link-container">
+				<a class="nav-link" href="./index.html">Vorabveröffentlichung</a>
+				<a class="nav-link" href="./kommentierung.html"><strong>Kommentierung</strong></a>
+				<a class="nav-link" href="./impressum.html">Impressum</a>
+				<a class="nav-link" href="./datenschutz.html">Datenschutzerklärung</a>
+			</div>
+			<div class="title-container">
+				<div class="title" title="Home">Kommentierungsverfahren	DEMIS-FHIR-Profile</div>
+			</div>
 		</div>
-	</header>
-	<div class="abstract-tag-container">
-			<p>Im Rahmen der öffentlichen Kommentierungsphase sind interessierte Personen, Organisationen und Unternehmen eingeladen, die bereitgestellten FHIR-Packages zu prüfen, d.h. daraufhin, ob dieses Format für die technische Bereitstellung und Nutzung für die Belange der elektronischen Meldung nach IfSG geeignet ist. Gerne können auch Wünsche und Bedarfe zur Weiterentwicklung für konkrete Anwendungsbeispiele benannt werden.</p>
+		<div class="right-col">
+			<a href="https://www.rki.de" target="_blank" title="Externer Link - RKI Homepage" class="rki-logo-link">
+				<img src="./images/RKI_Logo.png" title="Logo Robert Koch - Institut" class="rki-logo" alt="Logo des Robert Koch - Instituts"/>
+			</a>
+		</div>
+	</div>
+</header>
+<div class="header">
+	<div class="header-image-background">
+		<div class="title-container">
+			<div class="title">
+				Kommentierungsverfahren DEMIS-FHIR-Profile
+			</div>
+			<div class="button-wrapper">
+				<a class="button" href="#ifsg">Kommentierung elektronische Meldung nach IfSG</a>
+				<a class="button" href="#ars">Antibiotika-Resistenz-Surveillance</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="abstract-tag-container" id="ifsg">
+	<h2>Elektronische Meldung nach IfSG</h2>
 
-			<p>Wir freuen uns auf Ihr Feedback und bedanken uns ganz herzlich für Ihre Unterstützung. Bei Rückfragen stehen wir gern via <a href= "mailto: demis@rki.de"> demis@rki.de </a> zur Verfügung.</p>
+	<p>Im Rahmen der öffentlichen Kommentierungsphase sind interessierte Personen, Organisationen und Unternehmen eingeladen, die bereitgestellten FHIR-Packages zu prüfen, d.h. daraufhin, ob dieses Format für die technische Bereitstellung und Nutzung für die Belange der elektronischen Meldung nach IfSG geeignet ist. Gerne können auch Wünsche und Bedarfe zur Weiterentwicklung für konkrete Anwendungsbeispiele benannt werden.</p>
 
-			<div>
-			<h2>Hinweise zur Kommentierung</h2>
-			<h3>Kommentierungszeitraum</h3>
-			<p>16. September 2024 - 4. November 2024</p>
-			<h3>Einreichung von Kommentaren</h3>
-			<p>Kommentare bitte über dieses <a class="package-link" href="./files/Kommentierungsformular_DEMIS-FHIR-Profile.xlsx">Formular</a> bis zum 4. November 2024 per E-Mail an das Postfach <a href= "mailto: demis@rki.de">demis@rki.de</a> senden. Weitere Informationen zur Kommentierung sind auf der <a href="https://wiki.gematik.de/x/9IFlIw">DEMIS-Wissensdatenbank</a> erhältlich.</p>
-			<h3>Persönlicher Austausch während der Kommentierungsphase</h3>
-			<p>Während der Kommentierungsphase bieten wir einen Termin an, bei dem es Gelegenheit für einen persönlichen Austausch gibt:
+	<p>Wir freuen uns auf Ihr Feedback und bedanken uns ganz herzlich für Ihre Unterstützung. Bei Rückfragen stehen wir gern via <a href= "mailto: demis@rki.de"><i class="fa-solid fa-envelope"></i> demis@rki.de </a> zur Verfügung.</p>
+
+	<div>
+		<h3>Kommentierungszeitraum</h3>
+		<p>16. September 2024 - 27. Oktober 2024</p>
+		<h3>Einreichung von Kommentaren</h3>
+		<p>Kommentare bitte über dieses <a class="package-link" href="./files/Kommentierungsformular_DEMIS-FHIR-Profile.xlsx">Formular</a> bis zum 27. Oktober 2024 per E-Mail an das Postfach <a href= "mailto: demis@rki.de">demis@rki.de</a> senden. Weitere Informationen zur Kommentierung sind auf der <a href="https://wiki.gematik.de/x/9IFlIw">DEMIS-Wissensdatenbank</a> erhältlich.</p>
+		<h3>Persönlicher Austausch während der Kommentierungsphase</h3>
+		<p>Während der Kommentierungsphase bieten wir einen Termin an, bei dem es Gelegenheit für einen persönlichen Austausch gibt:
 			<br>Termin: virtuell, per Webex-Event, am 16.10.2024 von 10:00 bis 11:30 Uhr
 			<br>Anmeldung über: <a href="https://rki.webex.com/rki/j.php?MTID=med36be2291f7abab8d7178a44182e4ae">https://rki.webex.com/rki/j.php?MTID=med36be2291f7abab8d7178a44182e4ae</a></p>
-			<h3>Besprechung der Kommentare</h3>
-			<p>Weiterhin bieten wir nachträglich zur Kommentierungsphase einen Termin zur Besprechung Ihrer Kommentare an:
+		<h3>Besprechung der Kommentare</h3>
+		<p>Weiterhin bieten wir nachträglich zur Kommentierungsphase einen Termin zur Besprechung Ihrer Kommentare an:
 			<br>Termin zur Kommentarbesprechung: virtuell, per Webex-Event, am 21.11.2024 von 14 bis 16 Uhr
 			<br>Anmeldung über: <a href="https://rki.webex.com/rki/j.php?MTID=m6fdaf7a4bf5a969ef56c950896311921">https://rki.webex.com/rki/j.php?MTID=m6fdaf7a4bf5a969ef56c950896311921</a></p>
 
-<h3>Zeitplan für das Kommentierungsverfahren im Überblick</h3>
-
-	<table>
-		<tr>
-		<th>Ankündigung des Kommentierungsverfahrens:</th>
-		<td>16. August 2024</td>
-		</tr>
-		<tr>	
-		<th>Eröffnung des Kommentierungsverfahrens:</th>
-		<td>16. September 2024</td>
-		</tr>
-		<tr>
-		<th>Schließen des Kommentierungsverfahrens:</th>
-		<td>4. November 2024</td>
-		</tr>
-		<tr>
-		<th>Besprechung und Auflösung der Kommentare:</th>
-		<td>voraussichtlich bis Ende November 2024</td>
-		</tr>
-	</table>	
-<p></p>
+		<h3>Zeitplan für das Kommentierungsverfahren im Überblick</h3>
+		<img class="timeline-image" src="images/timelineDemis.drawio.svg" alt="Zeitliche Abfolge der Kommentierungsphase. Sie endet am 27.10.2024"/>
+	</div>
 	<div>
-		<h2>Folgende Pakete stehen zur Kommentierung:</h2>
-	</div>
+		<div>
+			<h3>Folgende Pakete stehen zur Kommentierung</h3>
 		</div>
+		<div class="card-container">
+			<div class="card">
+				<div class="card-content">
+					<div class="card-title"><b>Basismeldeinhalte rki.demis.common-2.0.0-alpha.1</b></div>
+					<div class="card-body">
+						<p>Das Paket <strong>rki.demis.common</strong> beinhaltet eine Reihe an DEMIS-Basis-Ressourcen z.B. betroffene Person oder Melder. Spezifische DEMIS-Pakete wie rki.demis.laboratory oder rki.demis.disease binden dieses als Dependency ein.</p>
+						<p><i> Gegenüber der Produktivversion sind die Profile bezüglich Kodierung, ValueSet-Binding, etc. strikter gestaltet.</i></p>
+						<p><a href="./rki.demis.common/commenting/Home.html"><i class="fa-solid fa-file"></i> Leitfaden</a></p>
+						<p><a href="./rki.demis.disease/commenting/Implementierungsleitfaden Disease 3.0.0-alpha.1@current.zip"><i class="fa-solid fa-download"></i> Download </a></p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-content">
+					<div class="card-title"><b>Erkrankungsmeldung rki.demis.disease-3.0.0-alpha.1</b></div>
+					<div class="card-body">
+						<p>Das Paket <strong>rki.demis.laboratory</strong> beinhaltet die Ressourcen für die Erkrankungsmeldung.</p><p><i> Diese Version bindet die strikter gestalteten Basismeldeinhalte rki.demis.common-2.0.0-alpha.1 als Dependency ein.</i></p>
+						<p><i> Gegenüber der Produktivversion sind die Profile bezüglich Kodierung, ValueSet-Binding, etc. strikter gestaltet.</i></p>
+						<p><a href="./rki.demis.disease/commenting/Home.html"><i class="fa-solid fa-file"></i> Leitfaden </a></p>
+						<p><a href="./rki.demis.disease/commenting/Implementierungsleitfaden Disease 3.0.0-alpha.1@current.zip"><i class="fa-solid fa-download"></i> Download </a></p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-content">
+					<div class="card-title"><b>Erregernachweismeldung rki.demis.laboratory-3.0.0-alpha.1</b></div>
+					<div class="card-body">
+						<p>Das Paket <strong>rki.demis.laboratory</strong> beinhaltet die Ressourcen für die Erregernachweismeldung.</p>
+						<p><i>Diese Version bindet die strikter gestalteten Basismeldeinhalte rki.demis.common-2.0.0-alpha.1 als Dependency ein und gegenüber der Produktivversion sind die Profile der Erregernachweismeldung ebenso bezüglich Kodierung, ValueSet-Binding, etc. strikter gestaltet.</i></p>
 
-<div>
-
-	
-
-			<blockquote>
-			<h2>Basismeldeinhalte rki.demis.common-2.0.0-alpha.1</h2>
-			<p>Das Paket rki.demis.common beinhaltet eine Reihe an DEMIS-Basis-Ressourcen z.B. betroffene Person oder Melder. Spezifische DEMIS-Pakete wie rki.demis.laboratory oder rki.demis.disease binden dieses als Dependency ein.</br><b> Gegenüber der Produktivversion sind die Profile bezüglich Kodierung, ValueSet-Binding, etc. strikter gestaltet.</b></br>
-			<a class="package-link" href="./rki.demis.common/commenting/Home.html">Leitfaden</a>
-			<a href="./rki.demis.common/commenting/Implementierungsleitfaden Common 2.0.0-alpha.1@current.zip">Download ZIP</a></br></p>
-			<h2>Erkrankungsmeldung rki.demis.disease-3.0.0-alpha.1</h2>
-			<p>Das Paket rki.demis.laboratory beinhaltet die Ressourcen für die Erkrankungsmeldung.</br><b> Diese Version bindet die strikter gestalteten Basismeldeinhalte rki.demis.common-2.0.0-alpha.1 als Dependency ein.</b></br>
-			<a class="package-link" href="./rki.demis.disease/commenting/Home.html">Leitfaden</a>
-			<a href="./rki.demis.disease/commenting/Implementierungsleitfaden Disease 3.0.0-alpha.1@current.zip">Download ZIP</a></br></p>
-			<h2>Erregernachweismeldung rki.demis.laboratory-3.0.0-alpha.1</h2>
-			<p>Das Paket rki.demis.laboratory beinhaltet die Ressourcen für die Erregernachweismeldung.</br> <b>Diese Version bindet die strikter gestalteten Basismeldeinhalte rki.demis.common-2.0.0-alpha.1 als Dependency ein und gegenüber der Produktivversion sind die Profile der Erregernachweismeldung ebenso bezüglich Kodierung, ValueSet-Binding, etc. strikter gestaltet.</b></br>
-			<a class="package-link" href="./rki.demis.laboratory/commenting/Home.html">Leitfaden</a>
-			<a href="./rki.demis.laboratory/commenting/Implementierungsleitfaden Laboratory 3.0.0-alpha.1@current.zip">Download ZIP</a></br></p>
-			<h2>Integrierte Genomische Surveillance rki.demis.igs-3.0.0-alpha.1</h2>
-			<p>Das Paket rki.demis.igs erweitert die Ressourcen des rki.demis.laboratory-Paketes für die Integrierte Genomische Surveillance (IGS).</br> <b>Diese Version bindet die strikter gestaltete Erregernachweismeldung rki.demis.laboratory-3.0.0-alpha.1 als Dependency ein.</b></br>
-			<a class="package-link" href="./rki.demis.igs/commenting/Home.html">Leitfaden</a>
-			<a href="./rki.demis.igs/commenting/Implementierungsleitfaden IGS 3.0.0-alpha.1@current.zip">Download ZIP</a></br></p>	
-			<h2>Krankenhausbettenbelegungsmeldung rki.demis.statistic-1.0.0</h2>
-			<p>Das Paket rki.demis.statistic beinhaltet die Ressourcen für die elektronische Meldung der Krankenhausbettenbelegung.
-			</br>Zur Kommentierung steht <a href="https://simplifier.net/rki.demis.statistic">die Produktivversion</a>.</p>	
-		</blockquote>
-	</div>	
+						<p><a href="./rki.demis.disease/commenting/Home.html"><i class="fa-solid fa-file"></i> Leitfaden </a></p>
+						<p><a href="./rki.demis.disease/commenting/Implementierungsleitfaden Disease 3.0.0-alpha.1@current.zip"><i class="fa-solid fa-download"></i> Download </a></p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-content">
+					<div class="card-title"><b>Integrierte Genomische Surveillance rki.demis.igs-3.0.0-alpha.1</b></div>
+					<div class="card-body">
+						<p>Das Paket <strong>rki.demis.igs</strong> erweitert die Ressourcen des rki.demis.laboratory-Paketes für die Integrierte Genomische Surveillance (IGS).</p><p><i>Diese Version bindet die strikter gestaltete Erregernachweismeldung rki.demis.laboratory-3.0.0-alpha.1 als Dependency ein.</i></p>
+						<p><a href="./rki.demis.disease/commenting/Home.html"><i class="fa-solid fa-file"></i> Leitfaden </a></p>
+						<p><a href="./rki.demis.disease/commenting/Implementierungsleitfaden Disease 3.0.0-alpha.1@current.zip"><i class="fa-solid fa-download"></i> Download </a></p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-content">
+					<div class="card-title"><b>Krankenhausbettenbelegungsmeldung rki.demis.statistic-1.0.0</b></div>
+					<div class="card-body">
+						<p>Das Paket <strong>rki.demis.statistic</strong> beinhaltet die Ressourcen für die elektronische Meldung der Krankenhausbettenbelegung. Zur Kommentierung steht <a href="https://simplifier.net/rki.demis.statistic">die Produktivversion</a>.</p>
+						<p><a href="https://simplifier.net/rki.demis.statistic"><i class="fa-solid fa-file"></i> Produktivversion </a></p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+</div>
+<div class="abstract-tag-container" id="ars">
+	<h2>Antibiotika-Resistenz-Surveillance</h2>
+
+	<p><a href="https://amr.rki.de/Content/ARS/Main.aspx">ARS</a> ist ein Surveillance-System zur Erfassung klinisch relevanter Pathogene und deren Resistenzen aus der mikrobiologischen Routinediagnostik. Seit 2008 können mikrobiologische Daten auf freiwilliger Basis elektronisch an das <a href="https://www.rki.de/DE/Home/homepage_node.html">Robert Koch-Institut (RKI)</a> übermittelt werden. Ziele von <a href="https://amr.rki.de/Content/ARS/Main.aspx">ARS</a> sind insbesondere die Veröffentlichung von Referenzdaten zur Resistenzlage in der stationären sowie in der ambulanten Versorgung. Darüber hinaus stellt <a href="https://amr.rki.de/Content/ARS/Main.aspx">ARS</a> Ergebnisreporte für teilnehmende Labore und Krankenhäuser sowie Daten für das <a href="https://www.ecdc.europa.eu/en/about-us/networks/disease-networks-and-laboratory-networks/ears-net-data">European Antimicrobial Resistance Surveillance Network (EARS-NET)</a> und das <a href="https://www.who.int/initiatives/glass">Global Antimicrobial Resistance and Use Surveillance System (GLASS)</a> der WHO bereit.</p>
+	<p>Teilnehmer bei <a href="https://amr.rki.de/Content/ARS/Main.aspx">ARS</a> sind mikrobiologische Labore der Humanmedizin, sowie Krankenhäuser mit entsprechender Datenübertragung aus dem versorgenden Labor.</p>
+	<p>Mit der Teilnahme an <a href="https://amr.rki.de/Content/ARS/Main.aspx">ARS</a> erfüllen Krankenhäuser mit Anwendung von Reserveantibiotika gemäß §35a SGB V die Qualitätsvorgaben des Gemeinsamen Bundesausschusses (GB-A).</p>
+
+	<h3>Die Anbindung von ARS an die DEMIS-Infrastruktur</h3>
+	<p>Die Deutsche <a href="https://www.bundesgesundheitsministerium.de/themen/praevention/antibiotika-resistenzen/dart-2030.html">Antibiotika-Resistenz-Strategie (DART 2030)</a> des Bundesministeriums für Gesundheit (BMG) sieht die Anbindung von ARS an das Deutsche Elektronische Melde- und Informationssystem (DEMIS) für 2024 vor. Die rechtliche Grundlage für die Datenübermittlung über DEMIS ist nach §14 Abs 2 IfSG gegeben.</p>
+	<p>Mit der neuen Spezifikation der Schnittstelle für <a href="https://amr.rki.de/Content/ARS/Main.aspx">ARS</a> finden die Interoperabilitätsstandards FHIR, LOINC, SNOMED und UCUM Verwendung. Zentrale Dienste der DEMIS-Infrastruktur werden nachgenutzt. Das Informationsmodell von <a href="https://amr.rki.de/Content/ARS/Main.aspx">ARS</a> wurde novelliert.</p>
+
+	<h3>Kommentierungsvorhaben</h3>
+	<p>Im Rahmen der öffentlichen Kommentierungsphase sind interessierte Personen, Organisationen und Unternehmen eingeladen, die bereitgestellte FHIR-Spezifikation zu prüfen, d.h. Rückmeldung zu geben, ob dieses Format für die technische Bereitstellung und Nutzung für die Belange von <a href="https://amr.rki.de/Content/ARS/Main.aspx">ARS</a> geeignet ist. Gerne können auch Wünsche und Bedarfe zur Weiterentwicklung für konkrete Anwendungsbeispiele benannt werden.</p>
+	<p>Bestandteil dieses Kommentierungsverfahrens ist das Datenmodell, die Profilierung der FHIR-Ressourcen und die Definition der benötigten value-sets für eine Datenübermittlung an <a href="https://amr.rki.de/Content/ARS/Main.aspx">ARS</a>.</p>
+	<p>Insbesondere Regeln im Umgang mit der Semantik für die Abbildung der Inhalte mikrobiologischer Diagnostik werden hier vorgestellt und sollen im Rahmen der Kommentierung diskutiert werden. Diese Regeln sollen Anwendung in ARS als auch in den Labormeldungen nach §7.1 IfSG finden. Die im Rahmen dieser Kommentierung zur Diskussion gestellten Regeln im Umgang mit der Semantik sind auch Bestandteil von Abstimmungen mit weiteren Stakeholdern in Deutschland, die mikrobiologische Daten mit den genannten Standards abbilden.</p>
+	<p>Wir freuen uns auf Ihr Feedback und bedanken uns ganz herzlich für Ihre Unterstützung. Bei Rückfragen stehen wir gern via <a href= "mailto: ars@rki.de">ars@rki.de</a> zur Verfügung.</p>
+
+	<div>
+		<h3>Kommentierungszeitraum</h3>
+		<p>04. November 2024 bis 16. Dezember 2024.</p>
+
+		<h3>Einreichung von Kommentaren</h3>
+		<p>Kommentare bitte über dieses <a class="package-link" href="./files/Kommentierungsformular_DEMIS-FHIR-Profile.xlsx">Formular</a> bis zum 16. Dezember 2024 per E-Mail an das Postfach <a href= "mailto: ars@rki.de">ars@rki.de</a> senden. Weitere Informationen zur Kommentierung sind auf der <a href="https://wiki.gematik.de/x/9IFlIw">DEMIS-Wissensdatenbank</a> erhältlich.</p>
+
+		<h3>Persönlicher Austausch während der Kommentierungsphase</h3>
+		<p>Während der Kommentierungsphase bieten wir einen Termin an, bei dem es Gelegenheit für einen persönlichen Austausch gibt:
+			<br>Termin: virtuell, per Webex-Event, am 13.11.2024 von 11:00 bis 12:30 Uhr
+			<br>Teilnahme über folgenden Link: <a href="https://rki.webex.com/rki/j.php?MTID=m225ae3a114b9b9bc1a4f2b7104df6724"> https://rki.webex.com/rki/j.php?MTID=m225ae3a114b9b9bc1a4f2b7104df6724</a></p>
+
+		<h3>Besprechung der Kommentare</h3>
+		<p>Weiterhin bieten wir nachträglich zur Kommentierungsphase einen Termin zur Besprechung Ihrer Kommentare an:
+			<br>Termin zur Kommentarbesprechung: virtuell, per Webex-Event, am 22.01.2025 von 11:00 bis 12:30 Uhr
+			<br>Teilnahme über folgenden Link: <a href="https://rki.webex.com/rki/j.php?MTID=mb7baf6bee23579bd826fbd4ecd485c67">https://rki.webex.com/rki/j.php?MTID=mb7baf6bee23579bd826fbd4ecd485c67</a></p>
+
+		<h3>Zeitplan für das Kommentierungsverfahren im Überblick</h3>
+		<img class="timeline-image" src="images/timelineARS.drawio.svg" alt="Zeitlicher Ablauf der Kommentierungsphase für ARS. Die Kommentierung endet am 16.12.2024" />
+	</div>
+
+	<div>
+		<div>
+			<h3>Folgendes Paket steht zur Kommentierung</h3>
+		</div>
+		<div class="card-container">
+			<div class="card">
+				<div class="card-content">
+					<div class="card-title"><b>rki.demis.ars-1.0.0.alpha.1</b></div>
+					<div class="card-body">
+						<p>Das Paket rki.demis.ars beinhaltet die Ressourcen für die Antibiotika-Resistenz-Surveillance.</p>
+						<p>Zur Kommentierung steht die Version auf <a href="https://simplifier.net/rki.demis.ars">Simplifier</a>.</p>
+						<p><a href="https://simplifier.net/rki.demis.ars"><i class="fa-solid fa-file"></i> Simplifier</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function expandSandwichMenu() {
+		let x = document.getElementById("nav-links");
+		if (x.style.display === "block") {
+			x.style.display = "none";
+		} else {
+			x.style.display = "block";
+		}
+	}
+</script>
+<script>
+	// Get the button
+	let mybutton = document.getElementById("scrollTopBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		// document.body.scrollTop = 0;
+		// document.documentElement.scrollTop = 0;
+		window.scrollTo({top: 0, behavior: 'smooth'});
+	}
+</script>
 </body>
 </html>
