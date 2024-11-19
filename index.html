@@ -60,22 +60,52 @@
             Person oder Melder. Diese Ressourcen sind jetzt im separaten rki.demis.common-Paket gebündelt. Spezifische
             DEMIS-Pakete wie rki.demis.laboratory oder rki.demis.disease binden dieses als Dependency ein.</p>
         <blockquote>
-            <font size="2" face="verdana" color="red">
+ <!--           <font size="2" face="verdana" color="red">
                 <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.common-Paket. Seit 09.07.2024 wird
                     die Version rki.demis.common-1.0.2 durch das DEMIS-Backend unterstützt. Das entsprechende
                     Simplifier-Projekt <a href="https://simplifier.net/rki.demis.common">https://simplifier.net/rki.demis.common</a>
                     wurde aktualisiert.</p>
-            </font>
+            </font>-->
+			<h3>Version rki.demis.common-2.0.0-rc.1 (19.11.2024)</h3>
+			<a class="package-link" href="./rki.demis.common/rki.demis.common-1.0.3-rc.1/Home.html">Leitfaden</a>
+            <a href="./rki.demis.common/rki.demis.common-1.0.3-rc.1/Vorab rki.demis.common-1.0.3-rc.1@current.zip">Download ZIP</a>
+			<ul>
+			<li>feat: SurvNet-Übermittlungskategorie NCV im CodeSystem TransmissionCategory hinzugefügt</li>
+			<li>doc: Hinweistext zum Entfernen der R4-Bundle-Constraints bdl-3 und bdl-4 bei der Snapshot-Erstellung hinzugefügt; siehe <a class="package-link" href="https://simplifier.net/guide/rki.demis.common/Home/resources/structuredefinitions/Parameters/guide-processnotificationrequestparameters.guide.md?version=current">ProcessNotificationRequestParameters</a></li>
+			</ul>
         </blockquote>
         <h2>FHIR-Profile Erregernachweismeldung (rki.demis.laboratory)</h2>
         <p>Das Paket rki.demis.laboratory beinhaltet die Ressourcen für die Erregernachweismeldung.</p>
         <blockquote>
-            <font size="2" face="verdana" color="red">
+			<h3>Version rki.demis.laboratory-2.0.0-rc.1 (19.11.2024)</h3>
+            <a class="package-link" href="./rki.demis.laboratory/rki.demis.laboratory-2.0.0-rc.1/Home.html">Leitfaden</a>
+            <a href="./rki.demis.laboratory/rki.demis.laboratory-2.0.0-rc.1/Vorab rki.demis.laboratory-2.0.0-rc.1@current.zip">Download ZIP</a>
+<!--            <font size="2" face="verdana" color="red">
                 <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.laboratory-Paket. Seit 25.08.2024
                     wird die Version rki.demis.laboratory-1.24.2 durch das DEMIS-Backend unterstützt. Das entsprechende
                     Simplifier-Projekt <a href="https://simplifier.net/rki.demis.laboratory">https://simplifier.net/rki.demis.laboratory</a>
                     wurde aktualisiert.</p>
-            </font>
+            </font>-->
+			<ul>
+			<li>feat: LaboratoryBundleNotByName.entry:notification auf max=1 gesetzt und LaboratoryBundleNotByName.identifier.system fix auf https://demis.rki.de/fhir/NamingSystem/NotificationBundleId gesetzt</li>
+			<li>feat: neuer Meldetatbestand NCVP (Vibrio spp., humanpathogen (außer Erreger der Cholera); soweit ausschließlich eine Ohrinfektion vorliegt, nur bei Vibrio cholerae non O1/non-O139) hinzugefügt</li>
+			<li>feat: Meldetatbestands-Display für VCHP in "Vibrio cholerae" umbenannt (Begründet in Einführung von NCVP-Meldetatbestand)</li>
+			<li>feat: Bundesland-Meldepflicht für SPYP aktualisiert: Property federal-state für DE-SN (Sachsen) im CodeSystem notificationCategory entfernt</li>
+			<li>feat: Update auf LOINC-Version 2.78</li>
+			<li>feat: Update auf SNOMED-CT Germany Edition 20240515</li>
+			<li>feat: Material-ValueSets um Codes erweitert</li>
+			<li>feat: Anpassung der LaboratoryTest- und Material-ValueSets in Vorbereitung auf striktere Profilierung - Mit der geplanten Einführung von Pflichtfeldern in Observation und Specimen, führt das Entfernen von Codes zu BreakingChanges. Wir haben daher jetzt schon Codes entfernt, die selten benutzt werden und in Vorbereitung einer angepassten Semantik. Diese wird im Rahmen des <a href="https://wiki.gematik.de/pages/viewpage.action?pageId=593854964">Kommentierungsverfahrens</a> erklärt. Bis zur Umsetzung der strikteren Profilierung auf der Testumgebung können Sie Warnungen bezüglich verwendeter LOINC-Codes, die nicht im ValueSet sind, ignorieren.</li>
+			<ul>
+			<li>Verkürzen der LaboratoryTest-ValueSets um spezifische LOINC-Terme</li>
+			<li>Hinzufügen von unspezifischen LOINC-Termen</li>
+			<li>Hinzufügen von SNOMED-CT-Codes zu MaterialSets</li>
+			</ul>
+			<li>feat: copyright-Tag in allen ValueSets hinzugefügt</li>
+			<li>fix: Displaywert für EHCP von "E. coli (enterohämorrhagische Stämme) (EHEC)" in "Escherichia coli (enterohämorrhagische Stämme) (EHEC)" geändert</li>
+			<li>fix: nur für Meldeportal relevant: Designation-Displays (Kurzdisplays) für BOBP, CLTP, CYMP, EAHP, GBSP, PVBP, SPYP und ADEP im CodeSystem notificationCategory geändert</li>
+			<li>fix: Includes auf meldetatbestandsspezifische Substance-Valuesets in einigen AnswerSet-ValueSets gesetzt</li>
+			<li>fix: in ValueSet AnswerSetResistance-SNOMED: Code 264841006 (Intermediately susceptible (qualifier value)) durch 11896004 (Intermediate (qualifier value)) ersetzt</li>
+			</ul>
         </blockquote>
         <h2>FHIR-Profile Integrierte Genomische Surveillance (rki.demis.igs)</h2>
         <p>Das Paket rki.demis.igs erweitert die Ressourcen des rki.demis.laboratory-Paketes für die Integrierte
@@ -89,8 +119,8 @@
             <a href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.2/IGS-1.0.0-alpha.2-vorab@current.zip">Download ZIP</a>
             <br/>Change log (gegenüber rki.demis.igs-1.0.0-alpha.1):
             <ul>
-                <li>Update auf SNOMED 20230901
-                <li>SNOMED-Code 58147004 (Clinical (qualifier value)) in ValueSet SequencingReason hinzugefügt
+                <li>Update auf SNOMED 20230901</li>
+                <li>SNOMED-Code 58147004 (Clinical (qualifier value)) in ValueSet SequencingReason hinzugefügt</li>
                 <li>Beispiele aktualisiert</li>
                 <li>Schärfung der Beschreibungstexte der Ressourcen und des Leitfadens</li>
                 <li>mustSupport-Markierungen für Unterelemente hinzugefügt</li>
@@ -106,8 +136,7 @@
             <br/>
             <h3>Version rki.demis.igs-1.0.0-alpha.1 (28.07.2023)</h3>
             <a class="package-link" href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.1/Home.html">Leitfaden</a>
-            <a href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.1/Leitfaden Integrierte Genomische Surveillance@current.zip">Download
-                ZIP</a>
+            <a href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.1/Leitfaden Integrierte Genomische Surveillance@current.zip">Download ZIP</a>
             <font size="2" face="verdana" color="red">
                 <br/>
                 Hinweise:
@@ -147,12 +176,28 @@
         <h2>FHIR-Profile Erkrankungsmeldung (rki.demis.disease)</h2>
         <p>Das Paket rki.demis.disease beinhaltet die Ressourcen für die Erkrankungsmeldung.</p>
         <blockquote>
-            <font size="2" face="verdana" color="red">
+		    <h3>Version rki.demis.disease-2.0.1-rc.1 (19.11.2024)</h3>
+            <a class="package-link" href="./rki.demis.disease/rki.demis.disease-2.0.1-rc.1/Home.html">Leitfaden</a>
+            <a href="./rki.demis.disease/rki.demis.disease-2.0.1-rc.1/Vorab rki.demis.disease-2.0.1-rc.1@current.zip">Download ZIP</a>
+			<ul>
+				<li>feat: Update auf SNOMED-CT Germany Edition 20240515</li>
+				<li>feat: ValueSets um Codes aus der neuen SNOMED-CT-Version erweitert</li>
+				<li>feat: nur für Meldeportal relevant: conceptOrder (Extension valueset-conceptOrder) für alle ValuesSets eingeführt</li>
+				<li>feat: Anpassung einzelner Displaynamen</li>
+				<li>feat: FHIR-technische Verbesserungen:</li>
+					<ul>
+					<li>mustSupport-Markierungen für required Elemente hinzugefügt</li>
+					<li>Kompatibilität der CodeSysteme und ValueSets mit Shareable CodeSystem bzw. Shareable ValueSet ist sichergestellt: publisher- und experimental-Tag wurden hinzugefügt</li>
+					</ul>
+				<li>feat: copyright-Tag in allen ValueSets hinzugefügt</li>
+				<li>fix: im ValueSet EvidenceCVDDv1 SNOMED-CT Version ist auf Germany Edition 20240515 korrigiert</li>
+			</ul>
+ <!-- <font size="2" face="verdana" color="red">
                 <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.disease-Paket. Seit 08.10.2024 wird
                     die Version rki.demis.disease-2.0.0 durch das DEMIS-Backend unterstützt. Das entsprechende
                     Simplifier-Projekt <a href="https://simplifier.net/rki.demis.disease">https://simplifier.net/rki.demis.disease</a>
-                    wurde aktualisiert.</p>
-            </font>
+                    wurde aktualisiert.</p> 
+            </font>-->
         </blockquote>
     </div>
 </div>

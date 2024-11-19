@@ -1,0 +1,60 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="c51ffefd-2da7-3b0b-b6a9-7e5b069141d0"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseHTVD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="htvd"></code>
+         <display value="Hantavirus-Erkrankung"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/ee1a8f25-3792-3f6d-9979-03fcb77976d7"></reference>
+   </subject>
+   <onsetDateTime value="2023-04-15"></onsetDateTime>
+   <recordedDate value="2023-04-15"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="386661006"></code>
+            <display value="Fieber"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="74474003"></code>
+            <display value="Blutung gastrointestinal"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="302227002"></code>
+            <display value="Hauteinblutung, Ekchymosen"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="60046008:42752001=166778002"></code>
+            <display value="Anzeichen für Plasmaaustritt (Pleuraerguss)"></display>
+         </coding>
+      </code>
+   </evidence>
+</Condition>
