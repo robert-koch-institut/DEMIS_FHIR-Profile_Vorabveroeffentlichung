@@ -55,37 +55,35 @@
             DEMIS-Backend unterstützt wird.</p>
 
         <h2>FHIR-Profile Basismeldeinhalte (rki.demis.common)</h2>
-        <p>Das Paket rki.demis.common beinhaltet eine Reihe an DEMIS-Basis-Ressourcen, welche bisher Bestandteil des
-            rki.demis.r4.core-Paketes waren. Es handelt sich dabei um sogenannte Basis-Ressourcen wie z.B. betroffene
-            Person oder Melder. Diese Ressourcen sind jetzt im separaten rki.demis.common-Paket gebündelt. Spezifische
-            DEMIS-Pakete wie rki.demis.laboratory oder rki.demis.disease binden dieses als Dependency ein.</p>
+        <p>Das Paket rki.demis.common beinhaltet eine Reihe an DEMIS-Basis-Ressourcen wie z.B. betroffene
+            Person oder Melder. Spezifische DEMIS-Pakete wie rki.demis.laboratory oder rki.demis.disease binden dieses als Dependency ein.</p>
         <blockquote>
- <!--           <font size="2" face="verdana" color="red">
-                <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.common-Paket. Seit 09.07.2024 wird
-                    die Version rki.demis.common-1.0.2 durch das DEMIS-Backend unterstützt. Das entsprechende
+            <font size="2" face="verdana" color="red">
+                <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.common-Paket. Seit 26.11.2024 wird
+                    die Version rki.demis.common-1.0.3 durch das DEMIS-Backend unterstützt. Das entsprechende
                     Simplifier-Projekt <a href="https://simplifier.net/rki.demis.common">https://simplifier.net/rki.demis.common</a>
                     wurde aktualisiert.</p>
-            </font>-->
-			<h3>Version rki.demis.common-2.0.0-rc.1 (19.11.2024)</h3>
+            </font>
+<!--			<h3>Version rki.demis.common-2.0.0-rc.1 (19.11.2024)</h3>
 			<a class="package-link" href="./rki.demis.common/rki.demis.common-1.0.3-rc.1/Home.html">Leitfaden</a>
             <a href="./rki.demis.common/rki.demis.common-1.0.3-rc.1/Vorab rki.demis.common-1.0.3-rc.1@current.zip">Download ZIP</a>
 			<ul>
 			<li>feat: SurvNet-Übermittlungskategorie NCV im CodeSystem TransmissionCategory hinzugefügt</li>
 			<li>doc: Hinweistext zum Entfernen der R4-Bundle-Constraints bdl-3 und bdl-4 bei der Snapshot-Erstellung hinzugefügt; siehe <a class="package-link" href="https://simplifier.net/guide/rki.demis.common/Home/resources/structuredefinitions/Parameters/guide-processnotificationrequestparameters.guide.md?version=current">ProcessNotificationRequestParameters</a></li>
-			</ul>
+			</ul>-->
         </blockquote>
         <h2>FHIR-Profile Erregernachweismeldung (rki.demis.laboratory)</h2>
         <p>Das Paket rki.demis.laboratory beinhaltet die Ressourcen für die Erregernachweismeldung.</p>
         <blockquote>
-			<h3>Version rki.demis.laboratory-2.0.0-rc.1 (19.11.2024)</h3>
-            <a class="package-link" href="./rki.demis.laboratory/rki.demis.laboratory-2.0.0-rc.1/Home.html">Leitfaden</a>
-            <a href="./rki.demis.laboratory/rki.demis.laboratory-2.0.0-rc.1/Vorab rki.demis.laboratory-2.0.0-rc.1@current.zip">Download ZIP</a>
-<!--            <font size="2" face="verdana" color="red">
-                <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.laboratory-Paket. Seit 25.08.2024
-                    wird die Version rki.demis.laboratory-1.24.2 durch das DEMIS-Backend unterstützt. Das entsprechende
+            <font size="2" face="verdana" color="red">
+                <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.laboratory-Paket. Seit 26.11.2024
+                    wird die Version rki.demis.laboratory-2.0.0 durch das DEMIS-Backend unterstützt. Das entsprechende
                     Simplifier-Projekt <a href="https://simplifier.net/rki.demis.laboratory">https://simplifier.net/rki.demis.laboratory</a>
                     wurde aktualisiert.</p>
-            </font>-->
+            </font>
+<!--		<h3>Version rki.demis.laboratory-2.0.0-rc.1 (19.11.2024)</h3>
+            <a class="package-link" href="./rki.demis.laboratory/rki.demis.laboratory-2.0.0-rc.1/Home.html">Leitfaden</a>
+            <a href="./rki.demis.laboratory/rki.demis.laboratory-2.0.0-rc.1/Vorab rki.demis.laboratory-2.0.0-rc.1@current.zip">Download ZIP</a>	
 			<ul>
 			<li>feat: LaboratoryBundleNotByName.entry:notification auf max=1 gesetzt und LaboratoryBundleNotByName.identifier.system fix auf https://demis.rki.de/fhir/NamingSystem/NotificationBundleId gesetzt</li>
 			<li>feat: neuer Meldetatbestand NCVP (Vibrio spp., humanpathogen (außer Erreger der Cholera); soweit ausschließlich eine Ohrinfektion vorliegt, nur bei Vibrio cholerae non O1/non-O139) hinzugefügt</li>
@@ -105,7 +103,7 @@
 			<li>fix: nur für Meldeportal relevant: Designation-Displays (Kurzdisplays) für BOBP, CLTP, CYMP, EAHP, GBSP, PVBP, SPYP und ADEP im CodeSystem notificationCategory geändert</li>
 			<li>fix: Includes auf meldetatbestandsspezifische Substance-Valuesets in einigen AnswerSet-ValueSets gesetzt</li>
 			<li>fix: in ValueSet AnswerSetResistance-SNOMED: Code 264841006 (Intermediately susceptible (qualifier value)) durch 11896004 (Intermediate (qualifier value)) ersetzt</li>
-			</ul>
+			</ul>-->
         </blockquote>
         <h2>FHIR-Profile Integrierte Genomische Surveillance (rki.demis.igs)</h2>
         <p>Das Paket rki.demis.igs erweitert die Ressourcen des rki.demis.laboratory-Paketes für die Integrierte
@@ -176,7 +174,7 @@
         <h2>FHIR-Profile Erkrankungsmeldung (rki.demis.disease)</h2>
         <p>Das Paket rki.demis.disease beinhaltet die Ressourcen für die Erkrankungsmeldung.</p>
         <blockquote>
-		    <h3>Version rki.demis.disease-2.0.1-rc.1 (19.11.2024)</h3>
+<!-- 		    <h3>Version rki.demis.disease-2.0.1-rc.1 (19.11.2024)</h3>
             <a class="package-link" href="./rki.demis.disease/rki.demis.disease-2.0.1-rc.1/Home.html">Leitfaden</a>
             <a href="./rki.demis.disease/rki.demis.disease-2.0.1-rc.1/Vorab rki.demis.disease-2.0.1-rc.1@current.zip">Download ZIP</a>
 			<ul>
@@ -191,13 +189,13 @@
 					</ul>
 				<li>feat: copyright-Tag in allen ValueSets hinzugefügt</li>
 				<li>fix: im ValueSet EvidenceCVDDv1 SNOMED-CT Version ist auf Germany Edition 20240515 korrigiert</li>
-			</ul>
- <!-- <font size="2" face="verdana" color="red">
-                <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.disease-Paket. Seit 08.10.2024 wird
-                    die Version rki.demis.disease-2.0.0 durch das DEMIS-Backend unterstützt. Das entsprechende
+			</ul>-->
+ <font size="2" face="verdana" color="red">
+                <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.disease-Paket. Seit 26.11.2024 wird
+                    die Version rki.demis.disease-2.0.1 durch das DEMIS-Backend unterstützt. Das entsprechende
                     Simplifier-Projekt <a href="https://simplifier.net/rki.demis.disease">https://simplifier.net/rki.demis.disease</a>
                     wurde aktualisiert.</p> 
-            </font>-->
+            </font>
         </blockquote>
     </div>
 </div>
