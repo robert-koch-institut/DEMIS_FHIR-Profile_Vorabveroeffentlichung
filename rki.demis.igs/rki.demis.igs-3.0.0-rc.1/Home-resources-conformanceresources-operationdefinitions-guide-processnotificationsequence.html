@@ -1,0 +1,1035 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Implementierungsleitfaden für DEMIS Integrierte Genomische Surveillance (IGS)</title>
+
+        <link rel="icon" href="static/styles/common/favicon.ico" />
+
+        <script src="static/styles/common/jquery/jquery.min.js"></script>
+        <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/common/main.min.css" />
+        <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" />
+
+        <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/treetable/style.css?v=1db4d7b41ee1200" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-treetable">
+
+                    <div class="segment-default-header" role="banner" aria-label="Header">
+                        <div class="row">
+                            <header class="col-md-12" aria-hidden="true">
+                                <h1 class="title">
+                                    <b>Implementierungsleitfaden für DEMIS Integrierte Genomische Surveillance (IGS)</b>
+                                </h1>
+                            </header>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div id="guide-panel">
+                            <div class="tree-panel" role="navigation" aria-label="Main menu">
+                                
+
+<div class="tree-content">
+    <div>
+
+        <input data-val="true" data-val-required="The Id field is required." id="GuideId" name="Guide.Id" type="hidden" value="6107" />
+
+        <table id="treetable" class="treetable ig-treetable hidden">
+
+                    <tr data-id="Home"
+                        data-filepath="Home"
+                        data-serial-nr="2"
+                        data-is-folder="True"
+                        class="rootnode treenode">
+                        <td>
+                            <a href="Home.html">
+                                <span class="baseIcon resource"></span>
+                                <span title="Home">Home</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-user.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-user.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="6"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-user.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Zielgruppe dieses Leitfadens">Zielgruppe dieses Leitfadens</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/overview"
+                        data-is-folder="True"
+                        data-filepath="Home/overview"
+                        data-parentId="Home"
+                        data-serial-nr="7"
+                        class="treenode">
+                        <td>
+                            <a href="Home-overview.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Grundlagen und &#xDC;berblick">Grundlagen und &#xDC;berblick</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/overview/guide-terminology.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/overview/guide-terminology.guide.md"
+                        data-parentId="Home/overview"
+                        data-serial-nr="10"
+                        class="treenode">
+                        <td>
+                            <a href="Home-overview-guide-terminology.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Terminologien">Terminologien</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-model.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-model.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="11"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-model.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Ressourcenmodell">Ressourcenmodell</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/changelogs"
+                        data-is-folder="True"
+                        data-filepath="Home/changelogs"
+                        data-parentId="Home"
+                        data-serial-nr="12"
+                        class="treenode">
+                        <td>
+                            <a href="Home-changelogs.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="&#xC4;nderungshistorie">&#xC4;nderungshistorie</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/changelogs/rki.demis.igs-3.0.0-rc.1.md"
+                        data-is-folder="False"
+                        data-filepath="Home/changelogs/rki.demis.igs-3.0.0-rc.1.md"
+                        data-parentId="Home/changelogs"
+                        data-serial-nr="15"
+                        class="treenode">
+                        <td>
+                            <a href="Home-changelogs-rki.demis.igs-3.0.0-rc.1.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="rki.demis.igs-3.0.0-rc.1 (13.12.2024)">rki.demis.igs-3.0.0-rc.1 (13.12.2024)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/changelogs/rki.demis.igs-3.0.0-alpha.3.md"
+                        data-is-folder="False"
+                        data-filepath="Home/changelogs/rki.demis.igs-3.0.0-alpha.3.md"
+                        data-parentId="Home/changelogs"
+                        data-serial-nr="16"
+                        class="treenode">
+                        <td>
+                            <a href="Home-changelogs-rki.demis.igs-3.0.0-alpha.3.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="rki.demis.igs-3.0.0-alpha.3 (26.11.2024)">rki.demis.igs-3.0.0-alpha.3 (26.11.2024)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/changelogs/rki.demis.igs-3.0.0-alpha.2.md"
+                        data-is-folder="False"
+                        data-filepath="Home/changelogs/rki.demis.igs-3.0.0-alpha.2.md"
+                        data-parentId="Home/changelogs"
+                        data-serial-nr="17"
+                        class="treenode">
+                        <td>
+                            <a href="Home-changelogs-rki.demis.igs-3.0.0-alpha.2.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="rki.demis.igs-3.0.0-alpha.2 (06.11.2024)">rki.demis.igs-3.0.0-alpha.2 (06.11.2024)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/changelogs/rki.demis.igs-3.0.0-alpha.1.md"
+                        data-is-folder="False"
+                        data-filepath="Home/changelogs/rki.demis.igs-3.0.0-alpha.1.md"
+                        data-parentId="Home/changelogs"
+                        data-serial-nr="18"
+                        class="treenode">
+                        <td>
+                            <a href="Home-changelogs-rki.demis.igs-3.0.0-alpha.1.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="rki.demis.igs-3.0.0-alpha.1 (01.11.2024)">rki.demis.igs-3.0.0-alpha.1 (01.11.2024)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/changelogs/rki.demis.igs-2.0.0-alpha.1.md"
+                        data-is-folder="False"
+                        data-filepath="Home/changelogs/rki.demis.igs-2.0.0-alpha.1.md"
+                        data-parentId="Home/changelogs"
+                        data-serial-nr="19"
+                        class="treenode">
+                        <td>
+                            <a href="Home-changelogs-rki.demis.igs-2.0.0-alpha.1.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="rki.demis.igs-2.0.0-alpha.1 (29.07.2024)">rki.demis.igs-2.0.0-alpha.1 (29.07.2024)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/changelogs/rki.demis.igs-1.0.0-alpha.2.md"
+                        data-is-folder="False"
+                        data-filepath="Home/changelogs/rki.demis.igs-1.0.0-alpha.2.md"
+                        data-parentId="Home/changelogs"
+                        data-serial-nr="20"
+                        class="treenode">
+                        <td>
+                            <a href="Home-changelogs-rki.demis.igs-1.0.0-alpha.2.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="rki.demis.igs-1.0.0-alpha.2 (25.01.2024)">rki.demis.igs-1.0.0-alpha.2 (25.01.2024)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/changelogs/rki.demis.igs-1.0.0-alpha.1.md"
+                        data-is-folder="False"
+                        data-filepath="Home/changelogs/rki.demis.igs-1.0.0-alpha.1.md"
+                        data-parentId="Home/changelogs"
+                        data-serial-nr="21"
+                        class="treenode">
+                        <td>
+                            <a href="Home-changelogs-rki.demis.igs-1.0.0-alpha.1.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="rki.demis.igs-1.0.0-alpha.1 (28.07.2023)">rki.demis.igs-1.0.0-alpha.1 (28.07.2023)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/changelogs/rki.demis.r4.core-1.25.0-alpha.1.md"
+                        data-is-folder="False"
+                        data-filepath="Home/changelogs/rki.demis.r4.core-1.25.0-alpha.1.md"
+                        data-parentId="Home/changelogs"
+                        data-serial-nr="22"
+                        class="treenode">
+                        <td>
+                            <a href="Home-changelogs-rki.demis.r4.core-1.25.0-alpha.1.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="rki.demis.r4.core-1.25.0-alpha.1 (23.12.2022)">rki.demis.r4.core-1.25.0-alpha.1 (23.12.2022)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/lifecyclemanagement"
+                        data-is-folder="True"
+                        data-filepath="Home/lifecyclemanagement"
+                        data-parentId="Home"
+                        data-serial-nr="23"
+                        class="treenode">
+                        <td>
+                            <a href="Home-lifecyclemanagement.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Grundlagen f&#xFC;r das Lifecyclemanagement">Grundlagen f&#xFC;r das Lifecyclemanagement</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/lifecyclemanagement/guide-lifecyclemanagement.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/lifecyclemanagement/guide-lifecyclemanagement.guide.md"
+                        data-parentId="Home/lifecyclemanagement"
+                        data-serial-nr="26"
+                        class="treenode">
+                        <td>
+                            <a href="Home-lifecyclemanagement-guide-lifecyclemanagement.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Lifecyclemanagement IGS">Lifecyclemanagement IGS</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-dataupload.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-dataupload.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="27"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-dataupload.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Datenupload per Labormanagementsystem">Datenupload per Labormanagementsystem</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/guide-links.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/guide-links.guide.md"
+                        data-parentId="Home"
+                        data-serial-nr="28"
+                        class="treenode">
+                        <td>
+                            <a href="Home-guide-links.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Weiterf&#xFC;hrende Informationen">Weiterf&#xFC;hrende Informationen</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources"
+                        data-is-folder="True"
+                        data-filepath="Home/resources"
+                        data-parentId="Home"
+                        data-serial-nr="29"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Ressourcen">Ressourcen</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources"
+                        data-parentId="Home/resources"
+                        data-serial-nr="32"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Conformance Resources">Conformance Resources</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/operationdefinitions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/operationdefinitions"
+                        data-parentId="Home/resources/conformanceresources"
+                        data-serial-nr="35"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-operationdefinitions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="OperationDefinitions">OperationDefinitions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/operationdefinitions/guide-processnotificationsequence.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/operationdefinitions/guide-processnotificationsequence.guide.md"
+                        data-parentId="Home/resources/conformanceresources/operationdefinitions"
+                        data-serial-nr="38"
+                        class="treenode selected">
+                        <td>
+                            <a href="Home-resources-conformanceresources-operationdefinitions-guide-processnotificationsequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotificationSequence">ProcessNotificationSequence</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions"
+                        data-parentId="Home/resources/conformanceresources"
+                        data-serial-nr="39"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="StructureDefinitions">StructureDefinitions</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/notificationbundle"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/notificationbundle"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="42"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-notificationbundle.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldevorgang (NotificationBundle)">Meldevorgang (NotificationBundle)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/notificationbundle/guide-notificationbundlesequence.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/notificationbundle/guide-notificationbundlesequence.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/notificationbundle"
+                        data-serial-nr="45"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-notificationbundle-guide-notificationbundlesequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenzmeldevorgang (NotificationBundleSequence)">Sequenzmeldevorgang (NotificationBundleSequence)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/notification"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/notification"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="46"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-notification.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Meldung (Notification)">Meldung (Notification)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/notification/guide-notificationsequence.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/notification/guide-notificationsequence.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/notification"
+                        data-serial-nr="49"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-notification-guide-notificationsequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenzmeldung (NotificationSequence)">Sequenzmeldung (NotificationSequence)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/guide-sequence.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/guide-sequence.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="50"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-guide-sequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenz (Sequence)">Sequenz (Sequence)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/laboratoryreportsequence"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/laboratoryreportsequence"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="51"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-laboratoryreportsequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Laborbericht (LaboratoryReport)">Laborbericht (LaboratoryReport)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/laboratoryreportsequence/guide-laboratoryreportsequence.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/laboratoryreportsequence/guide-laboratoryreportsequence.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/laboratoryreportsequence"
+                        data-serial-nr="54"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-laboratoryreportsequence-guide-laboratoryreportsequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenz-Laborbericht (LaboratoryReportSequence)">Sequenz-Laborbericht (LaboratoryReportSequence)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/pathogendetectionsequence"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/pathogendetectionsequence"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="55"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-pathogendetectionsequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Erregernachweise (PathogenDetection)">Erregernachweise (PathogenDetection)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/pathogendetectionsequence/guide-pathogendetectionsequence.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/pathogendetectionsequence/guide-pathogendetectionsequence.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/pathogendetectionsequence"
+                        data-serial-nr="58"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-pathogendetectionsequence-guide-pathogendetectionsequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenz-Erregernachweis (PathogenDetectionSequence)">Sequenz-Erregernachweis (PathogenDetectionSequence)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/specimensequence"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/specimensequence"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="59"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-specimensequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Probe (Specimen)">Probe (Specimen)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/specimensequence/guide-specimensequence.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/specimensequence/guide-specimensequence.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/specimensequence"
+                        data-serial-nr="62"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-specimensequence-guide-specimensequence.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenz-Probe (SpecimenSequence)">Sequenz-Probe (SpecimenSequence)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/guide-sequencedocument.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/guide-sequencedocument.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="63"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-guide-sequencedocument.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenz-Dokument (SequenceDocument)">Sequenz-Dokument (SequenceDocument)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/substance"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/substance"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="64"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-substance.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Material (Substance)">Material (Substance)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/substance/guide-adaptersubstance.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/substance/guide-adaptersubstance.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/substance"
+                        data-serial-nr="67"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-substance-guide-adaptersubstance.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Adapter (AdapterSubstance)">Adapter (AdapterSubstance)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/substance/guide-primersubstance.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/substance/guide-primersubstance.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/substance"
+                        data-serial-nr="68"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-substance-guide-primersubstance.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Primer-Scheme (PrimerSubstance)">Primer-Scheme (PrimerSubstance)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/guide-sequencingdevice.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/guide-sequencingdevice.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="69"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-guide-sequencingdevice.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Sequenzierger&#xE4;t (SequencingDevice)">Sequenzierger&#xE4;t (SequencingDevice)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="70"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Erweiterungen (Extensions)">Erweiterungen (Extensions)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequencingreason.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequencingreason.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-serial-nr="72"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions-guide-sequencingreason.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Grund der Sequenzierung (SequencingReason)">Grund der Sequenzierung (SequencingReason)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceuploadsubmitter.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceuploadsubmitter.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-serial-nr="73"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions-guide-sequenceuploadsubmitter.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Verantwortlicher des Sequenz-Uploads (SequenceUploadSubmitter)">Verantwortlicher des Sequenz-Uploads (SequenceUploadSubmitter)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceuploadstatus.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceuploadstatus.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-serial-nr="74"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions-guide-sequenceuploadstatus.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Status des Sequenz-Uploads (SequenceUploadStatus)">Status des Sequenz-Uploads (SequenceUploadStatus)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceuploaddate.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceuploaddate.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-serial-nr="75"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions-guide-sequenceuploaddate.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Datum des Sequenz-Uploads (SequenceUploadDate)">Datum des Sequenz-Uploads (SequenceUploadDate)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceauthor.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequenceauthor.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-serial-nr="76"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions-guide-sequenceauthor.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Verantwortlicher der Sequenz (SequenceAuthor)">Verantwortlicher der Sequenz (SequenceAuthor)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions/guide-isolate.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions/guide-isolate.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-serial-nr="77"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions-guide-isolate.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Isolat (Isolate)">Isolat (Isolate)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequencedocumentreference.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/extensions/guide-sequencedocumentreference.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/extensions"
+                        data-serial-nr="78"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-extensions-guide-sequencedocumentreference.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Referenz auf das SequenceDocument (SequenceDocumentreference)">Referenz auf das SequenceDocument (SequenceDocumentreference)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/parameters"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/parameters"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions"
+                        data-serial-nr="79"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-parameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Parameter (Parameters)">Parameter (Parameters)</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/parameters/guide-processnotificationsequencerequestparameters.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/parameters/guide-processnotificationsequencerequestparameters.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/parameters"
+                        data-serial-nr="82"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-parameters-guide-processnotificationsequencerequestparameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotificationSequenceRequestParameters">ProcessNotificationSequenceRequestParameters</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/conformanceresources/structuredefinitions/parameters/guide-processnotificationsequenceresponseparameters.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/conformanceresources/structuredefinitions/parameters/guide-processnotificationsequenceresponseparameters.guide.md"
+                        data-parentId="Home/resources/conformanceresources/structuredefinitions/parameters"
+                        data-serial-nr="83"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-conformanceresources-structuredefinitions-parameters-guide-processnotificationsequenceresponseparameters.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ProcessNotificationSequenceResponseParameters">ProcessNotificationSequenceResponseParameters</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologyresources"
+                        data-parentId="Home/resources"
+                        data-serial-nr="84"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="Terminology Resources">Terminology Resources</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/codesystems"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologyresources/codesystems"
+                        data-parentId="Home/resources/terminologyresources"
+                        data-serial-nr="87"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-codesystems.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="CodeSystems">CodeSystems</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/codesystems/guide-instrument.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/codesystems/guide-instrument.guide.md"
+                        data-parentId="Home/resources/terminologyresources/codesystems"
+                        data-serial-nr="90"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-codesystems-guide-instrument.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="instrument">instrument</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/codesystems/guide-repositoryName.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/codesystems/guide-repositoryName.guide.md"
+                        data-parentId="Home/resources/terminologyresources/codesystems"
+                        data-serial-nr="91"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-codesystems-guide-repositoryName.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="repositoryName">repositoryName</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/codesystems/guide-sequencingPlatform.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/codesystems/guide-sequencingPlatform.guide.md"
+                        data-parentId="Home/resources/terminologyresources/codesystems"
+                        data-serial-nr="92"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-codesystems-guide-sequencingPlatform.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="sequencingPlatform">sequencingPlatform</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/codesystems/guide-sequencingStrategy.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/codesystems/guide-sequencingStrategy.guide.md"
+                        data-parentId="Home/resources/terminologyresources/codesystems"
+                        data-serial-nr="93"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-codesystems-guide-sequencingStrategy.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="sequencingStrategy">sequencingStrategy</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/codesystems/guide-sequencingSubstances.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/codesystems/guide-sequencingSubstances.guide.md"
+                        data-parentId="Home/resources/terminologyresources/codesystems"
+                        data-serial-nr="94"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-codesystems-guide-sequencingSubstances.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="sequencingSubstances">sequencingSubstances</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets"
+                        data-is-folder="True"
+                        data-filepath="Home/resources/terminologyresources/valuesets"
+                        data-parentId="Home/resources/terminologyresources"
+                        data-serial-nr="95"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="ValueSets">ValueSets</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-contentType.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-contentType.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="98"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-contentType.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="contentType">contentType</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-instrument.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-instrument.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="99"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-instrument.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="instrument">instrument</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-repositoryName.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-repositoryName.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="100"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-repositoryName.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="repositoryName">repositoryName</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-sequencingPlatform.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-sequencingPlatform.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="101"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-sequencingPlatform.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="sequencingPlatform">sequencingPlatform</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-sequencingReason.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-sequencingReason.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="102"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-sequencingReason.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="sequencingReason">sequencingReason</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-sequencingStrategy.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-sequencingStrategy.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="103"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-sequencingStrategy.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="sequencingStrategy">sequencingStrategy</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-sequencingSubstances.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-sequencingSubstances.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="104"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-sequencingSubstances.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="sequencingSubstances">sequencingSubstances</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr data-id="Home/resources/terminologyresources/valuesets/guide-uploadStatus.guide.md"
+                        data-is-folder="False"
+                        data-filepath="Home/resources/terminologyresources/valuesets/guide-uploadStatus.guide.md"
+                        data-parentId="Home/resources/terminologyresources/valuesets"
+                        data-serial-nr="105"
+                        class="treenode">
+                        <td>
+                            <a href="Home-resources-terminologyresources-valuesets-guide-uploadStatus.html">
+                                <span class="baseIcon dataType"></span>
+                                <span title="uploadStatus">uploadStatus</span>
+                            </a>
+                        </td>
+                    </tr>
+
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', (event) => {
+
+        var resourceTreeTable = new BaseTreeTable();
+        resourceTreeTable.init("treetable");
+
+        var tree = document.getElementById("treetable");
+        tree.classList.remove("hidden");
+
+    });
+</script>
+
+                            </div>
+                            <div id="preview-content" class="preview-panel full-width" role="main" aria-label="Main content">
+                                
+
+<h1 id="page-title">ProcessNotificationSequence</h1>
+<p><a href="https://simplifier.net/rki.demis.igs/%7Eresources?canonical=https://demis.rki.de/fhir/igs/operationdefinition/processnotificationsequence&amp;category=Profile&amp;sortBy=RankScore_desc">https://demis.rki.de/fhir/igs/OperationDefinition/ProcessNotificationSequence</a></p>
+<p>Operation zum Übermitteln von Sequenz- und Metadaten gemäß Infektionsschutzgesetz (§13 Abs. 3).</p>
+<p><strong>Profilansicht</strong>
+<div class="stu3-treetable" id="6e7dda511c8942278ad0194f6b98d2d6" data-level="1"><div class="treetable-wrapper"><div class="treetable-left-panel"><table class="treetable instance-tree"><tr data-id="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>OperationDefinition</b></td></tr><tr class="collapsed" data-id="582984455aca4609b188281d11463f5f" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>id : </b><span>ProcessNotificationSequence</span></td></tr>
+<tr class="collapsed" data-id="b0f17e8c40ec4a2aaea1baea896c0508" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>url : </b><span>https://demis.rki.de/fhir/igs/OperationDefinition/ProcessNotificationSequence</span></td></tr>
+<tr class="collapsed" data-id="4f4ee6cf49094dcd8d5f9e797ef0e195" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>version : </b><span>2.0.0</span></td></tr>
+<tr class="collapsed" data-id="973ef51aeffa400096e553c342c5cc5b" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>name : </b><span>ProcessNotificationSequence</span></td></tr>
+<tr class="collapsed" data-id="e0543e5ae0c74434b1e649e59ab69afa" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>title : </b><span>ProcessNotificationSequence</span></td></tr>
+<tr class="collapsed" data-id="8c100d8b441046ae9df5c5875332040b" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>status : </b><span>active</span></td></tr>
+<tr class="collapsed" data-id="9e3d9bd24e8542f5b877c5c92b7a3aad" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>kind : </b><span>operation</span></td></tr>
+<tr class="collapsed" data-id="cd60e1f30de64a849d08bdbed0ced074" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>date : </b><span>2024-07-24</span></td></tr>
+<tr class="collapsed" data-id="c4d4259d0a0948839b74fb1f9cbd8694" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>publisher : </b><span>Robert Koch-Institut (RKI)</span></td></tr>
+<tr class="collapsed" data-id="69f5bfe79e1e4186bd39c0c3c708399f" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>contact</b></td></tr><tr class="collapsed" data-id="d5ba205740ee49c9b8e10c304911e378" data-parentId="69f5bfe79e1e4186bd39c0c3c708399f"><td class="instance"><span class="baseIcon primitive"></span><b>name : </b><span>DEMIS Gesch&#228;ftsstelle</span></td></tr>
+<tr class="collapsed" data-id="76cc446364dc48dfaf0baddb1fde3e58" data-parentId="69f5bfe79e1e4186bd39c0c3c708399f"><td class="instance"><span class="baseIcon primitive"></span><b>telecom</b></td></tr><tr class="collapsed" data-id="4a52f5d58e9b46b0b87cd8b92db51b0f" data-parentId="76cc446364dc48dfaf0baddb1fde3e58"><td class="instance"><span class="baseIcon primitive"></span><b>system : </b><span>email</span></td></tr>
+<tr class="collapsed" data-id="02e1d20086f2429b888e10ee567c033f" data-parentId="76cc446364dc48dfaf0baddb1fde3e58"><td class="instance"><span class="baseIcon primitive"></span><b>value : </b><span>demis@rki.de</span></td></tr>
+
+
+<tr class="collapsed" data-id="5cce86bb432f46e08325d2e8d744f2da" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>description : </b><span>Operation zum &#220;bermitteln von Sequenz- und Metadaten gem&#228;&#223; Infektionsschutzgesetz (&#167;13 Abs. 3).</span></td></tr>
+<tr class="collapsed" data-id="67d7f77112834c87a701acb8195aa9e5" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>jurisdiction</b></td></tr><tr class="collapsed" data-id="d6e25d5c90ef41509272405ce2d4abfc" data-parentId="67d7f77112834c87a701acb8195aa9e5"><td class="instance"><span class="baseIcon primitive"></span><b>coding</b></td></tr><tr class="collapsed" data-id="cf9ce456fde84354bf2b2adc27df79b1" data-parentId="d6e25d5c90ef41509272405ce2d4abfc"><td class="instance"><span class="baseIcon primitive"></span><b>system : </b><span>urn:iso:std:iso:3166</span></td></tr>
+<tr class="collapsed" data-id="818207babf0c431fa6584674d8a123b8" data-parentId="d6e25d5c90ef41509272405ce2d4abfc"><td class="instance"><span class="baseIcon primitive"></span><b>code : </b><span>DE</span></td></tr>
+
+
+<tr class="collapsed" data-id="114bd2267ee7486e80d6aba1ca63fc55" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>affectsState : </b><span>True</span></td></tr>
+<tr class="collapsed" data-id="c4dc1b24294b4678865fd09ca5c2244f" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>code : </b><span>process-notification</span></td></tr>
+<tr class="collapsed" data-id="c791855e794b435695109d3213de0fca" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>system : </b><span>True</span></td></tr>
+<tr class="collapsed" data-id="154586099174412a9363c9c86ab474ff" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>type : </b><span>False</span></td></tr>
+<tr class="collapsed" data-id="df287ced714e4d8393dcd0b56460abf0" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>instance : </b><span>False</span></td></tr>
+<tr class="collapsed" data-id="2454804466dd47ada48586fc1375d246" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>inputProfile : </b><span>https://demis.rki.de/fhir/igs/StructureDefinition/ProcessNotificationSequenceRequestParameters</span></td></tr>
+<tr class="collapsed" data-id="2fc10b3c1fb1401e929a2cc88aac4759" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>outputProfile : </b><span>https://demis.rki.de/fhir/igs/StructureDefinition/ProcessNotificationSequenceResponseParameters</span></td></tr>
+<tr class="collapsed" data-id="f121ac9537c64c49a0158bced05977ab" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>parameter</b></td></tr><tr class="collapsed" data-id="f6b14341a5944e09b603d91ceb375691" data-parentId="f121ac9537c64c49a0158bced05977ab"><td class="instance"><span class="baseIcon primitive"></span><b>name : </b><span>content</span></td></tr>
+<tr class="collapsed" data-id="30767b74e1a94859ac77fc7983036fa0" data-parentId="f121ac9537c64c49a0158bced05977ab"><td class="instance"><span class="baseIcon primitive"></span><b>use : </b><span>in</span></td></tr>
+<tr class="collapsed" data-id="7d7004109b484c34b902b9deb83033b2" data-parentId="f121ac9537c64c49a0158bced05977ab"><td class="instance"><span class="baseIcon primitive"></span><b>min : </b><span>1</span></td></tr>
+<tr class="collapsed" data-id="9f0b8b7e535f468a9f358c86825f7c5b" data-parentId="f121ac9537c64c49a0158bced05977ab"><td class="instance"><span class="baseIcon primitive"></span><b>max : </b><span>1</span></td></tr>
+<tr class="collapsed" data-id="1a4bb12c30e64f1b91052cc72da6d4a4" data-parentId="f121ac9537c64c49a0158bced05977ab"><td class="instance"><span class="baseIcon primitive"></span><b>documentation : </b><span>Sequenz-Meldevorgang</span></td></tr>
+<tr class="collapsed" data-id="342d7f6735cd440a94289228fc101441" data-parentId="f121ac9537c64c49a0158bced05977ab"><td class="instance"><span class="baseIcon primitive"></span><b>type : </b><span>Bundle</span></td></tr>
+
+<tr class="collapsed" data-id="7dcd541c9e864b5599b4ff11baa7463c" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>parameter</b></td></tr><tr class="collapsed" data-id="ce1fcc36e2ea4440bda5eb3fff8cb04a" data-parentId="7dcd541c9e864b5599b4ff11baa7463c"><td class="instance"><span class="baseIcon primitive"></span><b>name : </b><span>operationOutcome</span></td></tr>
+<tr class="collapsed" data-id="fc40afbc40174e0e98a670948c5a4376" data-parentId="7dcd541c9e864b5599b4ff11baa7463c"><td class="instance"><span class="baseIcon primitive"></span><b>use : </b><span>out</span></td></tr>
+<tr class="collapsed" data-id="d4ffa506859a4b909c2d4bdd5629de83" data-parentId="7dcd541c9e864b5599b4ff11baa7463c"><td class="instance"><span class="baseIcon primitive"></span><b>min : </b><span>1</span></td></tr>
+<tr class="collapsed" data-id="56999f171704424cb0236f5510f31bfa" data-parentId="7dcd541c9e864b5599b4ff11baa7463c"><td class="instance"><span class="baseIcon primitive"></span><b>max : </b><span>1</span></td></tr>
+<tr class="collapsed" data-id="d806fa44b47943dc8c2c0d89fb660dcc" data-parentId="7dcd541c9e864b5599b4ff11baa7463c"><td class="instance"><span class="baseIcon primitive"></span><b>documentation : </b><span>Ergebnis der Verarbeitung</span></td></tr>
+<tr class="collapsed" data-id="41b94281a1bf4f9b84722b2d5549d38e" data-parentId="7dcd541c9e864b5599b4ff11baa7463c"><td class="instance"><span class="baseIcon primitive"></span><b>type : </b><span>OperationOutcome</span></td></tr>
+
+<tr class="collapsed" data-id="c3c1c174e4954ccda51e393e2904a9af" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>parameter</b></td></tr><tr class="collapsed" data-id="01f6adad966c400f80694d0632113358" data-parentId="c3c1c174e4954ccda51e393e2904a9af"><td class="instance"><span class="baseIcon primitive"></span><b>name : </b><span>transactionID</span></td></tr>
+<tr class="collapsed" data-id="3d35e7ff32084a6abdc3d92c7a6632d2" data-parentId="c3c1c174e4954ccda51e393e2904a9af"><td class="instance"><span class="baseIcon primitive"></span><b>use : </b><span>out</span></td></tr>
+<tr class="collapsed" data-id="ab9ae246a9e645e7bedae251b48000af" data-parentId="c3c1c174e4954ccda51e393e2904a9af"><td class="instance"><span class="baseIcon primitive"></span><b>min : </b><span>1</span></td></tr>
+<tr class="collapsed" data-id="8a0e0757ae0a4412899d7a030e3fe9c4" data-parentId="c3c1c174e4954ccda51e393e2904a9af"><td class="instance"><span class="baseIcon primitive"></span><b>max : </b><span>1</span></td></tr>
+<tr class="collapsed" data-id="6dcb1920c1734693883329208e97da28" data-parentId="c3c1c174e4954ccda51e393e2904a9af"><td class="instance"><span class="baseIcon primitive"></span><b>documentation : </b><span>Transaktions-ID: Verweis auf das Analyseergebnis der Integrierten Genomischen Surveillance (IGS)</span></td></tr>
+<tr class="collapsed" data-id="0b8f2c807e4e414a98e00a7172eeab16" data-parentId="c3c1c174e4954ccda51e393e2904a9af"><td class="instance"><span class="baseIcon primitive"></span><b>type : </b><span>Identifier</span></td></tr>
+
+<tr class="collapsed" data-id="888f61d6dd11485fb714a7aedf46ee0e" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>parameter</b></td></tr><tr class="collapsed" data-id="f14750a80bc14c3e98ebdaa2bc130dfd" data-parentId="888f61d6dd11485fb714a7aedf46ee0e"><td class="instance"><span class="baseIcon primitive"></span><b>name : </b><span>submitterGeneratedNotificationID</span></td></tr>
+<tr class="collapsed" data-id="b9e76b86d7ac492a9fc8416a328492bc" data-parentId="888f61d6dd11485fb714a7aedf46ee0e"><td class="instance"><span class="baseIcon primitive"></span><b>use : </b><span>out</span></td></tr>
+<tr class="collapsed" data-id="2458ad56385b4578854cc5846ef66ace" data-parentId="888f61d6dd11485fb714a7aedf46ee0e"><td class="instance"><span class="baseIcon primitive"></span><b>min : </b><span>1</span></td></tr>
+<tr class="collapsed" data-id="de38c42f68cd41c099703c65fad6d693" data-parentId="888f61d6dd11485fb714a7aedf46ee0e"><td class="instance"><span class="baseIcon primitive"></span><b>max : </b><span>1</span></td></tr>
+<tr class="collapsed" data-id="c2c59b38d24e4cd39d87e50b06d93a14" data-parentId="888f61d6dd11485fb714a7aedf46ee0e"><td class="instance"><span class="baseIcon primitive"></span><b>documentation : </b><span>NotificationID der urspr&#252;nglich vom Einsender der Probe erstellten Meldung.</span></td></tr>
+<tr class="collapsed" data-id="5a643196107144418f66875b5f8a1557" data-parentId="888f61d6dd11485fb714a7aedf46ee0e"><td class="instance"><span class="baseIcon primitive"></span><b>type : </b><span>Identifier</span></td></tr>
+
+<tr class="collapsed" data-id="3e5ebbc67760451aaeef4ddfc076b9c2" data-parentId="83e12680aee746d78cb3776a8908746f"><td class="instance"><span class="baseIcon primitive"></span><b>parameter</b></td></tr><tr class="collapsed" data-id="4c04adbab1a846508374d4f1a282c413" data-parentId="3e5ebbc67760451aaeef4ddfc076b9c2"><td class="instance"><span class="baseIcon primitive"></span><b>name : </b><span>labSequenceID</span></td></tr>
+<tr class="collapsed" data-id="7a02b9af4f284eeca023bad6e4d53302" data-parentId="3e5ebbc67760451aaeef4ddfc076b9c2"><td class="instance"><span class="baseIcon primitive"></span><b>use : </b><span>out</span></td></tr>
+<tr class="collapsed" data-id="8264b390325944699201fc850e5bb044" data-parentId="3e5ebbc67760451aaeef4ddfc076b9c2"><td class="instance"><span class="baseIcon primitive"></span><b>min : </b><span>1</span></td></tr>
+<tr class="collapsed" data-id="7337673af5d640c296f5f6b934c26509" data-parentId="3e5ebbc67760451aaeef4ddfc076b9c2"><td class="instance"><span class="baseIcon primitive"></span><b>max : </b><span>1</span></td></tr>
+<tr class="collapsed" data-id="c59ff22cf5e543a5a5bdad7a5769aeac" data-parentId="3e5ebbc67760451aaeef4ddfc076b9c2"><td class="instance"><span class="baseIcon primitive"></span><b>documentation : </b><span>Laboreigene ID der Probe</span></td></tr>
+<tr class="collapsed" data-id="07b4e7d73e514eecb5e67c1a75cd62a8" data-parentId="3e5ebbc67760451aaeef4ddfc076b9c2"><td class="instance"><span class="baseIcon primitive"></span><b>type : </b><span>Identifier</span></td></tr>
+
+
+</table></div></div></div><script type="text/javascript">
+(function() {
+var isTreetableVisible = document.querySelector(".treetable") != null;
+if (isTreetableVisible) {
+var resourceTreeTable6e7dda511c8942278ad0194f6b98d2d6 = new InstanceTree();
+resourceTreeTable6e7dda511c8942278ad0194f6b98d2d6.init("6e7dda511c8942278ad0194f6b98d2d6");
+}
+})();
+</script></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

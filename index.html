@@ -108,10 +108,22 @@
         <h2>FHIR-Profile Integrierte Genomische Surveillance (rki.demis.igs)</h2>
         <p>Das Paket rki.demis.igs erweitert die Ressourcen des rki.demis.laboratory-Paketes für die Integrierte
             Genomische Surveillance (IGS).</p>
-
         <blockquote>
-
-
+            <h3>Version rki.demis.igs-3.0.0-rc.1 (13.12.2024)</h3>
+            <a class="package-link" href="./rki.demis.igs/rki.demis.igs-3.0.0-rc.1/Home.html">Leitfaden</a>
+            <a href="./rki.demis.igs/rki.demis.igs-3.0.0-rc.1/Vorab rki.demis.igs-3.0.0-rc.1@current.zip">Download ZIP</a>
+			<br/>Change log (gegenüber rki.demis.igs-1.0.0-alpha.2):
+			<ul>
+				<li>Canonical von "https://demis.rki.de/fhir/" zu "https://demis.rki.de/fhir/igs/" geändert</li>
+				<li>Sequence.repository.extension:sequenceUploadStatus auf 1..1 gesetzt</li>
+				<li>Sequence.repository.name auf 1..1 gesetzt</li>
+				<li>SequenceDocument.content.attachment.title auf 0..1 gesetzt</li>
+				<li>SequenceDocument.content.attachment.contentType auf 0..1 gesetzt</li>
+				<li>SequenceDocument.content.attachment.hash profiliert (auf mustSupport gesetzt und Constraint für Format hinzugefügt)</li>
+				<li>Update auf SNOMED-Version 20240515 (betrifft ValueSet SequencingReason und UploadStatus)</li>
+				<li>Beschreibung des Up- und Downloadprozesses aktualisiert</li>
+			</ul>
+			<br/>
             <h3>Version rki.demis.igs-1.0.0-alpha.2 (26.01.2024)</h3>
             <a class="package-link" href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.2/Home.html">Leitfaden</a>
             <a href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.2/IGS-1.0.0-alpha.2-vorab@current.zip">Download ZIP</a>
