@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceHXXD" />
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceHXXD" />
+  <version value="1.2.2" />
+  <name value="EvidenceHXXD" />
+  <title value="Symptome und Manifestationen in Bezug auf den Meldetatbestand &quot;Akute Virushepatitis&quot;" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-10-10" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet EvidenceHXXD enthält die kodierten Angaben zu Symptomen und Manifestationen in Bezug auf den Meldetatbestand &quot;Akute Virushepatitis&quot;." />
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20240515" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="11" />
+        </extension>
+        <code value="105721009:{363698007=80581009}" />
+        <display value="Oberbauchbeschwerden" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="1119454002" />
+          </use>
+          <value value="105721009 | General problem AND/OR complaint (finding) | : {363698007 | Finding site (attribute) | = 80581009 | Upper abdomen structure (body structure) |}" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="12" />
+        </extension>
+        <code value="18165001" />
+        <display value="Gelbsucht (Ikterus)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Jaundice (finding)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="13" />
+        </extension>
+        <code value="386661006" />
+        <display value="Fieber" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Fever (finding)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="10" />
+        </extension>
+        <code value="707724006" />
+        <display value="Serumtransaminasen, erhöht" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Liver enzymes level above reference range (finding)" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
