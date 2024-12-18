@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="materialLSVP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/materialLSVP" />
+  <version value="1.7.0" />
+  <name value="MaterialLSVP" />
+  <title value="Material für Lassavirus" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-08-27" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet MaterialLSVP enthält die Codes der Materialien für Lassavirus." />
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20240515" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="119342007" />
+        <display value="Saliva specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Saliva specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Speichel" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="122575003" />
+        <display value="Urine specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Urine specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Urin" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="123038009" />
+        <display value="Specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Anderes Untersuchungsmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258450006" />
+        <display value="Cerebrospinal fluid specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Cerebrospinal fluid specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Liquorprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="119294007" />
+        <display value="Dried blood specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Dried blood specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Trockenblut" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="119297000" />
+        <display value="Blood specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Blood specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Blutprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="119361006" />
+        <display value="Plasma specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Plasma specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Plasmaprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="119364003" />
+        <display value="Serum specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Serum specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Serumprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="122554006" />
+        <display value="Capillary blood specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Capillary blood specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Kapillarblutprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="122555007" />
+        <display value="Venous blood specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Venous blood specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Venöses Blut" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="122592007" />
+        <display value="Acellular blood (serum or plasma) specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Acellular blood (serum or plasma) specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Blutprobe, azellulär (Serum oder Plasma)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258580003" />
+        <display value="Whole blood specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Whole blood specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Vollblutprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="303248007" />
+        <display value="Blood film specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Blood film specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Blutfilm" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="440500007" />
+        <display value="Dried blood spot specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Dried blood spot specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Dried-Blood-Spot (DBS)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="445295009" />
+        <display value="Blood specimen with edetic acid (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Blood specimen with edetic acid (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="EDTA-Blutprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708049000" />
+        <display value="Plasma specimen with ethylenediamine tetraacetic acid (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Plasma specimen with ethylenediamine tetraacetic acid (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="EDTA-Plasmaprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="737535000" />
+        <display value="Blood smear specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Blood smear specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Blutaustrich" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="788707000" />
+        <display value="Plasma specimen or serum specimen or whole blood specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Plasma specimen or serum specimen or whole blood specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Plasma- Serum- oder Vollblutprobe" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
