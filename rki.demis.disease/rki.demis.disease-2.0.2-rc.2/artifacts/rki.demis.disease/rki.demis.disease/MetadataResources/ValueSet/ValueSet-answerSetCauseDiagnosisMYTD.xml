@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetCauseDiagnosisMYTD" />
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetCauseDiagnosisMYTD" />
+  <version value="1.3.1" />
+  <name value="AnswerSetCauseDiagnosisMYTD" />
+  <title value="Anwort Anlass der Diagnose bei Tuberkulose" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-08-29" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet AnswerSetCauseDiagnosisMYTD enthält die Codes der Antwortmöglichkeiten für den Anlass der Diagnosebei bei Tuberkulose." />
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20240515" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="11" />
+        </extension>
+        <code value="11999007+308537004" />
+        <display value="Überwachung gesunder Befundträger nach früherer Tuberkulose" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="1119454002" />
+          </use>
+          <value value="11999007 | Inactive tuberculosis (disorder) | + 308537004 | Monitoring status (finding) |" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="19" />
+        </extension>
+        <code value="168461002" />
+        <display value="Andere postmortale Untersuchung" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Postmortem examination (procedure)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="10" />
+        </extension>
+        <code value="225058007" />
+        <display value="Umgebungsuntersuchung" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Well person screening (procedure)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="17" />
+        </extension>
+        <code value="281685003:{363702006=160734000}" />
+        <display value="Aufnahme in ein Alten- oder Pflegeheim" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="1119454002" />
+          </use>
+          <value value="281685003 | Admission for care (procedure) | : {363702006 | Has focus (attribute) | = 160734000 | Lives in nursing home (finding) |}" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="12" />
+        </extension>
+        <code value="29240004" />
+        <display value="Obduktion" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Autopsy examination (procedure)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="16" />
+        </extension>
+        <code value="313331005:{363702006=160736003}" />
+        <display value="Aufnahme in ein Obdachlosenheim" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="1119454002" />
+          </use>
+          <value value="313331005 | Admission for social reasons (procedure) | : {363702006 | Has focus (attribute) | = 160736003 | Lives in a welfare home (finding) |}" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="14" />
+        </extension>
+        <code value="313331005:{370131001=161158003}" />
+        <display value="Aussiedler/in, Aufnahme in eine Gemeinschaftsunterkunft" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="1119454002" />
+          </use>
+          <value value="313331005 | Admission for social reasons (procedure) | : {370131001 | Recipient category (attribute) | = 161158003 | Immigrant (person) |}" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="18" />
+        </extension>
+        <code value="313331005:{370131001=390790000}" />
+        <display value="Asylbewerber/in, Aufnahme in eine Gemeinschaftsunterkunft" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="1119454002" />
+          </use>
+          <value value="313331005 | Admission for social reasons (procedure) | : {370131001 | Recipient category (attribute) | = 390790000 | Asylum seeker (person) |}" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="13" />
+        </extension>
+        <code value="313331005:{370131001=446654005}" />
+        <display value="Geflüchteter/-Geflüchtete, Aufnahme in eine Gemeinschaftsunterkunft" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="1119454002" />
+          </use>
+          <value value="313331005 | Admission for social reasons (procedure) | : {370131001 | Recipient category (attribute) | = 446654005 | Refugee (person) |}" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="20" />
+        </extension>
+        <code value="41769001:{246090004=404684003}" />
+        <display value="Abklärung tuberkulosebedingter Symptome" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="1119454002" />
+          </use>
+          <value value="41769001 | Disease suspected (situation) | : {246090004 | Associated finding (attribute) | = 404684003 | Clinical finding (finding) |}" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="15" />
+        </extension>
+        <code value="45361006" />
+        <display value="Aufnahme in eine Justizvollzugsanstalt" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Imprisonment (finding)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="74964007" />
+        <display value="andere/sonstige" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Other (qualifier value)" />
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+      <version value="2.1.0" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="999" />
+        </extension>
+        <code value="ASKU" />
+        <display value="asked but unknown" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1000" />
+        </extension>
+        <code value="NASK" />
+        <display value="not asked" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

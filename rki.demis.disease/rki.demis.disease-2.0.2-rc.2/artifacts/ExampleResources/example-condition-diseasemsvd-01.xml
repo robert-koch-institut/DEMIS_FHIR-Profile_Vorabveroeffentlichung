@@ -1,0 +1,72 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="28655d7c-730c-3bed-b3df-a1ac66f2d12e"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseMSVD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="msvd"></code>
+         <display value="Masern"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/31bbeda4-f814-3898-b386-de581e237bf8"></reference>
+   </subject>
+   <onsetDateTime value="2023-01-20"></onsetDateTime>
+   <recordedDate value="2023-01-26"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="386661006"></code>
+            <display value="Fieber"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="64611009"></code>
+            <display value="wässriger Schnupfen (Katarrh)"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="247471006:363698007=181469002"></code>
+            <display value="Hautausschlag, generalisiert, makulopapulös"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="193894004"></code>
+            <display value="Rötung der Bindehaut"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="233604007"></code>
+            <display value="Lungenentzündung (Pneumonie)"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="-"></text>
+   </note>
+</Condition>

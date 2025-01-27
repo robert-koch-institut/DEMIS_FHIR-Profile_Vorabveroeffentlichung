@@ -1,0 +1,47 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="b3c783f9-8bc7-3f23-81e2-c61d0a0fb034"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationSSPD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsSSPD"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/2a64e4ad-b0c9-3a90-a2aa-4b66e393a16a"></reference>
+   </subject>
+   <item>
+      <linkId value="immunization"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/d8f8f50e-bd1a-327b-b768-e4ce3cef64bf"></reference>
+               </valueReference>
+            </answer>
+         </item>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/7f8b8d88-7be0-32ce-b541-17e134565387"></reference>
+               </valueReference>
+            </answer>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>

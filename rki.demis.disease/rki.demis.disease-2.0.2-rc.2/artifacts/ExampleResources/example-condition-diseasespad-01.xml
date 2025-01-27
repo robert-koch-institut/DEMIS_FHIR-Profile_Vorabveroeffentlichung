@@ -1,0 +1,63 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="4c14a267-6cf7-3455-8339-3b9cdea1e197"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseSPAD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="spad"></code>
+         <display value="Paratyphus"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/21b23f64-f54b-351d-95df-22e5a4d9c4b0"></reference>
+   </subject>
+   <onsetDateTime value="2022-12-05"></onsetDateTime>
+   <recordedDate value="2022-12-07"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="21522001"></code>
+            <display value="Bauchschmerzen"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="409966000"></code>
+            <display value="Durchfall, akut"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="386661006"></code>
+            <display value="Fieber"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="25064002"></code>
+            <display value="Kopfschmerzen"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="Textueller Hinweis"></text>
+   </note>
+</Condition>
