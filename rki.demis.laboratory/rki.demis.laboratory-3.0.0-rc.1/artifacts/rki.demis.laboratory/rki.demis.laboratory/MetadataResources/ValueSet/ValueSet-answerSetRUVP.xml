@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetRUVP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetRUVP" />
+  <version value="1.6.1" />
+  <name value="AnswerSetRUVP" />
+  <title value="AnswerSet für Rubellavirus" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-09-09" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet AnswerSetRUVP enthält die Codes der Answer-Codes für Rubellavirus." />
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20240515" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="425415004" />
+        <display value="Rubella virus genotype 1B (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Rubella virus genotype 1B (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Röteln-Virus, Genotyp 1B" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="425872000" />
+        <display value="Rubella virus genotype 1a (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Rubella virus genotype 1a (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Röteln-Virus, Genotyp 1a" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="425891000" />
+        <display value="Rubella virus genotype 2A (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Rubella virus genotype 2A (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Röteln-Virus, Genotyp 2A" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="426085007" />
+        <display value="Rubella virus genotype 1E (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Rubella virus genotype 1E (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Röteln-Virus, Genotyp 1E" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="426209008" />
+        <display value="Rubella virus genotype 1G (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Rubella virus genotype 1G (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Röteln-Virus, Genotyp 1G" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="426367009" />
+        <display value="Rubella virus genotype 1F (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Rubella virus genotype 1F (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Röteln-Virus, Genotyp 1F" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="426612000" />
+        <display value="Rubella virus genotype 2B (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Rubella virus genotype 2B (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Röteln-Virus, Genotyp 2B" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="427329000" />
+        <display value="Rubella virus genotype 2C (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Rubella virus genotype 2C (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Röteln-Virus, Genotyp 2C" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="427398000" />
+        <display value="Rubella virus genotype 1C (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Rubella virus genotype 1C (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Röteln-Virus, Genotyp 1C" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="427559006" />
+        <display value="Rubella virus genotype 1D (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Rubella virus genotype 1D (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Röteln-Virus, Genotyp 1D" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="90" />
+        </extension>
+        <code value="5210005" />
+        <display value="Rubella virus (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Rubella virus (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Röteln-Virus" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="698201004" />
+        <display value="Rubella virus genotype 1H (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Rubella virus genotype 1H (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Röteln-Virus, Genotyp 1H" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="698202006" />
+        <display value="Rubella virus genotype 1I (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Rubella virus genotype 1I (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Röteln-Virus, Genotyp 1I" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="698203001" />
+        <display value="Rubella virus genotype 1J (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Rubella virus genotype 1J (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Röteln-Virus, Genotyp 1J" />
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/answerSetLaboratoryTest-SNOMED" />
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/answerSetResistance-SNOMED" />
+    </include>
+  </compose>
+</ValueSet>

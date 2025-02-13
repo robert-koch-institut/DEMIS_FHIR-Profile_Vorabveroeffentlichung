@@ -1,0 +1,3608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="resistance" />
+  <url value="https://demis.rki.de/fhir/ValueSet/resistance" />
+  <version value="1.10.0" />
+  <name value="Resistance" />
+  <title value="Resistenz" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-09-09" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet Resistance enthält die Codes für die Resistenzen." />
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.78" />
+      <concept>
+        <code value="100041-3" />
+        <display value="Aminoglycoside [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Aminoglycosid [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100042-1" />
+        <display value="Atovaquone [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="100043-9" />
+        <display value="Azithromycin+Ethambutol [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Azithromycin+Ethambutol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100044-7" />
+        <display value="Cefcapene [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefcapen [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100045-4" />
+        <display value="Cefozopran [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="100046-2" />
+        <display value="Cefquinome [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="100047-0" />
+        <display value="Cefteram [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="100048-8" />
+        <display value="Clarithromycin+Ethambutol [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Clarithromycin+Ethambutol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100049-6" />
+        <display value="Eravacycline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Eravacyclin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100050-4" />
+        <display value="Erythromycin+Ethambutol [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Erythromycin+Ethambutol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100051-2" />
+        <display value="Ethambutol+rifAMPin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ethambutol+Rifampicin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100052-0" />
+        <display value="Flomoxef [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Flomoxef [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100053-8" />
+        <display value="Fluoroquinolone [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Fluorchinolon [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100054-6" />
+        <display value="Gamithromycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="100055-3" />
+        <display value="Optochin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Optochin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100056-1" />
+        <display value="Panipenem [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Panipenem [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100057-9" />
+        <display value="Prothionamide [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Prothionamid [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100058-7" />
+        <display value="Prulifloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Prulifloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100059-5" />
+        <display value="Rifapentine [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Rifapentin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100060-3" />
+        <display value="Tildipirosin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="100061-1" />
+        <display value="Tosufloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Tosufloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="100699-8" />
+        <display value="Rifabutin+Ethambutol [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Rifabutin+Ethambutol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="103653-2" />
+        <display value="Ciprofloxacin [Susceptibility] for meningitis" />
+      </concept>
+      <concept>
+        <code value="103654-0" />
+        <display value="Meropenem [Susceptibility] for meningitis" />
+      </concept>
+      <concept>
+        <code value="103672-2" />
+        <display value="Amoxicillin+Clavulanate [Susceptibility] for UTI" />
+      </concept>
+      <concept>
+        <code value="1-8" />
+        <display value="Acyclovir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18855-7" />
+        <display value="5-Fluorocytosine [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="5-Fluorocytosin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18857-3" />
+        <display value="Almecillin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18859-9" />
+        <display value="Amdinocillin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18860-7" />
+        <display value="Amikacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Amikacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18861-5" />
+        <display value="Amoxicillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Amoxicillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18862-3" />
+        <display value="Amoxicillin+Clavulanate [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Amoxicillin+Clavulanat [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18863-1" />
+        <display value="Amphotericin B [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Amphotericin B [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18864-9" />
+        <display value="Ampicillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ampicillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18865-6" />
+        <display value="Ampicillin+Sulbactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ampicillin+Sulbactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18866-4" />
+        <display value="Azithromycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Azithromycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18867-2" />
+        <display value="Azlocillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Azlocillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18868-0" />
+        <display value="Aztreonam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Aztreonam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18869-8" />
+        <display value="Bacampicillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Bacampicillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18870-6" />
+        <display value="Bacitracin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Bacitracin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18871-4" />
+        <display value="Butirosin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18872-2" />
+        <display value="Capreomycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Capreomycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18873-0" />
+        <display value="Carbenicillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Carbenicillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18874-8" />
+        <display value="Cefaclor [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefaclor [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18875-5" />
+        <display value="Cefadroxil [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefadroxil [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18876-3" />
+        <display value="Cefamandole [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefamandol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18877-1" />
+        <display value="Cefatrizine [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefatrizin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18878-9" />
+        <display value="ceFAZolin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefazolin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18879-7" />
+        <display value="Cefepime [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefepim [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18880-5" />
+        <display value="Cefixime [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefixim [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18881-3" />
+        <display value="Cefmetazole [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefmetazol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18882-1" />
+        <display value="Cefodizime [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefodizim [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18883-9" />
+        <display value="Cefonicid [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefonicid [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18884-7" />
+        <display value="Cefoperazone [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefoperazon [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18885-4" />
+        <display value="Ceforanide [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ceforanid [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18886-2" />
+        <display value="Cefotaxime [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefotaxim [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18887-0" />
+        <display value="cefoTEtan [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefotetan [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18888-8" />
+        <display value="cefOXitin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefoxitin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18889-6" />
+        <display value="Cefpirome [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefpirom [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18890-4" />
+        <display value="Cefpodoxime [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefpodoxim [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18891-2" />
+        <display value="Cefprozil [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefprozil [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18892-0" />
+        <display value="Cefsulodin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefsulodin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18893-8" />
+        <display value="cefTAZidime [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ceftazidim [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18894-6" />
+        <display value="Ceftizoxime [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ceftizoxim [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18895-3" />
+        <display value="cefTRIAXone [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ceftriaxon [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18896-1" />
+        <display value="Cefuroxime Parenteral [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefuroxim parenteral [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18897-9" />
+        <display value="Cephalexin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cephalexin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18898-7" />
+        <display value="Cephaloglycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18899-5" />
+        <display value="Cephaloridine [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cephaloridin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18900-1" />
+        <display value="Cephalothin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cephalothin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18901-9" />
+        <display value="Cephapirin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cephapirin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18902-7" />
+        <display value="Cephradine [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cephradin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18903-5" />
+        <display value="Chloramphenicol [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Chloramphenicol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18904-3" />
+        <display value="Chlortetracycline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Chlortetracyclin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18905-0" />
+        <display value="Cinoxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cinoxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18906-8" />
+        <display value="Ciprofloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ciprofloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18907-6" />
+        <display value="Clarithromycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Clarithromycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18908-4" />
+        <display value="Clindamycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Clindamycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18909-2" />
+        <display value="Clotrimazole [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18910-0" />
+        <display value="Cloxacillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cloxacillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18911-8" />
+        <display value="Colistimethate" />
+      </concept>
+      <concept>
+        <code value="18912-6" />
+        <display value="Colistin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Colistin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18913-4" />
+        <display value="Cyclacillin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18914-2" />
+        <display value="cycloSERINE [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cycloserin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18915-9" />
+        <display value="Demeclocycline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Demeclocyclin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18916-7" />
+        <display value="Dicloxacillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Dicloxacillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18917-5" />
+        <display value="Doxycycline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Doxycyclin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18918-3" />
+        <display value="Enoxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Enoxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18919-1" />
+        <display value="Erythromycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Erythromycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18920-9" />
+        <display value="Erythromycin+Sulfisoxazole [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Erythromycin+Sulfisoxazol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18921-7" />
+        <display value="Ethambutol [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ethambutol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18922-5" />
+        <display value="Ethionamide [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ethionamid [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18923-3" />
+        <display value="Floxacillin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18924-1" />
+        <display value="Fluconazole [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18926-6" />
+        <display value="Framycetin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Framycetin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18927-4" />
+        <display value="Fusidate [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Fusidat [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18928-2" />
+        <display value="Gentamicin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Gentamicin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18929-0" />
+        <display value="Gentamicin.high potency [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Gentamicin.Hochdosis [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18930-8" />
+        <display value="Gramicidin D [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Gramicidin D [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18931-6" />
+        <display value="Hetacillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hetacillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18932-4" />
+        <display value="Imipenem [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Imipenem [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18934-0" />
+        <display value="Isoniazid [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Isoniazid [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18935-7" />
+        <display value="Kanamycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Kanamycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18936-5" />
+        <display value="Kanamycin.high potency [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Kanamycin.Hochdosis [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18937-3" />
+        <display value="Ketoconazole [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ketoconazol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18938-1" />
+        <display value="Lincomycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Lincomycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18939-9" />
+        <display value="Lomefloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Lomefloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18940-7" />
+        <display value="Loracarbef [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Loracarbef [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18941-5" />
+        <display value="Lymecycline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Lymecyclin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18942-3" />
+        <display value="Meclocycline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Meclocyclin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18943-1" />
+        <display value="Meropenem [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Meropenem [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18944-9" />
+        <display value="Methacycline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Methacyclin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18945-6" />
+        <display value="Methicillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Methicillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18946-4" />
+        <display value="metroNIDAZOLE [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Metronidazol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18947-2" />
+        <display value="Mezlocillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mezlocillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18948-0" />
+        <display value="Minocycline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Minocyclin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18949-8" />
+        <display value="Miocamycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Miocamycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18950-6" />
+        <display value="Moxalactam [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18951-4" />
+        <display value="Nafcillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Nafcillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18952-2" />
+        <display value="Nalidixate [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18953-0" />
+        <display value="Neomycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Neomycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18954-8" />
+        <display value="Netilmicin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Netilmicin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18955-5" />
+        <display value="Nitrofurantoin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Nitrofurantoin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18956-3" />
+        <display value="Norfloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Norfloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18957-1" />
+        <display value="Novobiocin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18958-9" />
+        <display value="Nystatin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18959-7" />
+        <display value="Ofloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ofloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18960-5" />
+        <display value="Oleandomycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Oleandomycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18961-3" />
+        <display value="Oxacillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Oxacillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18962-1" />
+        <display value="Oxytetracycline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Oxytetracyclin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18963-9" />
+        <display value="Pefloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Pefloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18964-7" />
+        <display value="Penicillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Penicillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18965-4" />
+        <display value="Penicillin G [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Penicillin G [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18966-2" />
+        <display value="Penicillin V [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Penicillin V [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18967-0" />
+        <display value="Phenethicillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Phenethicillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18968-8" />
+        <display value="Pipemidate [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18969-6" />
+        <display value="Piperacillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Piperacillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18970-4" />
+        <display value="Piperacillin+Tazobactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Piperacillin+Tazobactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18971-2" />
+        <display value="Pivampicillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Pivampicillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18972-0" />
+        <display value="Polymyxin B [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Polymyxin B [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18973-8" />
+        <display value="Pyrazinamide [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Pyrazinamid [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18974-6" />
+        <display value="rifAMPin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Rifampicin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18975-3" />
+        <display value="Ristocetin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18976-1" />
+        <display value="Rolitetracycline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Rolitetracyclin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18977-9" />
+        <display value="Rosoxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Rosoxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18978-7" />
+        <display value="Roxithromycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Roxithromycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18979-5" />
+        <display value="Sisomicin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Sisomicin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18980-3" />
+        <display value="Spectinomycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Spectinomycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18981-1" />
+        <display value="Spiramycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Spiramycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18982-9" />
+        <display value="Streptomycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Streptomycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18983-7" />
+        <display value="Streptomycin.high potency [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Streptomycin.Hochdosis [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18984-5" />
+        <display value="sulfADIAZINE [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Sulfadiazin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18985-2" />
+        <display value="Sulfamethoxazole [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Sulfamethoxazol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18986-0" />
+        <display value="sulfiSOXAZOLE [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Sulfisoxazol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18987-8" />
+        <display value="Sulfonamide [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Sulfonamid [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18988-6" />
+        <display value="Talampicillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Talampicillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18989-4" />
+        <display value="Teicoplanin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Teicoplanin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18990-2" />
+        <display value="Temafloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Temafloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18991-0" />
+        <display value="Temocillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Temocillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18992-8" />
+        <display value="Terbinafine [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18993-6" />
+        <display value="Tetracycline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Tetracyclin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18994-4" />
+        <display value="Ticarcillin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ticarcillin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18995-1" />
+        <display value="Ticarcillin+Clavulanate [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ticarcillin+Clavulanat [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18996-9" />
+        <display value="Tobramycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Tobramycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18997-7" />
+        <display value="Trimethoprim [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Trimethoprim [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18998-5" />
+        <display value="Trimethoprim+Sulfamethoxazole [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Trimethoprim+Sulfamethoxazol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="18999-3" />
+        <display value="Troleandomycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Troleandomycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="19000-9" />
+        <display value="Vancomycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Vancomycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="19001-7" />
+        <display value="Viomycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="19149-4" />
+        <display value="Rifabutin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Rifabutin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="20388-5" />
+        <display value="Nitrofurazone [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Nitrofurazon [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="20389-3" />
+        <display value="Mupirocin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mupirocin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="20390-1" />
+        <display value="Silver sulfADIAZINE [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Sulfadiazin-Silber [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="20391-9" />
+        <display value="Mafenide [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="20629-2" />
+        <display value="levoFLOXacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Levofloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="23627-3" />
+        <display value="Clofazimine [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Clofazimin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="23628-1" />
+        <display value="Sparfloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Sparfloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="23629-9" />
+        <display value="Para aminosalicylate [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Para-Aminosalicylat [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="23636-4" />
+        <display value="Cefdinir [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefdinir [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="23638-0" />
+        <display value="Grepafloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Grepafloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="23640-6" />
+        <display value="Quinupristin+Dalfopristin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Quinupristin+Dalfopristin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="23642-2" />
+        <display value="Trovafloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Trovafloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="23658-8" />
+        <display value="Other Antibiotic [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Anderes Antibiotikum [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="23659-6" />
+        <display value="Apramycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="23709-9" />
+        <display value="Ceftiofur [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="23712-3" />
+        <display value="Enrofloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="23740-4" />
+        <display value="Florfenicol [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="25595-0" />
+        <display value="Econazole [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Econazol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="25596-8" />
+        <display value="Fosfomycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Fosfomycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="25597-6" />
+        <display value="Josamycine [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Josamycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="25607-3" />
+        <display value="Miconazole [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Miconazol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="25608-1" />
+        <display value="Nitroxoline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Nitroxolin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="256-8" />
+        <display value="Foscarnet [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="265-9" />
+        <display value="Ganciclovir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="29258-1" />
+        <display value="Linezolid [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Linezolid [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="30298-4" />
+        <display value="lamiVUDine [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Lamivudin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="30299-2" />
+        <display value="Amprenavir [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Amprenavir [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="30300-8" />
+        <display value="Didanosine [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Didanosin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="30301-6" />
+        <display value="Zalcitabine [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="30302-4" />
+        <display value="Stavudine [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="30303-2" />
+        <display value="Abacavir [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Abacavir [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="30304-0" />
+        <display value="Adefovir [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Adefovir [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="30305-7" />
+        <display value="Delavirdine [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Delavirdin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="30306-5" />
+        <display value="Efavirenz [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="30307-3" />
+        <display value="Indinavir [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Indinavir [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="30308-1" />
+        <display value="Ritonavir [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ritonavir [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="30309-9" />
+        <display value="Nelfinavir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="30310-7" />
+        <display value="Saquinavir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="30311-5" />
+        <display value="Nevirapine [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="31038-3" />
+        <display value="Gatifloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Gatifloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="31039-1" />
+        <display value="Moxifloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Moxifloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="32372-5" />
+        <display value="Fleroxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Fleroxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="32373-3" />
+        <display value="Arbekacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Arbekacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="32374-1" />
+        <display value="Cefotiam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefotiam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="32375-8" />
+        <display value="Cefmenoxime [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefmenoxim [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="32376-6" />
+        <display value="Clinafloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="32377-4" />
+        <display value="Cefetamet [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefetamet [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="32378-2" />
+        <display value="Caspofungin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="32379-0" />
+        <display value="Voriconazole [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="32381-6" />
+        <display value="Isepamicin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Isepamicin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="32383-2" />
+        <display value="Pristinamycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Pristinamycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="32384-0" />
+        <display value="Thiacetazone [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="32597-7" />
+        <display value="Natamycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Natamycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="32603-3" />
+        <display value="Itraconazole [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Itraconazol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="33627-1" />
+        <display value="Tenofovir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="33628-9" />
+        <display value="Cidofovir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35756-6" />
+        <display value="Avilamycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35762-4" />
+        <display value="Cefditoren [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefditoren [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="35771-5" />
+        <display value="Cefotaxime+Clavulanate [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefotaxim+Clavulanat [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="35776-4" />
+        <display value="cefTAZidime+Clavulanate [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ceftazidim+Clavulanat [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="35779-8" />
+        <display value="Ceftibuten [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ceftibuten [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="35783-0" />
+        <display value="Cefuroxime Oral [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefuroxim oral [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="35789-7" />
+        <display value="DAPTOmycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Daptomycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="35792-1" />
+        <display value="Difloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35795-4" />
+        <display value="Dirithromycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Dirithromycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="35802-8" />
+        <display value="Ertapenem [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ertapenem [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="35805-1" />
+        <display value="Bambermycins [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35813-5" />
+        <display value="Garenoxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Garenoxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="35816-8" />
+        <display value="Gemifloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Gemifloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="35827-5" />
+        <display value="Orbifloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35831-7" />
+        <display value="Pirlimycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35838-2" />
+        <display value="Salinomycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35845-7" />
+        <display value="Telithromycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Telithromycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="35848-1" />
+        <display value="Tiamulin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35851-5" />
+        <display value="Tilmicosin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35854-9" />
+        <display value="Trospectinomycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35858-0" />
+        <display value="Tylosin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35861-4" />
+        <display value="Virginiamycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Virginiamycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="35874-7" />
+        <display value="Penicillin+Novobiocin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Penicillin+Novobiocin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41726-1" />
+        <display value="ABT492 [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="ABT492 [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41727-9" />
+        <display value="Aztreonam+Clavulanate [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Aztreonam+Clavulanat [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41728-7" />
+        <display value="Biapenem [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Biapenem [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41729-5" />
+        <display value="cefoTEtan+Clavulanate [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefotetan+Clavulanat [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41730-3" />
+        <display value="cefOXitin+Clavulanate [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefoxitin+Clavulanat [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41731-1" />
+        <display value="Cefpodoxime+Clavulanate [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefpodoxim+Clavulanat [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41732-9" />
+        <display value="cefTRIAXone+Clavulanate [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ceftriaxon+Clavulanat [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41733-7" />
+        <display value="Clavulanate [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Clavulanat [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41734-5" />
+        <display value="Dalbavancin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Dalbavancin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41735-2" />
+        <display value="Everninomicin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="41736-0" />
+        <display value="Oritavancin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Oritavancin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41737-8" />
+        <display value="Ramoplanin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="41738-6" />
+        <display value="Rosamicin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="41739-4" />
+        <display value="Sulbactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Sulbactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41740-2" />
+        <display value="Tazobactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Tazobactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41993-7" />
+        <display value="Atazanavir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="42353-3" />
+        <display value="Cefepime+Clavulanate [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefepim+Clavulanat [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="42357-4" />
+        <display value="Tigecycline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Tigecyclin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="42535-5" />
+        <display value="Tipranavir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="43272-4" />
+        <display value="Ceftobiprole [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ceftobiprol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="50633-7" />
+        <display value="cefTRIAXone [Susceptibility] for meningitis" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ceftriaxon [Empfindlichkeit] für Meningitis" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="50712-9" />
+        <display value="Influenza virus.neuraminidase inhibitor resistance [Susceptibility] Qualitative" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Influenza-Virus.Neuraminidaseinhibitor-Resistenz [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="51503-1" />
+        <display value="Penicillin G procaine [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Penicillin G Procain [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="51504-9" />
+        <display value="Penicillin G benzathine [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Penicillin G Benzathin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="51694-8" />
+        <display value="Carumonam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Carumonam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="51698-9" />
+        <display value="Dapsone [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Dapson [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="51719-3" />
+        <display value="Paromomycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Paromomycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="51724-3" />
+        <display value="Cefuroxime [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefuroxim [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="52128-6" />
+        <display value="Cefotaxime [Susceptibility] for meningitis" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefotaxim [Empfindlichkeit] für Meningitis" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="531-4" />
+        <display value="Zidovudine [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="54166-4" />
+        <display value="Cefoperazone+Sulbactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefoperazon+Sulbactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="54169-8" />
+        <display value="Thiamphenicol [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Thiamphenicol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="54170-6" />
+        <display value="Imipenem+EDTA [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Imipenem+EDTA [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="54188-8" />
+        <display value="Posaconazole [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="54191-2" />
+        <display value="Cefotaxime+Sulbactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefotaxim+Sulbactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="54194-6" />
+        <display value="Mezlocillin+Sulbactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mezlocillin+Sulbactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="54197-9" />
+        <display value="Piperacillin+Sulbactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Piperacillin+Sulbactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="54200-1" />
+        <display value="Griseofulvin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="54908-9" />
+        <display value="Cefminox [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefminox [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="54928-7" />
+        <display value="Tinidazole [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Tinidazol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="55196-0" />
+        <display value="Terconazole [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="55289-3" />
+        <display value="Sulopenem [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="55292-7" />
+        <display value="Linopristin+Flopristin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="55614-2" />
+        <display value="Amoxicillin+Sulbactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Amoxicillin+Sulbactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="55625-8" />
+        <display value="Cefacetrile [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefacetril [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="55631-6" />
+        <display value="Cephalothin+Sulbactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cephalothin+Sulbactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="55635-7" />
+        <display value="Cefamandole+Sulbactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefamandol+Sulbactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="55649-8" />
+        <display value="cefTAZidime+Sulbactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ceftazidim+Sulbactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="55657-1" />
+        <display value="Clindamycin.high potency [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Clindamycin.Hochdosis [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="55670-4" />
+        <display value="Dibekacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Dibekacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="55676-1" />
+        <display value="Flumequine [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Flumequin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="55682-9" />
+        <display value="Isoconazole [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Isoconazol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="55691-0" />
+        <display value="Ornidazole [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ornidazol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="55696-9" />
+        <display value="Oxolinate [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="55706-6" />
+        <display value="Piromidate [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="55717-3" />
+        <display value="Ticarcillin+Sulbactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ticarcillin+Sulbactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="55738-9" />
+        <display value="Cefotiam hexetil [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefotiamhexetil [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="57095-2" />
+        <display value="Anidulafungin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="57896-3" />
+        <display value="Influenza virus A 2009 H1N1v.neuraminidase inhibitor resistance [Susceptibility] in Specimen by Genotype method" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Influenza-Virus A 2009 H1N1v.Neuraminidaseinhibitor-Resistenz [Empfindlichkeit] in Probenmaterial mittels Genotypisierung" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="58080-3" />
+        <display value="Penicillin Parenteral [Susceptibility] for meningitis" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Penicillin parenteral [Empfindlichkeit] für Meningitis" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="58085-2" />
+        <display value="Penicillin Parenteral [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Penicillin parenteral [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="60535-2" />
+        <display value="Doripenem [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Doripenem [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="61188-9" />
+        <display value="Clindamycin.induced [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Clindamycin.induziert [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="65340-2" />
+        <display value="Micafungin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="6-7" />
+        <display value="Amantadine [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="69574-2" />
+        <display value="Furazolidone [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Furazolidon [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="6984-9" />
+        <display value="Beta lactamase.extended spectrum [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Beta-Lactamase.Breitspektrum [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="6985-6" />
+        <display value="Beta lactamase.usual [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Beta-Lactamase.normal [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="73585-2" />
+        <display value="Tizoxanide [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="73586-0" />
+        <display value="Tedizolid [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Tedizolid [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="73587-8" />
+        <display value="Solithromycin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Solithromycin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="73588-6" />
+        <display value="Sarafloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="73589-4" />
+        <display value="rifAXIMin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Rifaximin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="73590-2" />
+        <display value="Razupenem [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="73591-0" />
+        <display value="Premafloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="73592-8" />
+        <display value="Plazomicin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Plazomicin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="73594-4" />
+        <display value="Omadacycline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Omadacyclin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="73595-1" />
+        <display value="Nitazoxanide [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Nitazoxanid [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="73596-9" />
+        <display value="Marbofloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="73597-7" />
+        <display value="Iclaprim [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Iclaprim [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="73598-5" />
+        <display value="Finafloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="73599-3" />
+        <display value="Fidaxomicin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Fidaxomicin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="73600-9" />
+        <display value="Faropenem [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Faropenem [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="73601-7" />
+        <display value="Danofloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="73602-5" />
+        <display value="Ceftolozane+Tazobactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ceftolozan+Tazobactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="73603-3" />
+        <display value="cefTAZidime+Avibactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ceftazidim+Avibactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="73604-1" />
+        <display value="Ceftaroline+Avibactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ceftarolin+Avibactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="73605-8" />
+        <display value="Ceftaroline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Ceftarolin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="73606-6" />
+        <display value="Besifloxacin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Besifloxacin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="87791-0" />
+        <display value="Carbadox [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="87792-8" />
+        <display value="Cefovecin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="87797-7" />
+        <display value="Sulfathiazole [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Sulfathiazol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="87798-5" />
+        <display value="Tulathromycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="87800-9" />
+        <display value="Pradofloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="87802-5" />
+        <display value="Sulfachloropyridazine [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="87803-3" />
+        <display value="Sulfadimethoxine [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Sulfadimethoxin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="88462-7" />
+        <display value="Carbapenem [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Carbapenem [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="88885-9" />
+        <display value="Delafloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="88886-7" />
+        <display value="Telavancin [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Telavancin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="88887-5" />
+        <display value="Isavuconazole [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="88892-5" />
+        <display value="Meropenem+Vaborbactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Meropenem+Vaborbactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="93850-6" />
+        <display value="Pretomanid [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Pretomanid [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="93851-4" />
+        <display value="Delamanid [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Delamanid [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="94274-8" />
+        <display value="Bedaquiline [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Bedaquilin [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="96372-8" />
+        <display value="Imipenem+Relebactam [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Imipenem+Relebactam [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="97941-9" />
+        <display value="Cycloheximide [Susceptibility] in Isolate Qualitative" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cycloheximid [Empfindlichkeit] in Isolat" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="99280-0" />
+        <display value="Cefiderocol [Susceptibility]" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cefiderocol [Empfindlichkeit]" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="99281-8" />
+        <display value="Lefamulin [Susceptibility]" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
