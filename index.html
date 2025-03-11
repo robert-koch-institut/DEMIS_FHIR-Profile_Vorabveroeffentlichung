@@ -92,7 +92,13 @@
         <p>Das Paket rki.demis.igs erweitert die Ressourcen des rki.demis.laboratory-Paketes für die Integrierte
             Genomische Surveillance (IGS).</p>
         <blockquote>
-            <h3>Version rki.demis.igs-3.0.0-rc.1 (13.12.2024)</h3>
+            <font size="2" face="verdana" color="red">
+            <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.igs-Paket. Seit 11.03.2025
+                    wird die Version rki.demis.igs-3.0.0 durch das DEMIS-Backend unterstützt. Das entsprechende
+                    Simplifier-Projekt <a href="https://simplifier.net/rki.demis.igs">https://simplifier.net/rki.demis.igs</a>
+                    wurde aktualisiert.</p>
+        </font>    
+        <!--<h3>Version rki.demis.igs-3.0.0-rc.1 (13.12.2024)</h3>
             <a class="package-link" href="./rki.demis.igs/rki.demis.igs-3.0.0-rc.1/Home.html">Leitfaden</a>
             <a href="./rki.demis.igs/rki.demis.igs-3.0.0-rc.1/Vorab rki.demis.igs-3.0.0-rc.1@current.zip">Download ZIP</a>
 			<br/>Change log (gegenüber rki.demis.igs-1.0.0-alpha.2):
@@ -106,65 +112,7 @@
 				<li>Update auf SNOMED-Version 20240515 (betrifft ValueSet SequencingReason und UploadStatus)</li>
 				<li>Beschreibung des Up- und Downloadprozesses aktualisiert</li>
 			</ul>
-			<br/>
-            <h3>Version rki.demis.igs-1.0.0-alpha.2 (26.01.2024)</h3>
-            <a class="package-link" href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.2/Home.html">Leitfaden</a>
-            <a href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.2/IGS-1.0.0-alpha.2-vorab@current.zip">Download ZIP</a>
-            <br/>Change log (gegenüber rki.demis.igs-1.0.0-alpha.1):
-            <ul>
-                <li>Update auf SNOMED 20230901</li>
-                <li>SNOMED-Code 58147004 (Clinical (qualifier value)) in ValueSet SequencingReason hinzugefügt</li>
-                <li>Beispiele aktualisiert</li>
-                <li>Schärfung der Beschreibungstexte der Ressourcen und des Leitfadens</li>
-                <li>mustSupport-Markierungen für Unterelemente hinzugefügt</li>
-                <li>FHIR-technische Verbesserungen:</li>
-                <ul>
-                    <li>meta-Tag ist verpflichtend</li>
-                    <li>Kompatibilität der CodeSysteme und ValueSets mit Shareable CodeSystem bzw. Shareable ValueSet
-                        ist sichergestellt: publisher- und experimental-Tag wurden hinzugefügt
-                    </li>
-                    <li>an Stelle von fixed Values werden pattern definiert</li>
-                </ul>
-            </ul>
-            <br/>
-            <h3>Version rki.demis.igs-1.0.0-alpha.1 (28.07.2023)</h3>
-            <a class="package-link" href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.1/Home.html">Leitfaden</a>
-            <a href="./rki.demis.igs/rki.demis.igs-1.0.0-alpha.1/Leitfaden Integrierte Genomische Surveillance@current.zip">Download ZIP</a>
-            <font size="2" face="verdana" color="red">
-                <br/>
-                Hinweise:
-                <ul>
-                    <li>Diese Erstveröffentlichung als separates Paket rki.demis.igs beinhaltet eine Erweiterung der
-                        Ressourcen für die Integrierte Genomische Surveillance (IGS), welche als Bestandteil des
-                        rki.demis.r4.core-1.25.0-alpha.1-Paketes im Dezember 2022 vorab veröffentlicht wurde. Das
-                        rki.demis.r4.core mit Versionsnummer 1.25.X wird nicht fortgeführt, die Weiterentwicklung der
-                        IGS-Ressourcen erfolgt innerhalb des rki.demis.igs-Paketes.
-                    <li>Dependencies: rki.demis.r4.core-1.24.0-alpha.2</p>
-                </ul>
-            </font>
-            Change log (gegenüber rki.demis.r4.core-1.25.0-alpha.1):
-            <ul>
-                <li>Integrierte Molekulare Surveillance (IMS) in Integrierte Genomische Surveillance (IGS) umbenannt
-                </li>
-                <li>Ressourcen für die Meldungsverarbeitung hinzugefügt (ProcessNotificationSequence, Parameters)</li>
-                <li>die Ressourcen Laborbericht, Erregernachweis und Probe der DEMIS-Labormeldung
-                    (https://simplifier.net/demis) werden nicht genutzt; an Stelle dessen wurden davon abgeleitete
-                    spezifische Ressourcen für die Sequenzmeldung angelegt
-                </li>
-                <li>Ressourcen zur Angabe des Sequenzierungsgrundes, des Gerätenamens, des Sequenziermaterials (Primer
-                    Scheme) und des Formates der Sequenz hinzugefügt
-                </li>
-                <li>Formatprüfung für die Transaktion-Id hinzugefügt; die Transaktion-Id kann als string oder als
-                    Identifier angegeben werden
-                </li>
-                <li>SpecimenSequence.processing.time erlaubt nur dateTime</li>
-                <li>Leitfaden hinzugefügt, inklusive einer Beschreibung des Lifecyclemanagements und des Datenuploads
-                </li>
-                <li>Beispiele hinzugefügt
-            </ul>
-            <br/>
-
-
+			<br/>-->
         </blockquote>
         <h2>FHIR-Profile Erkrankungsmeldung (rki.demis.disease)</h2>
         <p>Das Paket rki.demis.disease beinhaltet die Ressourcen für die Erkrankungsmeldung.</p>
