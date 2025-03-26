@@ -1,0 +1,2644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetECOP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetECOP" />
+  <version value="1.8.0" />
+  <name value="AnswerSetECOP" />
+  <title value="AnswerSet für Escherichia coli (sonstige darmpathogene Stämme)" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-02-25" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet AnswerSetECOP enthält die Codes der Answer-Codes für Escherichia coli (sonstige darmpathogene Stämme)." />
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20241115" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="65" />
+        </extension>
+        <code value="1085101000112108" />
+        <display value="Escherichia coli serogroup O182 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O182 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O182" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="162" />
+        </extension>
+        <code value="1112001000112105" />
+        <display value="Escherichia coli serogroup O28ab (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O28ab (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O28ab" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="200" />
+        </extension>
+        <code value="112283007" />
+        <display value="Escherichia coli (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="195" />
+        </extension>
+        <code value="116394005" />
+        <display value="Enterotoxigenic Escherichia coli (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Enterotoxigenic Escherichia coli (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Enterotoxigene Escherichia coli" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="197" />
+        </extension>
+        <code value="116396007" />
+        <display value="Enteroinvasive Escherichia coli (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Enteroinvasive Escherichia coli (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Enteroinvasive Escherichia coli" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="198" />
+        </extension>
+        <code value="116397003" />
+        <display value="Enteroaggregative Escherichia coli (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Enteroaggregative Escherichia coli (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Enteroaggregative Escherichia coli" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="172" />
+        </extension>
+        <code value="1269432003" />
+        <display value="Escherichia coli serogroup O16 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O16 (organism)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="185" />
+        </extension>
+        <code value="131260002" />
+        <display value="Escherichia coli serogroup O26 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O26 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O26" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="189" />
+        </extension>
+        <code value="131261003" />
+        <display value="Escherichia coli serogroup O111 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O111 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O111" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="170" />
+        </extension>
+        <code value="26451000087103" />
+        <display value="Escherichia coli serogroup O19 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O19 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O19" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="173" />
+        </extension>
+        <code value="407162008" />
+        <display value="Escherichia coli serogroup O15 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O15 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O15" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="169" />
+        </extension>
+        <code value="407164009" />
+        <display value="Escherichia coli serogroup O20 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O20 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O20" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="192" />
+        </extension>
+        <code value="407166006" />
+        <display value="Escherichia coli serogroup O157 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O157 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O157" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="165" />
+        </extension>
+        <code value="407167002" />
+        <display value="Escherichia coli serogroup O25 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O25 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O25" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="164" />
+        </extension>
+        <code value="407170003" />
+        <display value="Escherichia coli serogroup O27 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O27 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O27" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="153" />
+        </extension>
+        <code value="407174007" />
+        <display value="Escherichia coli serogroup O49 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O49 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O49" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="147" />
+        </extension>
+        <code value="407176009" />
+        <display value="Escherichia coli serogroup O63 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O63 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O63" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="136" />
+        </extension>
+        <code value="407178005" />
+        <display value="Escherichia coli serogroup O78 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O78 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O78" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="104" />
+        </extension>
+        <code value="407181000" />
+        <display value="Escherichia coli serogroup O128 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O128 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O128" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="92" />
+        </extension>
+        <code value="407183002" />
+        <display value="Escherichia coli serogroup O148 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O148 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O148" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="88" />
+        </extension>
+        <code value="407185009" />
+        <display value="Escherichia coli serogroup O153 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O153 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O153" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="85" />
+        </extension>
+        <code value="407187001" />
+        <display value="Escherichia coli serogroup O159 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O159 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O159" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="78" />
+        </extension>
+        <code value="407191006" />
+        <display value="Escherichia coli serogroup O167 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O167 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O167" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="76" />
+        </extension>
+        <code value="407193009" />
+        <display value="Escherichia coli serogroup O169 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O169 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O169" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="149" />
+        </extension>
+        <code value="407195002" />
+        <display value="Escherichia coli serogroup O55 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O55 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O55" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="128" />
+        </extension>
+        <code value="407200006" />
+        <display value="Escherichia coli serogroup O86 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O86 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O86" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="116" />
+        </extension>
+        <code value="407205001" />
+        <display value="Escherichia coli serogroup O114 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O114 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O114" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="111" />
+        </extension>
+        <code value="407208004" />
+        <display value="Escherichia coli serogroup O119 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O119 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O119" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="107" />
+        </extension>
+        <code value="407210002" />
+        <display value="Escherichia coli serogroup O125 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O125 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O125" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="106" />
+        </extension>
+        <code value="407212005" />
+        <display value="Escherichia coli serogroup O126 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O126 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O126" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="105" />
+        </extension>
+        <code value="407215007" />
+        <display value="Escherichia coli serogroup O127 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O127 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O127" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="96" />
+        </extension>
+        <code value="407223009" />
+        <display value="Escherichia coli serogroup O142 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O142 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O142" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="163" />
+        </extension>
+        <code value="407226001" />
+        <display value="Escherichia coli serogroup O28 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O28 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O28" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="160" />
+        </extension>
+        <code value="407228000" />
+        <display value="Escherichia coli serogroup O29 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O29 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O29" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="118" />
+        </extension>
+        <code value="407230003" />
+        <display value="Escherichia coli serogroup O112 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O112 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O112" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="108" />
+        </extension>
+        <code value="407232006" />
+        <display value="Escherichia coli serogroup O124 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O124 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O124" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100" />
+        </extension>
+        <code value="407236009" />
+        <display value="Escherichia coli serogroup O136 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O136 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O136" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="95" />
+        </extension>
+        <code value="407238005" />
+        <display value="Escherichia coli serogroup O143 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O143 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O143" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="94" />
+        </extension>
+        <code value="407240000" />
+        <display value="Escherichia coli serogroup O144 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O144 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O144" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="89" />
+        </extension>
+        <code value="407242008" />
+        <display value="Escherichia coli serogroup O152 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O152 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O152" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="81" />
+        </extension>
+        <code value="407244009" />
+        <display value="Escherichia coli serogroup O164 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O164 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O164" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="183" />
+        </extension>
+        <code value="407250004" />
+        <display value="Escherichia coli serogroup O1 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O1 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O1" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="182" />
+        </extension>
+        <code value="407252007" />
+        <display value="Escherichia coli serogroup O2 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O2 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O2" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="180" />
+        </extension>
+        <code value="407255009" />
+        <display value="Escherichia coli serogroup O5 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O5 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O5" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="176" />
+        </extension>
+        <code value="407257001" />
+        <display value="Escherichia coli serogroup O9 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O9 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O9" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="174" />
+        </extension>
+        <code value="407259003" />
+        <display value="Escherichia coli serogroup O14 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O14 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O14" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="167" />
+        </extension>
+        <code value="407261007" />
+        <display value="Escherichia coli serogroup O22 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O22 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O22" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="154" />
+        </extension>
+        <code value="407266002" />
+        <display value="Escherichia coli serogroup O45 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O45 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O45" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="186" />
+        </extension>
+        <code value="407268001" />
+        <display value="Escherichia coli serogroup O48 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O48 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O48" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="152" />
+        </extension>
+        <code value="407270005" />
+        <display value="Escherichia coli serogroup O50 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O50 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O50" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="135" />
+        </extension>
+        <code value="407272002" />
+        <display value="Escherichia coli serogroup O79 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O79 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O79" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="131" />
+        </extension>
+        <code value="407274001" />
+        <display value="Escherichia coli serogroup O83 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O83 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O83" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="187" />
+        </extension>
+        <code value="407276004" />
+        <display value="Escherichia coli serogroup O91 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O91 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O91" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="188" />
+        </extension>
+        <code value="407280009" />
+        <display value="Escherichia coli serogroup O103 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O103 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O103" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="122" />
+        </extension>
+        <code value="407282001" />
+        <display value="Escherichia coli serogroup O104 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O104 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O104" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="117" />
+        </extension>
+        <code value="407286003" />
+        <display value="Escherichia coli serogroup O113 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O113 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O113" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="112" />
+        </extension>
+        <code value="407288002" />
+        <display value="Escherichia coli serogroup O118 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O118 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O118" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="110" />
+        </extension>
+        <code value="407292009" />
+        <display value="Escherichia coli serogroup O121 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O121 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O121" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="99" />
+        </extension>
+        <code value="407296007" />
+        <display value="Escherichia coli serogroup O137 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O137 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O137" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="190" />
+        </extension>
+        <code value="407298008" />
+        <display value="Escherichia coli serogroup O145 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O145 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O145" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="82" />
+        </extension>
+        <code value="407302000" />
+        <display value="Escherichia coli serogroup O163 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O163 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O163" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="80" />
+        </extension>
+        <code value="407304004" />
+        <display value="Escherichia coli serogroup O165 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O165 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O165" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="73" />
+        </extension>
+        <code value="407307006" />
+        <display value="Escherichia coli serogroup O172 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O172 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O172" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="193" />
+        </extension>
+        <code value="407309009" />
+        <display value="Escherichia coli serogroup Orough (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup Orough (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O rau" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="184" />
+        </extension>
+        <code value="414132004" />
+        <display value="Escherichia coli not O157 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli not O157 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli nicht O157" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="199" />
+        </extension>
+        <code value="416989002" />
+        <display value="Diffuse adherence Escherichia coli (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Diffuse adherence Escherichia coli (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Diffus adhärierende Escherichia coli" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="72" />
+        </extension>
+        <code value="422953009" />
+        <display value="Escherichia coli serogroup O174 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O174 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O174" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="68" />
+        </extension>
+        <code value="424672005" />
+        <display value="Escherichia coli serogroup O178 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O178 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O178" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="79" />
+        </extension>
+        <code value="425004001" />
+        <display value="Escherichia coli serogroup O166 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O166 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O166" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="86" />
+        </extension>
+        <code value="427294000" />
+        <display value="Escherichia coli serogroup O158 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O158 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O158" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="127" />
+        </extension>
+        <code value="432096007" />
+        <display value="Escherichia coli serogroup O88 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O88 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O88" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="67" />
+        </extension>
+        <code value="442019004" />
+        <display value="Escherichia coli serogroup O179 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O179 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O179" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="103" />
+        </extension>
+        <code value="442109007" />
+        <display value="Escherichia coli serogroup O130 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O130 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O130" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="144" />
+        </extension>
+        <code value="442282007" />
+        <display value="Escherichia coli serogroup O69 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O69 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O69" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="130" />
+        </extension>
+        <code value="443091009" />
+        <display value="Escherichia coli serogroup O84 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O84 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O84" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="179" />
+        </extension>
+        <code value="450477004" />
+        <display value="Escherichia coli serogroup O6 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O6 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O6" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="177" />
+        </extension>
+        <code value="450478009" />
+        <display value="Escherichia coli serogroup O8 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O8 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O8" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="66" />
+        </extension>
+        <code value="457140000" />
+        <display value="Escherichia coli serogroup O181 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O181 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O181" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="69" />
+        </extension>
+        <code value="457145005" />
+        <display value="Escherichia coli serogroup O177 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O177 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O177" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="71" />
+        </extension>
+        <code value="457297005" />
+        <display value="Escherichia coli serogroup O175 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O175 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O175" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="90" />
+        </extension>
+        <code value="457354003" />
+        <display value="Escherichia coli serogroup O150 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O150 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O150" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="91" />
+        </extension>
+        <code value="457374005" />
+        <display value="Escherichia coli serogroup O149 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O149 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O149" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="93" />
+        </extension>
+        <code value="457394001" />
+        <display value="Escherichia coli serogroup O146 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O146 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O146" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="77" />
+        </extension>
+        <code value="457571003" />
+        <display value="Escherichia coli serogroup O168 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O168 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O168" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="83" />
+        </extension>
+        <code value="457846008" />
+        <display value="Escherichia coli serogroup O162 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O162 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O162" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="84" />
+        </extension>
+        <code value="457880006" />
+        <display value="Escherichia coli serogroup O160 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O160 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O160" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="191" />
+        </extension>
+        <code value="457907005" />
+        <display value="Escherichia coli serotype O157:nonmotile (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serotype O157:nonmotile (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serotyp O157:nicht-motil" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="87" />
+        </extension>
+        <code value="457944005" />
+        <display value="Escherichia coli serogroup O156 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O156 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O156" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="97" />
+        </extension>
+        <code value="457991003" />
+        <display value="Escherichia coli serogroup O141 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O141 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O141" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="98" />
+        </extension>
+        <code value="458025003" />
+        <display value="Escherichia coli serogroup O140 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O140 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O140" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="102" />
+        </extension>
+        <code value="458051001" />
+        <display value="Escherichia coli serogroup O132 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O132 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O132" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="109" />
+        </extension>
+        <code value="458071005" />
+        <display value="Escherichia coli serogroup O123 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O123 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O123" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="181" />
+        </extension>
+        <code value="458089006" />
+        <display value="Escherichia coli serogroup O3 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O3 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O3" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="178" />
+        </extension>
+        <code value="458090002" />
+        <display value="Escherichia coli serogroup O7 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O7 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O7" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="175" />
+        </extension>
+        <code value="458091003" />
+        <display value="Escherichia coli serogroup O11 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O11 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O11" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="171" />
+        </extension>
+        <code value="458110000" />
+        <display value="Escherichia coli serogroup O18 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O18 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O18" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="168" />
+        </extension>
+        <code value="458115005" />
+        <display value="Escherichia coli serogroup O21 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O21 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O21" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="166" />
+        </extension>
+        <code value="458119004" />
+        <display value="Escherichia coli serogroup O24 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O24 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O24" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="158" />
+        </extension>
+        <code value="458136007" />
+        <display value="Escherichia coli serogroup O38 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O38 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O38" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="157" />
+        </extension>
+        <code value="458138008" />
+        <display value="Escherichia coli serogroup O42 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O42 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O42" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="156" />
+        </extension>
+        <code value="458140003" />
+        <display value="Escherichia coli serogroup O43 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O43 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O43" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="151" />
+        </extension>
+        <code value="458152005" />
+        <display value="Escherichia coli serogroup O52 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O52 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O52" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="150" />
+        </extension>
+        <code value="458154006" />
+        <display value="Escherichia coli serogroup O53 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O53 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O53" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="148" />
+        </extension>
+        <code value="458160006" />
+        <display value="Escherichia coli serogroup O60 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O60 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O60" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="113" />
+        </extension>
+        <code value="459071004" />
+        <display value="Escherichia coli serogroup O117 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O117 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O117" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="114" />
+        </extension>
+        <code value="459074007" />
+        <display value="Escherichia coli serogroup O116 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O116 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O116" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="115" />
+        </extension>
+        <code value="459077000" />
+        <display value="Escherichia coli serogroup O115 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O115 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O115" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="119" />
+        </extension>
+        <code value="459092004" />
+        <display value="Escherichia coli serogroup O110 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O110 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O110" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="120" />
+        </extension>
+        <code value="459096001" />
+        <display value="Escherichia coli serogroup O109 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O109 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O109" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="123" />
+        </extension>
+        <code value="459106006" />
+        <display value="Escherichia coli serogroup O101 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O101 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O101" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="124" />
+        </extension>
+        <code value="459107002" />
+        <display value="Escherichia coli serogroup O100 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O100 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O100" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="125" />
+        </extension>
+        <code value="459109004" />
+        <display value="Escherichia coli serogroup O98 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O98 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O98" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="129" />
+        </extension>
+        <code value="459121000" />
+        <display value="Escherichia coli serogroup O85 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O85 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O85" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="132" />
+        </extension>
+        <code value="459128006" />
+        <display value="Escherichia coli serogroup O82 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O82 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O82" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="134" />
+        </extension>
+        <code value="459130008" />
+        <display value="Escherichia coli serogroup O80 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O80 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O80" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="138" />
+        </extension>
+        <code value="459136002" />
+        <display value="Escherichia coli serogroup O76 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O76 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O76" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="140" />
+        </extension>
+        <code value="459141005" />
+        <display value="Escherichia coli serogroup O74 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O74 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O74" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="141" />
+        </extension>
+        <code value="459143008" />
+        <display value="Escherichia coli serogroup O73 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O73 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O73" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="142" />
+        </extension>
+        <code value="459146000" />
+        <display value="Escherichia coli serogroup O71 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O71 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O71" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="143" />
+        </extension>
+        <code value="459149007" />
+        <display value="Escherichia coli serogroup O70 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O70 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O70" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="155" />
+        </extension>
+        <code value="608886002" />
+        <display value="Escherichia coli serogroup O44 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O44 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O44" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="161" />
+        </extension>
+        <code value="698020006" />
+        <display value="Escherichia coli serogroup O28ac (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O28ac (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O28ac" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="63" />
+        </extension>
+        <code value="705177007" />
+        <display value="Escherichia coli serogroup O186 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O186 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O186" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="70" />
+        </extension>
+        <code value="707501002" />
+        <display value="Escherichia coli serogroup O176 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O176 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O176" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="159" />
+        </extension>
+        <code value="709311003" />
+        <display value="Escherichia coli serogroup O32 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O32 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O32" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="64" />
+        </extension>
+        <code value="709312005" />
+        <display value="Escherichia coli serogroup O185 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O185 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O185" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="121" />
+        </extension>
+        <code value="715306002" />
+        <display value="Escherichia coli serogroup O108 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O108 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O108" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="146" />
+        </extension>
+        <code value="715309009" />
+        <display value="Escherichia coli serogroup O64 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O64 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O64" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="145" />
+        </extension>
+        <code value="715310004" />
+        <display value="Escherichia coli serogroup O66 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O66 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O66" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="139" />
+        </extension>
+        <code value="725506000" />
+        <display value="Escherichia coli serogroup O75 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O75 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O75" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="194" />
+        </extension>
+        <code value="733594004" />
+        <display value="Escherichia coli serogroup O:nonmotile (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O:nonmotile (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O:nicht-motil" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="137" />
+        </extension>
+        <code value="738514000" />
+        <display value="Escherichia coli serogroup O77 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O77 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O77" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="101" />
+        </extension>
+        <code value="738773001" />
+        <display value="Escherichia coli serogroup O134 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O134 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O134" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="133" />
+        </extension>
+        <code value="785855007" />
+        <display value="Escherichia coli serogroup O81 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O81 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O81" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="126" />
+        </extension>
+        <code value="830231008" />
+        <display value="Escherichia coli serogroup O93 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O93 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O93" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="196" />
+        </extension>
+        <code value="83285000" />
+        <display value="Enteropathogenic Escherichia coli (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Enteropathogenic Escherichia coli (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Enteropathogene Escherichia coli" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="74" />
+        </extension>
+        <code value="870643006" />
+        <display value="Escherichia coli serogroup O171 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O171 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O171" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="75" />
+        </extension>
+        <code value="871877007" />
+        <display value="Escherichia coli serogroup O170 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Escherichia coli serogroup O170 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O170" />
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/answerSetLaboratoryTest-SNOMED" />
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/answerSetResistance-SNOMED" />
+    </include>
+  </compose>
+</ValueSet>

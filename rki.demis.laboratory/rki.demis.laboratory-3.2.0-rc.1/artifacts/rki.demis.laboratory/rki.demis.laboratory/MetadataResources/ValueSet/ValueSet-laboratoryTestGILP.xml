@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestGILP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestGILP" />
+  <version value="1.6.1" />
+  <name value="LaboratoryTestGILP" />
+  <title value="Labortest für Giardia lamblia" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-02-26" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet LaboratoryTestGILP enthält die Codes der Labortests für Giardia lamblia." />
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.79" />
+      <concept>
+        <code value="104404-9" />
+        <display value="Giardia lamblia cysts [Presence] in Stool by Microscopy" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia-lamblia-Zysten [Nachweis] in Stuhl mittels Mikroskopie" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="104405-6" />
+        <display value="Giardia lamblia trophozoites [Presence] in Stool by Microscopy" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia-lamblia-Trophozoiten [Nachweis] in Stuhl mittels Mikroskopie" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="10670-8" />
+        <display value="Giardia lamblia [Presence] in Stool by Organism specific culture" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia [Nachweis] in Stuhl mittels erregerspezifischer Kultur" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="14210-9" />
+        <display value="Giardia lamblia Ag [Presence] in Stool by Immunofluorescence" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia Antigen [Nachweis] in Stuhl mittels Immunfluoreszenztest" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="16899-7" />
+        <display value="Giardia lamblia Ag [Presence] in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia Antigen [Nachweis] in Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="31830-3" />
+        <display value="Giardia lamblia Ag [Presence] in Stool" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia Antigen [Nachweis] in Stuhl" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41153-8" />
+        <display value="Giardia lamblia IgM Ab [Presence] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia IgM-Antikörper [Nachweis] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41154-6" />
+        <display value="Giardia lamblia IgG Ab [Presence] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia IgG-Antikörper [Nachweis] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41852-5" />
+        <display value="Microorganism or agent identified in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mikroorganismus oder Erreger identifiziert in Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="60544-4" />
+        <display value="Giardia lamblia DNA [Presence] in Specimen by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="6412-1" />
+        <display value="Giardia lamblia Ag [Presence] in Stool by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia Antigen [Nachweis] in Stuhl mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="6413-9" />
+        <display value="Giardia lamblia Ag [Presence] in Specimen by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia Antigen [Nachweis] in Probenmaterial mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="673-4" />
+        <display value="Ova and parasites identified in Specimen by Light microscopy" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Wurmeier und Parasiten identifiziert in Probenmaterial mittels Lichtmikroskopie" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="7891-5" />
+        <display value="Giardia lamblia IgG Ab [Units/volume] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia IgG-Antikörper [Einheiten/Volumen] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="7892-3" />
+        <display value="Giardia lamblia IgM Ab [Units/volume] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia IgM-Antikörper [Einheiten/Volumen] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="80683-6" />
+        <display value="Giardia lamblia 18S rRNA [Presence] in Stool by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia 18S rRNA [Nachweis] in Stuhl mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="82208-0" />
+        <display value="Giardia lamblia DNA [Presence] in Stool by NAA with non-probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia DNA [Nachweis] in Stuhl mittels Nukleinsäureamplifikation mit Detektion ohne Sonde" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="91676-7" />
+        <display value="Giardia lamblia Ag [Presence] in Stool by Rapid immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia Antigen [Nachweis] in Stuhl mittels Immunoassay-Schnelltest" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="92687-3" />
+        <display value="Giardia lamblia DNA [Presence] in Stool by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia DNA [Nachweis] in Stuhl mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="9658-6" />
+        <display value="Giardia lamblia IgA Ab [Units/volume] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Giardia lamblia IgA-Antikörper [Einheiten/Volumen] in Serum" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

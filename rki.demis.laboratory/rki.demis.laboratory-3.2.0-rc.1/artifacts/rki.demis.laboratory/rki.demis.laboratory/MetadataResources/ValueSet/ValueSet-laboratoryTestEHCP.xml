@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestEHCP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestEHCP" />
+  <version value="1.10.0" />
+  <name value="LaboratoryTestEHCP" />
+  <title value="Labortest für Escherichia coli (enterohämorrhagische Stämme) (EHEC)" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-02-26" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet LaboratoryTestEHCP enthält die Codes der Labortests für Escherichia coli (enterohämorrhagische Stämme) (EHEC)." />
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.79" />
+      <concept>
+        <code value="106554-9" />
+        <display value="Escherichia coli shiga-like toxin DNA [Presence] in Stool by NAA with probe detection" />
+      </concept>
+      <concept>
+        <code value="16283-4" />
+        <display value="Escherichia coli verotoxin [Presence] in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Vero-Toxin [Nachweis] in Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="20789-4" />
+        <display value="Escherichia coli serotype [Identifier] in Isolate" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Serotyp [Nachweis oder Identität] in Isolat" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="21262-1" />
+        <display value="Escherichia coli shiga-like toxin [Presence] in Stool by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Shiga-ähnliches Toxin [Nachweis] in Stuhl mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="32777-5" />
+        <display value="Escherichia coli O157:H7 Ag [Presence] in Stool" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli O157:H7 Antigen [Nachweis] in Stuhl" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="38990-8" />
+        <display value="Escherichia coli O157:H7 DNA [Presence] in Specimen by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli O157:H7 DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41852-5" />
+        <display value="Microorganism or agent identified in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mikroorganismus oder Erreger identifiziert in Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="44087-5" />
+        <display value="Escherichia coli O157 Ag [Presence] in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli O157 Antigen [Nachweis] in Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="51939-7" />
+        <display value="Escherichia coli shiga-like toxin 2 [Presence] in Stool by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Shiga-ähnliches Toxin 2 [Nachweis] in Stuhl mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="51940-5" />
+        <display value="Escherichia coli shiga-like toxin 1 [Presence] in Stool by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Shiga-ähnliches Toxin 1 [Nachweis] in Stuhl mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="53946-0" />
+        <display value="Escherichia coli shiga-like toxin identified in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Shiga-ähnliches Toxin identifiziert in Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="63423-8" />
+        <display value="Escherichia coli eaeA gene [Presence] in Specimen by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli eaeA-Gen [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="63427-9" />
+        <display value="Escherichia coli Stx1 toxin stx1 gene [Presence] in Specimen by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Stx1 Toxin stx1-Gen [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="63428-7" />
+        <display value="Escherichia coli Stx2 toxin stx2 gene [Presence] in Specimen by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Stx2 Toxin stx2-Gen [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="6574-8" />
+        <display value="Escherichia coli verotoxin 1 [Presence] in Stool" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Vero-Toxin 1 [Nachweis] in Stuhl" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="6576-3" />
+        <display value="Escherichia coli verotoxin 2 [Presence] in Stool" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Vero-Toxin 2 [Nachweis] in Stuhl" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="75756-7" />
+        <display value="Bacteria identified in Isolate by MS.MALDI-TOF" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Bakterien identifiziert in Isolat mittels MS.MALDI-TOF" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="79386-9" />
+        <display value="Escherichia coli Stx1 toxin stx1 gene [Presence] in Stool by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Stx1 Toxin stx1-Gen [Nachweis] in Stuhl mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="79387-7" />
+        <display value="Escherichia coli Stx2 toxin stx2 gene [Presence] in Stool by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Stx2 Toxin stx2-Gen [Nachweis] in Stuhl mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="80679-4" />
+        <display value="Escherichia coli Stx1 and Stx2 toxin stx1+stx2 genes [Presence] in Stool by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Stx1+Stx2-Toxine stx1+stx2-Gene [Nachweis] in Stuhl mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="82203-1" />
+        <display value="Escherichia coli Stx1 and Stx2 toxin stx1+stx2 genes [Presence] in Stool by NAA with non-probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Stx1+Stx2-Toxine stx1+stx2-Gene [Nachweis] in Stuhl mittels Nukleinsäureamplifikation mit Detektion ohne Sonde" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="82204-9" />
+        <display value="Escherichia coli O157 DNA [Presence] in Stool by NAA with non-probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli O157 DNA [Nachweis] in Stuhl mittels Nukleinsäureamplifikation mit Detektion ohne Sonde" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="82299-9" />
+        <display value="Escherichia coli shiga-like toxin 1+2 [Presence] in Stool by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Shiga-ähnliches Toxin 1+2 [Nachweis] in Stuhl mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="82303-9" />
+        <display value="Escherichia coli O157 [Presence] in Stool by Culture" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli O157 [Nachweis] in Stuhl mittels Kultur" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="87318-2" />
+        <display value="Escherichia coli eaeA gene [Presence] in Isolate by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli eaeA-Gen [Nachweis] in Isolat mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="87376-0" />
+        <display value="Escherichia coli Stx1 toxin stx1 gene [Presence] in Isolate by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Stx1 Toxin stx1-Gen [Nachweis] in Isolat mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="87377-8" />
+        <display value="Escherichia coli Stx2 toxin stx2 gene [Presence] in Isolate by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Stx2 Toxin stx2-Gen [Nachweis] in Isolat mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="87380-2" />
+        <display value="Escherichia coli Stx2e toxin stx2e gene [Presence] in Isolate by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli Stx2e-Toxin stx2e-Gen [Nachweis] in Isolat mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="97320-6" />
+        <display value="Escherichia coli O157 DNA [Presence] in Stool by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Escherichia coli O157 DNA [Nachweis] in Stuhl mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistance" />
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistanceGene" />
+    </include>
+  </compose>
+</ValueSet>

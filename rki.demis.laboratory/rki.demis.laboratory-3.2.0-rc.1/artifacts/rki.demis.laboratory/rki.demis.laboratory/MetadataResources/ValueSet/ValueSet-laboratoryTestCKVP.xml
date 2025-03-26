@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestCKVP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestCKVP" />
+  <version value="1.8.1" />
+  <name value="LaboratoryTestCKVP" />
+  <title value="Labortest für Chikungunya-Virus" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-02-26" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet LaboratoryTestCKVP enthält die Codes der Labortests für Chikungunya-Virus." />
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.79" />
+      <concept>
+        <code value="41852-5" />
+        <display value="Microorganism or agent identified in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mikroorganismus oder Erreger identifiziert in Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="51664-1" />
+        <display value="Chikungunya virus RNA [Presence] in Specimen by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Chikungunya-Virus RNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="57934-2" />
+        <display value="Chikungunya virus IgM Ab [Presence] in Serum or Plasma" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Chikungunya-Virus IgM-Antikörper [Nachweis] in Serum oder Plasma" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="88629-1" />
+        <display value="Chikungunya virus IgM Ab [Presence] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Chikungunya-Virus IgM-Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="88630-9" />
+        <display value="Chikungunya virus IgG Ab [Presence] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Chikungunya-Virus IgG-Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="93979-3" />
+        <display value="Chikungunya virus IgG Ab [Presence] in Serum or Plasma" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Chikungunya-Virus IgG-Antikörper [Nachweis] in Serum oder Plasma" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="95705-0" />
+        <display value="Chikungunya virus IgA Ab [Presence] in Specimen by Immunoassay" />
+      </concept>
+      <concept>
+        <code value="97866-8" />
+        <display value="Chikungunya virus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Chikungunya-Virus IgG-Antikörper [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="97867-6" />
+        <display value="Chikungunya virus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Chikungunya-Virus IgM-Antikörper [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="materialCVDP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/materialCVDP" />
+  <version value="1.12.0" />
+  <name value="MaterialCVDP" />
+  <title value="Material für Severe-Acute-Respiratory-Syndrome-Coronavirus-2 (SARS-CoV-2)" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-02-25" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet MaterialCVDP enthält die Codes der Materialien für Severe-Acute-Respiratory-Syndrome-Coronavirus-2 (SARS-CoV-2)." />
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20241115" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="119303007" />
+        <display value="Microbial isolate specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Microbial isolate specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Probenmaterial von mikrobiellem Isolat" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="122571007" />
+        <display value="Pericardial fluid specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Pericardial fluid specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Perikardflüssigkeitprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="122575003" />
+        <display value="Urine specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Urine specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Urinprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="123038009" />
+        <display value="Specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258450006" />
+        <display value="Cerebrospinal fluid specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Cerebrospinal fluid specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Liquorprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="22" />
+        </extension>
+        <code value="119334006" />
+        <display value="Sputum specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Sputum specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Sputumprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="119389009" />
+        <display value="Specimen from throat (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Specimen from throat (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Probenmaterial des Rachens" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="119390000" />
+        <display value="Specimen from trachea (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Specimen from trachea (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Probenmaterial der Trachea" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="122618002" />
+        <display value="Specimen from pleura obtained by fine needle aspiration procedure (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Specimen from pleura obtained by fine needle aspiration procedure (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Pleuraaspirat mittels Feinnadel" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="122877000" />
+        <display value="Upper respiratory fluid specimen obtained by tracheal aspiration (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Upper respiratory fluid specimen obtained by tracheal aspiration (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Trachealaspirat des oberen Atmungstrakts" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="16224371000119105" />
+        <display value="Nasal lavage fluid specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Nasal lavage fluid specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Probenmaterial aus Nasenspülflüssigkeit" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="168141000" />
+        <display value="Nasal fluid specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Nasal fluid specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Nasensekretprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="257261003" />
+        <display value="Swab (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Swab (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Abstrich" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258411007" />
+        <display value="Nasopharyngeal aspirate (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Nasopharyngeal aspirate (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Nasopharyngeales Aspirat" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258412000" />
+        <display value="Oropharyngeal aspirate (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Oropharyngeal aspirate (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Oropharyngeales Aspirat" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258446004" />
+        <display value="Bronchial fluid specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Bronchial fluid specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Bronchialsekretprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258467004" />
+        <display value="Nasopharyngeal washings (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Nasopharyngeal washings (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Nasopharyngeale Spülflüssigkeit" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258469001" />
+        <display value="Pharyngeal washings (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Pharyngeal washings (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Rachenspülflüssigkeit" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258480001" />
+        <display value="Transtracheal aspirate specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Transtracheal aspirate specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Transtracheale Aspiratsprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="45" />
+        </extension>
+        <code value="258500001" />
+        <display value="Nasopharyngeal swab (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Nasopharyngeal swab (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Nasopharynxabstrich" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="30" />
+        </extension>
+        <code value="258529004" />
+        <display value="Throat swab (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Throat swab (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Rachenabstrich" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="35" />
+        </extension>
+        <code value="258604001" />
+        <display value="Upper respiratory specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Upper respiratory specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Probenmaterial der oberen Atemwege" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="34" />
+        </extension>
+        <code value="258606004" />
+        <display value="Lower respiratory tract specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Lower respiratory tract specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Probenmaterial der unteren Atemwege" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="36" />
+        </extension>
+        <code value="258607008" />
+        <display value="Bronchoalveolar lavage fluid specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Bronchoalveolar lavage fluid specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Probenmaterial der bronchoalveolären Lavageflüssigkeit" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258609006" />
+        <display value="Sputum specimen obtained by aspiration from trachea (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Sputum specimen obtained by aspiration from trachea (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Sputumprobe mittels Trachealaspiration" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="309164002" />
+        <display value="Upper respiratory swab specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Upper respiratory swab specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Abstrich der oberen Atemwege" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="309166000" />
+        <display value="Ear swab specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Ear swab specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Ohrabstrich" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="309171007" />
+        <display value="Lower respiratory fluid specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Lower respiratory fluid specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Flüssigkeit der unteren Atemwege" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="309174004" />
+        <display value="Bronchial biopsy specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Bronchial biopsy specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Bronchialbiopsat" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="69" />
+        </extension>
+        <code value="410580001" />
+        <display value="Respiratory fluid specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Respiratory fluid specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Atemwegssekretprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="415293009" />
+        <display value="Respiratory secretion (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Respiratory secretion (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Atemwegssekret" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="41" />
+        </extension>
+        <code value="418564007" />
+        <display value="Pleural fluid specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Pleural fluid specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Pleuraflüssigkeitprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="430248009" />
+        <display value="Specimen from nasopharyngeal structure (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Specimen from nasopharyngeal structure (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Probenmaterial des Nasopharynx" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="433801000124107" />
+        <display value="Combined nasopharyngeal and oropharyngeal swab (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Combined nasopharyngeal and oropharyngeal swab (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Kombinierter nasopharyngealer und oropharyngealer Abstrich" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="441620008" />
+        <display value="Oral fluid specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Oral fluid specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Probenmaterial aus Mundflüssigkeit" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="445297001" />
+        <display value="Swab of internal nose (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Swab of internal nose (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Abstrich der inneren Nase" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="19" />
+        </extension>
+        <code value="445447003" />
+        <display value="Specimen from trachea obtained by aspiration (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Specimen from trachea obtained by aspiration (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Tracheaaspirat" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="447154002" />
+        <display value="Specimen from nose (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Specimen from nose (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Probenmaterial der Nase" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="447339001" />
+        <display value="Nasal smear specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Nasal smear specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Nasensekretausstrich" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="461911000124106" />
+        <display value="Swab specimen from oropharynx (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Swab specimen from oropharynx (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Oropharyngealer Abstrich" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="472867001" />
+        <display value="Swab from tonsil (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Swab from tonsil (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Tonsillenabstrich" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="472881004" />
+        <display value="Swab from pharynx (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Swab from pharynx (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Abstrich aus Pharynx" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="472901003" />
+        <display value="Swab from nasal sinus (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Swab from nasal sinus (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Nasennebenhöhlenabstrich" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="57741000052105" />
+        <display value="Tracheal secretion specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Tracheal secretion specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Trachealsekretprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="697989009" />
+        <display value="Anterior nares swab (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Anterior nares swab (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Nasenvorhofabstrich" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="119294007" />
+        <display value="Dried blood specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Dried blood specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Trockenblutprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="66" />
+        </extension>
+        <code value="119297000" />
+        <display value="Blood specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Blood specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Blutprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="119361006" />
+        <display value="Plasma specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Plasma specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Plasmaprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="119364003" />
+        <display value="Serum specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Serum specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Serumprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="122554006" />
+        <display value="Capillary blood specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Capillary blood specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Kapillarblutprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="122555007" />
+        <display value="Venous blood specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Venous blood specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Venöse Blutprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="122592007" />
+        <display value="Acellular blood (serum or plasma) specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Acellular blood (serum or plasma) specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Azelluläre Blutprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258580003" />
+        <display value="Whole blood specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Whole blood specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Vollblutprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="303248007" />
+        <display value="Blood film specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Blood film specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Blutfilm" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="440500007" />
+        <display value="Dried blood spot specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Dried blood spot specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Dried Blood Spot Sample" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="445295009" />
+        <display value="Blood specimen with edetic acid (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Blood specimen with edetic acid (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="EDTA-Blutprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708049000" />
+        <display value="Plasma specimen with ethylenediamine tetraacetic acid (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Plasma specimen with ethylenediamine tetraacetic acid (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="EDTA-Plasmaprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="737535000" />
+        <display value="Blood smear specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Blood smear specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Blutausstrichprobe" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="788707000" />
+        <display value="Plasma specimen or serum specimen or whole blood specimen (specimen)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Plasma specimen or serum specimen or whole blood specimen (specimen)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Plasma-, Serum- oder Vollblutprobe" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

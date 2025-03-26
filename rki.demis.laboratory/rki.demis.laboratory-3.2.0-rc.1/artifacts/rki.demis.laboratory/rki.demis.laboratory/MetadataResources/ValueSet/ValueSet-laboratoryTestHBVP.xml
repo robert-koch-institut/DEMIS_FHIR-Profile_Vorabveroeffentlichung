@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestHBVP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestHBVP" />
+  <version value="1.7.0" />
+  <name value="LaboratoryTestHBVP" />
+  <title value="Labortest für Hepatitis-B-Virus; Meldepflicht für alle Nachweise" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-02-26" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet LaboratoryTestHBVP enthält die Codes der Labortests für Hepatitis-B-Virus; Meldepflicht für alle Nachweise." />
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.79" />
+      <concept>
+        <code value="106938-4" />
+        <display value="Hepatitis B virus core Ab [Units/volume] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus core Antikörper [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="11258-1" />
+        <display value="Hepatitis B virus DNA [Units/volume] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus DNA [Einheiten/Volumen] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="13952-7" />
+        <display value="Hepatitis B virus core Ab [Presence] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-Core Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="13953-5" />
+        <display value="Hepatitis B virus e Ab [Presence] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus e Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="13954-3" />
+        <display value="Hepatitis B virus e Ag [Presence] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus e Antigen [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="16933-4" />
+        <display value="Hepatitis B virus core Ab [Presence] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-Core Antikörper [Nachweis] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="16935-9" />
+        <display value="Hepatitis B virus surface Ab [Units/volume] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-surface Antikörper [Einheiten/Volumen] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22318-0" />
+        <display value="Hepatitis B virus core IgG Ab [Units/volume] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-Core IgG-Antikörper [Einheiten/Volumen] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22319-8" />
+        <display value="Hepatitis B virus core IgM Ab [Units/volume] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-Core IgM-Antikörper [Einheiten/Volumen] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22320-6" />
+        <display value="Hepatitis B virus e Ab [Presence] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus e Antikörper [Nachweis] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22322-2" />
+        <display value="Hepatitis B virus surface Ab [Presence] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-surface Antikörper [Nachweis] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="24113-3" />
+        <display value="Hepatitis B virus core IgM Ab [Presence] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-Core IgM-Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="29610-3" />
+        <display value="Hepatitis B virus DNA [Presence] in Serum or Plasma by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus DNA [Nachweis] in Serum oder Plasma mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="29615-2" />
+        <display value="Hepatitis B virus DNA [#/volume] (viral load) in Serum or Plasma by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus DNA [#/Volumen] (Viruslast) in Serum oder Plasma mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="31204-1" />
+        <display value="Hepatitis B virus core IgM Ab [Presence] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-Core IgM-Antikörper [Nachweis] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="31844-4" />
+        <display value="Hepatitis B virus e Ag [Presence] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus e Antigen [Nachweis] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="31845-1" />
+        <display value="Hepatitis B virus e Ag [Units/volume] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus e Antigen [Einheiten/Volumen] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="32019-2" />
+        <display value="Hepatitis B virus surface Ab [Titer] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-surface Antikörper [Titer] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="32366-7" />
+        <display value="Hepatitis B virus genotype [Identifier] in Serum or Plasma by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus Genotyp [Nachweis oder Identität] in Serum oder Plasma mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="32685-0" />
+        <display value="Hepatitis B virus core IgG Ab [Presence] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-Core IgG-Antikörper [Nachweis] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="39007-0" />
+        <display value="Hepatitis B virus e Ag [Presence] in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus e Antigen [Nachweis] in Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41852-5" />
+        <display value="Microorganism or agent identified in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mikroorganismus oder Erreger identifiziert in Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="42595-9" />
+        <display value="Hepatitis B virus DNA [Units/volume] (viral load) in Serum or Plasma by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus DNA [Einheiten/Volumen] (Viruslast) in Serum oder Plasma mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="49360-1" />
+        <display value="Hepatitis B virus DNA [Units/volume] (viral load) in Specimen by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus DNA [Einheiten/Volumen] (Viruslast) in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="49362-7" />
+        <display value="Hepatitis B virus DNA [#/volume] (viral load) in Specimen by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus DNA [#/Volumen] (Viruslast) in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="5009-6" />
+        <display value="Hepatitis B virus DNA [Presence] in Specimen by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="5195-3" />
+        <display value="Hepatitis B virus surface Ag [Presence] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-surface Antigen [Nachweis] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="5196-1" />
+        <display value="Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-surface Antigen [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="58452-4" />
+        <display value="Hepatitis B virus surface Ag [Units/volume] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-surface Antigen [Einheiten/Volumen] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="63557-3" />
+        <display value="Hepatitis B virus surface Ag [Units/volume] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-surface Antigen [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="65633-0" />
+        <display value="Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Confirmatory method" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-surface Antigen [Nachweis] in Serum oder Plasma mittels Bestätigungstest" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="70154-0" />
+        <display value="Hepatitis B virus surface Ag in Serum or Plasma by Confirmatory method" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-surface Antigen in Serum oder Plasma mittels Bestätigungstest" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="7905-3" />
+        <display value="Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Neutralization test" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Hepatitis-B-Virus-surface Antigen [Nachweis] in Serum oder Plasma mittels Neutralisationstest" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

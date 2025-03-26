@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestPOVP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestPOVP" />
+  <version value="1.6.1" />
+  <name value="LaboratoryTestPOVP" />
+  <title value="Labortest für Poliovirus" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-02-26" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet LaboratoryTestPOVP enthält die Codes der Labortests für Poliovirus." />
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.79" />
+      <concept>
+        <code value="16284-2" />
+        <display value="Polio virus Ab [Units/volume] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Polio-Virus Antikörper [Einheiten/Volumen] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22446-9" />
+        <display value="Polio virus 1 Ab [Titer] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Polio-Virus 1 Antikörper [Titer] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22448-5" />
+        <display value="Polio virus 2 Ab [Titer] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Polio-Virus 2 Antikörper [Titer] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22450-1" />
+        <display value="Polio virus 3 Ab [Titer] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Polio-Virus 3 Antikörper [Titer] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41852-5" />
+        <display value="Microorganism or agent identified in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mikroorganismus oder Erreger identifiziert in Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="42980-3" />
+        <display value="Polio virus Ab [Titer] in Serum" />
+      </concept>
+      <concept>
+        <code value="5281-1" />
+        <display value="Polio virus 1 neutralizing antibody [Titer] in Serum by Neutralization test" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Poliovirus-1-neutralisierender Antikörper [Titer] in Serum mittels Neutralisationstest" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="5283-7" />
+        <display value="Polio virus 2 neutralizing antibody [Titer] in Serum by Neutralization test" />
+      </concept>
+      <concept>
+        <code value="7985-5" />
+        <display value="Polio virus 1 Ab [Units/volume] in Serum" />
+      </concept>
+      <concept>
+        <code value="7986-3" />
+        <display value="Polio virus 2 Ab [Units/volume] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Polio-Virus 2 Antikörper [Einheiten/Volumen] in Serum" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="7987-1" />
+        <display value="Polio virus 3 Ab [Units/volume] in Serum" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Polio-Virus 3 Antikörper [Einheiten/Volumen] in Serum" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

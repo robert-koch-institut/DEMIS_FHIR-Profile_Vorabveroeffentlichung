@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetMSVP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetMSVP" />
+  <version value="1.6.2" />
+  <name value="AnswerSetMSVP" />
+  <title value="AnswerSet für Masernvirus" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-02-25" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet AnswerSetMSVP enthält die Codes der Answer-Codes für Masernvirus." />
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20241115" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="41482005" />
+        <display value="Molecular sequence data (finding)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Molecular sequence data (finding)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Molekulare Sequenzdaten" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="416435006" />
+        <display value="Measles virus, viral envelope M protein variant (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus, viral envelope M protein variant (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Variante des M-Proteins der Virushülle" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="425684000" />
+        <display value="Measles virus genotype G3 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype G3 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp G3" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="425966004" />
+        <display value="Measles virus genotype H1 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype H1 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp H1" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="425970007" />
+        <display value="Measles virus genotype D3 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype D3 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp D3" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426028006" />
+        <display value="Measles virus genotype D6 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype D6 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp D6" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426091009" />
+        <display value="Measles virus genotype G2 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype G2 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp G2" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426188007" />
+        <display value="Measles virus genotype C1 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype C1 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp C1" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426261008" />
+        <display value="Measles virus genotype D4 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype D4 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp D4" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426424002" />
+        <display value="Measles virus genotype H2 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype H2 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp H2" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426535005" />
+        <display value="Measles virus genotype D9 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype D9 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp D9" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426558008" />
+        <display value="Measles virus genotype A (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype A (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp A" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426640005" />
+        <display value="Measles virus genotype D2 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype D2 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp D2" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426654002" />
+        <display value="Measles virus genotype B2 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype B2 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp B2" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="427073007" />
+        <display value="Measles virus genotype B3 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype B3 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp B3" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="427182003" />
+        <display value="Measles virus genotype C2 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype C2 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp C2" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="427263000" />
+        <display value="Measles virus genotype D10 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype D10 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp D10" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="427290009" />
+        <display value="Measles virus genotype D8 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype D8 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp D8" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="427353006" />
+        <display value="Measles virus genotype D7 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype D7 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp D7" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="427706006" />
+        <display value="Measles virus genotype D5 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype D5 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp D5" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="90" />
+        </extension>
+        <code value="52584002" />
+        <display value="Measles morbillivirus (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles morbillivirus (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Measles Morbillivirus" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="698204007" />
+        <display value="Measles virus genotype D11 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype D11 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp D11" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="732206003" />
+        <display value="Measles virus genotype F (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype F (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp F" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="732207007" />
+        <display value="Measles virus genotype E (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype E (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp E" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="732208002" />
+        <display value="Measles virus genotype D1 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype D1 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp D1" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="732209005" />
+        <display value="Measles virus genotype B1 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype B1 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp B1" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="732210000" />
+        <display value="Measles virus genotype G1 (organism)" />
+        <designation>
+          <language value="en-US" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000003001" />
+          </use>
+          <value value="Measles virus genotype G1 (organism)" />
+        </designation>
+        <designation>
+          <language value="de-DE" />
+          <value value="Masern-Virus, Genotyp G1" />
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/answerSetLaboratoryTest-SNOMED" />
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/answerSetResistance-SNOMED" />
+    </include>
+  </compose>
+</ValueSet>

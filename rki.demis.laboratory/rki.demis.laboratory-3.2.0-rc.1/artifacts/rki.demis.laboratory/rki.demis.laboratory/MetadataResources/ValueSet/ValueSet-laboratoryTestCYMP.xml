@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestCYMP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestCYMP" />
+  <version value="1.3.1" />
+  <name value="LaboratoryTestCYMP" />
+  <title value="Labortest für Cytomegalie, Cytomegalievirus" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-02-26" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet LaboratoryTestCYMP enthält die Codes der Labortests für Cytomegalie, Cytomegalievirus." />
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.79" />
+      <concept>
+        <code value="13226-6" />
+        <display value="Cytomegalovirus IgM Ab [Units/volume] in Cerebral spinal fluid" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus IgM-Antikörper [Einheiten/Volumen] in Liquor" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22239-8" />
+        <display value="Cytomegalovirus Ab [Presence] in Serum or Plasma" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus Antikörper [Nachweis] in Serum oder Plasma" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22243-0" />
+        <display value="Cytomegalovirus IgG Ab [Units/volume] in Cerebral spinal fluid" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Einheiten/Volumen] in Liquor" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="22244-8" />
+        <display value="Cytomegalovirus IgG Ab [Presence] in Serum or Plasma" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Nachweis] in Serum oder Plasma" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="24119-0" />
+        <display value="Cytomegalovirus IgM Ab [Presence] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus IgM-Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="30325-5" />
+        <display value="Cytomegalovirus IgM Ab [Presence] in Serum or Plasma" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus IgM-Antikörper [Nachweis] in Serum oder Plasma" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="31797-4" />
+        <display value="Cytomegalovirus Ag [Presence] in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus Antigen [Nachweis] in Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="34720-3" />
+        <display value="Cytomegalovirus DNA [Units/volume] (viral load) in Specimen by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus DNA [Einheiten/Volumen] (Viruslast) in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="41852-5" />
+        <display value="Microorganism or agent identified in Specimen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Mikroorganismus oder Erreger identifiziert in Probenmaterial" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="43045-4" />
+        <display value="Cytomegalovirus IgM Ab [Presence] in Cerebral spinal fluid" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus IgM-Antikörper [Nachweis] in Liquor" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="47307-4" />
+        <display value="Cytomegalovirus IgG Ab index [Units/volume] in Serum and CSF" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörperindex [Einheiten/Volumen] in Serum und Liquor" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="5000-5" />
+        <display value="Cytomegalovirus DNA [Presence] in Specimen by NAA with probe detection" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="5124-3" />
+        <display value="Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="5126-8" />
+        <display value="Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus IgM-Antikörper [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="78445-4" />
+        <display value="Cytomegalovirus IgG Ab avidity [Presence] in Serum or Plasma by Immunoassay" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörperavidität [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="7852-7" />
+        <display value="Cytomegalovirus IgG Ab [Units/volume] in Serum or Plasma" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus IgG-Antikörper [Einheiten/Volumen] in Serum oder Plasma" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="7853-5" />
+        <display value="Cytomegalovirus IgM Ab [Units/volume] in Serum or Plasma" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://loinc.org" />
+            <code value="LONG_COMMON_NAME" />
+          </use>
+          <value value="Cytomegalie-Virus IgM-Antikörper [Einheiten/Volumen] in Serum oder Plasma" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
