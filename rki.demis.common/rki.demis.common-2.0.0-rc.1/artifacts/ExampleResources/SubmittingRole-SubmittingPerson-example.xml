@@ -1,9 +1,0 @@
-<PractitionerRole xmlns="http://hl7.org/fhir">
-  <id value="SubmittingRole-SubmittingPerson-example" />
-  <meta>
-    <profile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingRole" />
-  </meta>
-  <practitioner>
-    <reference value="Practitioner/61ebe359-bfdc-4613-8bf2-c5e300945f0n32" />
-  </practitioner>
-</PractitionerRole>

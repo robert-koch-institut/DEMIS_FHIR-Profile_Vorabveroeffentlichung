@@ -1,0 +1,27 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="a21c0305-fd26-33fd-bba8-2f41cbcda999"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseCJKD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="cjkd"></code>
+         <display value="Creutzfeldt-Jakob-Krankheit"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/9c03dea3-66d8-3f87-ba88-a7f4339cff54"></reference>
+   </subject>
+   <onsetDateTime value="2023-01-20"></onsetDateTime>
+   <recordedDate value="2023-04-15"></recordedDate>
+   <note>
+      <text value="-"></text>
+   </note>
+</Condition>
