@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Specimen"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/Specimen"/>
+  <version value="2.0.0"/>
+  <name value="Specimen"/>
+  <title value="Probe"/>
+  <status value="active"/>
+  <date value="2025-02-20"/>
+  <publisher value="Robert Koch-Institut"/><contact><telecom><system value="email"/><value value="demis-support@rki.de"/></telecom></contact><description value="Die Probe enthält Angaben zum Eingangszeitpunkt der Probe sowie zum Probenmaterial. Darüber hinaus wird auf den Einsender der Probe verwiesen."/>
+  <jurisdiction><coding><system value="urn:iso:std:iso:3166"/><version value="ALPHA-2"/><code value="DE"/></coding></jurisdiction><copyright value="Copyright (C) 2021-2025 Robert Koch-Institut"/><fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="true"/>
+  <type value="Specimen"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Specimen.accessionIdentifier">
+      <path value="Specimen.accessionIdentifier"/>
+      <short value="Probennummer"/>
+      <definition value="Probennummer die vom Datensender zur Kommunikation genutzt wird."/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.accessionIdentifier.use">
+      <path value="Specimen.accessionIdentifier.use"/>
+      <max value="0"/>
+    </element>
+    <element id="Specimen.accessionIdentifier.type">
+      <path value="Specimen.accessionIdentifier.type"/>
+      <max value="0"/>
+    </element>
+    <element id="Specimen.accessionIdentifier.system">
+      <path value="Specimen.accessionIdentifier.system"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.accessionIdentifier.value">
+      <path value="Specimen.accessionIdentifier.value"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.accessionIdentifier.period">
+      <path value="Specimen.accessionIdentifier.period"/>
+      <max value="0"/>
+    </element>
+    <element id="Specimen.accessionIdentifier.assigner">
+      <path value="Specimen.accessionIdentifier.assigner"/>
+      <max value="0"/>
+    </element>
+    <element id="Specimen.status">
+      <path value="Specimen.status"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.type">
+      <path value="Specimen.type"/>
+      <short value="Art des Probenmaterials"/>
+      <definition value="Die Angabe des Probenmaterials ist für die Bewertung der Meldepflicht relevant. Für einige Erreger ist die Art des untersuchten Probenmaterials ausschlaggebend, ob eine Meldepflicht vorliegt. Für die automatisierte Weiterverarbeitung der Inhalte im Gesundheitsamt ist die Angabe des Materials sehr wichtig. Insbesondere für unspezifische LOINC Codes, wie sie für die Meldung von mikrobiologischen Ergebnissen benötigt werden ist die Angabe des Materials als SNOMED-CT Code notwendig um einen vollständigen Meldungsinhalt zu übermitteln. Die Angabe des Materials als SNOMED -CT Code wird jetzt verpflichtend eingeführt. Die Auswahl des verwendeten SNOMED-CT Codes muss dabei aus dem erregerspezifischen MaterialSet (https://demis.rki.de/fhir/ValueSet/material) im coding Element dargestellt werden."/>
+      <comment value="Die Angabe des Materials unter Verwendung von Type.text ist in folgenden zwei Ausnahmefällen zulässig: &#13;&#10;- Das Material ist in dem ValueSet https://demis.rki.de/fhir/ValueSet/material nicht enthalten. Bitte geben Sie Feedback an DEMIS (demis-support@rki.de), damit das ValueSet ergänzt werden kann.&#10;- Das Primärsystem kann die internen Codes zur Zeit noch nicht korrekt auf die SNOMED-Codes des ValueSets https://demis.rki.de/fhir/ValueSet/material mappen."/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.type.coding">
+      <path value="Specimen.type.coding"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/material"/>
+      </binding>
+    </element>
+    <element id="Specimen.type.coding.system">
+      <path value="Specimen.type.coding.system"/>
+      <min value="1"/>
+      <patternUri value="http://snomed.info/sct"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.type.coding.version">
+      <path value="Specimen.type.coding.version"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.type.coding.code">
+      <path value="Specimen.type.coding.code"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.type.text">
+      <path value="Specimen.type.text"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.subject">
+      <path value="Specimen.subject"/>
+      <short value="Verweis auf die in der Meldung benannte betroffene Person."/>
+      <definition value="Verweis auf die in der Meldung benannte betroffene Person. Hierbei handelt es sich grundsätzlich um den Verweis auf die in der Erregernachweismeldung als „subject“ referenzierte Patient Ressource."/>
+      <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson"/>
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonAnonymous"/>
+        <aggregation value="bundled"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.subject.reference">
+      <path value="Specimen.subject.reference"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.receivedTime">
+      <path value="Specimen.receivedTime"/>
+      <short value="Zeitpunkt des Probeneingangs im Labor"/>
+      <definition value="Zeitpunkt des Probeneingangs im Labor"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.collection">
+      <path value="Specimen.collection"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.collection.collector">
+      <path value="Specimen.collection.collector"/>
+      <short value="Verweis auf die Einsender-Rolle"/>
+      <definition value="Verweis auf die Einsender-Rolle. Über die Einsender-Rolle kann eine Person oder eine Organisation als Einsender referenziert werden."/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingRole"/>
+        <aggregation value="bundled"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.collection.collector.reference">
+      <path value="Specimen.collection.collector.reference"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.collection.collected[x]">
+      <path value="Specimen.collection.collected[x]"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="$this"/>
+        </discriminator>
+        <rules value="closed"/>
+      </slicing>
+      <short value="Probenentnahmezeitpunkt"/>
+      <definition value="Probenentnahmezeitpunkt"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.collection.collected[x]:collectedDateTime">
+      <path value="Specimen.collection.collected[x]"/>
+      <sliceName value="collectedDateTime"/>
+      <short value="Probenentnahmedatum"/>
+      <definition value="Zeitpunkt der Entnahme der Probe. Dieses Datum ist das relevante Datum für evtl. Maßnahmenergreifung im Gesundheitsamt. Die Angabe des Probeneingangsdatums (Specimen.receivedTime) ist nur eine Alternative, wenn das Probenentnahmedatum nicht bekannt ist. Die Möglichkeit ein Zeitfenster für die Probenentnahme anzugeben (Specimen.collection.collected[x]:collectedPeriod) ist eigentlich nicht erwünscht. Die Option wurde aus Kompatibilitätsgründen mit anderen Anwendungen aufgenommen."/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.collection.collected[x]:collectedPeriod">
+      <path value="Specimen.collection.collected[x]"/>
+      <sliceName value="collectedPeriod"/>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="Specimen.collection.bodySite">
+      <path value="Specimen.collection.bodySite"/>
+      <short value="Abnahmeort"/>
+      <definition value="In Ergänzung zum Probenmaterial in Specimen.type kann die Probe hinsichtlich des Abnahmeortes weiter spezifiziert werden."/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.collection.bodySite.coding">
+      <path value="Specimen.collection.bodySite.coding"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.collection.bodySite.coding.system">
+      <path value="Specimen.collection.bodySite.coding.system"/>
+      <min value="1"/>
+      <fixedUri value="http://snomed.info/sct"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.collection.bodySite.coding.version">
+      <path value="Specimen.collection.bodySite.coding.version"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.collection.bodySite.coding.code">
+      <path value="Specimen.collection.bodySite.coding.code"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.collection.bodySite.text">
+      <path value="Specimen.collection.bodySite.text"/>
+      <short value="Originalbezeichnung"/>
+      <definition value="Originalbezeichnung aus dem Laborinformationssystem (LIS) oder aus dem sendenden System."/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.processing">
+      <path value="Specimen.processing"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.processing.extension">
+      <path value="Specimen.processing.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="0"/>
+    </element>
+    <element id="Specimen.processing.extension:transactionID">
+      <path value="Specimen.processing.extension"/>
+      <sliceName value="transactionID"/>
+      <short value="TypisierungsID/IGS-ID: Verweis auf das Analyseergebnis der Integrierten Genomischen Surveillance (IGS)"/>
+      <definition value="Die TypisierungsID/IGS-ID wird vom DEMIS Backend vergeben, wenn eine Sequenz im Rahmen der Integrierten Genomischen Surveillance (IGS) an das RKI hochgeladen wurde. Für den vollständigen Zyklus des Informationsflusses wird dies ID über die extension &quot;TransactionID&quot; an das Gesundheitsamt gemeldet. Im Abschnitt &quot;PathogenDetection/Erregernachweis&quot; wird das Ergebnis der Sequenzierung als nachgewiesene Species (SNOMED-CT cod) aus dem erregerspezifischen AnswerSet gemeldet.&#13;&#10;&#13;&#10;Die TypisierungsID/DEMIS_Sequence_ID hat folgendes Format:  IGS-12345-CVDP-UUID&#13;&#10;&#13;&#10;**IGS**: festes Prefix&#13;&#10;&#13;&#10;**12345**: 5-stelliger Identifier (DEMIS-ParticipantID) des sequenzierenden Labors (Untersuchungslabors), analog zum bereits existierenden DEMIS-System (DEMIS-10001 bis derzeit DEMIS-10563). Die Liste wird von der DEMIS-Geschäftsstelle gepflegt. Falls Sie noch nicht registriert sind, wenden Sie sich bitte an demis-support@rki.de.&#13;&#10;&#13;&#10;**CVDP**: 4-stelliges DEMIS-Kürzel, welches dem Meldetatbestand direkt zugeordnet wird.&#13;&#10;&#13;&#10;**UUID**: hexadezimal Zahl nach dem Muster 8-4-4-4-12 (z.B. be8131da-9024-41a4-a53c-3ce0d6f6fe37).&#13;&#10;&#13;&#10;Beispiel: IGS-10001-CVDP-be8131da-9024-41a4-a53c-3ce0d6f6fe37"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/TransactionID"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.processing.extension:clusterID">
+      <path value="Specimen.processing.extension"/>
+      <sliceName value="clusterID"/>
+      <short value="Identifier für zusammengehörige Genomsequenzdaten"/>
+      <definition value="Wird eine Probe sequenziert, dann führt die Analyse der Genomsequenzdaten zur Gruppierung von ähnlichen Sequenzen. Diese Gruppen werden als Cluster bezeichnet und je nach Definition mit einem eindeutigen Identifier versehen, der ClusterID."/>
+      <type>
+        <code value="Extension"/>
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/ClusterID"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.container">
+      <path value="Specimen.container"/>
+      <max value="0"/>
+    </element>
+    <element id="Specimen.condition">
+      <path value="Specimen.condition"/>
+      <max value="0"/>
+    </element>
+    <element id="Specimen.note">
+      <path value="Specimen.note"/>
+      <short value="Kommentar z.B. für die Information, dass die Probe zu einem Ausbruch gehört"/>
+      <definition value="Kommentar z.B. für die Information, dass die Probe zu einem Ausbruch gehört"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.note.text">
+      <path value="Specimen.note.text"/>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>

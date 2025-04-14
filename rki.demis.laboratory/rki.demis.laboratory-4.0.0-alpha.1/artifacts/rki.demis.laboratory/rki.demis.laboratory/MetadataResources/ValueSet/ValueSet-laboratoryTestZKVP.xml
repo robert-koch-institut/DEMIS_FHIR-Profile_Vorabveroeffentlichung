@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestZKVP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestZKVP" />
+  <version value="1.5.1" />
+  <name value="LaboratoryTestZKVP" />
+  <title value="Labortest für Zika-Virus" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-03-26" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet LaboratoryTestZKVP enthält die Codes der Labortests für Zika-Virus." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.79" />
+      <concept>
+        <code value="41852-5" />
+        <display value="Mikroorganismus oder Erreger identifiziert in Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="79190-5" />
+        <display value="Zika-Virus RNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="80619-0" />
+        <display value="Zika-Virus IgM-Antikörper [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="80824-6" />
+        <display value="Zika-Virus IgM-Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="83069-5" />
+        <display value="Zika-Virus Nichtstrukturprotein 1 IgG-Antikörper [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="85622-9" />
+        <display value="Zika-Virus RNA [Nachweis] in Serum oder Plasma mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="87622-7" />
+        <display value="Zika-Virus IgM-Antikörper [Nachweis] in Probenmaterial mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="89591-2" />
+        <display value="Zika-Virus IgM-Antikörper [Titer] in Serum mittels Immunfluoreszenztest" />
+      </concept>
+      <concept>
+        <code value="91080-2" />
+        <display value="Zika-Virus IgG-Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="91678-3" />
+        <display value="Zika-Virus IgM-Antikörper [Nachweis] in Serum, Plasma oder Blut mittels Immunoassay-Schnelltest" />
+      </concept>
+      <concept>
+        <code value="95663-1" />
+        <display value="Zika-Virus IgG-Antikörper [Nachweis] in Probenmaterial mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="97870-0" />
+        <display value="Zika-Virus IgG-Antikörper [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestDENP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestDENP" />
+  <version value="1.7.1" />
+  <name value="LaboratoryTestDENP" />
+  <title value="Labortest für Denguevirus" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-03-26" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet LaboratoryTestDENP enthält die Codes der Labortests für Denguevirus." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.79" />
+      <concept>
+        <code value="100963-8" />
+        <display value="Dengue-Virus 1+2+3+4 nsP1 IgG IgG-Antikörper [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="101206-1" />
+        <display value="Dengue-Virus NS1 Antigen [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="23958-2" />
+        <display value="Dengue-Virus IgG-Antikörper [Einheiten/Volumen] in Serum" />
+      </concept>
+      <concept>
+        <code value="23968-1" />
+        <display value="Dengue-Virus IgM-Antikörper [Einheiten/Volumen] in Serum" />
+      </concept>
+      <concept>
+        <code value="23992-1" />
+        <display value="Dengue-Virus IgM-Antikörper [Einheiten/Volumen] in Serum mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="25338-5" />
+        <display value="Dengue-Virus IgM-Antikörper [Nachweis] in Serum" />
+      </concept>
+      <concept>
+        <code value="29663-2" />
+        <display value="Dengue-Virus IgM-Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="29676-4" />
+        <display value="Dengue-Virus IgG-Antikörper [Nachweis] in Serum" />
+      </concept>
+      <concept>
+        <code value="31798-2" />
+        <display value="Dengue-Virus Antigen [Nachweis] in Serum" />
+      </concept>
+      <concept>
+        <code value="31799-0" />
+        <display value="Dengue-Virus Antigen [Nachweis] in Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="34721-1" />
+        <display value="Dengue-Virus IgM-Antikörper [Nachweis] in Liquor" />
+      </concept>
+      <concept>
+        <code value="41852-5" />
+        <display value="Mikroorganismus oder Erreger identifiziert in Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="60262-3" />
+        <display value="Dengue-Virus 1 RNA [Nachweis] in Serum mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="60418-1" />
+        <display value="Dengue-Virus 4 RNA [Nachweis] in Serum mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="60419-9" />
+        <display value="Dengue-Virus 3 RNA [Nachweis] in Serum mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="60420-7" />
+        <display value="Dengue-Virus 2 RNA [Nachweis] in Serum mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="6811-4" />
+        <display value="Dengue-Virus IgG-Antikörper [Titer] in Serum" />
+      </concept>
+      <concept>
+        <code value="6812-2" />
+        <display value="Dengue-Virus IgM-Antikörper [Titer] in Serum" />
+      </concept>
+      <concept>
+        <code value="75377-2" />
+        <display value="Dengue-Virus NS1 Antigen [Nachweis] in Serum, Plasma oder Blut mittels Immunoassay-Schnelltest" />
+      </concept>
+      <concept>
+        <code value="7855-0" />
+        <display value="Dengue-Virus 1+2+3+4 RNA [Nachweis] in Serum mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="88188-8" />
+        <display value="Dengue-Virus 1+2+3+4 RNA [Nachweis] in Urin mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="88189-6" />
+        <display value="Dengue-Virus 1+2+3+4 RNA [Nachweis] in Blut mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="88203-5" />
+        <display value="Dengue-Virus 1 und 2 und 3 und 4 RNA [Nachweis oder Identität] in Serum oder Blut mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="91064-6" />
+        <display value="Dengue-Virus NS1 Antigen [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="94837-2" />
+        <display value="Dengue-Virus 1+2+3+4 RNA [Nachweis] in Amnionflüssigkeit mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="95673-0" />
+        <display value="Dengue-Virus 1+2+3+4 IgG-Antikörper [Nachweis] in Probenmaterial mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="95688-8" />
+        <display value="Dengue-Virus 1+2+3+4 IgM-Antikörper [Nachweis] in Probenmaterial mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="99111-7" />
+        <display value="Dengue-Virus-neutralisierender Antikörper [Titer] in Probenmaterial mittels Neutralisationstest" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

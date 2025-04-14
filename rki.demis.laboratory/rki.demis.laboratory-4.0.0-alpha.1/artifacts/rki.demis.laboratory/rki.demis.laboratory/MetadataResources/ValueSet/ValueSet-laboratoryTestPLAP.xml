@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestPLAP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestPLAP" />
+  <version value="1.3.1" />
+  <name value="LaboratoryTestPLAP" />
+  <title value="Labortest für Plasmodium spp. (Malaria)" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-03-26" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet LaboratoryTestPLAP enthält die Codes der Labortests für Plasmodium spp. (Malaria)." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.79" />
+      <concept>
+        <code value="101305-1" />
+        <display value="Plasmodium sp DNA [Nachweis] in Blut mittels Nukleinsäureamplifikation mit Detektion ohne Sonde" />
+      </concept>
+      <concept>
+        <code value="10710-2" />
+        <display value="Plasmodium sp identifiziert in Blut mittels Blutausstrich" />
+      </concept>
+      <concept>
+        <code value="29305-0" />
+        <display value="Medikation verschrieben" />
+      </concept>
+      <concept>
+        <code value="32700-7" />
+        <display value="Mikroskopische Beobachtung [Nachweis oder Identität] in Blut mittels Malariaausstrich" />
+      </concept>
+      <concept>
+        <code value="41447-4" />
+        <display value="Plasmodium falciparum DNA [Nachweis] in Blut mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="41448-2" />
+        <display value="Plasmodium malariae DNA [Nachweis] in Blut mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="41449-0" />
+        <display value="Plasmodium ovale DNA [Nachweis] in Blut mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="41450-8" />
+        <display value="Plasmodium vivax DNA [Nachweis] in Blut mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="41852-5" />
+        <display value="Mikroorganismus oder Erreger identifiziert in Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="47085-6" />
+        <display value="Plasmodium sp DNA [Nachweis] in Blut mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="47260-5" />
+        <display value="Plasmodium sp DNA [Nachweis oder Identität] in Blut mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="48427-9" />
+        <display value="Erythrozyten.Plasmodium-sp-infiziert/1000 Erythrozyten in Blut" />
+      </concept>
+      <concept>
+        <code value="51587-4" />
+        <display value="Plasmodium sp [Nachweis] in Blut mittels Lichtmikroskopie" />
+      </concept>
+      <concept>
+        <code value="51865-4" />
+        <display value="Plasmodium sp Antigen [Nachweis oder Identität] in Blut" />
+      </concept>
+      <concept>
+        <code value="53556-7" />
+        <display value="Erythrozyten.Plasmodium-sp-infiziert/Erythrozyten in Blut" />
+      </concept>
+      <concept>
+        <code value="637-9" />
+        <display value="Plasmodium sp identifiziert in Blut mittels dickem Tropfen" />
+      </concept>
+      <concept>
+        <code value="70568-1" />
+        <display value="Plasmodium knowlesi DNA [Nachweis] in Blut mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="76772-3" />
+        <display value="Plasmodium falciparum Antigen [Nachweis] in Blut mittels Immunoassay-Schnelltest" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

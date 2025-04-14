@@ -105,8 +105,25 @@
             <a class="package-link" href="./rki.demis.laboratory/rki.demis.laboratory-4.0.0-alpha.1/Home.html">Leitfaden</a>
             <a href="./rki.demis.laboratory/rki.demis.laboratory-4.0.0-alpha.1/Vorab-rki.demis.laboratory-4.0.0-alpha.1@current.zip">Download ZIP</a>	
             <ul>
-                <li>feat: Anpassungen der strikten Profile</li>
-            </ul>
+                <li>feat: Anpassungen der strikten Profile<ul>
+                <li>ConceptMap LOINCMaterialToSNOMEDMaterial entfernt</li>
+                <li>ConceptMap LOINCMethodToSNOMEDMethod entfernt</li>
+                <li>NamingSystem ServiceRequestId entfernt</li>
+                <li>NotificationLaboratory.category gestrichen</li>
+                <li>uniqueId.value bei neuen NamingSystems von <a href="https://demis.rki.de/fhir/NamingSystem/">https://demis.rki.de/fhir/NamingSystem/</a> auf <a href="https://demis.rki.de/fhir/sid/">https://demis.rki.de/fhir/sid/</a> geändert</li>
+                <li>LaboratoryReport-Slice der NotificationLaboratory.section verpflichtend gemacht</li>
+                <li>version in Codings verpflichtend gemacht</li>
+                <li>extensible ValueSet-Bindings auf required gesetzt</li>
+                <li>Option text in Codings gestrichen (außer bei Specimen.type)</li>
+                <li>Slicing von PathogenDetection.value</li>
+                <li>Streichung von PathogenDetection.value[x]:valueString bei fast allen Meldetatbeständen</li>
+                <li>einige Felder auf required gesetzt</li>
+                <li>Streichungen von nicht benötigten Elementen</li>
+                <li>Metadaten publisher, contact, jurisdiction und copyright für alle Ressourcen hinzugefügt</li>
+                <li>Umstellung von fixed Values auf Pattern bei komplexen Datentypen</li>
+                </ul>
+                </li>
+                </ul>                
         </blockquote>
         <p></p>
         <h2>FHIR-Profile Integrierte Genomische Surveillance (rki.demis.igs)</h2>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestHBVP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestHBVP" />
+  <version value="1.7.0" />
+  <name value="LaboratoryTestHBVP" />
+  <title value="Labortest für Hepatitis-B-Virus; Meldepflicht für alle Nachweise" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-03-26" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet LaboratoryTestHBVP enthält die Codes der Labortests für Hepatitis-B-Virus; Meldepflicht für alle Nachweise." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.79" />
+      <concept>
+        <code value="106938-4" />
+        <display value="Hepatitis-B-Virus core Antikörper [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="11258-1" />
+        <display value="Hepatitis-B-Virus DNA [Einheiten/Volumen] in Serum" />
+      </concept>
+      <concept>
+        <code value="13952-7" />
+        <display value="Hepatitis-B-Virus-Core Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="13953-5" />
+        <display value="Hepatitis-B-Virus e Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="13954-3" />
+        <display value="Hepatitis-B-Virus e Antigen [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="16933-4" />
+        <display value="Hepatitis-B-Virus-Core Antikörper [Nachweis] in Serum" />
+      </concept>
+      <concept>
+        <code value="16935-9" />
+        <display value="Hepatitis-B-Virus-surface Antikörper [Einheiten/Volumen] in Serum" />
+      </concept>
+      <concept>
+        <code value="22318-0" />
+        <display value="Hepatitis-B-Virus-Core IgG-Antikörper [Einheiten/Volumen] in Serum" />
+      </concept>
+      <concept>
+        <code value="22319-8" />
+        <display value="Hepatitis-B-Virus-Core IgM-Antikörper [Einheiten/Volumen] in Serum" />
+      </concept>
+      <concept>
+        <code value="22320-6" />
+        <display value="Hepatitis-B-Virus e Antikörper [Nachweis] in Serum" />
+      </concept>
+      <concept>
+        <code value="22322-2" />
+        <display value="Hepatitis-B-Virus-surface Antikörper [Nachweis] in Serum" />
+      </concept>
+      <concept>
+        <code value="24113-3" />
+        <display value="Hepatitis-B-Virus-Core IgM-Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="29610-3" />
+        <display value="Hepatitis-B-Virus DNA [Nachweis] in Serum oder Plasma mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="29615-2" />
+        <display value="Hepatitis-B-Virus DNA [#/Volumen] (Viruslast) in Serum oder Plasma mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="31204-1" />
+        <display value="Hepatitis-B-Virus-Core IgM-Antikörper [Nachweis] in Serum" />
+      </concept>
+      <concept>
+        <code value="31844-4" />
+        <display value="Hepatitis-B-Virus e Antigen [Nachweis] in Serum" />
+      </concept>
+      <concept>
+        <code value="31845-1" />
+        <display value="Hepatitis-B-Virus e Antigen [Einheiten/Volumen] in Serum" />
+      </concept>
+      <concept>
+        <code value="32019-2" />
+        <display value="Hepatitis-B-Virus-surface Antikörper [Titer] in Serum" />
+      </concept>
+      <concept>
+        <code value="32366-7" />
+        <display value="Hepatitis-B-Virus Genotyp [Nachweis oder Identität] in Serum oder Plasma mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="32685-0" />
+        <display value="Hepatitis-B-Virus-Core IgG-Antikörper [Nachweis] in Serum" />
+      </concept>
+      <concept>
+        <code value="39007-0" />
+        <display value="Hepatitis-B-Virus e Antigen [Nachweis] in Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="41852-5" />
+        <display value="Mikroorganismus oder Erreger identifiziert in Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="42595-9" />
+        <display value="Hepatitis-B-Virus DNA [Einheiten/Volumen] (Viruslast) in Serum oder Plasma mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="49360-1" />
+        <display value="Hepatitis-B-Virus DNA [Einheiten/Volumen] (Viruslast) in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="49362-7" />
+        <display value="Hepatitis-B-Virus DNA [#/Volumen] (Viruslast) in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="5009-6" />
+        <display value="Hepatitis-B-Virus DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="5195-3" />
+        <display value="Hepatitis-B-Virus-surface Antigen [Nachweis] in Serum" />
+      </concept>
+      <concept>
+        <code value="5196-1" />
+        <display value="Hepatitis-B-Virus-surface Antigen [Nachweis] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="58452-4" />
+        <display value="Hepatitis-B-Virus-surface Antigen [Einheiten/Volumen] in Serum" />
+      </concept>
+      <concept>
+        <code value="63557-3" />
+        <display value="Hepatitis-B-Virus-surface Antigen [Einheiten/Volumen] in Serum oder Plasma mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="65633-0" />
+        <display value="Hepatitis-B-Virus-surface Antigen [Nachweis] in Serum oder Plasma mittels Bestätigungstest" />
+      </concept>
+      <concept>
+        <code value="70154-0" />
+        <display value="Hepatitis-B-Virus-surface Antigen in Serum oder Plasma mittels Bestätigungstest" />
+      </concept>
+      <concept>
+        <code value="7905-3" />
+        <display value="Hepatitis-B-Virus-surface Antigen [Nachweis] in Serum oder Plasma mittels Neutralisationstest" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

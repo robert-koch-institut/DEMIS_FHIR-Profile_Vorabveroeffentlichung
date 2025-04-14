@@ -1,0 +1,359 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="NotificationBundleLaboratory-example" />
+  <meta>
+    <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundleLaboratory"></profile>
+  </meta>
+  <identifier>
+    <system value="https://demis.rki.de/fhir/NamingSystem/NotificationBundleId"></system>
+    <value value="5071c623-74e1-3cc4-ac49-0f64960c53f1"></value>
+  </identifier>
+  <type value="document"></type>
+  <timestamp value="2024-09-04T17:28:13.000+01:00"></timestamp>
+  <entry>
+    <fullUrl value="urn:uuid:9a07c054-db05-3d5b-83d0-3e8cc0cb1f11"></fullUrl>
+    <resource>
+      <Composition xmlns="http://hl7.org/fhir">
+        <id value="9a07c054-db05-3d5b-83d0-3e8cc0cb1f11"></id>
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationLaboratory"></profile>
+        </meta>
+        <identifier>
+          <system value="https://demis.rki.de/fhir/NamingSystem/NotificationId"></system>
+          <value value="6188ad51-c608-40e4-b49f-88b47a349410"></value>
+        </identifier>
+        <status value="final"></status>
+        <type>
+          <coding>
+            <system value="http://loinc.org"></system>
+            <code value="34782-3"></code>
+            <display value="Infectious disease Note"></display>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:d96587b9-3b9c-3200-8a51-62cd322862e4"></reference>
+        </subject>
+        <date value="2024-09-04T17:28:13.000+01:00"></date>
+        <author>
+          <reference value="urn:uuid:5f73c825-5808-3102-9ce2-299ce62dd1fd"></reference>
+        </author>
+        <title value="Erregernachweismeldung"></title>
+        <section>
+          <code>
+            <coding>
+              <system value="http://loinc.org"></system>
+              <code value="11502-2"></code>
+              <display value="Laboratory report"></display>
+            </coding>
+          </code>
+          <entry>
+            <reference value="urn:uuid:76bd45bf-d17b-3534-9d43-49a17b77edbe"></reference>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d96587b9-3b9c-3200-8a51-62cd322862e4"></fullUrl>
+    <resource>
+      <Patient xmlns="http://hl7.org/fhir">
+        <id value="d96587b9-3b9c-3200-8a51-62cd322862e4"></id>
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson"></profile>
+        </meta>
+        <name>
+          <use value="official"></use>
+          <family value="Bäcker"></family>
+          <given value="Paula"></given>
+        </name>
+        <telecom>
+          <system value="email"></system>
+          <value value="paula.isst.baeck@gmehl.de"></value>
+        </telecom>
+        <gender value="female"></gender>
+        <birthDate value="1979-08-02"></birthDate>
+        <address>
+          <extension url="https://demis.rki.de/fhir/StructureDefinition/AddressUse">
+            <valueCoding>
+              <system value="https://demis.rki.de/fhir/CodeSystem/addressUse"></system>
+              <code value="primary"></code>
+            </valueCoding>
+          </extension>
+          <line value="Diagonalallee 414"></line>
+          <city value="Berlin"></city>
+          <postalCode value="10179"></postalCode>
+          <country value="DE"></country>
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:5f73c825-5808-3102-9ce2-299ce62dd1fd"></fullUrl>
+    <resource>
+      <PractitionerRole xmlns="http://hl7.org/fhir">
+        <id value="5f73c825-5808-3102-9ce2-299ce62dd1fd"></id>
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifierRole"></profile>
+        </meta>
+        <organization>
+          <reference value="urn:uuid:1ff3d70a-1dbf-3bf9-a8b9-b3178982b1b5"></reference>
+        </organization>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1ff3d70a-1dbf-3bf9-a8b9-b3178982b1b5"></fullUrl>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <id value="1ff3d70a-1dbf-3bf9-a8b9-b3178982b1b5"></id>
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifierFacility"></profile>
+        </meta>
+        <identifier>
+          <system value="https://demis.rki.de/fhir/NamingSystem/DEMISParticipantId"></system>
+          <value value="12345"></value>
+        </identifier>
+        <identifier>
+          <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"></system>
+          <value value="987654300"></value>
+        </identifier>
+        <type>
+          <coding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/organizationType"></system>
+            <code value="laboratory"></code>
+            <display value="Erregerdiagnostische Untersuchungsstelle"></display>
+          </coding>
+        </type>
+        <name value="Primärlabor"></name>
+        <telecom>
+          <system value="phone"></system>
+          <value value="0309876543210"></value>
+          <use value="work"></use>
+        </telecom>
+        <address>
+          <line value="Dingsweg 321"></line>
+          <city value="Berlin"></city>
+          <postalCode value="13055"></postalCode>
+          <country value="DE"></country>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:761fbe4a-1cd5-3c77-840c-098436dd7aec"></fullUrl>
+    <resource>
+      <PractitionerRole xmlns="http://hl7.org/fhir">
+        <id value="761fbe4a-1cd5-3c77-840c-098436dd7aec"></id>
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingRole"></profile>
+        </meta>
+        <organization>
+          <reference value="urn:uuid:b8c56554-618d-381c-9042-17d532d14322"></reference>
+        </organization>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b8c56554-618d-381c-9042-17d532d14322"></fullUrl>
+    <resource>
+      <Organization xmlns="http://hl7.org/fhir">
+        <id value="b8c56554-618d-381c-9042-17d532d14322"></id>
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingFacility"></profile>
+        </meta>
+        <identifier>
+          <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"></system>
+          <value value="123456780"></value>
+        </identifier>
+        <name value="Einsendepraxis ABC"></name>
+        <telecom>
+          <system value="phone"></system>
+          <value value="030 1234567890"></value>
+          <use value="work"></use>
+        </telecom>
+        <address>
+          <line value="Teststr. 123"></line>
+          <city value="Berlin"></city>
+          <postalCode value="13055"></postalCode>
+          <country value="DE"></country>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:76bd45bf-d17b-3534-9d43-49a17b77edbe"></fullUrl>
+    <resource>
+      <DiagnosticReport xmlns="http://hl7.org/fhir">
+        <id value="76bd45bf-d17b-3534-9d43-49a17b77edbe"></id>
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportMSVP"></profile>
+        </meta>
+        <status value="final"></status>
+        <code>
+          <coding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/notificationCategory"></system>
+            <code value="msvp"></code>
+            <display value="Masernvirus"></display>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:d96587b9-3b9c-3200-8a51-62cd322862e4"></reference>
+        </subject>
+        <issued value="2024-09-04T17:28:13.000+01:00"></issued>
+        <result>
+          <reference value="urn:uuid:a897cb70-7655-3b10-8d89-e20f7d9c5ba2"></reference>
+        </result>
+        <result>
+          <reference value="urn:uuid:610357ad-7347-3c40-a365-738474c024f2"></reference>
+        </result>
+        <conclusionCode>
+          <coding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/conclusionCode"></system>
+            <code value="pathogenDetected"></code>
+            <display value="Meldepflichtiger Erreger nachgewiesen"></display>
+          </coding>
+        </conclusionCode>
+      </DiagnosticReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a897cb70-7655-3b10-8d89-e20f7d9c5ba2"></fullUrl>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="a897cb70-7655-3b10-8d89-e20f7d9c5ba2"></id>
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionMSVP"></profile>
+        </meta>
+        <status value="final"></status>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"></system>
+            <code value="laboratory"></code>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"></system>
+            <version value="2.78"></version>
+            <code value="60422-3"></code>
+            <display value="Measles virus genotype [Identifier] in Specimen by NAA with probe detection"></display>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:d96587b9-3b9c-3200-8a51-62cd322862e4"></reference>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"></system>
+            <version value="http://snomed.info/sct/11000274103/version/20240515"></version>
+            <code value="427290009"></code>
+            <display value="Measles virus genotype D8 (organism)"></display>
+          </coding>
+        </valueCodeableConcept>
+        <interpretation>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"></system>
+            <code value="POS"></code>
+            <display value="Positive"></display>
+          </coding>
+        </interpretation>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"></system>
+            <version value="http://snomed.info/sct/11000274103/version/20240515"></version>
+            <code value="117040002"></code>
+            <display value="Nucleic acid sequencing (procedure)"></display>
+          </coding>
+        </method>
+        <specimen>
+          <reference value="urn:uuid:680c823f-19ec-323c-ade2-fa91b0797332"></reference>
+        </specimen>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:610357ad-7347-3c40-a365-738474c024f2"></fullUrl>
+    <resource>
+      <Observation xmlns="http://hl7.org/fhir">
+        <id value="610357ad-7347-3c40-a365-738474c024f2"></id>
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionMSVP"></profile>
+        </meta>
+        <status value="final"></status>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"></system>
+            <code value="laboratory"></code>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"></system>
+            <version value="2.78"></version>
+            <code value="60422-3"></code>
+            <display value="Measles virus genotype [Identifier] in Specimen by NAA with probe detection"></display>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:d96587b9-3b9c-3200-8a51-62cd322862e4"></reference>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"></system>
+            <version value="http://snomed.info/sct/11000274103/version/20240515"></version>
+            <code value="41482005"></code>
+            <display value="Molecular sequence data (finding)"></display>
+          </coding>
+          <text value="WHO Sequenz-Nummer (Distinct Sequenz ID): 8782"></text>
+        </valueCodeableConcept>
+        <interpretation>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"></system>
+            <code value="POS"></code>
+            <display value="Positive"></display>
+          </coding>
+        </interpretation>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"></system>
+            <version value="http://snomed.info/sct/11000274103/version/20240515"></version>
+            <code value="117040002"></code>
+            <display value="Nucleic acid sequencing (procedure)"></display>
+          </coding>
+        </method>
+        <specimen>
+          <reference value="urn:uuid:680c823f-19ec-323c-ade2-fa91b0797332"></reference>
+        </specimen>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:680c823f-19ec-323c-ade2-fa91b0797332"></fullUrl>
+    <resource>
+      <Specimen xmlns="http://hl7.org/fhir">
+        <id value="680c823f-19ec-323c-ade2-fa91b0797332"></id>
+        <meta>
+          <profile value="https://demis.rki.de/fhir/StructureDefinition/SpecimenMSVP"></profile>
+        </meta>
+        <status value="available"></status>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"></system>
+            <version value="http://snomed.info/sct/11000274103/version/20240515"></version>
+            <code value="258529004"></code>
+            <display value="Throat swab (specimen)"></display>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:d96587b9-3b9c-3200-8a51-62cd322862e4"></reference>
+        </subject>
+        <receivedTime value="2024-09-04T13:58:08.000+01:00"></receivedTime>
+        <collection>
+          <collector>
+            <reference value="urn:uuid:761fbe4a-1cd5-3c77-840c-098436dd7aec"></reference>
+          </collector>
+          <collectedDateTime value="2024-09-04T08:08:08.000+01:00"></collectedDateTime>
+        </collection>
+      </Specimen>
+    </resource>
+  </entry>
+</Bundle>
