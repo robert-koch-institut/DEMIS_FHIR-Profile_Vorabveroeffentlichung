@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NotificationReceipt" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/NotificationReceipt" />
+  <version value="2.0.0" />
+  <name value="NotificationReceipt" />
+  <title value="Meldequittung" />
+  <status value="active" />
+  <date value="2025-02-20" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Meldequittung" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright (C) 2021-2025 Robert Koch-Institut" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="fhirdocumentreference" />
+    <uri value="http://hl7.org/fhir/documentreference" />
+    <name value="FHIR DocumentReference" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition.meta">
+      <path value="Composition.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.meta.profile">
+      <path value="Composition.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <patternCanonical value="https://demis.rki.de/fhir/StructureDefinition/NotificationReceipt" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.extension">
+      <path value="Composition.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Composition.extension:receivedNotificationBundle">
+      <path value="Composition.extension" />
+      <sliceName value="receivedNotificationBundle" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/ReceivedNotificationBundle" />
+      </type>
+    </element>
+    <element id="Composition.identifier">
+      <path value="Composition.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.type.coding">
+      <path value="Composition.type.coding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="77999-1" />
+        <display value="Case notification comment" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.type.coding.version">
+      <path value="Composition.type.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="Composition.type.coding.userSelected">
+      <path value="Composition.type.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.type.text">
+      <path value="Composition.type.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <max value="0" />
+    </element>
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <max value="0" />
+    </element>
+    <element id="Composition.encounter">
+      <path value="Composition.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.confidentiality">
+      <path value="Composition.confidentiality" />
+      <max value="0" />
+    </element>
+    <element id="Composition.attester">
+      <path value="Composition.attester" />
+      <max value="0" />
+    </element>
+    <element id="Composition.custodian">
+      <path value="Composition.custodian" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo">
+      <path value="Composition.relatesTo" />
+      <short value="NotificationID der gesendeten Meldung" />
+      <definition value="NotificationID der gesendeten Meldung" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.code">
+      <path value="Composition.relatesTo.code" />
+      <fixedCode value="appends" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x]">
+      <path value="Composition.relatesTo.target[x]" />
+      <type>
+        <code value="Reference" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x].reference">
+      <path value="Composition.relatesTo.target[x].reference" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo.target[x].type">
+      <path value="Composition.relatesTo.target[x].type" />
+      <min value="1" />
+      <fixedUri value="Composition" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier">
+      <path value="Composition.relatesTo.target[x].identifier" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier.use">
+      <path value="Composition.relatesTo.target[x].identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier.type">
+      <path value="Composition.relatesTo.target[x].identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier.system">
+      <path value="Composition.relatesTo.target[x].identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://demis.rki.de/fhir/NamingSystem/NotificationId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier.value">
+      <path value="Composition.relatesTo.target[x].identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier.period">
+      <path value="Composition.relatesTo.target[x].identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier.assigner">
+      <path value="Composition.relatesTo.target[x].identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo.target[x].display">
+      <path value="Composition.relatesTo.target[x].display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.event">
+      <path value="Composition.event" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section">
+      <path value="Composition.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code.text" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <max value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:reportingSite">
+      <path value="Composition.section" />
+      <sliceName value="reportingSite" />
+      <short value="Zuständiges Gesundheitsamt" />
+      <definition value="Zuständiges Gesundheitsamt" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:reportingSite.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+      <fixedString value="Zuständiges Gesundheitsamt" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:reportingSite.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:reportingSite.code.text">
+      <path value="Composition.section.code.text" />
+      <min value="1" />
+      <fixedString value="Zuständiges Gesundheitsamt" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:reportingSite.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:reportingSite.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:reportingSite.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:reportingSite.mode">
+      <path value="Composition.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:reportingSite.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:reportingSite.entry">
+      <path value="Composition.section.entry" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:reportingSite.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:reportingSite.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:reportingSite.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:pdfReceipt">
+      <path value="Composition.section" />
+      <sliceName value="pdfReceipt" />
+      <short value="PDF Quittung" />
+      <definition value="PDF Quittung" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:pdfReceipt.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+      <fixedString value="PDF Quittung" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:pdfReceipt.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:pdfReceipt.code.text">
+      <path value="Composition.section.code.text" />
+      <min value="1" />
+      <fixedString value="PDF Quittung" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:pdfReceipt.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:pdfReceipt.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:pdfReceipt.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:pdfReceipt.mode">
+      <path value="Composition.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:pdfReceipt.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:pdfReceipt.entry">
+      <path value="Composition.section.entry" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:pdfReceipt.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:pdfReceipt.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:pdfReceipt.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

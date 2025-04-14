@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="addressUse" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/addressUse" />
+  <version value="1.2.1" />
+  <name value="AddressUse" />
+  <title value="Adressnutzung" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-03-28" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das CodeSystem AddressUse enthält die Codes für die Adressnutzung." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="(C) 2021-2025 Robert Koch-Institut" />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/addressUse" />
+  <content value="complete" />
+  <count value="3" />
+  <concept>
+    <code value="current" />
+    <display value="Derzeitiger Aufenthaltsort" />
+  </concept>
+  <concept>
+    <code value="ordinary" />
+    <display value="Gewöhnlicher Aufenthaltsort" />
+  </concept>
+  <concept>
+    <code value="primary" />
+    <display value="Hauptwohnsitz" />
+  </concept>
+</CodeSystem>

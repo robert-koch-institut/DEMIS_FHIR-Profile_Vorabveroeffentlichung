@@ -58,40 +58,55 @@
         <p>Das Paket rki.demis.common beinhaltet eine Reihe an DEMIS-Basis-Ressourcen wie z.B. betroffene
             Person oder Melder. Spezifische DEMIS-Pakete wie rki.demis.laboratory oder rki.demis.disease binden dieses als Dependency ein.</p>
         <blockquote>
-            <font size="2" face="verdana" color="red">
+            <!--<font size="2" face="verdana" color="red">
                 <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.common-Paket. Seit 09.04.2025 wird
                     die Version rki.demis.common-2.1.0 durch das DEMIS-Backend unterstützt. Das entsprechende
                     Simplifier-Projekt <a href="https://simplifier.net/rki.demis.common">https://simplifier.net/rki.demis.common</a>
                     wurde aktualisiert.</p>
-            </font>
-			<!--<h3>Version rki.demis.common-2.1.0-rc.1 (26.03.2025)</h3>
-			<a class="package-link" href="./rki.demis.common/rki.demis.common-2.1.0-rc.1/Home.html">Leitfaden</a>
-            <a href="./rki.demis.common/rki.demis.common-2.1.0-rc.1/Vorab-rki.demis.common-2.1.0-rc.1@current.zip">Download ZIP</a>
+            </font>-->
+			<h3>Version rki.demis.common-3.0.0-alpha.1 (14.04.2025)</h3>
+			<a class="package-link" href="./rki.demis.common/rki.demis.common-3.0.0-alpha.1/Home.html">Leitfaden</a>
+            <a href="./rki.demis.common/rki.demis.common-3.0.0-alpha.1/Vorab-rki.demis.common-3.0.0-alpha.1@current.zip">Download ZIP</a>
             <ul>
-                <li>feat: Profil NotifiedPersonNotByName in NotifiedPersonAnonymous umbenannt</li>
-                <li>fix: in CodeSystem OrganizationType: Korrektur der Definitions von &quot;housingFacility&quot; und &quot;nursingHome&quot;</li>
-            </ul>-->
+                <li>feat: Anpassungen der strikten Profile<ul>
+                <li>CapabilityStatements hinzugefügt</li>
+                <li>CodeSystem/ValueSet Country entfernt</li>
+                <li>CodeSystem/ValueSet PostalCode entfernt</li>
+                <li>ValueSet AnswerSetAddressUse entfernt</li>
+                <li>Extension und ValueSet County entfernt</li>
+                <li>ConceptMap ISO3166CountryCodes2DEMISCountry entfernt</li>
+                <li>ConceptMaps IHEHealthcareFacilityCodes2DEMISOrganizationTypeCodes, IHEOutsideHealthcareFacilityCodes2DEMISOrganizationTypeCodes und ISIKOrganizationTypeCodes2DEMISOrganizationTypeCodes hinzugefügt</li>
+                <li>NamingSystem DemisLaboratoryId entfernt</li>
+                <li>Identifier IdentifierDemisParticipantId hinzugefügt</li>
+                <li>Identifier IdentifierInternalOrganizationId und IdentifierSurveillancePatientPseudonym hinzugefügt, sowie entsprechendes NamingSystem</li>
+                <li>einige Felder auf required umgestellt</li>
+                <li>Umstellung der Constraints von warning auf error</li>
+                <li>Betroffene Person (namentlich und anonym): Slicing der Adresse nach Aufenthaltsort und Aufnahme der Extension gender-amtlich-de</li>
+                <li>Extension ReceivedNotification in ReceivedNotificationBundle umbenannt</li>
+                <li>Extension Salutation in SubmittingPerson hinzugefügt</li>
+                <li>Streichungen von nicht benötigten Elementen</li>
+                <li>Metadaten publisher, contact, jurisdiction und copyright für alle Ressourcen hinzugefügt</li>
+                <li>Umstellung von fixed Values auf Pattern bei komplexen Datentypen</li>
+                </ul>
+                </li>
+                </ul>
         </blockquote>
         <p></p>
         <h2>FHIR-Profile Erregernachweismeldung (rki.demis.laboratory)</h2>
         <p>Das Paket rki.demis.laboratory beinhaltet die Ressourcen für die Erregernachweismeldung.</p>
         <blockquote>
-            <font size="2" face="verdana" color="red">
+            <!--<font size="2" face="verdana" color="red">
                 <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.laboratory-Paket. Seit 09.04.2025
                     wird die Version rki.demis.laboratory-3.2.0 durch das DEMIS-Backend unterstützt. Das entsprechende
                     Simplifier-Projekt <a href="https://simplifier.net/rki.demis.laboratory">https://simplifier.net/rki.demis.laboratory</a>
                     wurde aktualisiert.</p>
-            </font>
-    		<!--<h3>Version rki.demis.laboratory-3.2.0-rc.1 (26.03.2025)</h3>
-            <a class="package-link" href="./rki.demis.laboratory/rki.demis.laboratory-3.2.0-rc.1/Home.html">Leitfaden</a>
-            <a href="./rki.demis.laboratory/rki.demis.laboratory-3.2.0-rc.1/Vorab-rki.demis.laboratory-3.2.0-rc.1@current.zip">Download ZIP</a>	
+            </font>-->
+    		<h3>Version rki.demis.laboratory-4.0.0-alpha.1 (14.04.2025)</h3>
+            <a class="package-link" href="./rki.demis.laboratory/rki.demis.laboratory-4.0.0-alpha.1/Home.html">Leitfaden</a>
+            <a href="./rki.demis.laboratory/rki.demis.laboratory-4.0.0-alpha.1/Vorab-rki.demis.laboratory-4.0.0-alpha.1@current.zip">Download ZIP</a>	
             <ul>
-                <li>feat: NotificationBundleLaboratoryNotByName in NotificationBundleLaboratoryNegative umbenannt und Descriptions angepasst</li>
-                <li>feat: NotificationLaboratoryNotByName in NotificationLaboratoryNegative umbenannt und Descriptions angepasst</li>
-                <li>feat: Referenzen auf NotifiedPersonNotByName durch Referenzen auf NotifiedPersonAnonymous ersetzt</li>
-                <li>feat: Update auf SNOMED-CT Germany Edition 20241115
-                <li>feat: Update auf LOINC 2.79</li>
-            </ul>-->
+                <li>feat: Anpassungen der strikten Profile</li>
+            </ul>
         </blockquote>
         <p></p>
         <h2>FHIR-Profile Integrierte Genomische Surveillance (rki.demis.igs)</h2>

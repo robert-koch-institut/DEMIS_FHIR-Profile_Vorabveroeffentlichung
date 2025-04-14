@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="ISIKOrganizationTypeCodes2DEMISOrganizationTypeCodes"/>
+  <url value="https://demis.rki.de/fhir/ConceptMap/ISIKOrganizationTypeCodes2DEMISOrganizationTypeCodes"/>
+  <version value="1.0.0"/>
+  <name value="ISIKOrganizationTypeCodes2DEMISOrganizationTypeCodes"/>
+  <title value="ISIKOrganizationTypeCodes2DEMISOrganizationTypeCodes"/>
+  <status value="active"/>
+  <date value="2025-02-20"/>
+  <publisher value="Robert Koch-Institut"/><contact><telecom><system value="email"/><value value="demis-support@rki.de"/></telecom></contact><description value="Die ConceptMap ISIKOrganizationTypeCodes2DEMISOrganizationTypeCodes ordnet die Codes der ISIK-Einrichtungstypen den Codes der DEMIS-Einrichtungsarten zu."/>
+  <jurisdiction><coding><system value="urn:iso:std:iso:3166"/><version value="ALPHA-2"/><code value="DE"/></coding></jurisdiction><copyright value="Copyright (C) 2021-2025 Robert Koch-Institut"/><sourceUri value="http://hl7.org/fhir/ValueSet/organization-type"/>
+  <targetUri value="https://demis.rki.de/fhir/ValueSet/organizationType"/>
+  <group>
+    <source value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+    <target value="https://demis.rki.de/fhir/CodeSystem/organizationType"/>
+    <element>
+      <code value="prov"/>
+      <display value="Healthcare Provider"/>
+      <target>
+        <code value="medFacility"/>
+        <display value="Medizinische Einrichtung"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="dept"/>
+      <display value="Hospital Department"/>
+      <target>
+        <code value="hospital"/>
+        <display value="Krankenhaus"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

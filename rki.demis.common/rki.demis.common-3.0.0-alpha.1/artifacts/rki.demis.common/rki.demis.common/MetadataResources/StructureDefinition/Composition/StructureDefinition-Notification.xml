@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Notification" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/Notification" />
+  <version value="2.0.0" />
+  <name value="Notification" />
+  <title value="Meldung" />
+  <status value="active" />
+  <date value="2025-02-20" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Die Meldung ist ein abstraktes Profil und referenziert den Melder und die Diagnose. Spezifische Arten von Meldungen werden in abgeleiteten Profilen definiert. &#xD;&#xA;Meldungen, die durch einen bestimmten Melder abgesetzt werden, können nur durch diesen ergänzt oder korrigiert werden. Meldungen können andere Meldungen referenzieren." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright (C) 2021-2025 Robert Koch-Institut" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="fhirdocumentreference" />
+    <uri value="http://hl7.org/fhir/documentreference" />
+    <name value="FHIR DocumentReference" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="true" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition">
+      <path value="Composition" />
+      <constraint>
+        <key value="idOfReferencedNotificationUnequalToNotificationId" />
+        <severity value="error" />
+        <human value="Die in relatesTo angegebene ID der referenzierten Meldung darf nicht gleich der Meldungs-ID (Composition.identifier) sein." />
+        <expression value="Composition.relatesTo.count()=0 or (Composition.relatesTo.target.identifier.value.toString()!=Composition.identifier.value.toString())" />
+      </constraint>
+    </element>
+    <element id="Composition.identifier">
+      <path value="Composition.identifier" />
+      <short value="Eindeutige ID der Meldung" />
+      <definition value="Eindeutige ID der Meldung, die vom Melder bei Erstellung generiert wird oder sich aus der Auftragsnummer ableitet. Es handelt sich um eine UUID im NamingSystem https://demis.rki.de/fhir/NamingSystem/NotificationId.&#xD;&#xA;&#xD;&#xA;Als system MUSS https://demis.rki.de/fhir/NamingSystem/NotificationId verwendet werden.&#xD;&#xA;&#xD;&#xA;Der value MUSS eine durch das System des Melders generierte UUID sein, die gemäß einer der beiden im Folgenden beschriebenen Varianten gebildet wird:&#xD;&#xA;&#xD;&#xA;Variante 1 - Bildung einer Random-UUID (v4) gemäß RFC4122&#xD;&#xA;Variante 2 - Bildung einer namensbasierten UUID (v5) gemäß RFC4122 (SHA1-basiert)" />
+      <comment value="Bei einer Ergänzungs- bzw. einer Korrekturmeldung ist die gleiche NotificationId der Meldung anzugegeben." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.identifier.use">
+      <path value="Composition.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Composition.identifier.type">
+      <path value="Composition.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.identifier.system">
+      <path value="Composition.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://demis.rki.de/fhir/NamingSystem/NotificationId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.identifier.value">
+      <path value="Composition.identifier.value" />
+      <min value="1" />
+      <constraint>
+        <key value="validNotificationId" />
+        <severity value="error" />
+        <human value="Die NotificationId muss dem UUID-Format [0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12} entsprechen." />
+        <expression value="$this.toString().matches('^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.identifier.period">
+      <path value="Composition.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Composition.identifier.assigner">
+      <path value="Composition.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Composition.status">
+      <path value="Composition.status" />
+      <short value="Status der Meldungsinhalte" />
+      <definition value="Der Status gibt, ob die Meldungsinhalte verbindlich oder vorläufig sind. Oder ob es sich um eine Korrektur-bzw. Ergänzungsmeldung handelt." />
+      <comment value="Der Status ist szenarienspezifisch (siehe Abschnitt  Lifecyclemanagement im Implementierungsleitfaden) folgendermaßen zu belegen: &#xD;&#xA;final - wenn keine weiteren Untersuchungen notwendig sind oder es sich um das erste von mehreren Untersuchungsergebnissen handelt;&#xD;&#xA;preliminary - wenn ein Bestätigungstest notwendig ist;&#xD;&#xA;amended - wenn die Meldung korrigiert oder um einen weiteren Erregernachweis ergänzt wird." />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="Status der Meldungsinhalte" />
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/NotificationStatus" />
+      </binding>
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type" />
+      <short value="Typ der Composition" />
+      <definition value="Typ der Composition" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.type.text">
+      <path value="Composition.type.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.category.text">
+      <path value="Composition.category.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.encounter">
+      <path value="Composition.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Composition.date">
+      <path value="Composition.date" />
+      <short value="Zeitpunkt der Erstellung/Bearbeitung der aktuellen Version der Meldung" />
+      <definition value="Zeitpunkt der Erstellung/Bearbeitung der aktuellen Version der Meldung" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <short value="Verweis auf die Melder-Rolle." />
+      <definition value="Verweis auf die Melder-Rolle. Über die Melder-Rolle kann eine Person oder eine Organisation als Melder referenziert werden." />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifierRole" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author.reference">
+      <path value="Composition.author.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author.type">
+      <path value="Composition.author.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.author.identifier">
+      <path value="Composition.author.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.author.display">
+      <path value="Composition.author.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.title">
+      <path value="Composition.title" />
+      <short value="Titel der Meldung" />
+      <definition value="Titel der Meldung" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.confidentiality">
+      <path value="Composition.confidentiality" />
+      <max value="0" />
+    </element>
+    <element id="Composition.attester">
+      <path value="Composition.attester" />
+      <max value="0" />
+    </element>
+    <element id="Composition.custodian">
+      <path value="Composition.custodian" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo">
+      <path value="Composition.relatesTo" />
+      <short value="Verweis auf eine Meldung" />
+      <definition value="Es kann eine Meldung referenziert werden, z.B. eine vorangegangene Meldung eines Primärlabors. Dazu wird die NotificationId der Meldung, auf die verwiesen werden soll, im relatesTo-Identifier angegeben." />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.code">
+      <path value="Composition.relatesTo.code" />
+      <fixedCode value="appends" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x]">
+      <path value="Composition.relatesTo.target[x]" />
+      <type>
+        <code value="Reference" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x].reference">
+      <path value="Composition.relatesTo.target[x].reference" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo.target[x].type">
+      <path value="Composition.relatesTo.target[x].type" />
+      <min value="1" />
+      <fixedUri value="Composition" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier">
+      <path value="Composition.relatesTo.target[x].identifier" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier.use">
+      <path value="Composition.relatesTo.target[x].identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier.type">
+      <path value="Composition.relatesTo.target[x].identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier.system">
+      <path value="Composition.relatesTo.target[x].identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://demis.rki.de/fhir/NamingSystem/NotificationId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier.value">
+      <path value="Composition.relatesTo.target[x].identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier.period">
+      <path value="Composition.relatesTo.target[x].identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo.target[x].identifier.assigner">
+      <path value="Composition.relatesTo.target[x].identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo.target[x].display">
+      <path value="Composition.relatesTo.target[x].display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.event">
+      <path value="Composition.event" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

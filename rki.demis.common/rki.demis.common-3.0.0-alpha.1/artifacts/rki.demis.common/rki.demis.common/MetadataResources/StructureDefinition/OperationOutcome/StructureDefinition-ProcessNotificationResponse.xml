@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ProcessNotificationResponse" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponse" />
+  <version value="2.0.0" />
+  <name value="ProcessNotificationResponse" />
+  <title value="Response für $process-notification" />
+  <status value="active" />
+  <date value="2025-02-20" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Response für $process-notification" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright (C) 2021-2025 Robert Koch-Institut" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="OperationOutcome" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/OperationOutcome" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="OperationOutcome.meta">
+      <path value="OperationOutcome.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.meta.profile">
+      <path value="OperationOutcome.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <patternCanonical value="https://demis.rki.de/fhir/StructureDefinition/ProcessNotificationResponse" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue">
+      <path value="OperationOutcome.issue" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.severity">
+      <path value="OperationOutcome.issue.severity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.code">
+      <path value="OperationOutcome.issue.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.details">
+      <path value="OperationOutcome.issue.details" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.diagnostics">
+      <path value="OperationOutcome.issue.diagnostics" />
+      <max value="0" />
+    </element>
+    <element id="OperationOutcome.issue.location">
+      <path value="OperationOutcome.issue.location" />
+      <max value="0" />
+    </element>
+    <element id="OperationOutcome.issue.expression">
+      <path value="OperationOutcome.issue.expression" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

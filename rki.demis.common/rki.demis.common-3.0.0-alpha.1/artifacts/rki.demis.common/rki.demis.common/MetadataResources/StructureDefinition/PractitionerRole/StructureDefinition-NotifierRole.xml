@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NotifierRole" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/NotifierRole" />
+  <version value="2.0.0" />
+  <name value="NotifierRole" />
+  <title value="Melder-Rolle" />
+  <status value="active" />
+  <date value="2025-02-20" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Melder müssen gemäß IfSG entweder Angaben zu ihrer Einrichtung oder Angaben zu ihrer Person angeben. Es können auch beide Angaben hinterlegt werden. Die Melder-Rolle ist erforderlich, um eine Unterscheidung zwischen Melder und Meldender Einrichtung vornehmen zu können. Sie beinhaltet lediglich Verweise auf die Meldende Person und/oder die Meldende Einrichtung." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+        <version value="ALPHA-2" /><code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright (C) 2021-2025 Robert Koch-Institut" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="servd" />
+    <uri value="http://www.omg.org/spec/ServD/1.0/" />
+    <name value="ServD" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="PractitionerRole" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="PractitionerRole">
+      <path value="PractitionerRole" />
+      <constraint>
+        <key value="personOrFacility" />
+        <severity value="error" />
+        <human value="Der Melder ist entweder eine Meldende Person oder eine Meldende Einrichtung." />
+        <expression value="practitioner.count()=1 or organization.count()=1" />
+        <source value="https://demis.rki.de/fhir/StructureDefinition/NotifierRole" />
+      </constraint>
+    </element>
+    <element id="PractitionerRole.meta">
+      <path value="PractitionerRole.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.meta.profile">
+      <path value="PractitionerRole.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <patternCanonical value="https://demis.rki.de/fhir/StructureDefinition/NotifierRole" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.identifier">
+      <path value="PractitionerRole.identifier"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.active">
+      <path value="PractitionerRole.active"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.period">
+      <path value="PractitionerRole.period"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.practitioner">
+      <path value="PractitionerRole.practitioner" />
+      <short value="Verweis auf die Meldende Person" />
+      <definition value="Verweis auf die Meldende Person" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/Notifier" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.practitioner.reference">
+      <path value="PractitionerRole.practitioner.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.practitioner.type">
+      <path value="PractitionerRole.practitioner.type"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.practitioner.identifier">
+      <path value="PractitionerRole.practitioner.identifier"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.practitioner.display">
+      <path value="PractitionerRole.practitioner.display"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.organization">
+      <path value="PractitionerRole.organization" />
+      <short value="Verweis auf die Meldende Einrichtung" />
+      <definition value="Verweis auf die Meldende Einrichtung" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifierFacility" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.organization.reference">
+      <path value="PractitionerRole.organization.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.organization.type">
+      <path value="PractitionerRole.organization.type"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.organization.identifier">
+      <path value="PractitionerRole.organization.identifier"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.organization.display">
+      <path value="PractitionerRole.organization.display"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.code">
+      <path value="PractitionerRole.code"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.specialty">
+      <path value="PractitionerRole.specialty"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.location">
+      <path value="PractitionerRole.location"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.healthcareService">
+      <path value="PractitionerRole.healthcareService"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.telecom">
+      <path value="PractitionerRole.telecom"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.availableTime">
+      <path value="PractitionerRole.availableTime"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.notAvailable">
+      <path value="PractitionerRole.notAvailable"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.availabilityExceptions">
+      <path value="PractitionerRole.availabilityExceptions"/>
+      <max value="0"/>
+    </element>
+    <element id="PractitionerRole.endpoint">
+      <path value="PractitionerRole.endpoint"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>

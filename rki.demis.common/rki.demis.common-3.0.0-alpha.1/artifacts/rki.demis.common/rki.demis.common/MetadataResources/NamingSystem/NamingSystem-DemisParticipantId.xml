@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="DemisParticipantId"/>
+  <name value="DemisParticipantId" />
+  <status value="active" />
+  <kind value="identifier" />
+  <date value="2025-02-12" />
+  <description value="Die DemisParticipantId (DEMIS-Teilnehmernummer) wird genutzt, um DEMIS-Teilnehmer (Melder, Gesundheitsämter etc.) innerhalb des Systems eindeutig identifizieren zu können. Die Herausgabe von Identifiern innerhalb dieses NamingSystems erfolgt durch das Robert Koch-Institut." />
+  <uniqueId>
+    <type value="uri" />
+    <value value="https://demis.rki.de/fhir/NamingSystem/DEMISParticipantId" />
+    <preferred value="true" />
+  </uniqueId>
+</NamingSystem>
