@@ -1,0 +1,1330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="method" />
+  <url value="https://demis.rki.de/fhir/ValueSet/method" />
+  <version value="1.15.0" />
+  <name value="Method" />
+  <title value="Nachweismethode" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-04-14" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet Method enthält die Codes der Nachweismethoden." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20241115" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1156860005" />
+        <display value="Rapid antigen detection immunoassay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Antigenschnelltest" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1156878000" />
+        <display value="Molecular nucleic acid amplification technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Nukleinsäure-Amplifikations-Technologie" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="117321004" />
+        <display value="Orcein stain method (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Orcein-Färbung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="118119003" />
+        <display value="Measurement of microbial antibody (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Antikörpernachweis" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="118590008" />
+        <display value="Dilution factor expressed as titer (property) (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Titerbestimmung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="121276004" />
+        <display value="Antigen assay (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Antigennachweis" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="122443003" />
+        <display value="Toxin assay (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Toxinnachweis" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1259932009" />
+        <display value="Loop-mediated isothermal amplification technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="PCR-Schnelltest" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1259933004" />
+        <display value="Strand displacement amplification technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Strangverdrängungsamplifikation" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1259934005" />
+        <display value="Microparticle enzyme immunoassay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Mikropartikel-Enzymimmunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1259935006" />
+        <display value="Chemiluminescent immunoassay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Chemilumineszenz-Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1259936007" />
+        <display value="Enzyme-linked fluorescence assay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Enzymgebundener Fluoreszenz-Assay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1293039000" />
+        <display value="Maus-Bioassay-Methode" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1303766009" />
+        <display value="Hemagglutination technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Hamagglutinations-Assay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1303769002" />
+        <display value="Hemagglutination inhibition technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Hämagglutinations-Hemm-Test" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1303773004" />
+        <display value="Fluorescence in situ hybridization technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Fluoreszenz-in- situ-Hybridisierung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1303825001" />
+        <display value="Ziehl-Neelsen stain technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Ziehl-Neelsen-Färbung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1303848006" />
+        <display value="Rhodamine-auramine fluorochrome stain technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Rhodamin-Auramin-Fluorochrom-Färbung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1303970008" />
+        <display value="Electron microscopy (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Elektronenmikroskopische Untersuchung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1303975003" />
+        <display value="Disk diffusion technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Agar-Diffusionstest" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1303998006" />
+        <display value="Multiplex polymerase chain reaction technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Multiplex/Panel-PCR" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1304162005" />
+        <display value="Nucleic acid sequencing technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Nukleinsäuresequenzierung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1306402001" />
+        <display value="Mass spectrometry technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Massenspektrometrie" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1331912004" />
+        <display value="Giemsa stain technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Giemsa-Färbung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1331921003" />
+        <display value="Immunofluorescent stain technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Immunfluoreszenz" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="1331923000" />
+        <display value="Cell culture for virus technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="virale Zellkultur" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="14788002" />
+        <display value="Antimicrobial susceptibility test (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Antimikrobielle Empfindlichkeitsprüfung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="250758002" />
+        <display value="Immunoglobulin G index measurement (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Liquor/Serum-Antikörperindex" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258035006" />
+        <display value="High pressure liquid chromatography (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Hochdruckflüssigkeitschromatographie" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258036007" />
+        <display value="Immunoblotting (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Immunoblotting" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258037003" />
+        <display value="Immunoradiometry (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Immunoradiometrie" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258066000" />
+        <display value="Polymerase chain reaction technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Polymerase-Kettenreaktion" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258075003" />
+        <display value="Serotyping (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Serotypisierung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258087005" />
+        <display value="Agar dilution (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Bestimmung der minimalen Hemmkonzentration (MHK) nach der Agar-Dilutionsmethode" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258099003" />
+        <display value="Fluorescence microscopy technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Fluoreszenzmikroskopie" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="258109007" />
+        <display value="Restriction fragment length polymorphism technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Restriktionsfragmentlängenpolymorphismus" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="263696007" />
+        <display value="Broth dilution (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Bouillon-Dilutionstests" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="264275001" />
+        <display value="Fluorescence polarization immunoassay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Fluoreszenzpolarisations-Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="264788002" />
+        <display value="Biotyping (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Biotyp-Identifzierung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="264896000" />
+        <display value="Nucleic acid analysis (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Nukleinsäure-Assay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="269829001" />
+        <display value="Treponema pallidum hemaglutination test (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="TPHA-Test" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="278289002" />
+        <display value="Microscopy technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Mikroskopie" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="31651002" />
+        <display value="Immunoglobulin A measurement (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Immunglobulin-A (IgA)-Bestimmung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="32746004" />
+        <display value="Direct fluorescent antibody test for syphilis (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="DFA-TP-Test" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="359838000" />
+        <display value="Nephelometry (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Nephelometrie" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="363778006" />
+        <display value="Phenotype determination (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Phänotypbestimmung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="405262001" />
+        <display value="Patientennahe Sofortdiagnostik" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000013009" />
+          </use>
+          <value value="POCT - Point-of-Care-Testing" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="420848008" />
+        <display value="Verabreichung von Malariaprophylaxe" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426053009" />
+        <display value="Elek test (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Elek-Test" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="45293001" />
+        <display value="Immunoglobulin G measurement (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Immunglobulin-G (IgG)-Bestimmung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="45764000" />
+        <display value="Immunoglobulin M measurement (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Immunglobulin-M (IgM)-Bestimmung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="66691000052100" />
+        <display value="Electrochemiluminescence immunoassay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Elektrochemilumineszenz-Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="66701000052100" />
+        <display value="Fluorescent enzyme immunoassay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Fluoreszenz-Enzym-Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="66711000052103" />
+        <display value="Line immunoassay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Line-Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="66721000052106" />
+        <display value="Recombinant immunoblot assay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Rekombinanter Immunoblot-Assay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="66731000052108" />
+        <display value="Immunochromatographic test technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Immunochromatographischer Test" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="66741000052102" />
+        <display value="Chemiluminescent microparticle immunoassay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Chemilumineszenz-Mikropartikel-Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="68431000052104" />
+        <display value="Enzyme-linked immunosorbent assay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Enzyme-linked Immunosorbent Assay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="702658000" />
+        <display value="Microbial culture technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Mikrobielle Kulturtechnik" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="702661004" />
+        <display value="Light microscopy technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Lichtmikroskopie" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="702674005" />
+        <display value="Nucleic acid hybridization probe technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Nukleinsäure-Assay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="702675006" />
+        <display value="Probe with target amplification technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Nukleinsäuresondentest mit Zielsequenz-Amplifikation" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="702946003" />
+        <display value="Coagulation technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Gerinnungstechnik" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703442003" />
+        <display value="Gradient strip susceptibility test technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Bestimmung der Antibiotikaempfindlichkeit via Gradienten-Diffusionstest" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703444002" />
+        <display value="Fluorescent immunoassay (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Fluoreszenz-Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703445001" />
+        <display value="Ion selective electrode measurement technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Messverfahren mit ionenselektiver Elektrode" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703446000" />
+        <display value="Immunoblot assay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Immunoblot" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703447009" />
+        <display value="Enzyme immunoassay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Enzymimmunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703448004" />
+        <display value="Latex agglutination test technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Latexagglutination" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703449007" />
+        <display value="Radioimmunoassay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Radioimmunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703450007" />
+        <display value="Electrophoresis technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Elektrophorese" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703455002" />
+        <display value="Rapid plasma reagin technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="RPR-Test" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703456001" />
+        <display value="Venereal Disease Research Laboratory technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="VDRL-Test" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703458000" />
+        <display value="Neutralization method (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Neutralisationstest" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703690001" />
+        <display value="Confirmatory technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Bestätigungstest" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703725008" />
+        <display value="Culture technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Kultivierung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703750006" />
+        <display value="Aerobic culture technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Aerobe Kulturtechnik" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703751005" />
+        <display value="Anaerobic culture technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Anaerobe Kulturtechnik" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703752003" />
+        <display value="Organism specific culture technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Mikroorganismusspezifische Kulturtechnik" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="703857004" />
+        <display value="Staining technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Färbemethode" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="70521000052109" />
+        <display value="Affinity chromatography technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Affinitätschromatografie" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="70531000052106" />
+        <display value="Agarose gel electrophoresis technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Agarosegel-Elektrophorese" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="70541000052100" />
+        <display value="Chemiluminescence technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Chemiluminescence-Assay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="70551000052102" />
+        <display value="Enzyme-multiplied immunoassay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Enzymverstärkter Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="70561000052104" />
+        <display value="Gas chromatography technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Gaschromatographie" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="70581000052105" />
+        <display value="Capillary electrophoresis technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Kapillarelektrophorese" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="70591000052107" />
+        <display value="Pyrosequencing technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Pyrosequenzierung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="70601000052104" />
+        <display value="Cycle Treshold für Nukleinsäurenachweis in Probenmaterial bei Polymerase-Kettenreaktion in Echtzeit" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Realtime-Polymerase-Kettenreaktion" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="70611000052102" />
+        <display value="Melting curve technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Schmelzkurvenanalyse" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708056006" />
+        <display value="Acid fast stain technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Nachweis säurefester Stäbchen" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708058007" />
+        <display value="Flow cytometry technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Durchflusszytometrie" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708060009" />
+        <display value="Genotype determination technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Genotypbestimmung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708061008" />
+        <display value="Gram stain technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Gram-Färbung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708062001" />
+        <display value="Immunodiffusion technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Immundiffusion" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708063006" />
+        <display value="Immunoelectrophoresis technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Immunelektrophorese" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708064000" />
+        <display value="Immunofixation technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Immunofixation" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708068002" />
+        <display value="Molecular genetics technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Molekulargenetischer Nachweis" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708071005" />
+        <display value="Smearing technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Ausstrich" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708073008" />
+        <display value="Minimum inhibitory concentration susceptibility test technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Minimale Hemmstoffkonzentration - Empfindlichkeitstestverfahren" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708075001" />
+        <display value="Potassium hydroxide preparation technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Kaliumhydroxid-Präparation" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708097004" />
+        <display value="Immunohistochemistry technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Immunhistochemie" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708099001" />
+        <display value="Rapid immunoassay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Schnelltest-Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708104000" />
+        <display value="Agglutination technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Agglutinationsassay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708130001" />
+        <display value="Anti human globulin test technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Coombs-Test" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708131002" />
+        <display value="Anti human globulin test technique, direct (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Coombs-Test, direkt" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="708133004" />
+        <display value="Complement fixation technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Komplementfixation" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="714797009" />
+        <display value="Histologischer Test" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="718496006" />
+        <display value="Bacterial bacteriophage typing (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Phagentypisierung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="719677008" />
+        <display value="Direct immunocytochemical technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Direkte Immunhistologische Färbung" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="726449005" />
+        <display value="Immunoassay technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Immunoassay" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="726748001" />
+        <display value="Radioallergosorbent testing technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Radioallergosorbent-Test" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="767095001" />
+        <display value="Direct immunofluorescence technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Direkte Immunfluoreszenz" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="767096000" />
+        <display value="Indirect immunofluorescence technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Indirekte Immunfluoreszenz" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="77601007" />
+        <display value="Tissue culture (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Gewebe- oder Zellkutur" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="782518009" />
+        <display value="Modified carbapenem inactivation technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Modifizierte Carbapenem-Inaktivierungsmethode (m)CIM" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="83581000052107" />
+        <display value="Matrix assisted laser desorption ionization time of flight mass spectrometry technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="MALDI-TOF" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="83601000052101" />
+        <display value="Potentiometry technique (qualifier value)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Potentiometrie" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="91454002" />
+        <display value="Pleozytose des Liquors" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="9232009" />
+        <display value="Fluorescent treponemal antibody absorption test (procedure)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="FTA-Abs-Test" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestADVP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestADVP" />
+  <version value="1.7.0" />
+  <name value="LaboratoryTestADVP" />
+  <title value="Labortest für Adenoviren; Meldepflicht nur für den direkten Nachweis im Konjunktivalabstrich" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-04-08" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet LaboratoryTestADVP enthält die Codes der Labortests für Adenoviren; Meldepflicht nur für den direkten Nachweis im Konjunktivalabstrich." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.79" />
+      <concept>
+        <code value="104326-4" />
+        <display value="Adenovirus sp identifiziert [Typ] in Probenmaterial mittels Sequenzierung" />
+      </concept>
+      <concept>
+        <code value="105887-4" />
+        <display value="Adenovirus DNA [Presence] in Specimen" />
+      </concept>
+      <concept>
+        <code value="31710-7" />
+        <display value="Adenovirus Antigen [Nachweis] in konjunktivalem Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="31714-9" />
+        <display value="Adenovirus Antigen [Nachweis] in Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="39528-5" />
+        <display value="Adenovirus DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="40976-3" />
+        <display value="Adenovirus DNA [Nachweis oder Identität] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="41852-5" />
+        <display value="Mikroorganismus oder Erreger identifiziert in Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="88533-5" />
+        <display value="Adenovirus DNA [Nachweis] in Kornea bzw. Konjunktiva mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="92854-9" />
+        <display value="Adenovirus DNA [#/Volumen] (Viruslast) in Kornea bzw. Konjunktiva mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

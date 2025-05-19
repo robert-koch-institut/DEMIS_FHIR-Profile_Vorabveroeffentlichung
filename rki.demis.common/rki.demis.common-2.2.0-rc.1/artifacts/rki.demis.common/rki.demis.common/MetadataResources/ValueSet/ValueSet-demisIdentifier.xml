@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="demisIdentifier" />
+  <url value="https://demis.rki.de/fhir/ValueSet/demisIdentifier" />
+  <version value="1.0.0" />
+  <name value="DemisIdentifier" />
+  <title value="Demis-Identifier" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-03-24" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet Demis-Identifier enthält die Codes der Demis-Identifier." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="(C) 2021-2025 Robert Koch-Institut" />
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/demisIdentifier" />
+      <version value="1.0.0" />
+    </include>
+  </compose>
+</ValueSet>
