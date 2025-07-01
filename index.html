@@ -59,21 +59,14 @@
             Person oder Melder. Spezifische DEMIS-Pakete wie rki.demis.laboratory oder rki.demis.disease binden dieses als Dependency ein.</p>
         <blockquote>
             <font size="2" face="verdana" color="red">
-                <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.common-Paket. Seit 22.05.2025 wird
-                    die Version rki.demis.common-2.2.0 durch das DEMIS-Backend unterstützt. Das entsprechende
-                    Simplifier-Projekt <a href="https://simplifier.net/rki.demis.common">https://simplifier.net/rki.demis.common</a>
-                    wurde aktualisiert.</p>
+                <p>
+					Aktuell gibt es keine Vorabveröffentlichungen für die DEMIS-Basismeldeinhalte.<br> 
+					Seit 23.06.2025 wird rki.demis.common-3.0.0-alpha.7 (zusätzlich zu rki.demis.common-2.1.0) in der User-Testumgebung durch 
+					das DEMIS-Backend unterstützt.<br> 
+					Das entsprechende Simplifier-Projekt findet sich hier: <a href="https://simplifier.net/rki.demis.common.strict">https://simplifier.net/rki.demis.common.strict</a>
+				</p>
             </font>
-            <!--<h3>Version rki.demis.common-2.2.0-rc.1 (19.05.2025)</h3>
-			<a class="package-link" href="./rki.demis.common/rki.demis.common-2.2.0-rc.1/Home.html">Leitfaden</a>
-            <a href="./rki.demis.common/rki.demis.common-2.2.0-rc.1/Vorab-rki.demis.common-2.2.0-rc.1@current.zip">Download ZIP</a>
-            <ul>
-                <li>fix: NotifiedPerson und NotifiedPersonAnonymous: Severity der Extension genderExists von error auf warning geändert</li>
-                <li>fix: NotifiedPersonAnonymous: fixedCodings in extension:addressUse.value durch fixedCode und fixedUri ersetzt</li>
-                <li>feat: Update der Dependencies de.basisprofil.r4 auf Version 1.5.3</li>
-                <li>feat: Anpassungen der Profile in Vorbereitung auf die strikten Profile</li>
-                <li>feat: Anpassungen der CodeSysteme und ValueSets in Vorbereitung auf die strikten Profile</li>
-            </ul>-->
+            <!--
 			<h3>Version rki.demis.common-3.0.0-alpha.1 (14.04.2025)</h3>
 			<a class="package-link" href="./rki.demis.common/rki.demis.common-3.0.0-alpha.1/Home.html">Leitfaden</a>
             <a href="./rki.demis.common/rki.demis.common-3.0.0-alpha.1/Vorab-rki.demis.common-3.0.0-alpha.1@current.zip">Download ZIP</a>
@@ -99,34 +92,22 @@
                 <li>Umstellung von fixed Values auf Pattern bei komplexen Datentypen</li>
                 </ul>
                 </li>
-                </ul>
+            </ul>
+			-->
         </blockquote>
         <p></p>
         <h2>FHIR-Profile Erregernachweismeldung (rki.demis.laboratory)</h2>
         <p>Das Paket rki.demis.laboratory beinhaltet die Ressourcen für die Erregernachweismeldung.</p>
         <blockquote>
             <font size="2" face="verdana" color="red">
-                <p>Aktuell gibt es keine Vorabveröffentlichungen für das rki.demis.laboratory-Paket. Seit 22.05.2025
-                    wird die Version rki.demis.laboratory-3.3.0 durch das DEMIS-Backend unterstützt. Das entsprechende
-                    Simplifier-Projekt <a href="https://simplifier.net/rki.demis.laboratory">https://simplifier.net/rki.demis.laboratory</a>
-                    wurde aktualisiert.</p>
+                <p>
+					Aktuell gibt es keine Vorabveröffentlichungen für die DEMIS-Erregernachweismeldung.<br> 
+					Seit 23.06.2025 wird rki.demis.laboratory-4.0.0-alpha.4 (zusätzlich zu rki.demis.laboratory-3.3.0) in der User-Testumgebung durch 
+					das DEMIS-Backend unterstützt.<br> 
+					Das entsprechende Simplifier-Projekt findet sich hier: <a href="https://simplifier.net/rki.demis.laboratory.strict">https://simplifier.net/rki.demis.laboratory.strict</a>
+				</p>	
             </font>
-            <!--<h3>Version rki.demis.laboratory-3.3.0-rc.1 (19.05.2025)</h3>
-			<a class="package-link" href="./rki.demis.laboratory/rki.demis.laboratory-3.3.0-rc.1/Home.html">Leitfaden</a>
-            <a href="./rki.demis.laboratory/rki.demis.laboratory-3.3.0-rc.1/Vorab-rki.demis.laboratory-3.3.0-rc.1@current.zip">Download ZIP</a>
-            <ul>
-                <li>feat: Update der Dependencies auf rki.demis.common-2.2.0-alpha.1 (und damit Update auf de.basisprofil.r4 Version 1.5.3)</li>
-                <li>feat: Anpassungen der Profile in Vorbereitung auf die strikten Profile<ul>
-                <li>feat: Specimen.collection.collected[x]:collectedPeriod erlaubt</li>
-                <li>feat: PathogenDetection.referenceRange erlaubt</li>
-                <li>feat: PathogenDetection.valueRatio erlaubt</li>
-                <li>feat: PathogenDetection.valueRange erlaubt</li>
-                <li>feat: NotificationLaboratory.category und NotificationLaboratoryNegative.category auf 0...1 gesetzt</li>
-                <li>feat: LaboratoryReport.basedOn.identifier.type.system und .value auf 0..1 gesetzt</li>
-                </ul>
-                </li>
-                <li>feat: Anpassungen der CodeSysteme und ValueSets in Vorbereitung auf die strikten Profile</li>
-            </ul>-->
+            <!--
     		<h3>Version rki.demis.laboratory-4.0.0-alpha.1 (14.04.2025)</h3>
             <a class="package-link" href="./rki.demis.laboratory/rki.demis.laboratory-4.0.0-alpha.1/Home.html">Leitfaden</a>
             <a href="./rki.demis.laboratory/rki.demis.laboratory-4.0.0-alpha.1/Vorab-rki.demis.laboratory-4.0.0-alpha.1@current.zip">Download ZIP</a>	
@@ -149,7 +130,8 @@
                 <li>Umstellung von fixed Values auf Pattern bei komplexen Datentypen</li>
                 </ul>
                 </li>
-                </ul>                
+            </ul>  
+			-->              
         </blockquote>
         <p></p>
         <h2>FHIR-Profile Integrierte Genomische Surveillance (rki.demis.igs)</h2>
