@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="notificationStatus" />
+  <url value="https://demis.rki.de/fhir/ValueSet/notificationStatus" />
+  <version value="1.0.0" />
+  <name value="NotificationStatus" />
+  <title value="Notification-Status" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-03-28" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet NotificationStatus enthält die zulässigen Codes für den Notification-Status/Composition-Status." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/composition-status" />
+      <version value="4.3.0" />
+      <concept>
+        <code value="amended" />
+        <display value="Amended" />
+      </concept>
+      <concept>
+        <code value="final" />
+        <display value="Final" />
+      </concept>
+      <concept>
+        <code value="preliminary" />
+        <display value="Preliminary" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

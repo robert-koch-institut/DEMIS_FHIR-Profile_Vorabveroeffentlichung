@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="InekStandortId" />
+  <name value="InekStandortId" />
+  <status value="active" />
+  <kind value="identifier" />
+  <date value="2025-03-14" />
+  <description value="Die InekStandortId ist das NamingSystem um die InEK-Standort-ID zu übermitteln." />
+  <uniqueId>
+    <type value="uri" />
+    <value value="https://demis.rki.de/fhir/sid/InekStandortId" />
+    <preferred value="true" />
+  </uniqueId>
+</NamingSystem>
