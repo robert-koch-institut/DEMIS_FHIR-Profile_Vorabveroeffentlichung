@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetMSVP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetMSVP" />
+  <version value="1.7.0" />
+  <name value="AnswerSetMSVP" />
+  <title value="AnswerSet für Masernvirus" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-04-08" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet AnswerSetMSVP enthält die Codes der Answer-Codes für Masernvirus." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20241115" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="41482005" />
+        <display value="Molecular sequence data (finding)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Molekulare Sequenzdaten" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="416435006" />
+        <display value="Masern-Virus, Variante des M-Proteins der Virushülle" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="425684000" />
+        <display value="Masern-Virus, Genotyp G3" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="425966004" />
+        <display value="Masern-Virus, Genotyp H1" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="425970007" />
+        <display value="Masern-Virus, Genotyp D3" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426028006" />
+        <display value="Masern-Virus, Genotyp D6" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426091009" />
+        <display value="Masern-Virus, Genotyp G2" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426188007" />
+        <display value="Masern-Virus, Genotyp C1" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426261008" />
+        <display value="Masern-Virus, Genotyp D4" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426424002" />
+        <display value="Masern-Virus, Genotyp H2" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426535005" />
+        <display value="Masern-Virus, Genotyp D9" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426558008" />
+        <display value="Masern-Virus, Genotyp A" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426640005" />
+        <display value="Masern-Virus, Genotyp D2" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="426654002" />
+        <display value="Masern-Virus, Genotyp B2" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="427073007" />
+        <display value="Masern-Virus, Genotyp B3" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="427182003" />
+        <display value="Masern-Virus, Genotyp C2" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="427263000" />
+        <display value="Masern-Virus, Genotyp D10" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="427290009" />
+        <display value="Masern-Virus, Genotyp D8" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="427353006" />
+        <display value="Masern-Virus, Genotyp D7" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="427706006" />
+        <display value="Masern-Virus, Genotyp D5" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="90" />
+        </extension>
+        <code value="52584002" />
+        <display value="Measles Morbillivirus" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="698204007" />
+        <display value="Masern-Virus, Genotyp D11" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="732206003" />
+        <display value="Masern-Virus, Genotyp F" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="732207007" />
+        <display value="Masern-Virus, Genotyp E" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="732208002" />
+        <display value="Masern-Virus, Genotyp D1" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="732209005" />
+        <display value="Masern-Virus, Genotyp B1" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="732210000" />
+        <display value="Masern-Virus, Genotyp G1" />
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/answerSetLaboratoryTest-SNOMED" />
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/answerSetResistance-SNOMED" />
+    </include>
+  </compose>
+</ValueSet>

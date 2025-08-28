@@ -1,0 +1,1643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetEHCP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetEHCP" />
+  <version value="1.10.0" />
+  <name value="AnswerSetEHCP" />
+  <title value="AnswerSet für Escherichia coli (enterohämorrhagische Stämme) (EHEC)" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-04-08" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet AnswerSetEHCP enthält die Codes der Answer-Codes für Escherichia coli (enterohämorrhagische Stämme) (EHEC)." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20241115" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="299" />
+        </extension>
+        <code value="103429008" />
+        <display value="Enterohämorrhagische Escherichia coli, Serotyp O157:H7" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="66" />
+        </extension>
+        <code value="1085101000112108" />
+        <display value="Escherichia coli, Serogruppe O182" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="168" />
+        </extension>
+        <code value="1112001000112105" />
+        <display value="Escherichia coli, Serogruppe O28ab" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="179" />
+        </extension>
+        <code value="1269432003" />
+        <display value="Escherichia coli serogroup O16 (organism)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Escherichia coli, Serogruppe O16" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="171" />
+        </extension>
+        <code value="131260002" />
+        <display value="Escherichia coli, Serogruppe O26" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="121" />
+        </extension>
+        <code value="131261003" />
+        <display value="Escherichia coli, Serogruppe O111" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="177" />
+        </extension>
+        <code value="26451000087103" />
+        <display value="Escherichia coli, Serogruppe O19" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="180" />
+        </extension>
+        <code value="407162008" />
+        <display value="Escherichia coli, Serogruppe O15" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="176" />
+        </extension>
+        <code value="407164009" />
+        <display value="Escherichia coli, Serogruppe O20" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="88" />
+        </extension>
+        <code value="407166006" />
+        <display value="Escherichia coli, Serogruppe O157" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="172" />
+        </extension>
+        <code value="407167002" />
+        <display value="Escherichia coli, Serogruppe O25" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="170" />
+        </extension>
+        <code value="407170003" />
+        <display value="Escherichia coli, Serogruppe O27" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="158" />
+        </extension>
+        <code value="407174007" />
+        <display value="Escherichia coli, Serogruppe O49" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="152" />
+        </extension>
+        <code value="407176009" />
+        <display value="Escherichia coli, Serogruppe O63" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="141" />
+        </extension>
+        <code value="407178005" />
+        <display value="Escherichia coli, Serogruppe O78" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="107" />
+        </extension>
+        <code value="407181000" />
+        <display value="Escherichia coli, Serogruppe O128" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="94" />
+        </extension>
+        <code value="407183002" />
+        <display value="Escherichia coli, Serogruppe O148" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="90" />
+        </extension>
+        <code value="407185009" />
+        <display value="Escherichia coli, Serogruppe O153" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="86" />
+        </extension>
+        <code value="407187001" />
+        <display value="Escherichia coli, Serogruppe O159" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="79" />
+        </extension>
+        <code value="407191006" />
+        <display value="Escherichia coli, Serogruppe O167" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="77" />
+        </extension>
+        <code value="407193009" />
+        <display value="Escherichia coli, Serogruppe O169" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="154" />
+        </extension>
+        <code value="407195002" />
+        <display value="Escherichia coli, Serogruppe O55" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="133" />
+        </extension>
+        <code value="407200006" />
+        <display value="Escherichia coli, Serogruppe O86" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="118" />
+        </extension>
+        <code value="407205001" />
+        <display value="Escherichia coli, Serogruppe O114" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="113" />
+        </extension>
+        <code value="407208004" />
+        <display value="Escherichia coli, Serogruppe O119" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="109" />
+        </extension>
+        <code value="407212005" />
+        <display value="Escherichia coli, Serogruppe O126" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="108" />
+        </extension>
+        <code value="407215007" />
+        <display value="Escherichia coli, Serogruppe O127" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="99" />
+        </extension>
+        <code value="407223009" />
+        <display value="Escherichia coli, Serogruppe O142" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="169" />
+        </extension>
+        <code value="407226001" />
+        <display value="Escherichia coli, Serogruppe O28" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="166" />
+        </extension>
+        <code value="407228000" />
+        <display value="Escherichia coli, Serogruppe O29" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="120" />
+        </extension>
+        <code value="407230003" />
+        <display value="Escherichia coli, Serogruppe O112" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="110" />
+        </extension>
+        <code value="407232006" />
+        <display value="Escherichia coli, Serogruppe O124" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="103" />
+        </extension>
+        <code value="407236009" />
+        <display value="Escherichia coli, Serogruppe O136" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="98" />
+        </extension>
+        <code value="407238005" />
+        <display value="Escherichia coli, Serogruppe O143" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="97" />
+        </extension>
+        <code value="407240000" />
+        <display value="Escherichia coli, Serogruppe O144" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="91" />
+        </extension>
+        <code value="407242008" />
+        <display value="Escherichia coli, Serogruppe O152" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="82" />
+        </extension>
+        <code value="407244009" />
+        <display value="Escherichia coli, Serogruppe O164" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="190" />
+        </extension>
+        <code value="407250004" />
+        <display value="Escherichia coli, Serogruppe O1" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="189" />
+        </extension>
+        <code value="407252007" />
+        <display value="Escherichia coli, Serogruppe O2" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="187" />
+        </extension>
+        <code value="407255009" />
+        <display value="Escherichia coli, Serogruppe O5" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="183" />
+        </extension>
+        <code value="407257001" />
+        <display value="Escherichia coli, Serogruppe O9" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="181" />
+        </extension>
+        <code value="407259003" />
+        <display value="Escherichia coli, Serogruppe O14" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="174" />
+        </extension>
+        <code value="407261007" />
+        <display value="Escherichia coli, Serogruppe O22" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="160" />
+        </extension>
+        <code value="407266002" />
+        <display value="Escherichia coli, Serogruppe O45" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="159" />
+        </extension>
+        <code value="407268001" />
+        <display value="Escherichia coli, Serogruppe O48" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="157" />
+        </extension>
+        <code value="407270005" />
+        <display value="Escherichia coli, Serogruppe O50" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="140" />
+        </extension>
+        <code value="407272002" />
+        <display value="Escherichia coli, Serogruppe O79" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="136" />
+        </extension>
+        <code value="407274001" />
+        <display value="Escherichia coli, Serogruppe O83" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="131" />
+        </extension>
+        <code value="407276004" />
+        <display value="Escherichia coli, Serogruppe O91" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="126" />
+        </extension>
+        <code value="407280009" />
+        <display value="Escherichia coli, Serogruppe O103" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="125" />
+        </extension>
+        <code value="407282001" />
+        <display value="Escherichia coli, Serogruppe O104" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="119" />
+        </extension>
+        <code value="407286003" />
+        <display value="Escherichia coli, Serogruppe O113" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="114" />
+        </extension>
+        <code value="407288002" />
+        <display value="Escherichia coli, Serogruppe O118" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="112" />
+        </extension>
+        <code value="407292009" />
+        <display value="Escherichia coli, Serogruppe O121" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="102" />
+        </extension>
+        <code value="407296007" />
+        <display value="Escherichia coli, Serogruppe O137" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="96" />
+        </extension>
+        <code value="407298008" />
+        <display value="Escherichia coli, Serogruppe O145" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="83" />
+        </extension>
+        <code value="407302000" />
+        <display value="Escherichia coli, Serogruppe O163" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="81" />
+        </extension>
+        <code value="407304004" />
+        <display value="Escherichia coli, Serogruppe O165" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="74" />
+        </extension>
+        <code value="407307006" />
+        <display value="Escherichia coli, Serogruppe O172" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="63" />
+        </extension>
+        <code value="407309009" />
+        <display value="Escherichia coli, Serogruppe O rau" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="73" />
+        </extension>
+        <code value="422953009" />
+        <display value="Escherichia coli, Serogruppe O174" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="69" />
+        </extension>
+        <code value="424672005" />
+        <display value="Escherichia coli, Serogruppe O178" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="80" />
+        </extension>
+        <code value="425004001" />
+        <display value="Escherichia coli, Serogruppe O166" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="87" />
+        </extension>
+        <code value="427294000" />
+        <display value="Escherichia coli, Serogruppe O158" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="132" />
+        </extension>
+        <code value="432096007" />
+        <display value="Escherichia coli, Serogruppe O88" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="68" />
+        </extension>
+        <code value="442019004" />
+        <display value="Escherichia coli, Serogruppe O179" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="106" />
+        </extension>
+        <code value="442109007" />
+        <display value="Escherichia coli, Serogruppe O130" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="149" />
+        </extension>
+        <code value="442282007" />
+        <display value="Escherichia coli, Serogruppe O69" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="135" />
+        </extension>
+        <code value="443091009" />
+        <display value="Escherichia coli, Serogruppe O84" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="228" />
+        </extension>
+        <code value="448711000124108" />
+        <display value="Shiga toxin-producing Escherichia coli serogroup O132 (organism)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O132" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="255" />
+        </extension>
+        <code value="448721000124100" />
+        <display value="Shiga toxin-producing Escherichia coli serogroup O78 (organism)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O78" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="186" />
+        </extension>
+        <code value="450477004" />
+        <display value="Escherichia coli, Serogruppe O6" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="184" />
+        </extension>
+        <code value="450478009" />
+        <display value="Escherichia coli, Serogruppe O8" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="67" />
+        </extension>
+        <code value="457140000" />
+        <display value="Escherichia coli, Serogruppe O181" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="70" />
+        </extension>
+        <code value="457145005" />
+        <display value="Escherichia coli, Serogruppe O177" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="72" />
+        </extension>
+        <code value="457297005" />
+        <display value="Escherichia coli, Serogruppe O175" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="92" />
+        </extension>
+        <code value="457354003" />
+        <display value="Escherichia coli, Serogruppe O150" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="93" />
+        </extension>
+        <code value="457374005" />
+        <display value="Escherichia coli, Serogruppe O149" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="95" />
+        </extension>
+        <code value="457394001" />
+        <display value="Escherichia coli, Serogruppe O146" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="78" />
+        </extension>
+        <code value="457571003" />
+        <display value="Escherichia coli, Serogruppe O168" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="84" />
+        </extension>
+        <code value="457846008" />
+        <display value="Escherichia coli, Serogruppe O162" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="85" />
+        </extension>
+        <code value="457880006" />
+        <display value="Escherichia coli, Serogruppe O160" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="89" />
+        </extension>
+        <code value="457944005" />
+        <display value="Escherichia coli, Serogruppe O156" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="100" />
+        </extension>
+        <code value="457991003" />
+        <display value="Escherichia coli, Serogruppe O141" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="101" />
+        </extension>
+        <code value="458025003" />
+        <display value="Escherichia coli, Serogruppe O140" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="105" />
+        </extension>
+        <code value="458051001" />
+        <display value="Escherichia coli, Serogruppe O132" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="111" />
+        </extension>
+        <code value="458071005" />
+        <display value="Escherichia coli, Serogruppe O123" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="188" />
+        </extension>
+        <code value="458089006" />
+        <display value="Escherichia coli, Serogruppe O3" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="185" />
+        </extension>
+        <code value="458090002" />
+        <display value="Escherichia coli, Serogruppe O7" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="182" />
+        </extension>
+        <code value="458091003" />
+        <display value="Escherichia coli, Serogruppe O11" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="178" />
+        </extension>
+        <code value="458110000" />
+        <display value="Escherichia coli, Serogruppe O18" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="175" />
+        </extension>
+        <code value="458115005" />
+        <display value="Escherichia coli, Serogruppe O21" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="173" />
+        </extension>
+        <code value="458119004" />
+        <display value="Escherichia coli, Serogruppe O24" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="164" />
+        </extension>
+        <code value="458136007" />
+        <display value="Escherichia coli, Serogruppe O38" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="163" />
+        </extension>
+        <code value="458138008" />
+        <display value="Escherichia coli, Serogruppe O42" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="162" />
+        </extension>
+        <code value="458140003" />
+        <display value="Escherichia coli, Serogruppe O43" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="156" />
+        </extension>
+        <code value="458152005" />
+        <display value="Escherichia coli, Serogruppe O52" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="155" />
+        </extension>
+        <code value="458154006" />
+        <display value="Escherichia coli, Serogruppe O53" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="153" />
+        </extension>
+        <code value="458160006" />
+        <display value="Escherichia coli, Serogruppe O60" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="115" />
+        </extension>
+        <code value="459071004" />
+        <display value="Escherichia coli, Serogruppe O117" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="116" />
+        </extension>
+        <code value="459074007" />
+        <display value="Escherichia coli, Serogruppe O116" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="117" />
+        </extension>
+        <code value="459077000" />
+        <display value="Escherichia coli, Serogruppe O115" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="122" />
+        </extension>
+        <code value="459092004" />
+        <display value="Escherichia coli, Serogruppe O110" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="123" />
+        </extension>
+        <code value="459096001" />
+        <display value="Escherichia coli, Serogruppe O109" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="127" />
+        </extension>
+        <code value="459106006" />
+        <display value="Escherichia coli, Serogruppe O101" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="128" />
+        </extension>
+        <code value="459107002" />
+        <display value="Escherichia coli, Serogruppe O100" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="129" />
+        </extension>
+        <code value="459109004" />
+        <display value="Escherichia coli, Serogruppe O98" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="134" />
+        </extension>
+        <code value="459121000" />
+        <display value="Escherichia coli, Serogruppe O85" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="137" />
+        </extension>
+        <code value="459128006" />
+        <display value="Escherichia coli, Serogruppe O82" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="139" />
+        </extension>
+        <code value="459130008" />
+        <display value="Escherichia coli, Serogruppe O80" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="143" />
+        </extension>
+        <code value="459136002" />
+        <display value="Escherichia coli, Serogruppe O76" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="145" />
+        </extension>
+        <code value="459141005" />
+        <display value="Escherichia coli, Serogruppe O74" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="146" />
+        </extension>
+        <code value="459143008" />
+        <display value="Escherichia coli, Serogruppe O73" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="147" />
+        </extension>
+        <code value="459146000" />
+        <display value="Escherichia coli, Serogruppe O71" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="148" />
+        </extension>
+        <code value="459149007" />
+        <display value="Escherichia coli, Serogruppe O70" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="161" />
+        </extension>
+        <code value="608886002" />
+        <display value="Escherichia coli, Serogruppe O44" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="167" />
+        </extension>
+        <code value="698020006" />
+        <display value="Escherichia coli, Serogruppe O28ac" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="64" />
+        </extension>
+        <code value="705177007" />
+        <display value="Escherichia coli, Serogruppe O186" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="71" />
+        </extension>
+        <code value="707501002" />
+        <display value="Escherichia coli, Serogruppe O176" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="165" />
+        </extension>
+        <code value="709311003" />
+        <display value="Escherichia coli, Serogruppe O32" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="65" />
+        </extension>
+        <code value="709312005" />
+        <display value="Escherichia coli, Serogruppe O185" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="124" />
+        </extension>
+        <code value="715306002" />
+        <display value="Escherichia coli, Serogruppe O108" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="151" />
+        </extension>
+        <code value="715309009" />
+        <display value="Escherichia coli, Serogruppe O64" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="150" />
+        </extension>
+        <code value="715310004" />
+        <display value="Escherichia coli, Serogruppe O66" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="144" />
+        </extension>
+        <code value="725506000" />
+        <display value="Escherichia coli, Serogruppe O75" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="298" />
+        </extension>
+        <code value="735270003" />
+        <display value="Enterohämorrhagische Escherichia coli, nicht O157:H7" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="142" />
+        </extension>
+        <code value="738514000" />
+        <display value="Escherichia coli, Serogruppe O77" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="104" />
+        </extension>
+        <code value="738773001" />
+        <display value="Escherichia coli, Serogruppe O134" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="278" />
+        </extension>
+        <code value="782208003" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O28" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="275" />
+        </extension>
+        <code value="782209006" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O40" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="269" />
+        </extension>
+        <code value="782210001" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O50" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="232" />
+        </extension>
+        <code value="782217003" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O127" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="285" />
+        </extension>
+        <code value="782219000" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O17" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="283" />
+        </extension>
+        <code value="782220006" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O21" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="282" />
+        </extension>
+        <code value="782221005" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O22" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="281" />
+        </extension>
+        <code value="782223008" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O24" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="270" />
+        </extension>
+        <code value="782225001" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O49" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="295" />
+        </extension>
+        <code value="782226000" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O1" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="294" />
+        </extension>
+        <code value="782227009" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O2" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="293" />
+        </extension>
+        <code value="782228004" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O3" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="292" />
+        </extension>
+        <code value="782229007" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O5" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="291" />
+        </extension>
+        <code value="782231003" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O6" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="290" />
+        </extension>
+        <code value="782232005" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O8" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="289" />
+        </extension>
+        <code value="782233000" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O9" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="288" />
+        </extension>
+        <code value="782234006" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O11" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="287" />
+        </extension>
+        <code value="782236008" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O12" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="286" />
+        </extension>
+        <code value="782237004" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O14" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="220" />
+        </extension>
+        <code value="782239001" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O149" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="218" />
+        </extension>
+        <code value="782240004" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O151" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="217" />
+        </extension>
+        <code value="782241000" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O152" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="216" />
+        </extension>
+        <code value="782242007" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O153" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="215" />
+        </extension>
+        <code value="782243002" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O156" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="211" />
+        </extension>
+        <code value="782244008" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O162" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="210" />
+        </extension>
+        <code value="782245009" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O163" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="209" />
+        </extension>
+        <code value="782246005" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O165" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="267" />
+        </extension>
+        <code value="782247001" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O55" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="263" />
+        </extension>
+        <code value="782248006" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O69" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="205" />
+        </extension>
+        <code value="782249003" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O175" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="203" />
+        </extension>
+        <code value="782250003" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O177" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="202" />
+        </extension>
+        <code value="782252006" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O178" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="201" />
+        </extension>
+        <code value="782253001" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O181" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="200" />
+        </extension>
+        <code value="782254007" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O186" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="259" />
+        </extension>
+        <code value="782255008" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O74" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="257" />
+        </extension>
+        <code value="782256009" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O76" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="256" />
+        </extension>
+        <code value="782257000" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O77" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="254" />
+        </extension>
+        <code value="782258005" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O79" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="253" />
+        </extension>
+        <code value="782259002" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O80" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="245" />
+        </extension>
+        <code value="782260007" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O104" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="243" />
+        </extension>
+        <code value="782261006" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O109" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="242" />
+        </extension>
+        <code value="782262004" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O110" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="240" />
+        </extension>
+        <code value="782263009" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O112" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="239" />
+        </extension>
+        <code value="782265002" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O113" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="238" />
+        </extension>
+        <code value="782266001" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O115" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="237" />
+        </extension>
+        <code value="782267005" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O118" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="262" />
+        </extension>
+        <code value="782268000" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O70" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="261" />
+        </extension>
+        <code value="782269008" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O71" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="260" />
+        </extension>
+        <code value="782270009" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O73" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="231" />
+        </extension>
+        <code value="782274000" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O128" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="230" />
+        </extension>
+        <code value="782275004" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O130" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="229" />
+        </extension>
+        <code value="782276003" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O131" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="227" />
+        </extension>
+        <code value="782277007" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O137" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="226" />
+        </extension>
+        <code value="782278002" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O141" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="222" />
+        </extension>
+        <code value="782279005" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O146" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="251" />
+        </extension>
+        <code value="782280008" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O83" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="249" />
+        </extension>
+        <code value="782281007" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O88" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="248" />
+        </extension>
+        <code value="782282000" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O91" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="207" />
+        </extension>
+        <code value="782287006" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O169" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="206" />
+        </extension>
+        <code value="782288001" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O174" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="236" />
+        </extension>
+        <code value="782289009" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O119" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="234" />
+        </extension>
+        <code value="782290000" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O123" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="233" />
+        </extension>
+        <code value="782291001" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O126" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="138" />
+        </extension>
+        <code value="785855007" />
+        <display value="Escherichia coli, Serogruppe O81" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="235" />
+        </extension>
+        <code value="792851007" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O121" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="223" />
+        </extension>
+        <code value="792853005" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O145" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="241" />
+        </extension>
+        <code value="792860004" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O111" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="246" />
+        </extension>
+        <code value="792861000" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O103" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="272" />
+        </extension>
+        <code value="792897009" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O45" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="280" />
+        </extension>
+        <code value="792898004" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O26" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="214" />
+        </extension>
+        <code value="792899007" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O157" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="130" />
+        </extension>
+        <code value="830231008" />
+        <display value="Escherichia coli, Serogruppe O93" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="300" />
+        </extension>
+        <code value="838549008" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="247" />
+        </extension>
+        <code value="840375007" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O100" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="244" />
+        </extension>
+        <code value="840376008" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O108" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="225" />
+        </extension>
+        <code value="840377004" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O142" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="221" />
+        </extension>
+        <code value="840378009" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O148" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="219" />
+        </extension>
+        <code value="840379001" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O150" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="213" />
+        </extension>
+        <code value="840380003" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O159" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="212" />
+        </extension>
+        <code value="840381004" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O160" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="204" />
+        </extension>
+        <code value="840382006" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O176" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="284" />
+        </extension>
+        <code value="840383001" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O20" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="279" />
+        </extension>
+        <code value="840384007" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O27" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="277" />
+        </extension>
+        <code value="840385008" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O29" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="276" />
+        </extension>
+        <code value="840386009" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O38" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="274" />
+        </extension>
+        <code value="840387000" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O42" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="273" />
+        </extension>
+        <code value="840388005" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O44" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="271" />
+        </extension>
+        <code value="840389002" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O48" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="266" />
+        </extension>
+        <code value="840390006" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O60" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="265" />
+        </extension>
+        <code value="840391005" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O63" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="264" />
+        </extension>
+        <code value="840392003" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O64" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="258" />
+        </extension>
+        <code value="840393008" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O75" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="252" />
+        </extension>
+        <code value="840394002" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O81" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="250" />
+        </extension>
+        <code value="840530005" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O85" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="268" />
+        </extension>
+        <code value="840541007" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O53" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="224" />
+        </extension>
+        <code value="840543005" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O144" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="208" />
+        </extension>
+        <code value="840545003" />
+        <display value="Shiga-Toxin-produzierende Escherichia coli, Serogruppe O167" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="75" />
+        </extension>
+        <code value="870643006" />
+        <display value="Escherichia coli, Serogruppe O171" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="76" />
+        </extension>
+        <code value="871877007" />
+        <display value="Escherichia coli, Serogruppe O170" />
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/substanceEHCP" />
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/answerSetLaboratoryTest-SNOMED" />
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/answerSetResistance-SNOMED" />
+    </include>
+  </compose>
+</ValueSet>

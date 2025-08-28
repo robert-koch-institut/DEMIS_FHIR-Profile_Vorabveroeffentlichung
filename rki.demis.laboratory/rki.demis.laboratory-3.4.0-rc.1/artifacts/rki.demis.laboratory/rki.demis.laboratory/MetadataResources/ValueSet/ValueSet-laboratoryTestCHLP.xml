@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestCHLP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestCHLP" />
+  <version value="1.6.0" />
+  <name value="LaboratoryTestCHLP" />
+  <title value="Labortest für Chlamydia psittaci" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-04-08" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet LaboratoryTestCHLP enthält die Codes der Labortests für Chlamydia psittaci." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.79" />
+      <concept>
+        <code value="22178-8" />
+        <display value="Chlamydophila psittaci IgA-Antikörper [Titer] in Serum" />
+      </concept>
+      <concept>
+        <code value="22180-4" />
+        <display value="Chlamydophila psittaci IgG-Antikörper [Titer] in Serum" />
+      </concept>
+      <concept>
+        <code value="22181-2" />
+        <display value="Chlamydophila psittaci IgM-Antikörper [Titer] in Serum" />
+      </concept>
+      <concept>
+        <code value="22992-2" />
+        <display value="Chlamydophila psittaci [Nachweis] in Probenmaterial mittels Giemsa-Färbung" />
+      </concept>
+      <concept>
+        <code value="23001-1" />
+        <display value="Chlamydophila psittaci DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="31306-4" />
+        <display value="Chlamydophila psittaci IgA Ab [Units/volume] in Serum" />
+      </concept>
+      <concept>
+        <code value="41852-5" />
+        <display value="Mikroorganismus oder Erreger identifiziert in Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="43868-9" />
+        <display value="Chlamydophila psittaci IgG Ab [Presence] in Serum" />
+      </concept>
+      <concept>
+        <code value="44977-7" />
+        <display value="Chlamydophila psittaci IgM-Antikörper [Nachweis] in Serum" />
+      </concept>
+      <concept>
+        <code value="44978-5" />
+        <display value="Chlamydophila psittaci IgA Ab [Presence] in Serum" />
+      </concept>
+      <concept>
+        <code value="5080-7" />
+        <display value="Chlamydophila psittaci IgG-Antikörper [Einheiten/Volumen] in Serum" />
+      </concept>
+      <concept>
+        <code value="5081-5" />
+        <display value="Chlamydophila psittaci IgM-Antikörper [Einheiten/Volumen] in Serum" />
+      </concept>
+      <concept>
+        <code value="6915-3" />
+        <display value="Chlamydophila psittaci IgA-Antikörper [Titer] in Serum mittels Immunfluoreszenztest" />
+      </concept>
+      <concept>
+        <code value="6916-1" />
+        <display value="Chlamydophila psittaci IgG-Antikörper [Titer] in Serum mittels Immunfluoreszenztest" />
+      </concept>
+      <concept>
+        <code value="6917-9" />
+        <display value="Chlamydophila psittaci IgM-Antikörper [Titer] in Serum mittels Immunfluoreszenztest" />
+      </concept>
+      <concept>
+        <code value="75756-7" />
+        <display value="Bakterien identifiziert in Isolat mittels MS.MALDI-TOF" />
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistance" />
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistanceGene" />
+    </include>
+  </compose>
+</ValueSet>

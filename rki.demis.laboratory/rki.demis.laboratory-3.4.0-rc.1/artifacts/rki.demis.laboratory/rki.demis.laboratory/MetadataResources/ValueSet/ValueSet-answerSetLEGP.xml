@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetLEGP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetLEGP" />
+  <version value="1.8.0" />
+  <name value="AnswerSetLEGP" />
+  <title value="AnswerSet für Legionella sp." />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-04-08" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet AnswerSetLEGP enthält die Codes der Answer-Codes für Legionella sp.." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20241115" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="90" />
+        </extension>
+        <code value="1003646009" />
+        <display value="Legionella-pneumophila-Serogruppe, nicht Serogruppe 1" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103447002" />
+        <display value="Legionella adelaidensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103448007" />
+        <display value="Legionella brunensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103449004" />
+        <display value="Legionella fairfieldensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103450004" />
+        <display value="Legionella geestiana" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103451000" />
+        <display value="Legionella gratiana" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103452007" />
+        <display value="Legionella lansingensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103453002" />
+        <display value="Legionella londiniensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103454008" />
+        <display value="Legionella moravica" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103455009" />
+        <display value="Legionella nautarum" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103456005" />
+        <display value="Legionella pneumophila Subspecies fraseri" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103457001" />
+        <display value="Legionella pneumophila Subspecies pascullei" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103458006" />
+        <display value="Legionella pneumophila Subspecies pneumophila" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103459003" />
+        <display value="Legionella quinlivanii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103460008" />
+        <display value="Legionella shakespearei" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103461007" />
+        <display value="Legionella tucsonensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="103462000" />
+        <display value="Legionella worsleiensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="91" />
+        </extension>
+        <code value="103463005" />
+        <display value="Legionella pneumophila, Serogruppe 1" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="50" />
+        </extension>
+        <code value="103464004" />
+        <display value="Legionella pneumophila, Serogruppe 2" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="49" />
+        </extension>
+        <code value="103465003" />
+        <display value="Legionella pneumophila, Serogruppe 3" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="48" />
+        </extension>
+        <code value="103466002" />
+        <display value="Legionella pneumophila, Serogruppe 4" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="47" />
+        </extension>
+        <code value="103467006" />
+        <display value="Legionella pneumophila, Serogruppe 5" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="46" />
+        </extension>
+        <code value="103468001" />
+        <display value="Legionella pneumophila, Serogruppe 6" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="45" />
+        </extension>
+        <code value="103469009" />
+        <display value="Legionella pneumophila, Serogruppe 7" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="44" />
+        </extension>
+        <code value="103470005" />
+        <display value="Legionella pneumophila, Serogruppe 8" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="43" />
+        </extension>
+        <code value="103471009" />
+        <display value="Legionella pneumophila, Serogruppe 9" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="58" />
+        </extension>
+        <code value="113720002" />
+        <display value="Legionella dumoffii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="113721003" />
+        <display value="Legionella gormanii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="113806002" />
+        <display value="Legionella lytica" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="113807006" />
+        <display value="Legionella quateirensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="113808001" />
+        <display value="Legionella waltersii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="115071005" />
+        <display value="Familie Legionellaceae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="35" />
+        </extension>
+        <code value="115515003" />
+        <display value="Legionella longbeachae, Serogruppe 1" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="34" />
+        </extension>
+        <code value="115516002" />
+        <display value="Legionella longbeachae, Serogruppe 2" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="88" />
+        </extension>
+        <code value="115517006" />
+        <display value="Legionella, nicht-Pneumophia-Species" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="116379006" />
+        <display value="Legionella maceachernii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="59" />
+        </extension>
+        <code value="116380009" />
+        <display value="Legionella micdadei" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="42" />
+        </extension>
+        <code value="131322009" />
+        <display value="Legionella pneumophilia, Serogruppe 10" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="41" />
+        </extension>
+        <code value="131323004" />
+        <display value="Legionella pneumophilia, Serogruppe 11" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="41" />
+        </extension>
+        <code value="131324005" />
+        <display value="Legionella pneumophilia, Serogruppe 12" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="40" />
+        </extension>
+        <code value="131325006" />
+        <display value="Legionella pneumophilia, Serogruppe 13" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="39" />
+        </extension>
+        <code value="131326007" />
+        <display value="Legionella pneumophilia, Serogruppe 14" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="14121003" />
+        <display value="Legionella steigerwaltii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="17083009" />
+        <display value="Legionella feeleii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="17298000" />
+        <display value="Legionella rubrilucens" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="60" />
+        </extension>
+        <code value="18214000" />
+        <display value="Legionella anisa" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="185883611000087104" />
+        <display value="Legionella hackeliae, Serogruppe 1" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="22592008" />
+        <display value="Legionella birminghamensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="28109006" />
+        <display value="Legionella erythra" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="304915231000087102" />
+        <display value="Legionella sainthelensi, Serogruppe 1" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="3128001" />
+        <display value="Legionella israelensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="317082141000087106" />
+        <display value="Legionella feeleii, Serogruppe 2" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="38322001" />
+        <display value="Legionella parisiensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="39739007" />
+        <display value="Legionella jordanis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="401198008" />
+        <display value="Legionella-Serotyp" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="414961002" />
+        <display value="Ordnung Legionellales" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="432325006" />
+        <display value="Legionella drancourtii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="432453005" />
+        <display value="Legionella fallonii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="432712001" />
+        <display value="Legionella drozanskii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="432713006" />
+        <display value="Legionella rowbothamii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="432714000" />
+        <display value="Legionella beliardensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="433048001" />
+        <display value="Legionella taurinensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="433050009" />
+        <display value="Legionella busanensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="433052001" />
+        <display value="Legionella gresilensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="450611004" />
+        <display value="Legionella bozemanae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="5111000146108" />
+        <display value="Legionella dresdenensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="5121000146103" />
+        <display value="Legionella impletisoli" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="5131000146101" />
+        <display value="Legionella yabuuchiae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="52462004" />
+        <display value="Legionella cherrii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="570536261000087106" />
+        <display value="Legionella sainthelensi, Serogruppe 2" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="58923007" />
+        <display value="Legionella cincinnatiensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="58939000" />
+        <display value="Legionella hackeliae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="638008" />
+        <display value="Legionella oakridgensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="64930007" />
+        <display value="Legionella spiritensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="72814000" />
+        <display value="Legionella santicrucis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="93" />
+        </extension>
+        <code value="7527002" />
+        <display value="Gattung Legionella" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="801523611000087100" />
+        <display value="Legionella bozemanii, Serogruppe 1" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="92" />
+        </extension>
+        <code value="80897008" />
+        <display value="Legionella pneumophila" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="8147000" />
+        <display value="Legionella wadsworthii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="844125861000087102" />
+        <display value="Legionella bozemanii, Serogruppe 2" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="87271006" />
+        <display value="Legionella sainthelens" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="80" />
+        </extension>
+        <code value="89605004" />
+        <display value="Legionella longbeachae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="89709001" />
+        <display value="Legionella jamestowniensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="937671351000087109" />
+        <display value="Legionella feeleii, Serogruppe 1" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="998010041000087101" />
+        <display value="Legionella hackeliae, Serogruppe 2" />
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/answerSetLaboratoryTest-SNOMED" />
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/answerSetResistance-SNOMED" />
+    </include>
+  </compose>
+</ValueSet>

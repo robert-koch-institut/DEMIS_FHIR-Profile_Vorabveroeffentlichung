@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="resistance" />
+  <url value="https://demis.rki.de/fhir/ValueSet/resistance" />
+  <version value="1.11.0" />
+  <name value="Resistance" />
+  <title value="Resistenz" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-04-08" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet Resistance enthält die Codes für die Resistenzen." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.79" />
+      <concept>
+        <code value="100041-3" />
+        <display value="Aminoglycosid [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100042-1" />
+        <display value="Atovaquone [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="100043-9" />
+        <display value="Azithromycin+Ethambutol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100044-7" />
+        <display value="Cefcapen [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100045-4" />
+        <display value="Cefozopran [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="100046-2" />
+        <display value="Cefquinome [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="100047-0" />
+        <display value="Cefteram [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="100048-8" />
+        <display value="Clarithromycin+Ethambutol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100049-6" />
+        <display value="Eravacyclin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100050-4" />
+        <display value="Erythromycin+Ethambutol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100051-2" />
+        <display value="Ethambutol+Rifampicin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100052-0" />
+        <display value="Flomoxef [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100053-8" />
+        <display value="Fluorchinolon [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100054-6" />
+        <display value="Gamithromycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="100055-3" />
+        <display value="Optochin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100056-1" />
+        <display value="Panipenem [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100057-9" />
+        <display value="Prothionamid [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100058-7" />
+        <display value="Prulifloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100059-5" />
+        <display value="Rifapentin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100060-3" />
+        <display value="Tildipirosin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="100061-1" />
+        <display value="Tosufloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="100699-8" />
+        <display value="Rifabutin+Ethambutol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="103653-2" />
+        <display value="Ciprofloxacin [Susceptibility] for meningitis" />
+      </concept>
+      <concept>
+        <code value="103654-0" />
+        <display value="Meropenem [Susceptibility] for meningitis" />
+      </concept>
+      <concept>
+        <code value="103672-2" />
+        <display value="Amoxicillin+Clavulanate [Susceptibility] for UTI" />
+      </concept>
+      <concept>
+        <code value="1-8" />
+        <display value="Acyclovir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18855-7" />
+        <display value="5-Fluorocytosin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18857-3" />
+        <display value="Almecillin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18859-9" />
+        <display value="Amdinocillin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18860-7" />
+        <display value="Amikacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18861-5" />
+        <display value="Amoxicillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18862-3" />
+        <display value="Amoxicillin+Clavulanat [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18863-1" />
+        <display value="Amphotericin B [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18864-9" />
+        <display value="Ampicillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18865-6" />
+        <display value="Ampicillin+Sulbactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18866-4" />
+        <display value="Azithromycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18867-2" />
+        <display value="Azlocillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18868-0" />
+        <display value="Aztreonam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18869-8" />
+        <display value="Bacampicillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18870-6" />
+        <display value="Bacitracin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18871-4" />
+        <display value="Butirosin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18872-2" />
+        <display value="Capreomycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18873-0" />
+        <display value="Carbenicillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18874-8" />
+        <display value="Cefaclor [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18875-5" />
+        <display value="Cefadroxil [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18876-3" />
+        <display value="Cefamandol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18877-1" />
+        <display value="Cefatrizin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18878-9" />
+        <display value="Cefazolin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18879-7" />
+        <display value="Cefepim [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18880-5" />
+        <display value="Cefixim [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18881-3" />
+        <display value="Cefmetazol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18882-1" />
+        <display value="Cefodizim [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18883-9" />
+        <display value="Cefonicid [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18884-7" />
+        <display value="Cefoperazon [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18885-4" />
+        <display value="Ceforanid [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18886-2" />
+        <display value="Cefotaxim [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18887-0" />
+        <display value="Cefotetan [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18888-8" />
+        <display value="Cefoxitin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18889-6" />
+        <display value="Cefpirom [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18890-4" />
+        <display value="Cefpodoxim [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18891-2" />
+        <display value="Cefprozil [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18892-0" />
+        <display value="Cefsulodin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18893-8" />
+        <display value="Ceftazidim [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18894-6" />
+        <display value="Ceftizoxim [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18895-3" />
+        <display value="Ceftriaxon [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18896-1" />
+        <display value="Cefuroxim parenteral [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18897-9" />
+        <display value="Cephalexin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18898-7" />
+        <display value="Cephaloglycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18899-5" />
+        <display value="Cephaloridin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18900-1" />
+        <display value="Cephalothin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18901-9" />
+        <display value="Cephapirin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18902-7" />
+        <display value="Cephradin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18903-5" />
+        <display value="Chloramphenicol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18904-3" />
+        <display value="Chlortetracyclin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18905-0" />
+        <display value="Cinoxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18906-8" />
+        <display value="Ciprofloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18907-6" />
+        <display value="Clarithromycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18908-4" />
+        <display value="Clindamycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18909-2" />
+        <display value="Clotrimazole [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18910-0" />
+        <display value="Cloxacillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18911-8" />
+        <display value="Colistimethate" />
+      </concept>
+      <concept>
+        <code value="18912-6" />
+        <display value="Colistin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18913-4" />
+        <display value="Cyclacillin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18914-2" />
+        <display value="Cycloserin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18915-9" />
+        <display value="Demeclocyclin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18916-7" />
+        <display value="Dicloxacillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18917-5" />
+        <display value="Doxycyclin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18918-3" />
+        <display value="Enoxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18919-1" />
+        <display value="Erythromycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18920-9" />
+        <display value="Erythromycin+Sulfisoxazol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18921-7" />
+        <display value="Ethambutol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18922-5" />
+        <display value="Ethionamid [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18923-3" />
+        <display value="Floxacillin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18924-1" />
+        <display value="Fluconazole [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18926-6" />
+        <display value="Framycetin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18927-4" />
+        <display value="Fusidat [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18928-2" />
+        <display value="Gentamicin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18929-0" />
+        <display value="Gentamicin.Hochdosis [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18930-8" />
+        <display value="Gramicidin D [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18931-6" />
+        <display value="Hetacillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18932-4" />
+        <display value="Imipenem [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18934-0" />
+        <display value="Isoniazid [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18935-7" />
+        <display value="Kanamycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18936-5" />
+        <display value="Kanamycin.Hochdosis [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18937-3" />
+        <display value="Ketoconazol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18938-1" />
+        <display value="Lincomycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18939-9" />
+        <display value="Lomefloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18940-7" />
+        <display value="Loracarbef [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18941-5" />
+        <display value="Lymecyclin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18942-3" />
+        <display value="Meclocyclin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18943-1" />
+        <display value="Meropenem [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18944-9" />
+        <display value="Methacyclin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18945-6" />
+        <display value="Methicillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18946-4" />
+        <display value="Metronidazol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18947-2" />
+        <display value="Mezlocillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18948-0" />
+        <display value="Minocyclin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18949-8" />
+        <display value="Miocamycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18950-6" />
+        <display value="Moxalactam [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18951-4" />
+        <display value="Nafcillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18952-2" />
+        <display value="Nalidixate [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18953-0" />
+        <display value="Neomycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18954-8" />
+        <display value="Netilmicin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18955-5" />
+        <display value="Nitrofurantoin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18956-3" />
+        <display value="Norfloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18957-1" />
+        <display value="Novobiocin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18958-9" />
+        <display value="Nystatin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18959-7" />
+        <display value="Ofloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18960-5" />
+        <display value="Oleandomycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18961-3" />
+        <display value="Oxacillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18962-1" />
+        <display value="Oxytetracyclin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18963-9" />
+        <display value="Pefloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18964-7" />
+        <display value="Penicillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18965-4" />
+        <display value="Penicillin G [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18966-2" />
+        <display value="Penicillin V [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18967-0" />
+        <display value="Phenethicillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18968-8" />
+        <display value="Pipemidate [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18969-6" />
+        <display value="Piperacillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18970-4" />
+        <display value="Piperacillin+Tazobactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18971-2" />
+        <display value="Pivampicillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18972-0" />
+        <display value="Polymyxin B [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18973-8" />
+        <display value="Pyrazinamid [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18974-6" />
+        <display value="Rifampicin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18975-3" />
+        <display value="Ristocetin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18976-1" />
+        <display value="Rolitetracyclin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18977-9" />
+        <display value="Rosoxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18978-7" />
+        <display value="Roxithromycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18979-5" />
+        <display value="Sisomicin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18980-3" />
+        <display value="Spectinomycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18981-1" />
+        <display value="Spiramycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18982-9" />
+        <display value="Streptomycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18983-7" />
+        <display value="Streptomycin.Hochdosis [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18984-5" />
+        <display value="Sulfadiazin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18985-2" />
+        <display value="Sulfamethoxazol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18986-0" />
+        <display value="Sulfisoxazol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18987-8" />
+        <display value="Sulfonamid [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18988-6" />
+        <display value="Talampicillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18989-4" />
+        <display value="Teicoplanin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18990-2" />
+        <display value="Temafloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18991-0" />
+        <display value="Temocillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18992-8" />
+        <display value="Terbinafine [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="18993-6" />
+        <display value="Tetracyclin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18994-4" />
+        <display value="Ticarcillin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18995-1" />
+        <display value="Ticarcillin+Clavulanat [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18996-9" />
+        <display value="Tobramycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18997-7" />
+        <display value="Trimethoprim [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18998-5" />
+        <display value="Trimethoprim+Sulfamethoxazol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="18999-3" />
+        <display value="Troleandomycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="19000-9" />
+        <display value="Vancomycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="19001-7" />
+        <display value="Viomycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="19149-4" />
+        <display value="Rifabutin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="20388-5" />
+        <display value="Nitrofurazon [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="20389-3" />
+        <display value="Mupirocin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="20390-1" />
+        <display value="Sulfadiazin-Silber [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="20391-9" />
+        <display value="Mafenide [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="20629-2" />
+        <display value="Levofloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="23627-3" />
+        <display value="Clofazimin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="23628-1" />
+        <display value="Sparfloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="23629-9" />
+        <display value="Para-Aminosalicylat [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="23636-4" />
+        <display value="Cefdinir [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="23638-0" />
+        <display value="Grepafloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="23640-6" />
+        <display value="Quinupristin+Dalfopristin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="23642-2" />
+        <display value="Trovafloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="23658-8" />
+        <display value="Anderes Antibiotikum [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="23659-6" />
+        <display value="Apramycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="23709-9" />
+        <display value="Ceftiofur [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="23712-3" />
+        <display value="Enrofloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="23740-4" />
+        <display value="Florfenicol [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="25595-0" />
+        <display value="Econazol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="25596-8" />
+        <display value="Fosfomycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="25597-6" />
+        <display value="Josamycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="25607-3" />
+        <display value="Miconazol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="25608-1" />
+        <display value="Nitroxolin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="256-8" />
+        <display value="Foscarnet [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="265-9" />
+        <display value="Ganciclovir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="29258-1" />
+        <display value="Linezolid [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="30298-4" />
+        <display value="Lamivudin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="30299-2" />
+        <display value="Amprenavir [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="30300-8" />
+        <display value="Didanosin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="30301-6" />
+        <display value="Zalcitabine [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="30302-4" />
+        <display value="Stavudine [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="30303-2" />
+        <display value="Abacavir [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="30304-0" />
+        <display value="Adefovir [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="30305-7" />
+        <display value="Delavirdin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="30306-5" />
+        <display value="Efavirenz [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="30307-3" />
+        <display value="Indinavir [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="30308-1" />
+        <display value="Ritonavir [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="30309-9" />
+        <display value="Nelfinavir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="30310-7" />
+        <display value="Saquinavir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="30311-5" />
+        <display value="Nevirapine [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="31038-3" />
+        <display value="Gatifloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="31039-1" />
+        <display value="Moxifloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="32372-5" />
+        <display value="Fleroxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="32373-3" />
+        <display value="Arbekacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="32374-1" />
+        <display value="Cefotiam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="32375-8" />
+        <display value="Cefmenoxim [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="32376-6" />
+        <display value="Clinafloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="32377-4" />
+        <display value="Cefetamet [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="32378-2" />
+        <display value="Caspofungin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="32379-0" />
+        <display value="Voriconazole [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="32381-6" />
+        <display value="Isepamicin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="32383-2" />
+        <display value="Pristinamycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="32384-0" />
+        <display value="Thiacetazone [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="32597-7" />
+        <display value="Natamycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="32603-3" />
+        <display value="Itraconazol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="33627-1" />
+        <display value="Tenofovir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="33628-9" />
+        <display value="Cidofovir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35756-6" />
+        <display value="Avilamycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35762-4" />
+        <display value="Cefditoren [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="35771-5" />
+        <display value="Cefotaxim+Clavulanat [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="35776-4" />
+        <display value="Ceftazidim+Clavulanat [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="35779-8" />
+        <display value="Ceftibuten [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="35783-0" />
+        <display value="Cefuroxim oral [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="35789-7" />
+        <display value="Daptomycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="35792-1" />
+        <display value="Difloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35795-4" />
+        <display value="Dirithromycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="35802-8" />
+        <display value="Ertapenem [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="35805-1" />
+        <display value="Bambermycins [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35813-5" />
+        <display value="Garenoxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="35816-8" />
+        <display value="Gemifloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="35827-5" />
+        <display value="Orbifloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35831-7" />
+        <display value="Pirlimycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35838-2" />
+        <display value="Salinomycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35845-7" />
+        <display value="Telithromycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="35848-1" />
+        <display value="Tiamulin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35851-5" />
+        <display value="Tilmicosin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35854-9" />
+        <display value="Trospectinomycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35858-0" />
+        <display value="Tylosin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="35861-4" />
+        <display value="Virginiamycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="35874-7" />
+        <display value="Penicillin+Novobiocin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="41726-1" />
+        <display value="ABT492 [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="41727-9" />
+        <display value="Aztreonam+Clavulanat [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="41728-7" />
+        <display value="Biapenem [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="41729-5" />
+        <display value="Cefotetan+Clavulanat [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="41730-3" />
+        <display value="Cefoxitin+Clavulanat [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="41731-1" />
+        <display value="Cefpodoxim+Clavulanat [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="41732-9" />
+        <display value="Ceftriaxon+Clavulanat [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="41733-7" />
+        <display value="Clavulanat [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="41734-5" />
+        <display value="Dalbavancin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="41735-2" />
+        <display value="Everninomicin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="41736-0" />
+        <display value="Oritavancin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="41737-8" />
+        <display value="Ramoplanin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="41738-6" />
+        <display value="Rosamicin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="41739-4" />
+        <display value="Sulbactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="41740-2" />
+        <display value="Tazobactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="41993-7" />
+        <display value="Atazanavir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="42353-3" />
+        <display value="Cefepim+Clavulanat [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="42357-4" />
+        <display value="Tigecyclin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="42535-5" />
+        <display value="Tipranavir [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="43272-4" />
+        <display value="Ceftobiprol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="50633-7" />
+        <display value="Ceftriaxon [Empfindlichkeit] für Meningitis" />
+      </concept>
+      <concept>
+        <code value="50712-9" />
+        <display value="Influenza-Virus.Neuraminidaseinhibitor-Resistenz [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="51503-1" />
+        <display value="Penicillin G Procain [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="51504-9" />
+        <display value="Penicillin G Benzathin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="51694-8" />
+        <display value="Carumonam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="51698-9" />
+        <display value="Dapson [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="51719-3" />
+        <display value="Paromomycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="51724-3" />
+        <display value="Cefuroxim [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="52128-6" />
+        <display value="Cefotaxim [Empfindlichkeit] für Meningitis" />
+      </concept>
+      <concept>
+        <code value="531-4" />
+        <display value="Zidovudine [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="54166-4" />
+        <display value="Cefoperazon+Sulbactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="54169-8" />
+        <display value="Thiamphenicol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="54170-6" />
+        <display value="Imipenem+EDTA [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="54188-8" />
+        <display value="Posaconazole [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="54191-2" />
+        <display value="Cefotaxim+Sulbactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="54194-6" />
+        <display value="Mezlocillin+Sulbactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="54197-9" />
+        <display value="Piperacillin+Sulbactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="54200-1" />
+        <display value="Griseofulvin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="54908-9" />
+        <display value="Cefminox [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="54928-7" />
+        <display value="Tinidazol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="55196-0" />
+        <display value="Terconazole [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="55289-3" />
+        <display value="Sulopenem [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="55292-7" />
+        <display value="Linopristin+Flopristin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="55614-2" />
+        <display value="Amoxicillin+Sulbactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="55625-8" />
+        <display value="Cefacetril [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="55631-6" />
+        <display value="Cephalothin+Sulbactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="55635-7" />
+        <display value="Cefamandol+Sulbactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="55649-8" />
+        <display value="Ceftazidim+Sulbactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="55657-1" />
+        <display value="Clindamycin.Hochdosis [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="55670-4" />
+        <display value="Dibekacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="55676-1" />
+        <display value="Flumequin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="55682-9" />
+        <display value="Isoconazol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="55691-0" />
+        <display value="Ornidazol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="55696-9" />
+        <display value="Oxolinate [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="55706-6" />
+        <display value="Piromidate [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="55717-3" />
+        <display value="Ticarcillin+Sulbactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="55738-9" />
+        <display value="Cefotiamhexetil [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="57095-2" />
+        <display value="Anidulafungin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="57896-3" />
+        <display value="Influenza-Virus A 2009 H1N1v.Neuraminidaseinhibitor-Resistenz [Empfindlichkeit] in Probenmaterial mittels Genotypisierung" />
+      </concept>
+      <concept>
+        <code value="58080-3" />
+        <display value="Penicillin parenteral [Empfindlichkeit] für Meningitis" />
+      </concept>
+      <concept>
+        <code value="58085-2" />
+        <display value="Penicillin parenteral [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="60535-2" />
+        <display value="Doripenem [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="61188-9" />
+        <display value="Clindamycin.induziert [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="65340-2" />
+        <display value="Micafungin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="6-7" />
+        <display value="Amantadine [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="69574-2" />
+        <display value="Furazolidon [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="6984-9" />
+        <display value="Beta-Lactamase.Breitspektrum [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="6985-6" />
+        <display value="Beta-Lactamase.normal [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="73585-2" />
+        <display value="Tizoxanide [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="73586-0" />
+        <display value="Tedizolid [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="73587-8" />
+        <display value="Solithromycin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="73588-6" />
+        <display value="Sarafloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="73589-4" />
+        <display value="Rifaximin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="73590-2" />
+        <display value="Razupenem [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="73591-0" />
+        <display value="Premafloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="73592-8" />
+        <display value="Plazomicin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="73594-4" />
+        <display value="Omadacyclin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="73595-1" />
+        <display value="Nitazoxanid [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="73596-9" />
+        <display value="Marbofloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="73597-7" />
+        <display value="Iclaprim [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="73598-5" />
+        <display value="Finafloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="73599-3" />
+        <display value="Fidaxomicin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="73600-9" />
+        <display value="Faropenem [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="73601-7" />
+        <display value="Danofloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="73602-5" />
+        <display value="Ceftolozan+Tazobactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="73603-3" />
+        <display value="Ceftazidim+Avibactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="73604-1" />
+        <display value="Ceftarolin+Avibactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="73605-8" />
+        <display value="Ceftarolin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="73606-6" />
+        <display value="Besifloxacin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="87791-0" />
+        <display value="Carbadox [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="87792-8" />
+        <display value="Cefovecin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="87797-7" />
+        <display value="Sulfathiazol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="87798-5" />
+        <display value="Tulathromycin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="87800-9" />
+        <display value="Pradofloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="87802-5" />
+        <display value="Sulfachloropyridazine [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="87803-3" />
+        <display value="Sulfadimethoxin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="88462-7" />
+        <display value="Carbapenem [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="88885-9" />
+        <display value="Delafloxacin [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="88886-7" />
+        <display value="Telavancin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="88887-5" />
+        <display value="Isavuconazole [Susceptibility]" />
+      </concept>
+      <concept>
+        <code value="88892-5" />
+        <display value="Meropenem+Vaborbactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="93850-6" />
+        <display value="Pretomanid [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="93851-4" />
+        <display value="Delamanid [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="94274-8" />
+        <display value="Bedaquilin [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="96372-8" />
+        <display value="Imipenem+Relebactam [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="97941-9" />
+        <display value="Cycloheximid [Empfindlichkeit] in Isolat" />
+      </concept>
+      <concept>
+        <code value="99280-0" />
+        <display value="Cefiderocol [Empfindlichkeit]" />
+      </concept>
+      <concept>
+        <code value="99281-8" />
+        <display value="Lefamulin [Susceptibility]" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

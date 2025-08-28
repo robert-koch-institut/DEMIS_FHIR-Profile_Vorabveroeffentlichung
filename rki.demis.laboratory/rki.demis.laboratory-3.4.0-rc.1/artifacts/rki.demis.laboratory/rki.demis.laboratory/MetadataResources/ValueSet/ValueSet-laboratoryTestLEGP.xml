@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratoryTestLEGP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/laboratoryTestLEGP" />
+  <version value="1.8.0" />
+  <name value="LaboratoryTestLEGP" />
+  <title value="Labortest für Legionella sp." />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-04-08" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet LaboratoryTestLEGP enthält die Codes der Labortests für Legionella sp.." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material contains content from LOINC (http://loinc.org/). LOINC is copyright © 1995-2023, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält Inhalte von LOINC (http://loinc.org/). LOINC ist urheberrechtlich geschützt © 1995-2023, Regenstrief Institute, Inc. und das Logical Observation Identifiers Names and Codes (LOINC) Committee und ist unter der Lizenz http://loinc.org/license kostenlos erhältlich. LOINC® ist eine eingetragene US-amerikanische Marke des Regenstrief Institute, Inc.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für LOINC-Übersetzungen für Anwendungszwecke in Deutschland&#xD;&#xA;Übersetzungen in verschiedenen Sprachen werden von &quot;LOINC® Adopters&quot;, meistens Behörden oder Forschungsinstituten verschiedener Länder, erstellt und an das Regenstrief Institute weitergegeben. Das Copyright für die Übersetzungen liegt beim Regenstrief Institute. Für Deutschland wird die LOINC®-Übersetzung durch das BfArM bereitgestellt. Die Übersetzungen werden durch das Regenstrief Institute als &quot;Linguistic Variants&quot; in den halbjährlichen LOINC®-Releases (Februar und August) veröffentlicht.&#xD;&#xA;&#xD;&#xA;Das Copyright für die Übersetzungen liegt beim Regenstrief Institute, 1101 W 10th St, Indianapolis, IN 46202, USA.&#xD;&#xA;&#xD;&#xA;Mit dem Download von Dateien kommt ein Nutzungsvertrag zwischen Ihnen und dem Regenstrief Institute zustande. Sie verpflichten sich, die unten verlinkten Nutzungs- und Abgabebedingungen für LOINC vom Regenstrief Institute einzuhalten." />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <version value="2.79" />
+      <concept>
+        <code value="100748-3" />
+        <display value="Legionella spp [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="100749-1" />
+        <display value="Legionella pneumophila, Serogruppe 1 [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="101219-4" />
+        <display value="Legionella sp DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="105074-9" />
+        <display value="Legionella pneumophila 1 Ag [Presence] in Specimen" />
+      </concept>
+      <concept>
+        <code value="17057-1" />
+        <display value="Legionella pneumophila Antigen [Nachweis] in Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="17059-7" />
+        <display value="Legionella pneumophila Antigen [Nachweis] in Urin mittels Immunfluoreszenztest" />
+      </concept>
+      <concept>
+        <code value="17060-5" />
+        <display value="Legionella pneumophila 1 Antikörper [Titer] in Serum" />
+      </concept>
+      <concept>
+        <code value="21363-7" />
+        <display value="Legionella pneumophila DNA [Nachweis] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="26621-3" />
+        <display value="Legionella sp Antigen [Nachweis] in Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="31868-3" />
+        <display value="Legionella pneumophila 1 Antigen [Nachweis] in Urin" />
+      </concept>
+      <concept>
+        <code value="31870-9" />
+        <display value="Legionella pneumophila Antigen [Nachweis] in Urin" />
+      </concept>
+      <concept>
+        <code value="32781-7" />
+        <display value="Legionella sp Antigen [Nachweis] in Urin" />
+      </concept>
+      <concept>
+        <code value="39541-8" />
+        <display value="Legionella sp Antigen [Nachweis] in Probenmaterial mittels Immunfluoreszenztest" />
+      </concept>
+      <concept>
+        <code value="41499-5" />
+        <display value="Legionella pneumophila 1 Antigen [Nachweis] in Urin mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="41852-5" />
+        <display value="Mikroorganismus oder Erreger identifiziert in Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="49616-6" />
+        <display value="Legionella sp DNA [Nachweis oder Identität] in Probenmaterial mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="57675-1" />
+        <display value="Legionella pneumophila IgG-Antikörper [Nachweis] in Serum mittels Immunfluoreszenztest --1. Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="57676-9" />
+        <display value="Legionella pneumophila IgG-Antikörper [Nachweis] in Serum mittels Immunfluoreszenztest --2. Probenmaterial" />
+      </concept>
+      <concept>
+        <code value="593-4" />
+        <display value="Legionella sp identifiziert in Probenmaterial mittels erregerspezifischer Kultur" />
+      </concept>
+      <concept>
+        <code value="6447-7" />
+        <display value="Legionella pneumophila Antigen [Nachweis] in Urin mittels Immunoassay" />
+      </concept>
+      <concept>
+        <code value="75756-7" />
+        <display value="Bakterien identifiziert in Isolat mittels MS.MALDI-TOF" />
+      </concept>
+      <concept>
+        <code value="77684-9" />
+        <display value="Legionella pneumophila 1 Antigen [Nachweis] in Urin mittels Immunoassay-Schnelltest" />
+      </concept>
+      <concept>
+        <code value="92145-2" />
+        <display value="Legionella pneumophila DNA [Nachweis] in Probenmaterial vom Respirationstrakt mittels Nukleinsäureamplifikation mit Sondendetektion" />
+      </concept>
+      <concept>
+        <code value="9541-4" />
+        <display value="Legionella pneumophila 1 IgG-Antikörper [Titer] in Serum mittels Immunfluoreszenztest" />
+      </concept>
+      <concept>
+        <code value="9542-2" />
+        <display value="Legionella pneumophila 1 IgM-Antikörper [Titer] in Serum mittels Immunfluoreszenztest" />
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistance" />
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/resistanceGene" />
+    </include>
+  </compose>
+</ValueSet>
