@@ -71,10 +71,10 @@
             </blockquote>-->
             <blockquote>
             <p> 
-                Seit 10.09.2025 wird die Version rki.demis.common-2.2.1 durch das DEMIS-Backend unterstützt. Das entsprechende
+                <b>Seit 10.09.2025 wird die Version rki.demis.common-2.2.1 durch das DEMIS-Backend unterstützt.</b> Das entsprechende
                     Simplifier-Projekt <a href="https://simplifier.net/rki.demis.common">https://simplifier.net/rki.demis.common</a>
                     wurde aktualisiert. </br>
-                Seit 23.06.2025 wird rki.demis.common-3.0.0-rc.1 in der DEMIS-Testumgebung unterstützt. Das entsprechende Simplifier-Projekt findet sich hier: <a href="https://simplifier.net/rki.demis.common.strict">https://simplifier.net/rki.demis.common.strict</a>
+                <b>Seit 21.10.2025 wird die Version rki.demis.common-3.0.0-rc.4 in der DEMIS-Testumgebung unterstützt.</b> Das entsprechende Simplifier-Projekt <a href="https://simplifier.net/rki.demis.common.strict">https://simplifier.net/rki.demis.common.strict</a> wurde aktualisiert.
             </p>
         </blockquote>
 			
@@ -103,10 +103,10 @@
         </blockquote>-->
         <blockquote>
             <p> 
-                Seit 10.09.2025 wird die Version rki.demis.laboratory-3.4.0 durch das DEMIS-Backend unterstützt. Das entsprechende
+                <b>Seit 10.09.2025 wird die Version rki.demis.laboratory-3.4.0 durch das DEMIS-Backend unterstützt.</b> Das entsprechende
                     Simplifier-Projekt <a href="https://simplifier.net/rki.demis.laboratory">https://simplifier.net/rki.demis.laboratory</a>
                     wurde aktualisiert. </br>
-                Seit 23.06.2025 wird rki.demis.laboratory-4.0.0-rc.1 in der DEMIS-Testumgebung unterstützt. Das entsprechende Simplifier-Projekt findet sich hier: <a href="https://simplifier.net/rki.demis.laboratory.strict">https://simplifier.net/rki.demis.laboratory.strict</a>
+                <b>Seit 21.10.2025 wird die Version rki.demis.laboratory-5.0.0-alpha.5 in der DEMIS-Testumgebung unterstützt. In dieser Version sind die Ressourcen für den Meldungstyp "Meldungen gemäß IfSG §7 Absatz 3" hinzugefügt wurden.</b> Das entsprechende Simplifier-Projekt <a href="https://simplifier.net/rki.demis.laboratory.strict">https://simplifier.net/rki.demis.laboratory.strict</a> wurde aktualisiert.
             </p>
         </blockquote>
         <p></p>
@@ -137,23 +137,38 @@
         </blockquote>
         <h2>FHIR-Profile Erkrankungsmeldung (rki.demis.disease)</h2>
         <p>Das Paket rki.demis.disease beinhaltet die Ressourcen für die Erkrankungsmeldung.</p>
-         <!-- <blockquote>
-            <h3>Version rki.demis.disease-2.2.2-rc.1 (27.08.2025)</h3>
-            <a class="package-link" href="./rki.demis.disease/rki.demis.disease-2.2.2-rc.1/Home.html">Leitfaden</a>
-            <a href="./rki.demis.disease/rki.demis.disease-2.2.2-rc.1/Vorab-rki.demis.disease-2.2.2-rc.1@current.zip">Download ZIP</a>
-            <ul>
-                <li>feat: Mapping in ConceptMap NotificationDiseaseCategoryToTransmissionCategory angepasst</li>
-            </ul>
-
-        </blockquote>-->
         <blockquote>
+        <p> 
+            <b>Seit 10.09.2025 wird die Version rki.demis.disease-2.2.2 durch das DEMIS-Backend unterstützt.</b> Das entsprechende
+                Simplifier-Projekt <a href="https://simplifier.net/rki.demis.disease">https://simplifier.net/rki.demis.disease</a>
+                wurde aktualisiert. </br>
+            <b>Seit 21.10.2025 wird die Version rki.demis.disease-3.0.0-rc.1 in der DEMIS-Testumgebung unterstützt. In dieser Version sind die Ressourcen für den Meldungstyp "Meldungen gemäß IfSG §7 Absatz 3" hinzugefügt wurden.</b>
+        </p>
+         
+            <h3>Version rki.demis.disease-3.0.0-rc.1 (24.10.2025)</h3>
+            FOLGT IN KÜRZE: <a class="package-link" href="./rki.demis.disease/rki.demis.disease-3.0.0-rc.1/Home.html">Leitfaden</a>
+            <a href="./rki.demis.disease/rki.demis.disease-3.0.0-rc.1/Vorab-rki.demis.disease-3.0.0-rc.1@current.zip">Download ZIP</a>
+            <ul>
+                <li>feat: Ressourcen für die 7.3-Meldung hinzugefügt</li>
+                <li>feat: Constraint notifiedPersonAnonymousAndRelatesToTargetIdentifier in NotificationBundleDisease hinzugefügt</li>
+                <li>fix: Conditions für die 7.3-Meldungen verweisen auf das korrekte ValueSet notificationDiseaseCategoryNonNominal</li>
+                <li>fix: Umbenennung der Compositions für die 7.3-Meldungen unter Berücksichtigung des Verweises auf "NonNominal"</li>
+                <li>fix: 7.3-Meldetatbestände in ConceptMap eingefügt</li>
+                <li>feat: Status der Ressourcen für §7.3-Meldung auf active gesetzt</li>
+                <li>doc: Beschreibungen für §7.3-Meldung in IG hinzugefügt</li>
+                <li>feat: min/maxQuantity-Constraints in §7.3-Questionnaires hinzugefügt (HL7 SDC-Extensions)</li>
+                <li>feat: Mapping in ConceptMap NotificationDiseaseCategoryToTransmissionCategory angepasst</li>
+                <li>fix: Korrektur Tippfehler TRPB -> TRPD</li>           
+            </ul>
+        </blockquote>
+        <!-- <blockquote>
             <p> 
                 Seit 10.09.2025 wird
                     die Version rki.demis.disease-2.2.2 durch das DEMIS-Backend unterstützt. Das entsprechende
                     Simplifier-Projekt <a href="https://simplifier.net/rki.demis.disease">https://simplifier.net/rki.demis.disease</a>
                     wurde aktualisiert.
             </p>
-        </blockquote>
+        </blockquote>-->
     </div>
 </div>
 <script>
