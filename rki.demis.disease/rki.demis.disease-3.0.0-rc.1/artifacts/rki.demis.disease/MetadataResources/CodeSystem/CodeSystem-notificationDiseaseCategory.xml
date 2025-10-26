@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="notificationDiseaseCategory" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory" />
+  <version value="2.0.1" />
+  <name value="NotificationDiseaseCategory" />
+  <title value="Meldetatbestände nach § 6 und § 7 Abs. 3 IfSG" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-04-30" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das CodeSystem NotificationDiseaseCategory enthält die Codes der Meldetatbestände nach § 6 und  § 7 Abs. 3 IfSG." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="(C) 2021-2025 Robert Koch-Institut" />
+  <caseSensitive value="false" />
+  <content value="complete" />
+  <count value="49" />
+  <property>
+    <code value="inactive" />
+    <type value="boolean" />
+  </property>
+  <property>
+    <code value="federal-state-specific-notificationCategory" />
+    <description value="Bundeslandspezifischer Meldetatbestand" />
+    <type value="boolean" />
+  </property>
+  <property>
+    <code value="federal-state" />
+    <description value="Bundesland" />
+    <type value="Coding" />
+  </property>
+  <property>
+    <code value="ifsg-paragraph" />
+    <description value="IfSG-Paragraph" />
+    <type value="code" />
+  </property>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="430" />
+    </extension>
+    <code value="clod" />
+    <display value="Botulismus" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Botulismus" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="420" />
+    </extension>
+    <code value="vchd" />
+    <display value="Cholera" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Cholera" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="410" />
+    </extension>
+    <code value="cdfd" />
+    <display value="Clostridioides-difficile-Erkrankung, schwere Verlaufsform" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Clostridioides-difficile-Erkrankung, schwere Verlaufsform" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="400" />
+    </extension>
+    <code value="cvdd" />
+    <display value="Coronavirus-Krankheit-2019 (COVID-19)" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Coronavirus-Krankheit-2019 (COVID-19)" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="390" />
+    </extension>
+    <code value="cjkd" />
+    <display value="Creutzfeldt-Jakob-Krankheit (CJK)" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Creutzfeldt-Jakob-Krankheit (CJK)" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="380" />
+    </extension>
+    <code value="dend" />
+    <display value="Denguefieber" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Denguefieber" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="370" />
+    </extension>
+    <code value="cord" />
+    <display value="Diphtherie" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Diphtherie" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="360" />
+    </extension>
+    <code value="ebvd" />
+    <display value="Ebolafieber" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Ebolafieber" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="350" />
+    </extension>
+    <code value="gfvd" />
+    <display value="Gelbfieber" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Gelbfieber" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="340" />
+    </extension>
+    <code value="husd" />
+    <display value="Hämolytisch-urämisches Syndrom (HUS)" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Hämolytisch-urämisches Syndrom (HUS)" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="330" />
+    </extension>
+    <code value="hfad" />
+    <display value="Hämorrhagisches Fieber" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Hämorrhagisches Fieber" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="320" />
+    </extension>
+    <code value="htvd" />
+    <display value="Hantavirus-Erkrankung, hämorrhagischer Verlauf" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Hantavirus-Erkrankung, hämorrhagischer Verlauf" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="310" />
+    </extension>
+    <code value="hxxd" />
+    <display value="Akute Virushepatitis" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Akute Virushepatitis" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="300" />
+    </extension>
+    <code value="havd" />
+    <display value="Hepatitis A" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Hepatitis A" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="290" />
+    </extension>
+    <code value="hbvd" />
+    <display value="Hepatitis B" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Hepatitis B" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="280" />
+    </extension>
+    <code value="hcvd" />
+    <display value="Hepatitis C" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Hepatitis C" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="270" />
+    </extension>
+    <code value="hdvd" />
+    <display value="Hepatitis D" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Hepatitis D" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="260" />
+    </extension>
+    <code value="hevd" />
+    <display value="Hepatitis E" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Hepatitis E" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="250" />
+    </extension>
+    <code value="vzzd" />
+    <display value="Herpes Zoster" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Herpes Zoster" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="true" />
+    </property>
+    <property>
+      <code value="federal-state" />
+      <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de" />
+        <code value="DE-BB" />
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state" />
+      <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de" />
+        <code value="DE-SN" />
+      </valueCoding>
+    </property>
+    <property>
+      <code value="federal-state" />
+      <valueCoding>
+        <system value="urn:iso:std:iso:3166-2:de" />
+        <code value="DE-ST" />
+      </valueCoding>
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="240" />
+    </extension>
+    <code value="bpsd" />
+    <display value="Keuchhusten" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Keuchhusten" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="230" />
+    </extension>
+    <code value="lsvd" />
+    <display value="Lassafieber" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Lassafieber" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="220" />
+    </extension>
+    <code value="mbvd" />
+    <display value="Marburgfieber" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Marburgfieber" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="210" />
+    </extension>
+    <code value="msvd" />
+    <display value="Masern" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Masern" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="200" />
+    </extension>
+    <code value="neid" />
+    <display value="Meningokokken, invasive Erkrankung" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Meningokokken, invasive Erkrankung" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="190" />
+    </extension>
+    <code value="band" />
+    <display value="Milzbrand" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Milzbrand" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="180" />
+    </extension>
+    <code value="mpxd" />
+    <display value="Mpox" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Mpox" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="170" />
+    </extension>
+    <code value="mpvd" />
+    <display value="Mumps" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Mumps" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="160" />
+    </extension>
+    <code value="opxd" />
+    <display value="Orthopocken, andere" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Orthopocken, andere" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="150" />
+    </extension>
+    <code value="spad" />
+    <display value="Paratyphus" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Paratyphus" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="140" />
+    </extension>
+    <code value="sxxd" />
+    <display value="Paratyphus/Typhus, nicht differenziert" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Paratyphus/Typhus, nicht differenziert" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="130" />
+    </extension>
+    <code value="ypsd" />
+    <display value="Pest" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Pest" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="120" />
+    </extension>
+    <code value="pkvd" />
+    <display value="Pocken" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Pocken" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="110" />
+    </extension>
+    <code value="povd" />
+    <display value="Poliomyelitis" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Poliomyelitis" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="100" />
+    </extension>
+    <code value="rund" />
+    <display value="Röteln, konnatal" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Röteln, konnatal" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="90" />
+    </extension>
+    <code value="ruvd" />
+    <display value="Röteln, postnatal" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Röteln, postnatal" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="80" />
+    </extension>
+    <code value="sspd" />
+    <display value="Subakute sklerosierende Panenzephalitis (SSPE)" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Subakute sklerosierende Panenzephalitis (SSPE)" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="70" />
+    </extension>
+    <code value="rbvd" />
+    <display value="Tollwut" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Tollwut" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="60" />
+    </extension>
+    <code value="chtd" />
+    <display value="Chlamydia trachomatis, sofern es sich um einen der Serotypen L1 bis L3 handelt" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Chlamydia trachomatis (L1 bis L3)" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="true" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="7.3" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="60" />
+    </extension>
+    <code value="ttvd" />
+    <display value="Tollwutexpositionsverdacht" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Tollwutexpositionsverdacht" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="50" />
+    </extension>
+    <code value="echd" />
+    <display value="Echinococcus sp." />
+    <designation>
+      <language value="de-DE" />
+      <value value="Echinococcus sp." />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="true" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="7.3" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="50" />
+    </extension>
+    <code value="mytd" />
+    <display value="Tuberkulose" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Tuberkulose" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="40" />
+    </extension>
+    <code value="hivd" />
+    <display value="Humanes Immundefizienz-Virus (HIV)" />
+    <designation>
+      <language value="de-DE" />
+      <value value="HIV" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="true" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="7.3" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="40" />
+    </extension>
+    <code value="mybd" />
+    <display value="Tuberkulose, bei Behandlungsabbruch" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Tuberkulose, bei Behandlungsabbruch" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="30" />
+    </extension>
+    <code value="negd" />
+    <display value="Neisseria gonorrhoeae" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Neisseria gonorrhoeae (Gonorrhö)" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="true" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="7.3" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="30" />
+    </extension>
+    <code value="styd" />
+    <display value="Typhus" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Typhus" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="20" />
+    </extension>
+    <code value="toxd" />
+    <display value="Toxoplasma gondii; Meldepflicht nur bei konnatalen Infektionen" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Toxoplasma gondii, konnatal" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="true" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="7.3" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="20" />
+    </extension>
+    <code value="vzwd" />
+    <display value="Windpocken" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Windpocken" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="10" />
+    </extension>
+    <code value="izvd" />
+    <display value="Zoonotische Influenza" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Zoonotische Influenza" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="6.1" />
+    </property>
+  </concept>
+  <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder">
+      <valueInteger value="10" />
+    </extension>
+    <code value="trpd" />
+    <display value="Treponema pallidum" />
+    <designation>
+      <language value="de-DE" />
+      <value value="Treponema pallidum (Syphilis)" />
+    </designation>
+    <property>
+      <code value="inactive" />
+      <valueBoolean value="true" />
+    </property>
+    <property>
+      <code value="federal-state-specific-notificationCategory" />
+      <valueBoolean value="false" />
+    </property>
+    <property>
+      <code value="ifsg-paragraph" />
+      <valueCode value="7.3" />
+    </property>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,21 @@
+<Immunization xmlns="http://hl7.org/fhir">
+   <id value="a0618b8c-b019-3c5d-ae03-840ac5140c42"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/ImmunizationInformationMSVD"></profile>
+   </meta>
+   <status value="completed"></status>
+   <vaccineCode>
+      <coding>
+         <system value="http://snomed.info/sct"></system>
+         <code value="2241000221103"></code>
+         <display value="Masern-Mumps-Röteln-Lebendvirusimpfstoff (Priorix,M-M-RVAXPRO)"></display>
+      </coding>
+   </vaccineCode>
+   <patient>
+      <reference value="Patient/31bbeda4-f814-3898-b386-de581e237bf8"></reference>
+   </patient>
+   <occurrenceDateTime value="2022-04-20"></occurrenceDateTime>
+   <note>
+      <text value="-"></text>
+   </note>
+</Immunization>

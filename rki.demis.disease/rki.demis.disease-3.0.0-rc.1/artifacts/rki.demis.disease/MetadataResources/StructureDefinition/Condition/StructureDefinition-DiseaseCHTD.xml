@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DiseaseCHTD"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/DiseaseCHTD"/>
+  <version value="1.0.1"/>
+  <name value="DiseaseCHTD"/>
+  <title value="Nichtnamentliche Ergänzung von Erkrankungsinformationen für Chlamydia trachomatis, sofern es sich um einen der Serotypen L1 bis L3 handelt"/>
+  <status value="active"/>
+  <date value="2025-08-12"/>
+  <description value="Die Condition-Ressource DiseaseCHTD spezifiziert die zu ergänzenden Erkrankungsinformationen wie z.B. Symptome hinsichtlich Chlamydia trachomatis, sofern es sich um einen der Serotypen L1 bis L3 handelt."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="sct-concept"/>
+    <uri value="http://snomed.info/conceptdomain"/>
+    <name value="SNOMED CT Concept Domain Binding"/>
+  </mapping>
+  <mapping>
+    <identity value="sct-attr"/>
+    <uri value="http://snomed.org/attributebinding"/>
+    <name value="SNOMED CT Attribute Binding"/>
+  </mapping>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Condition"/>
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/DiseaseNonNominal"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Condition.code">
+      <path value="Condition.code"/>
+      <short value="Meldetatbestand &quot;Chlamydia trachomatis, sofern es sich um einen der Serotypen L1 bis L3 handelt&quot;"/>
+      <definition value="Bei Meldetatbestand &quot;Chlamydia trachomatis, sofern es sich um einen der Serotypen L1 bis L3 handelt&quot; ist Condition.code.coding.code mit &quot;chtd&quot; zu belegen."/>
+    </element>
+    <element id="Condition.code.coding.system">
+      <path value="Condition.code.coding.system"/>
+      <fixedUri value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"/>
+    </element>
+    <element id="Condition.code.coding.code">
+      <path value="Condition.code.coding.code"/>
+      <fixedCode value="chtd"/>
+    </element>
+    <element id="Condition.evidence">
+      <path value="Condition.evidence"/>
+      <short value="Symptome und Manifestationen in Bezug auf Chlamydia trachomatis, sofern es sich um einen der Serotypen L1 bis L3 handelt"/>
+      <definition value="Der Wert muss als SNOMED-Code - entsprechend des vom RKI definierten und in regelmäßigen Abständen aktualisierten ValueSets (https://demis.rki.de/fhir/ValueSet/evidenceCHTD) – im code.coding Element dargestellt werden."/>
+    </element>
+    <element id="Condition.evidence.code">
+      <path value="Condition.evidence.code"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Condition.evidence.code.coding">
+      <path value="Condition.evidence.code.coding"/>
+      <min value="1"/>
+      <max value="1"/>
+      <binding>
+        <strength value="extensible"/>
+        <description value="Symptome und Manifestationen in Bezug auf Chlamydia trachomatis, sofern es sich um einen der Serotypen L1 bis L3 handelt"/>
+        <valueSet value="https://demis.rki.de/fhir/ValueSet/evidenceCHTD"/>
+      </binding>
+    </element>
+    <element id="Condition.evidence.code.coding.system">
+      <path value="Condition.evidence.code.coding.system"/>
+      <min value="1"/>
+    </element>
+    <element id="Condition.evidence.code.coding.code">
+      <path value="Condition.evidence.code.coding.code"/>
+      <min value="1"/>
+    </element>
+  </differential>
+</StructureDefinition>

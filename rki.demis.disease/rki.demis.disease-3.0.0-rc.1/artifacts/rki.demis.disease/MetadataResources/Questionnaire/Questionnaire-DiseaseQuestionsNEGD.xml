@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="DiseaseQuestionsNEGD"/>
+  <url value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsNEGD"/>
+  <version value="1.1.0"/>
+  <name value="DiseaseQuestionsNEGD"/>
+  <title value="Neisseria gonorrhoeae: spezifische klinische und epidemiologische Angaben"/>
+  <status value="active"/>
+  <date value="2025-08-12"/>
+  <description value="Neisseria gonorrhoeae spezifische Informationsbedarfe werden in diesem meldetatbestandsspezifischen Fragebogen zusammengestellt. Dieser manifestiert sich als entsprechende QuestionnaireResponse innerhalb der Meldung."/>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/regex">
+      <valueString value="^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$|^19[0-9]{2}$|^20[0-9]{2}$" />
+    </extension>
+    <linkId value="timeOfInfection"/>
+    <text value="Welcher ist der wahrscheinliche Infektionszeitpunkt?"/>
+    <type value="date"/>
+    <required value="false"/>
+    <repeats value="false"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="swabRegion"/>
+    <text value="An welcher Körperregion wurde der Abstrich genommen bzw. um welche Art der Probe handelt es sich?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetSwabRegionNEGD"/>
+    <item>
+      <linkId value="otherNote"/>
+      <text value="Wenn Sie &quot;Andere&quot; ausgewählt haben, können Sie das näher erläutern?"/>
+      <type value="text"/>
+      <enableWhen>
+        <question value="swabRegion"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="74964007"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="false"/>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="therapyCeftriaxon"/>
+    <text value="Wurde eine Therapie mit Ceftriaxon durchgeführt?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="drop-down"/>
+            <display value="Drop down"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="therapyPeriodCeftriaxon"/>
+      <text value="Bitte geben Sie die Behandlungsdauer an."/>
+      <type value="choice"/>
+      <enableWhen>
+        <question value="therapyCeftriaxon"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="373066001"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="false"/>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetTherapyPeriodNEGD"/>
+      <item>
+        <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-minQuantity">
+          <valueQuantity>
+            <value value="1"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="d"/>
+          </valueQuantity>
+        </extension>
+        <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-maxQuantity">
+          <valueQuantity>
+            <value value="30"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="d"/>
+          </valueQuantity>
+        </extension>
+        <linkId value="therapyPeriodOtherCeftriaxon"/>
+        <text value="Wie viele Tage hielt die Behandlung an?"/>
+        <type value="quantity"/>
+        <enableWhen>
+          <question value="therapyPeriodCeftriaxon"/>
+          <operator value="="/>
+          <answerCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="74964007"/>
+          </answerCoding>
+        </enableWhen>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="therapyCefixim"/>
+    <text value="Wurde eine Therapie mit Cefixim durchgeführt?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="drop-down"/>
+            <display value="Drop down"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="therapyPeriodCefixim"/>
+      <text value="Bitte geben Sie die Behandlungsdauer an."/>
+      <type value="choice"/>
+      <enableWhen>
+        <question value="therapyCefixim"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="373066001"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="false"/>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetTherapyPeriodNEGD"/>
+      <item>
+        <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-minQuantity">
+          <valueQuantity>
+            <value value="1"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="d"/>
+          </valueQuantity>
+        </extension>
+        <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-maxQuantity">
+          <valueQuantity>
+            <value value="30"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="d"/>
+          </valueQuantity>
+        </extension>
+        <linkId value="therapyPeriodOtherCefixim"/>
+        <text value="Wie viele Tage hielt die Behandlung an?"/>
+        <type value="quantity"/>
+        <enableWhen>
+          <question value="therapyPeriodCefixim"/>
+          <operator value="="/>
+          <answerCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="74964007"/>
+          </answerCoding>
+        </enableWhen>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="therapyAzithromycin"/>
+    <text value="Wurde eine Therapie mit Azithromycin durchgeführt?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="drop-down"/>
+            <display value="Drop down"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="therapyPeriodAzithromycin"/>
+      <text value="Bitte geben Sie die Behandlungsdauer an."/>
+      <type value="choice"/>
+      <enableWhen>
+        <question value="therapyAzithromycin"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="373066001"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="false"/>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetTherapyPeriodNEGD"/>
+      <item>
+        <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-minQuantity">
+          <valueQuantity>
+            <value value="1"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="d"/>
+          </valueQuantity>
+        </extension>
+        <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-maxQuantity">
+          <valueQuantity>
+            <value value="30"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="d"/>
+          </valueQuantity>
+        </extension>
+        <linkId value="therapyPeriodOtherAzithromycin"/>
+        <text value="Wie viele Tage hielt die Behandlung an?"/>
+        <type value="quantity"/>
+        <enableWhen>
+          <question value="therapyPeriodAzithromycin"/>
+          <operator value="="/>
+          <answerCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="74964007"/>
+          </answerCoding>
+        </enableWhen>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="therapyOther"/>
+    <text value="Wurde eine Therapie mit anderen Antibiotika durchgeführt?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="drop-down"/>
+            <display value="Drop down"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="medicationOther"/>
+      <text value="Mit welchem Antibiotikum wurde behandelt?"/>
+      <type value="choice"/>
+      <enableWhen>
+        <question value="therapyOther"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="373066001"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="true"/>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetMedicationOtherNEGD"/>
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-minQuantity">
+        <valueQuantity>
+          <value value="1"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="d"/>
+        </valueQuantity>
+      </extension>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-maxQuantity">
+        <valueQuantity>
+          <value value="30"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="d"/>
+        </valueQuantity>
+      </extension>
+      <linkId value="therapyPeriodOther"/>
+      <text value="Wie viele Tage hielt die Behandlung an?"/>
+      <type value="quantity"/>
+      <enableWhen>
+        <question value="therapyOther"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="373066001"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="false"/>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="priorAntibioTreatment"/>
+    <text value="Hat die betroffene Person in den sechs Monaten vor der Infektion Antibiotika eingenommen?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="drop-down"/>
+            <display value="Drop down"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="priorTherapy"/>
+      <text value="Welche Antibiotika wurden verabreicht?"/>
+      <type value="choice"/>
+      <enableWhen>
+        <question value="priorAntibioTreatment"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="373066001"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="true"/>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetPriorTherapyNEGD"/>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+              <code value="drop-down"/>
+              <display value="Drop down"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <linkId value="priorTherapyOther"/>
+        <text value="Bitte geben Sie an, welches andere Antibiotikum verabreicht wurde."/>
+        <type value="choice"/>
+        <enableWhen>
+          <question value="priorTherapy"/>
+          <operator value="="/>
+          <answerCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="74964007"/>
+          </answerCoding>
+        </enableWhen>
+        <required value="true"/>
+        <repeats value="false"/>
+        <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetMedicationOtherNEGD"/>
+      </item>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="clinicalFindingNEGD"/>
+    <text value="Wie lautet die klinische Beurteilung der vorliegenden Infektion?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetClinicalFindingNEGD"/>
+    <item>
+      <linkId value="reinfectionNote"/>
+      <text value="Wenn Sie &quot;Reinfektion&quot; ausgewählt haben, können Sie das näher erläutern?"/>
+      <type value="text"/>
+      <enableWhen>
+        <question value="clinicalFindingNEGD"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="255230006"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="false"/>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="coinfections12Months"/>
+    <text value="Sind aus den letzten 12 Monaten Koinfektionen bekannt?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="true"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetCoinfectionNEGD"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="hivPrEPStatusNEGD"/>
+    <text value="Wurde zum Zeitpunkt der Gonokokken-Infektion eine HIV-PrEP eingenommen?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="stiProphylaxisStatusNEGD"/>
+    <text value="Wurde zum Zeitpunkt der Gonokokken-Infektion eine antibiotische STI-Prophylaxe eingenommen (z.B. Doxy-PEP)?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetSTIProphylaxis"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="infectionPathRisk"/>
+    <text value="Auf welchem Weg hat sich die betroffene Person wahrscheinlich infiziert?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="true"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionPathNEGD"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="sexWork"/>
+    <text value="Hat die betroffene Person Sexarbeit ausgeübt oder in Anspruch genommen?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="true"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetSexWork"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="partnerNotifiedNEGD"/>
+    <text value="Hat die betroffene Person ihre (Sexual)Partner*innen über die Gonokokken-Infektion benachrichtigt?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="true"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetPartnerNotified"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="countryOrigin"/>
+    <text value="Welches ist das Herkunftsland der betroffenen Person?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetCountry-ISO-SNOMED"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="countryOfInfection"/>
+    <text value="Welches ist das wahrscheinliche Infektionsland?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetCountry-ISO-SNOMED"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="genderDefintion"/>
+    <text value="Zusatzangabe zur geschlechtlichen Selbstdefinition der betroffenen Person, falls bekannt."/>
+    <type value="choice"/>
+    <required value="false"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetGenderDefinition"/>
+  </item>
+</Questionnaire>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetCDCCHIVD" />
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetCDCCHIVD" />
+  <version value="1.0.1" />
+  <name value="AnswerSetCDCCHIVD" />
+  <title value="Indikatorerkrankungen, definierend für HIV-Erkrankungen der Kategorie C." />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-08-12" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Dieses ValueSet enthält die kodierten Antwortmöglichkeiten zur Angabe der Indikatorerkrankungen, die eine HIV-Erkrankung der Kategorie C definieren." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20241115" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="11" />
+        </extension>
+        <code value="1260096003" />
+        <display value="Wasting syndrome due to acquired immunodeficiency syndrome (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="20" />
+        </extension>
+        <code value="154283005" />
+        <display value="Lungentuberkulose" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="12" />
+        </extension>
+        <code value="192701001" />
+        <display value="Toxoplasma encephalitis (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="10" />
+        </extension>
+        <code value="22455005" />
+        <display value="Zytomegalie-Retinitis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="19" />
+        </extension>
+        <code value="415125002" />
+        <display value="Pneumocystosis jirovecii pneumonia (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="21" />
+        </extension>
+        <code value="420524008" />
+        <display value="Kaposi's sarcoma with acquired immunodeficiency syndrome (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="16" />
+        </extension>
+        <code value="420554003" />
+        <display value="Progressive multifocal leukoencephalopathy with acquired immunodeficiency syndrome (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="27" />
+        </extension>
+        <code value="420945005" />
+        <display value="Histoplasmosis with acquired immunodeficiency syndrome (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="35" />
+        </extension>
+        <code value="421047005" />
+        <display value="Candidiasis of lung with acquired immunodeficiency syndrome (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="32" />
+        </extension>
+        <code value="421403008" />
+        <display value="Cryptococcosis with acquired immunodeficiency syndrome (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="29" />
+        </extension>
+        <code value="421827003" />
+        <display value="Encephalopathy with acquired immunodeficiency syndrome (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="33" />
+        </extension>
+        <code value="422337001" />
+        <display value="Coccidioidomycosis with acquired immunodeficiency syndrome (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="13" />
+        </extension>
+        <code value="428875002" />
+        <display value="Rezidivierende bakterielle Infektion" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="18" />
+        </extension>
+        <code value="44274007" />
+        <display value="Pneumonie, interstitielle, lymphoide" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="36" />
+        </extension>
+        <code value="713297001" />
+        <display value="Candidiasis of esophagus co-occurrent with human immunodeficiency virus infection (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="17" />
+        </extension>
+        <code value="713325002" />
+        <display value="Primary cerebral lymphoma co-occurrent with human immunodeficiency virus infection (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="34" />
+        </extension>
+        <code value="713446007" />
+        <display value="Chronic infection caused by herpes simplex virus co-occurrent with human immunodeficiency virus infection (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="15" />
+        </extension>
+        <code value="713526000" />
+        <display value="Recurrent bacterial pneumonia co-occurrent with human immunodeficiency virus infection (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="22" />
+        </extension>
+        <code value="713546005" />
+        <display value="Isosporiasis co-occurrent with human immunodeficiency virus infection (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="31" />
+        </extension>
+        <code value="713718006" />
+        <display value="Diffuse non-Hodgkin immunoblastic lymphoma co-occurrent with human immunodeficiency virus infection (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="25" />
+        </extension>
+        <code value="713722001" />
+        <display value="Infection caused by Cytomegalovirus co-occurrent with human immunodeficiency virus infection (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="26" />
+        </extension>
+        <code value="713845004" />
+        <display value="Infection caused by Cryptosporidium co-occurrent with human immunodeficiency virus infection (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="37" />
+        </extension>
+        <code value="713897006" />
+        <display value="Burkitt lymphoma co-occurrent with human immunodeficiency virus infection (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="30" />
+        </extension>
+        <code value="713967004" />
+        <display value="Disseminated atypical infection caused by Mycobacterium co-occurrent with human immunodeficiency virus infection (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="14" />
+        </extension>
+        <code value="714083007" />
+        <display value="Recurrent salmonella sepsis co-occurrent with human immunodeficiency virus infection (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="24" />
+        </extension>
+        <code value="719522009" />
+        <display value="Infection of upper respiratory tract caused by Candida co-occurrent with human immunodeficiency virus infection (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="23" />
+        </extension>
+        <code value="733834006" />
+        <display value="Invasive carcinoma of uterine cervix co-occurrent with human immunodeficiency virus infection (disorder)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="28" />
+        </extension>
+        <code value="733835007" />
+        <display value="Extrapulmonary tuberculosis co-occurrent with human immunodeficiency virus infection (disorder)" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

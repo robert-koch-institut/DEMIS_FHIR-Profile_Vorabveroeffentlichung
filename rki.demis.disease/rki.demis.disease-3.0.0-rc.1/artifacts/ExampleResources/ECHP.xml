@@ -1,0 +1,415 @@
+<Parameters xmlns="http://hl7.org/fhir">
+   <parameter>
+      <name value="content"></name>
+      <resource>
+         <Bundle xmlns="http://hl7.org/fhir">
+            <meta>
+               <lastUpdated value="2025-06-19T20:16:01.000+01:00"></lastUpdated>
+               <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundleLaboratoryNonNominal"></profile>
+            </meta>
+            <identifier>
+               <system value="https://demis.rki.de/fhir/NamingSystem/NotificationBundleId"></system>
+               <value value="80c0ca29-9f5c-394f-b19c-7ea118b08f36"></value>
+            </identifier>
+            <type value="document"></type>
+            <timestamp value="2025-06-19T20:16:01.000+01:00"></timestamp>
+            <entry>
+               <fullUrl value="urn:uuid:b3cfdbc7-38fa-3837-8149-a6280f143bc1"></fullUrl>
+               <resource>
+                  <Composition xmlns="http://hl7.org/fhir">
+                     <id value="b3cfdbc7-38fa-3837-8149-a6280f143bc1"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationLaboratoryNonNominal"></profile>
+                     </meta>
+                     <identifier>
+                        <system value="https://demis.rki.de/fhir/NamingSystem/NotificationId"></system>
+                        <value value="60f8baf2-27d4-5458-981a-f070c78a7256"></value>
+                     </identifier>
+                     <status value="final"></status>
+                     <type>
+                        <coding>
+                           <system value="http://loinc.org"></system>
+                           <version value="2.79"></version>
+                           <code value="34782-3"></code>
+                           <display value="Infectious disease Note"></display>
+                        </coding>
+                     </type>
+                     <subject>
+                        <reference value="urn:uuid:33915b71-7f11-383c-8494-bbdb71aaf6fd"></reference>
+                     </subject>
+                     <date value="2025-06-19T20:16:00.000+01:00"></date>
+                     <author>
+                        <reference value="urn:uuid:1f539708-d5fa-3464-9e00-eea60609893c"></reference>
+                     </author>
+                     <title value="Erregernachweismeldung"></title>
+                     <section>
+                        <code>
+                           <coding>
+                              <system value="http://loinc.org"></system>
+                              <version value="2.79"></version>
+                              <code value="11502-2"></code>
+                              <display value="Laboratory report"></display>
+                           </coding>
+                        </code>
+                        <entry>
+                           <reference value="urn:uuid:ca938985-f246-334c-9cba-98100245c176"></reference>
+                        </entry>
+                     </section>
+                  </Composition>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:33915b71-7f11-383c-8494-bbdb71aaf6fd"></fullUrl>
+               <resource>
+                  <Patient xmlns="http://hl7.org/fhir">
+                     <id value="33915b71-7f11-383c-8494-bbdb71aaf6fd"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson"></profile>
+                     </meta>
+                     <name>
+                        <use value="official"></use>
+                        <family value="Müller"></family>
+                        <given value="Markus"></given>
+                     </name>
+                     <telecom>
+                        <system value="phone"></system>
+                        <value value="01577894624248"></value>
+                     </telecom>
+                     <telecom>
+                        <system value="email"></system>
+                        <value value="test@test.de"></value>
+                     </telecom>
+                     <gender value="male"></gender>
+                     <birthDate value="1960-11-22"></birthDate>
+                     <address>
+                        <extension url="https://demis.rki.de/fhir/StructureDefinition/AddressUse">
+                           <valueCoding>
+                              <system value="https://demis.rki.de/fhir/CodeSystem/addressUse"></system>
+                              <code value="primary"></code>
+                           </valueCoding>
+                        </extension>
+                        <line value="Poststr. 18"></line>
+                        <city value="Berlin"></city>
+                        <postalCode value="13353"></postalCode>
+                        <country value="DE"></country>
+                     </address>
+                  </Patient>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:1f539708-d5fa-3464-9e00-eea60609893c"></fullUrl>
+               <resource>
+                  <PractitionerRole xmlns="http://hl7.org/fhir">
+                     <id value="1f539708-d5fa-3464-9e00-eea60609893c"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifierRole"></profile>
+                     </meta>
+                     <practitioner>
+                        <reference value="urn:uuid:d9762073-58e1-3036-b6af-18b9ed9d681b"></reference>
+                     </practitioner>
+                     <organization>
+                        <reference value="urn:uuid:26f9441a-5e7e-363a-9022-d494a0539fb6"></reference>
+                     </organization>
+                  </PractitionerRole>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:d9762073-58e1-3036-b6af-18b9ed9d681b"></fullUrl>
+               <resource>
+                  <Practitioner xmlns="http://hl7.org/fhir">
+                     <id value="d9762073-58e1-3036-b6af-18b9ed9d681b"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/Notifier"></profile>
+                     </meta>
+                     <name>
+                        <use value="official"></use>
+                        <family value="Primarius-Schmidt"></family>
+                        <given value="Laborius"></given>
+                     </name>
+                     <telecom>
+                        <system value="phone"></system>
+                        <value value="+49 30 123234345456"></value>
+                     </telecom>
+                     <telecom>
+                        <system value="email"></system>
+                        <value value="Laborius.Primarius-Schmidt@primaerlabor.de"></value>
+                     </telecom>
+                     <address>
+                        <line value="Irgendwasstrasse 1"></line>
+                        <city value="Berlin"></city>
+                        <postalCode value="15257"></postalCode>
+                        <country value="DE"></country>
+                     </address>
+                  </Practitioner>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:26f9441a-5e7e-363a-9022-d494a0539fb6"></fullUrl>
+               <resource>
+                  <Organization xmlns="http://hl7.org/fhir">
+                     <id value="26f9441a-5e7e-363a-9022-d494a0539fb6"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/NotifierFacility"></profile>
+                     </meta>
+                     <identifier>
+                        <system value="https://demis.rki.de/fhir/NamingSystem/DemisParticipantId"></system>
+                        <value value="54321"></value>
+                     </identifier>
+                     <identifier>
+                        <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"></system>
+                        <value value="987654400"></value>
+                     </identifier>
+                     <type>
+                        <coding>
+                           <system value="https://demis.rki.de/fhir/CodeSystem/organizationType"></system>
+                           <code value="laboratory"></code>
+                           <display value="Erregerdiagnostische Untersuchungsstelle"></display>
+                        </coding>
+                     </type>
+                     <name value="Primärlabor"></name>
+                     <telecom>
+                        <system value="phone"></system>
+                        <value value="0308765432109"></value>
+                        <use value="work"></use>
+                     </telecom>
+                     <telecom>
+                        <system value="email"></system>
+                        <value value="info@primaerlabor.de"></value>
+                        <use value="work"></use>
+                     </telecom>
+                     <telecom>
+                        <system value="url"></system>
+                        <value value="www.primaerlabor.de"></value>
+                        <use value="work"></use>
+                     </telecom>
+                     <address>
+                        <line value="Andersallee 999"></line>
+                        <city value="Berlin"></city>
+                        <postalCode value="10967"></postalCode>
+                        <country value="DE"></country>
+                     </address>
+                     <contact>
+                        <name>
+                           <use value="official"></use>
+                           <family value="Infopoint"></family>
+                           <given value="Ingrid"></given>
+                        </name>
+                     </contact>
+                  </Organization>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:ccf559c0-7ac3-34d9-b05b-9f0b24fc2a87"></fullUrl>
+               <resource>
+                  <PractitionerRole xmlns="http://hl7.org/fhir">
+                     <id value="ccf559c0-7ac3-34d9-b05b-9f0b24fc2a87"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingRole"></profile>
+                     </meta>
+                     <organization>
+                        <reference value="urn:uuid:803b2d66-c500-34ef-ad91-d895005ffcc8"></reference>
+                     </organization>
+                  </PractitionerRole>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:803b2d66-c500-34ef-ad91-d895005ffcc8"></fullUrl>
+               <resource>
+                  <Organization xmlns="http://hl7.org/fhir">
+                     <id value="803b2d66-c500-34ef-ad91-d895005ffcc8"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/SubmittingFacility"></profile>
+                     </meta>
+                     <identifier>
+                        <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"></system>
+                        <value value="876543210"></value>
+                     </identifier>
+                     <name value="Einsendepraxis ABC"></name>
+                     <telecom>
+                        <system value="phone"></system>
+                        <value value="0309876543210"></value>
+                        <use value="work"></use>
+                     </telecom>
+                     <telecom>
+                        <system value="email"></system>
+                        <value value="info@EinsendepraxisABC.de"></value>
+                        <use value="work"></use>
+                     </telecom>
+                     <telecom>
+                        <system value="url"></system>
+                        <value value="www.EinsendepraxisABC.de/sti"></value>
+                        <use value="work"></use>
+                     </telecom>
+                     <address>
+                        <line value="Dingsweg 321"></line>
+                        <city value="Berlin"></city>
+                        <postalCode value="13055"></postalCode>
+                        <country value="DE"></country>
+                     </address>
+                     <contact>
+                        <name>
+                           <use value="official"></use>
+                           <family value="Empfangsperson"></family>
+                           <given value="Erik"></given>
+                        </name>
+                        <telecom>
+                           <system value="phone"></system>
+                           <value value="030-12345-2323"></value>
+                           <use value="work"></use>
+                        </telecom>
+                        <address>
+                           <line value="Empfangschalter"></line>
+                           <city value="Berlin"></city>
+                           <postalCode value="13055"></postalCode>
+                           <country value="DE"></country>
+                        </address>
+                     </contact>
+                  </Organization>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:ca938985-f246-334c-9cba-98100245c176"></fullUrl>
+               <resource>
+                  <DiagnosticReport xmlns="http://hl7.org/fhir">
+                     <id value="ca938985-f246-334c-9cba-98100245c176"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReportECHP"></profile>
+                     </meta>
+                     <basedOn>
+                        <type value="ServiceRequest"></type>
+                        <identifier>
+                           <type>
+                              <coding>
+                                 <system value="http://terminology.hl7.org/CodeSystem/v2-0203"></system>
+                                 <code value="FILL"></code>
+                              </coding>
+                           </type>
+                           <system value="http://www.primaerlabor.de/identifiers/diagnosticReport/accessionIdentifier"></system>
+                           <value value="LaborauftragsNr_1234"></value>
+                        </identifier>
+                     </basedOn>
+                     <status value="final"></status>
+                     <code>
+                        <coding>
+                           <system value="https://demis.rki.de/fhir/CodeSystem/notificationCategory"></system>
+                           <code value="echp"></code>
+                           <display value="Echinococcus sp."></display>
+                        </coding>
+                     </code>
+                     <subject>
+                        <reference value="urn:uuid:33915b71-7f11-383c-8494-bbdb71aaf6fd"></reference>
+                     </subject>
+                     <issued value="2025-06-19T20:15:00.000+01:00"></issued>
+                     <result>
+                        <reference value="urn:uuid:813160c5-fac4-3141-bbc2-6aa566c49fc2"></reference>
+                     </result>
+                     <conclusion value="Ich bin die textuelle Conclusion ..."></conclusion>
+                     <conclusionCode>
+                        <coding>
+                           <system value="https://demis.rki.de/fhir/CodeSystem/conclusionCode"></system>
+                           <code value="pathogenDetected"></code>
+                           <display value="Meldepflichtiger Erreger nachgewiesen"></display>
+                        </coding>
+                     </conclusionCode>
+                  </DiagnosticReport>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:813160c5-fac4-3141-bbc2-6aa566c49fc2"></fullUrl>
+               <resource>
+                  <Observation xmlns="http://hl7.org/fhir">
+                     <id value="813160c5-fac4-3141-bbc2-6aa566c49fc2"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetectionECHP"></profile>
+                     </meta>
+                     <status value="final"></status>
+                     <category>
+                        <coding>
+                           <system value="http://terminology.hl7.org/CodeSystem/observation-category"></system>
+                           <code value="laboratory"></code>
+                        </coding>
+                     </category>
+                     <code>
+                        <coding>
+                           <system value="http://loinc.org"></system>
+                           <version value="2.79"></version>
+                           <code value="41852-5"></code>
+                           <display value="Mikroorganismus oder Erreger identifiziert in Probenmaterial"></display>
+                        </coding>
+                     </code>
+                     <subject>
+                        <reference value="urn:uuid:33915b71-7f11-383c-8494-bbdb71aaf6fd"></reference>
+                     </subject>
+                     <valueCodeableConcept>
+                        <coding>
+                           <system value="http://snomed.info/sct"></system>
+                           <version value="http://snomed.info/sct/11000274103/version/20240515"></version>
+                           <code value="47622006"></code>
+                           <display value="Gattung Echinococcus"></display>
+                        </coding>
+                     </valueCodeableConcept>
+                     <interpretation>
+                        <coding>
+                           <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"></system>
+                           <code value="POS"></code>
+                           <display value="Positive"></display>
+                        </coding>
+                     </interpretation>
+                     <note>
+                        <text value="Nette Zusatzinformation"></text>
+                     </note>
+                     <method>
+                        <coding>
+                           <system value="http://snomed.info/sct"></system>
+                           <version value="http://snomed.info/sct/11000274103/version/20241115"></version>
+                           <code value="278289002"></code>
+                           <display value="Mikroskopie"></display>
+                        </coding>
+                     </method>
+                     <specimen>
+                        <reference value="urn:uuid:cc9c3ec9-10ae-3ef0-a84c-cb8764e6194f"></reference>
+                     </specimen>
+                  </Observation>
+               </resource>
+            </entry>
+            <entry>
+               <fullUrl value="urn:uuid:cc9c3ec9-10ae-3ef0-a84c-cb8764e6194f"></fullUrl>
+               <resource>
+                  <Specimen xmlns="http://hl7.org/fhir">
+                     <id value="cc9c3ec9-10ae-3ef0-a84c-cb8764e6194f"></id>
+                     <meta>
+                        <profile value="https://demis.rki.de/fhir/StructureDefinition/SpecimenECHP"></profile>
+                     </meta>
+                     <accessionIdentifier>
+                        <system value="http://www.primaerlabor.de/identifiers/specimen/accessionIdentifier"></system>
+                        <value value="23BLN001234"></value>
+                     </accessionIdentifier>
+                     <status value="available"></status>
+                     <type>
+                        <coding>
+                           <system value="http://snomed.info/sct"></system>
+                           <version value="http://snomed.info/sct/11000274103/version/20241115"></version>
+                           <code value="119339001"></code>
+                           <display value="Stuhlprobe"></display>
+                        </coding>
+                     </type>
+                     <subject>
+                        <reference value="urn:uuid:33915b71-7f11-383c-8494-bbdb71aaf6fd"></reference>
+                     </subject>
+                     <receivedTime value="2025-06-19T15:40:00.000+01:00"></receivedTime>
+                     <collection>
+                        <collector>
+                           <reference value="urn:uuid:ccf559c0-7ac3-34d9-b05b-9f0b24fc2a87"></reference>
+                        </collector>
+                        <collectedDateTime value="2025-06-19T09:50:01.000+01:00"></collectedDateTime>
+                     </collection>
+                     <note>
+                        <text value="Ich bin eine interessante Zusatzinformation ..."></text>
+                     </note>
+                  </Specimen>
+               </resource>
+            </entry>
+         </Bundle>
+      </resource>
+   </parameter>
+</Parameters>

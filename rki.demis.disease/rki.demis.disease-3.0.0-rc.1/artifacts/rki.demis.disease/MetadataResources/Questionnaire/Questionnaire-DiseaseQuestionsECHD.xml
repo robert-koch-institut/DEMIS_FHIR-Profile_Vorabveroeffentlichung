@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="DiseaseQuestionsECHD"/>
+  <url value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsECHD"/>
+  <version value="1.1.0"/>
+  <name value="DiseaseQuestionsECHD"/>
+  <title value="Echinococcus sp.: spezifische klinische und epidemiologische Angaben"/>
+  <status value="active"/>
+  <date value="2025-08-12"/>
+  <description value="Echinococcus sp. spezifische Informationsbedarfe werden in diesem meldetatbestandsspezifischen Fragebogen zusammengestellt. Dieser manifestiert sich als entsprechende QuestionnaireResponse innerhalb der Meldung."/>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="ultrasonicProcedure"/>
+    <text value="Wie verhalten sich die Ultraschall-Befunde im Hinblick auf Echinokokkose?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetImagingProceduresECHD"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="ctScanProcedure"/>
+    <text value="Wie verhalten sich die CT-Befunde im Hinblick auf Echinokokkose?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetImagingProceduresECHD"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="mrtProcedure"/>
+    <text value="Wie verhalten sich die MRT-Befunde im Hinblick auf Echinokokkose?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetImagingProceduresECHD"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="xRayProcedure"/>
+    <text value="Wie verhalten sich die konventionellen Röntgen-Befunde im Hinblick auf Echinokokkose?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetImagingProceduresECHD"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="imagingProceduresFinding"/>
+    <text value="Wofür sprechen die bildgebenden Verfahren?"/>
+    <type value="choice"/>
+    <enableWhen>
+      <question value="ultrasonicProcedure"/>
+      <operator value="="/>
+      <answerCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="255390006"/>
+      </answerCoding>
+    </enableWhen>
+    <enableWhen>
+      <question value="ultrasonicProcedure"/>
+      <operator value="="/>
+      <answerCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="255332001"/>
+      </answerCoding>
+    </enableWhen>
+    <enableWhen>
+      <question value="ultrasonicProcedure"/>
+      <operator value="="/>
+      <answerCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="255301002"/>
+      </answerCoding>
+    </enableWhen>
+    <enableWhen>
+      <question value="xRayProcedure"/>
+      <operator value="="/>
+      <answerCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="255390006"/>
+      </answerCoding>
+    </enableWhen>
+    <enableWhen>
+      <question value="xRayProcedure"/>
+      <operator value="="/>
+      <answerCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="255332001"/>
+      </answerCoding>
+    </enableWhen>
+    <enableWhen>
+      <question value="xRayProcedure"/>
+      <operator value="="/>
+      <answerCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="255301002"/>
+      </answerCoding>
+    </enableWhen>
+    <enableWhen>
+      <question value="mrtProcedure"/>
+      <operator value="="/>
+      <answerCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="255390006"/>
+      </answerCoding>
+    </enableWhen>
+    <enableWhen>
+      <question value="mrtProcedure"/>
+      <operator value="="/>
+      <answerCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="255332001"/>
+      </answerCoding>
+    </enableWhen>
+    <enableWhen>
+      <question value="mrtProcedure"/>
+      <operator value="="/>
+      <answerCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="255301002"/>
+      </answerCoding>
+    </enableWhen>
+    <enableWhen>
+      <question value="ctScanProcedure"/>
+      <operator value="="/>
+      <answerCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="255390006"/>
+      </answerCoding>
+    </enableWhen>
+    <enableWhen>
+      <question value="ctScanProcedure"/>
+      <operator value="="/>
+      <answerCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="255332001"/>
+      </answerCoding>
+    </enableWhen>
+    <enableWhen>
+      <question value="ctScanProcedure"/>
+      <operator value="="/>
+      <answerCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="255301002"/>
+      </answerCoding>
+    </enableWhen>
+    <enableBehavior value="any"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetDiagnosisECHD"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="diagnosisECHD"/>
+    <text value="Wie lautet die abschließende Diagnose, wenn alle Untersuchungsergebnisse berücksichtigt werden?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetDiagnosisECHD"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="firstDiagnosis"/>
+    <text value="Handelt es sich um die Erstdiagnose dieser Echinokokkose?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/regex">
+        <valueString value="^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$|^19[0-9]{2}$|^20[0-9]{2}$" />
+      </extension>
+      <linkId value="dateOfFirstDiagnosis"/>
+      <text value="Datum der Erstdiagnose"/>
+      <type value="date"/>
+      <enableWhen>
+        <question value="firstDiagnosis"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="373067005"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="false"/>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="isDead"/>
+    <text value="Ist die Person verstorben?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="drop-down"/>
+            <display value="Drop down"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="deathByECHD"/>
+      <text value="Ist der Tod als Folge dieser Echinokokkose eingetreten?"/>
+      <type value="choice"/>
+      <enableWhen>
+        <question value="isDead"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="373066001"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="false"/>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="countryOfInfection"/>
+    <text value="Welches ist das wahrscheinliche Infektionsland?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetCountry-ISO-SNOMED"/>
+  </item>
+</Questionnaire>

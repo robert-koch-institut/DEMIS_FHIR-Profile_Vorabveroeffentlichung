@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="DiseaseQuestionsHIVD"/>
+  <url value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsHIVD"/>
+  <version value="1.1.0"/>
+  <name value="DiseaseQuestionsHIVD"/>
+  <title value="Humanes Immundefizienz-Virus (HIV): spezifische klinische und epidemiologische Angaben"/>
+  <status value="active"/>
+  <date value="2025-08-12"/>
+  <description value="HIV spezifische Informationsbedarfe werden in diesem meldetatbestandsspezifischen Fragebogen zusammengestellt. Dieser manifestiert sich als entsprechende QuestionnaireResponse innerhalb der Meldung."/>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="firstDiagnosisGER"/>
+    <text value="Ist dies der erste erfolgte Nachweis der HIV-Infektion in Deutschland?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/regex">
+        <valueString value="^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$|^19[0-9]{2}$|^20[0-9]{2}$" />
+      </extension>
+      <linkId value="lastNegTest"/>
+      <text value="Wann wurde der letzte negative HIV-Test durchgeführt?"/>
+      <type value="date"/>
+      <enableWhen>
+        <question value="firstDiagnosisGER"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="373066001"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="false"/>
+      <repeats value="false"/>
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/regex">
+        <valueString value="^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$|^19[0-9]{2}$|^20[0-9]{2}$" />
+      </extension>
+      <linkId value="firstPosTest"/>
+      <text value="Wann wurde der erste bestätigte positive HIV-Test durchgeführt?"/>
+      <type value="date"/>
+      <enableWhen>
+        <question value="firstDiagnosisGER"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="373067005"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="false"/>
+      <repeats value="false"/>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="firstDiagnosisAbroad"/>
+    <text value="Wurde zuvor ein positiver Test im Ausland durchgeführt?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="drop-down"/>
+            <display value="Drop down"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="firstDiagnosisCountry"/>
+      <text value="In welchem Land wurde dieser positive Test durchgeführt?"/>
+      <type value="choice"/>
+      <enableWhen>
+        <question value="firstDiagnosisAbroad"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="373066001"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="false"/>
+      <repeats value="false"/>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetCountry-ISO-SNOMED"/>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="countryOrigin"/>
+    <text value="Welches ist das Herkunftsland der betroffenen Person?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetCountry-ISO-SNOMED"/>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="drop-down"/>
+            <display value="Drop down"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="countryOriginOfInfection"/>
+      <text value="Ist dies auch das Land, in dem die Infektion stattfand?"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+              <code value="drop-down"/>
+              <display value="Drop down"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <linkId value="countryInfection"/>
+        <text value="Welches ist das Land, in dem die Infektion stattfand?"/>
+        <type value="choice"/>
+        <enableWhen>
+          <question value="countryOriginOfInfection"/>
+          <operator value="="/>
+          <answerCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+          </answerCoding>
+        </enableWhen>
+        <required value="true"/>
+        <repeats value="false"/>
+        <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetCountry-ISO-SNOMED"/>
+      </item>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="stadiumHIVD"/>
+    <text value="Welches Stadium der HIV-Erkrankung liegt vor?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetStadiumHIVD"/>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="drop-down"/>
+            <display value="Drop down"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="cdcA"/>
+      <text value="Welche Ausprägung der asymptomatischen HIV-Infektion liegt vor?"/>
+      <type value="choice"/>
+      <enableWhen>
+        <question value="stadiumHIVD"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="91947003"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="true"/>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetCDCAHIVD"/>
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="drop-down"/>
+            <display value="Drop down"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="cdcB"/>
+      <text value="Welche Symptome einer HIV-Infektion liegen vor?"/>
+      <type value="choice"/>
+      <enableWhen>
+        <question value="stadiumHIVD"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="81000119104"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="true"/>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetCDCBHIVD"/>
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="drop-down"/>
+            <display value="Drop down"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="cdcC"/>
+      <text value="Welche der AIDS definierenden Erkrankungen liegen vor?"/>
+      <type value="choice"/>
+      <enableWhen>
+        <question value="stadiumHIVD"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="62479008"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="true"/>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetCDCCHIVD"/>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="coinfections"/>
+    <text value="Sind Koinfektionen bekannt?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="true"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetCoinfectionHIVD"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="hivPrEPStatusHIVD"/>
+    <text value="Wurde innerhalb der letzten 12 Monate vor der HIV-Erstdiagnose eine HIV-PrEP eingenommen?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="sexWork"/>
+    <text value="Hat die betroffene Person Sexarbeit ausgeübt oder in Anspruch genommen?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="true"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetSexWork"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="infectionPathRisk"/>
+    <text value="Auf welchem Weg hat sich die betroffene Person wahrscheinlich infiziert?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="true"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionPathHIVD"/>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/regex">
+        <valueString value="^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$|^19[0-9]{2}$|^20[0-9]{2}$" />
+      </extension>
+      <linkId value="bloodTransfusionDate"/>
+      <text value="Wann wurden die Blutprodukte verabreicht?"/>
+      <type value="date"/>
+      <enableWhen>
+        <question value="infectionPathRisk"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="409496000:704326004=5447007"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="false"/>
+      <repeats value="false"/>
+    </item>
+    <item>
+      <linkId value="bloodTransfusionNote"/>
+      <text value="Können Sie die Verabreichung der Blutprodukte näher erläutern?"/>
+      <type value="text"/>
+      <enableWhen>
+        <question value="infectionPathRisk"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="409496000:704326004=5447007"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="false"/>
+      <repeats value="false"/>
+    </item>
+    <item>
+      <linkId value="medicinalWorkerNote"/>
+      <text value="Können Sie die berufliche Exposition näher erläutern?"/>
+      <type value="text"/>
+      <enableWhen>
+        <question value="infectionPathRisk"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="16090731000119102"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="false"/>
+      <repeats value="false"/>
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="drop-down"/>
+            <display value="Drop down"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="infectionSource"/>
+      <text value="Auf welchem Wege hat sich die Person infiziert, die als Infektionsquelle vermutet wird?"/>
+      <type value="choice"/>
+      <enableWhen>
+        <question value="infectionPathRisk"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="472986005"/>
+        </answerCoding>
+      </enableWhen>
+      <enableWhen>
+        <question value="infectionPathRisk"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="472987001"/>
+        </answerCoding>
+      </enableWhen>
+      <enableWhen>
+        <question value="infectionPathRisk"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="472988006"/>
+        </answerCoding>
+      </enableWhen>
+      <enableWhen>
+        <question value="infectionPathRisk"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="1290740005"/>
+        </answerCoding>
+      </enableWhen>
+      <enableBehavior value="any"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionPathHIVD"/>
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+            <code value="drop-down"/>
+            <display value="Drop down"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <linkId value="infectionSourceSecure"/>
+      <text value="Ist die HIV-Infektion der Person, die als Infektionsquelle vermutet wird, gesichert?"/>
+      <type value="choice"/>
+      <enableWhen>
+        <question value="infectionPathRisk"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="472986005"/>
+        </answerCoding>
+      </enableWhen>
+      <enableWhen>
+        <question value="infectionPathRisk"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="472987001"/>
+        </answerCoding>
+      </enableWhen>
+      <enableWhen>
+        <question value="infectionPathRisk"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="472988006"/>
+        </answerCoding>
+      </enableWhen>
+      <enableWhen>
+        <question value="infectionPathRisk"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="1290740005"/>
+        </answerCoding>
+      </enableWhen>
+      <enableBehavior value="any"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+    </item>
+    <item>
+      <linkId value="otherNote"/>
+      <text value="Wenn Sie &quot;Andere&quot; ausgewählt haben, können Sie das näher erläutern?"/>
+      <type value="text"/>
+      <enableWhen>
+        <question value="infectionPathRisk"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="74964007"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="false"/>
+      <repeats value="false"/>
+    </item>
+  </item>
+</Questionnaire>

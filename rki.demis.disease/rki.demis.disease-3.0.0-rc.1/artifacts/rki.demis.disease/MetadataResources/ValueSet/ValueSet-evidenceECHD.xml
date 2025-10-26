@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="evidenceECHD" />
+  <url value="https://demis.rki.de/fhir/ValueSet/evidenceECHD" />
+  <version value="1.0.1" />
+  <name value="EvidenceECHD" />
+  <title value="Symptome und Manifestationen in Bezug auf den Meldetatbestand &quot;Echinococcus sp.&quot;" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-08-12" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet EvidenceECHD enthält die kodierten Angaben zu Symptomen und Manifestationen in Bezug auf den Meldetatbestand &quot;Echinococcus sp.&quot;." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20241115" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="15" />
+        </extension>
+        <code value="105721009:{363698007=80581009}" />
+        <display value="Oberbauchbeschwerden" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="11" />
+        </extension>
+        <code value="177418003" />
+        <display value="Ruptured cyst (morphologic abnormality)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Zystenruptur" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="17" />
+        </extension>
+        <code value="18165001" />
+        <display value="Ikterus" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Gelbsucht (Ikterus)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="13" />
+        </extension>
+        <code value="187144000" />
+        <display value="Hydatid cyst of kidney caused by Echinococcus (disorder)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Zysten in der Leber" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="22" />
+        </extension>
+        <code value="21522001" />
+        <display value="Abdominale Schmerzen" />
+        <designation>
+          <language value="de-DE" />
+          <use>
+            <system value="http://snomed.info/sct" />
+            <code value="900000000000013009" />
+          </use>
+          <value value="Bauchschmerzen" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="21" />
+        </extension>
+        <code value="233791001:{47429007=275504005}" />
+        <display value="Bronchiale Fisteln" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1000" />
+        </extension>
+        <code value="261665006" />
+        <display value="Unbekannt" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="23" />
+        </extension>
+        <code value="267036007" />
+        <display value="Dyspnoe" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Atemstörung (Dyspnoe)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="18" />
+        </extension>
+        <code value="30144000" />
+        <display value="Obstruction of bile duct (disorder)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Gallenwegsobstruktion" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="25" />
+        </extension>
+        <code value="39579001:{116676008=177418003}" />
+        <display value="anaphylaktische Reaktionen nach Zystenruptur" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="16" />
+        </extension>
+        <code value="49727002" />
+        <display value="Husten" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="10" />
+        </extension>
+        <code value="53206008:{47429007=9484001}" />
+        <display value="Zystobiliäre Fisteln" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="24" />
+        </extension>
+        <code value="735173007" />
+        <display value="Anaphylaktischer Schock" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="1" />
+        </extension>
+        <code value="74964007" />
+        <display value="Andere" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="12" />
+        </extension>
+        <code value="75388006" />
+        <display value="Echinococcus granulosus infection of lung (disorder)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Zysten in der Lunge" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="20" />
+        </extension>
+        <code value="82403002" />
+        <display value="Cholangitis (disorder)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Entzündete Gallengänge (Cholangitis)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="19" />
+        </extension>
+        <code value="84229001" />
+        <display value="Fatigue" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="14" />
+        </extension>
+        <code value="87628006:{47429007=441457006,47429007=264569006}" />
+        <display value="sekundäre bakterielle Infektion der Zysten" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

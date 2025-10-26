@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="notificationDiseaseCategoryNonNominal" />
+  <url value="https://demis.rki.de/fhir/ValueSet/notificationDiseaseCategoryNonNominal" />
+  <version value="1.0.1" />
+  <name value="NotificationDiseaseCategoryNonNominal" />
+  <title value="Nichtnamentliche Meldetatbestände nach § 7 Abs. 3 IfSG" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-08-12" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet NotificationDiseaseCategoryNonNominal enthält die Codes der nichtnamentlichen Meldetatbestände nach nach § 7 Abs. 3 IfSG." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="(C) 2021-2025 Robert Koch-Institut" />
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory" />
+      <version value="2.0.1" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="60" />
+        </extension>
+        <code value="chtd" />
+        <display value="Chlamydia trachomatis, sofern es sich um einen der Serotypen L1 bis L3 handelt" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Chlamydia trachomatis (L1 bis L3)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="50" />
+        </extension>
+        <code value="echd" />
+        <display value="Echinococcus sp." />
+        <designation>
+          <language value="de-DE" />
+          <value value="Echinococcus sp." />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="40" />
+        </extension>
+        <code value="hivd" />
+        <display value="Humanes Immundefizienz-Virus (HIV)" />
+        <designation>
+          <language value="de-DE" />
+          <value value="HIV" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="30" />
+        </extension>
+        <code value="negd" />
+        <display value="Neisseria gonorrhoeae" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Neisseria gonorrhoeae (Gonorrhö)" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="20" />
+        </extension>
+        <code value="toxd" />
+        <display value="Toxoplasma gondii; Meldepflicht nur bei konnatalen Infektionen" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Toxoplasma gondii, konnatal" />
+        </designation>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="10" />
+        </extension>
+        <code value="trpd" />
+        <display value="Treponema pallidum" />
+        <designation>
+          <language value="de-DE" />
+          <value value="Treponema pallidum (Syphilis)" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

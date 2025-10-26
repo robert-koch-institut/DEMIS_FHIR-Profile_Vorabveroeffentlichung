@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="DiseaseQuestionsCHTD"/>
+  <url value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsCHTD"/>
+  <version value="1.1.0"/>
+  <name value="DiseaseQuestionsCHTD"/>
+  <title value="Chlamydia trachomatis, sofern es sich um einen der Serotypen L1 bis L3 handelt: spezifische klinische und epidemiologische Angaben"/>
+  <status value="active"/>
+  <date value="2025-08-12"/>
+  <description value="Chlamydia trachomatis (L1 bis L3) spezifische Informationsbedarfe werden in diesem meldetatbestandsspezifischen Fragebogen zusammengestellt. Dieser manifestiert sich als entsprechende QuestionnaireResponse innerhalb der Meldung."/>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/regex">
+      <valueString value="^19[0-9]{2}-[0-9]{2}$|^20[0-9]{2}-[0-9]{2}$|^19[0-9]{2}$|^20[0-9]{2}$" />
+    </extension>
+    <linkId value="timeOfInfection"/>
+    <text value="Welcher ist der wahrscheinliche Infektionszeitpunkt?"/>
+    <type value="date"/>
+    <required value="false"/>
+    <repeats value="false"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="infectionLocalization"/>
+    <text value="Wo war die Infektion zum Zeitpunkt der Diagnose lokalisiert?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="true"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionLocalizationCHTD"/>
+    <item>
+      <linkId value="infectionLocalizationNote"/>
+      <text value="Bitte benennen Sie die Lokalisation der Infektion:"/>
+      <type value="text"/>
+      <enableWhen>
+        <question value="infectionLocalization"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="74964007"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="false"/>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="coinfections"/>
+    <text value="Sind Koinfektionen bekannt?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="true"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetCoinfectionCHTD"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="clinicalFindingCHTD"/>
+    <text value="Wie lautet die klinische Beurteilung der vorliegenden Infektion?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetClinicalFindingCHTD"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="infectionPathRisk"/>
+    <text value="Auf welchem Weg hat sich die betroffene Person wahrscheinlich infiziert?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetInfectionPathCHTD"/>
+    <item>
+      <linkId value="infectionPathRiskNote"/>
+      <text value="Bitte erläutern Sie den wahrscheinlichen Infektionsweg:"/>
+      <type value="text"/>
+      <enableWhen>
+        <question value="infectionPathRisk"/>
+        <operator value="="/>
+        <answerCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="74964007"/>
+        </answerCoding>
+      </enableWhen>
+      <required value="true"/>
+      <repeats value="false"/>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="sexWork"/>
+    <text value="Hat die betroffene Person Sexarbeit ausgeübt oder in Anspruch genommen?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="true"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetSexWork"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="hivPrEPStatusCHTD"/>
+    <text value="Wurde zum Zeitpunkt der Chlamydien-Infektion eine HIV-PrEP eingenommen?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/yesOrNoOrNoInformation-SNOMED"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="stiProphylaxisStatusCHTD"/>
+    <text value="Wurde zum Zeitpunkt der Chlamydien-Infektion eine antibiotische STI-Prophylaxe eingenommen (z.B. Doxy-PEP)?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetSTIProphylaxis"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="countryOrigin"/>
+    <text value="Welches ist das Herkunftsland der betroffenen Person?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetCountry-ISO-SNOMED"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="drop-down"/>
+          <display value="Drop down"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="countryOfInfection"/>
+    <text value="Welches ist das wahrscheinliche Infektionsland?"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <answerValueSet value="https://demis.rki.de/fhir/ValueSet/answerSetCountry-ISO-SNOMED"/>
+  </item>
+</Questionnaire>
