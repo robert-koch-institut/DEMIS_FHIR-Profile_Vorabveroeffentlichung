@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="LaboratoryReportSequence" />
+  <url value="https://demis.rki.de/fhir/igs/StructureDefinition/LaboratoryReportSequence" />
+  <version value="2.0.1" />
+  <name value="LaboratoryReportSequence" />
+  <title value="Sequenz-Laborbericht" />
+  <status value="active" />
+  <date value="2025-07-22" />
+  <description value="Der Sequenz-Laborbericht kann mehrere Sequenz-Erregernachweise zu einer Probe enthalten." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="true" />
+  <type value="DiagnosticReport" />
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/LaboratoryReport" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DiagnosticReport.meta">
+      <path value="DiagnosticReport.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.meta.profile">
+      <path value="DiagnosticReport.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/igs/StructureDefinition/LaboratoryReportSequence" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.code">
+      <path value="DiagnosticReport.code" />
+      <definition value="Angabe des Meldetatbestandes. Der jeweils zutreffende Meldetatbestand ist aus dem ValueSet https://demis.rki.de/fhir/ValueSet/notificationCategory zu entnehmen." />
+    </element>
+    <element id="DiagnosticReport.subject">
+      <path value="DiagnosticReport.subject" />
+      <short value="Betroffene Person (anonym)" />
+      <definition value="Betroffene Person (anonym)" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonAnonymous" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="DiagnosticReport.result">
+      <path value="DiagnosticReport.result" />
+      <short value="Sequenz-Erregernachweis" />
+      <definition value="Referenziert einen Sequenz-Erregernachweis." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/igs/StructureDefinition/PathogenDetectionSequence" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="DiagnosticReport.conclusionCode">
+      <path value="DiagnosticReport.conclusionCode" />
+      <definition value="Fasst die Ergebnisse der Einzeltests in kodierter Form zusammen und gibt damit an, ob der Meldetatbestand erfüllt ist. Der Wert muss entsprechend des vom RKI definierten ValueSets (https://demis.rki.de/fhir/ValueSet/conclusionCode) im coding Element dargestellt werden." />
+    </element>
+  </differential>
+</StructureDefinition>

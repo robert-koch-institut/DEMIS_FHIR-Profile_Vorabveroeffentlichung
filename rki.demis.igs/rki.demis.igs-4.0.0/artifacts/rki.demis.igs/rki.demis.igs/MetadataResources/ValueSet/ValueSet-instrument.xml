@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="instrument" />
+  <url value="https://demis.rki.de/fhir/igs/ValueSet/instrument" />
+  <version value="2.0.0" />
+  <name value="Instrument" />
+  <title value="Name des Sequenziergerätes" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-07-24" />
+  <publisher value="Robert Koch-Institut" />
+  <description value="Das ValueSet Instrument enthält die Codes der Sequenzierungsgerätenamen (angelehnt an ENA)." />
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/igs/CodeSystem/instrument" />
+      <version value="2.0.0" />
+    </include>
+  </compose>
+</ValueSet>
