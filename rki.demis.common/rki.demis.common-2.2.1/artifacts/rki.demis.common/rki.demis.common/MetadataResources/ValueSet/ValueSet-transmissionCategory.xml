@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="transmissionCategory" />
+  <url value="https://demis.rki.de/fhir/ValueSet/transmissionCategory" />
+  <version value="2.1.0" />
+  <name value="TransmissionCategory" />
+  <title value="Übermittlungskategorie" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-07-31" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet TransmissionCategory enthält die 3-Buchstaben-Codes der Übermittlungskategorien. Die Codes werden für die Pseudonymisierung benötigt." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="(C) 2021-2025 Robert Koch-Institut" />
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/transmissionCategory" />
+      <version value="2.1.0" />
+    </include>
+  </compose>
+</ValueSet>
