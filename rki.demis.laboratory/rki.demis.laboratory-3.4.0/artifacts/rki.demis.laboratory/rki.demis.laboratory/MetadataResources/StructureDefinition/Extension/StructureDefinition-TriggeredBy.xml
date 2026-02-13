@@ -1,0 +1,121 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ExtensionObservationTriggeredBy" />
+  <url value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy" />
+  <version value="1.0.0" />
+  <name value="ExtensionObservationTriggeredBy" />
+  <title value="Observation Triggered By" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-08-06" />
+  <description value="Backport-Extension für das Feld Observation.triggeredBy aus FHIR-R5. Über triggeredBy werden Referenzen zwischen Observations angelegt, die zusammen die Abfolge von Schritten innerhalb der Kette mikrobiologischer Testungen abbilden." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Observation" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Observation Triggered By" />
+      <definition value="Backport-Extension für das Feld Observation.triggeredBy aus FHIR-R5. Über triggeredBy werden Referenzen zwischen Observations angelegt, die zusammen die Abfolge von Schritten innerhalb der Kette mikrobiologischer Testungen abbilden." />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <min value="2" />
+    </element>
+    <element id="Extension.extension:observation">
+      <path value="Extension.extension" />
+      <sliceName value="observation" />
+      <short value="Triggering observation" />
+      <definition value="Reference to the triggering observation." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:observation.extension">
+      <path value="Extension.extension.extension" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:observation.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="observation" />
+    </element>
+    <element id="Extension.extension:observation.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetection" />
+      </type>
+    </element>
+    <element id="Extension.extension:observation.value[x]:valueReference">
+      <path value="Extension.extension.value[x]" />
+      <sliceName value="valueReference" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://demis.rki.de/fhir/StructureDefinition/PathogenDetection" />
+      </type>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension" />
+      <sliceName value="type" />
+      <short value="reflex | repeat | re-run" />
+      <definition value="The type of trigger. Reflex | Repeat | Re-run." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:type.extension">
+      <path value="Extension.extension.extension" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="type" />
+    </element>
+    <element id="Extension.extension:type.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+    <element id="Extension.extension:type.value[x]:valueCode">
+      <path value="Extension.extension.value[x]" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <patternCode value="reflex" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

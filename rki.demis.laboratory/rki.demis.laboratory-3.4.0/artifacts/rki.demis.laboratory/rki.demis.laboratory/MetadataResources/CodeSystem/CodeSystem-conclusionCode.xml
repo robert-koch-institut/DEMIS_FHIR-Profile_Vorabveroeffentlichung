@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="conclusionCode" />
+  <url value="https://demis.rki.de/fhir/CodeSystem/conclusionCode" />
+  <version value="1.4.0" />
+  <name value="ConclusionCode" />
+  <title value="Gesamttestergebnis" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-04-08" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das CodeSystem ConclusionCode enthält die Codes des Gesamttestergebnisses." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="(C) 2021-2025 Robert Koch-Institut" />
+  <caseSensitive value="false" />
+  <valueSet value="https://demis.rki.de/fhir/ValueSet/conclusionCode" />
+  <content value="complete" />
+  <count value="2" />
+  <concept>
+    <code value="pathogenDetected" />
+    <display value="Meldepflichtiger Erreger nachgewiesen" />
+  </concept>
+  <concept>
+    <code value="pathogenNotDetected" />
+    <display value="Meldepflichtiger Erreger nicht nachgewiesen" />
+  </concept>
+</CodeSystem>

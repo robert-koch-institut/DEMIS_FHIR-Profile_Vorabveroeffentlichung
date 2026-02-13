@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetEBCP" />
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetEBCP" />
+  <version value="1.8.0" />
+  <name value="AnswerSetEBCP" />
+  <title value="AnswerSet für Enterobacterales bei Nachweis einer Carbapenemase-Determinante oder mit verminderter Empfindlichkeit gegenüber Carbapenemen außer bei natürlicher Resistenz; Meldepflicht nur bei Infektion oder Kolonisation" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2025-04-08" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet AnswerSetEBCP enthält die Codes der Answer-Codes für Enterobacterales bei Nachweis einer Carbapenemase-Determinante oder mit verminderter Empfindlichkeit gegenüber Carbapenemen außer bei natürlicher Resistenz; Meldepflicht nur bei Infektion oder Kolonisation." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.&#xD;&#xA;&#xD;&#xA;Dieses Material enthält SNOMED Clinical Terms® (SNOMED CT®), die mit Genehmigung der International Health Terminology Standards Development Organisation (IHTSDO) verwendet werden. Alle Rechte vorbehalten. SNOMED CT® wurde ursprünglich vom College of American Pathologists entwickelt. &quot;SNOMED&quot; und &quot;SNOMED CT&quot; sind eingetragene Warenzeichen der IHTSDO.&#xD;&#xA;&#xD;&#xA;Downloadbedingungen für SNOMED-CT&#xD;&#xA;&#xD;&#xA;Enthält durch SNOMED International urheberrechtlich geschützte Information. Jede Verwendung von SNOMED CT in Deutschland erfordert eine vollgültige Affiliate Lizenz oder eine Sublizenz. Die entsprechende Lizenz ist kostenlos, vorausgesetzt die Verwendung findet nur in Deutschland statt und erfüllt die Bedingungen des Affiliate License Agreements. Affiliate Lizenzen können über das Mitglieder-Lizenzierungs- und Distributions-Service (MLDS) direkt beim jeweiligen NRC beantragt werden. https://mlds.ihtsdotools.org/#/landing/DE?lang=de&#xD;&#xA;&#xD;&#xA;Contains information protected by copyright of SNOMED International. Any use of SNOMED CT in Austria requires a valid affiliate license or sublicense. The corresponding license is free of charge, provided that the use only takes place in Austria and fulfills the conditions of the Affiliate License Agreement. Affiliate licenses can be requested directly from the respective NRC via the Member Licensing and Distribution Service (MLDS). ttps://mlds.ihtsdotools.org/#/landing/DE?lang=de" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20241115" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="719" />
+        </extension>
+        <code value="10021006" />
+        <display value="Rahnella aquatilis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="680" />
+        </extension>
+        <code value="10334001" />
+        <display value="Yersinia intermedia" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="683" />
+        </extension>
+        <code value="103434007" />
+        <display value="Yersinia bercovieri" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="705" />
+        </extension>
+        <code value="10413007" />
+        <display value="Serratia odorifera" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="895" />
+        </extension>
+        <code value="10969007" />
+        <display value="Buttiauxella agrestis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="828" />
+        </extension>
+        <code value="112283007" />
+        <display value="Escherichia coli" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="803" />
+        </extension>
+        <code value="112284001" />
+        <display value="Gattung Providencia" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="713" />
+        </extension>
+        <code value="112329006" />
+        <display value="Serratia fonticola" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="855" />
+        </extension>
+        <code value="113611000146106" />
+        <display value="Enterobacter bugandensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="890" />
+        </extension>
+        <code value="114261007" />
+        <display value="Buttiauxella noackiae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="883" />
+        </extension>
+        <code value="114262000" />
+        <display value="Citrobacter braakii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="882" />
+        </extension>
+        <code value="114263005" />
+        <display value="Citrobacter farmeri" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="879" />
+        </extension>
+        <code value="114264004" />
+        <display value="Citrobacter koseri" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="876" />
+        </extension>
+        <code value="114265003" />
+        <display value="Citrobacter sedlakii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="874" />
+        </extension>
+        <code value="114442006" />
+        <display value="Citrobacter werkmanii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="873" />
+        </extension>
+        <code value="114443001" />
+        <display value="Citrobacter youngae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="877" />
+        </extension>
+        <code value="114444007" />
+        <display value="Citrobacter rodentium" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="854" />
+        </extension>
+        <code value="114451003" />
+        <display value="Enterobacter cancerogenus" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="848" />
+        </extension>
+        <code value="114454006" />
+        <display value="Enterobacter hormaechei" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="733" />
+        </extension>
+        <code value="114455007" />
+        <display value="Pluralibacter pyrinus" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="847" />
+        </extension>
+        <code value="114456008" />
+        <display value="Enterobacter kobei" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="731" />
+        </extension>
+        <code value="114461005" />
+        <display value="Proteus inconstans" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="701" />
+        </extension>
+        <code value="115004003" />
+        <display value="Serratia proteamaculans Subspecies quinovora" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="712" />
+        </extension>
+        <code value="115005002" />
+        <display value="Serratia grimesii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="809" />
+        </extension>
+        <code value="115013001" />
+        <display value="Gattung Pantoea" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="755" />
+        </extension>
+        <code value="115014007" />
+        <display value="Pantoea ananatis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="756" />
+        </extension>
+        <code value="115015008" />
+        <display value="Pantoea agglomerans" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="751" />
+        </extension>
+        <code value="115017000" />
+        <display value="Pantoea dispersa" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="746" />
+        </extension>
+        <code value="115019002" />
+        <display value="Pantoea stewartii Subspecies indologenes" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="745" />
+        </extension>
+        <code value="115020008" />
+        <display value="Pantoea stewartii Subspecies stewartii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="805" />
+        </extension>
+        <code value="115024004" />
+        <display value="Gattung Pragia" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="821" />
+        </extension>
+        <code value="1156339009" />
+        <display value="Franconibacter pulveris" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="703" />
+        </extension>
+        <code value="116135003" />
+        <display value="Serratia proteamaculans" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="702" />
+        </extension>
+        <code value="116136002" />
+        <display value="Serratia proteamaculans Subspecies proteamaculans" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="796" />
+        </extension>
+        <code value="12162005" />
+        <display value="Gattung Tatumella" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="747" />
+        </extension>
+        <code value="131300002" />
+        <display value="Pantoea stewartii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="724" />
+        </extension>
+        <code value="14196002" />
+        <display value="Providencia rettgeri" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="853" />
+        </extension>
+        <code value="14385002" />
+        <display value="Enterobacter cloacae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="722" />
+        </extension>
+        <code value="1445008" />
+        <display value="Providencia stuartii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="858" />
+        </extension>
+        <code value="14566004" />
+        <display value="Gattung Edwardsiella" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="794" />
+        </extension>
+        <code value="14943005" />
+        <display value="Gattung Yokenella" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="824" />
+        </extension>
+        <code value="14961000146107" />
+        <display value="Escherichia marmotae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="688" />
+        </extension>
+        <code value="1546007" />
+        <display value="Tatumella ptyseos" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="830" />
+        </extension>
+        <code value="17031002" />
+        <display value="Erwinia tracheiphila" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="781" />
+        </extension>
+        <code value="17688001" />
+        <display value="Klebsiella pneumoniae Subspecies rhinoscleromatis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="782" />
+        </extension>
+        <code value="18400002" />
+        <display value="Klebsiella pneumoniae Subspecies pneumoniae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="822" />
+        </extension>
+        <code value="19027003" />
+        <display value="Ewingella americana" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="723" />
+        </extension>
+        <code value="19196004" />
+        <display value="Providencia rustigianii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="818" />
+        </extension>
+        <code value="20523001" />
+        <display value="Gattung Hafnia" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="887" />
+        </extension>
+        <code value="2345009" />
+        <display value="Cedecea lapagei" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="711" />
+        </extension>
+        <code value="23787004" />
+        <display value="Serratia liquefaciens" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="762" />
+        </extension>
+        <code value="243301005" />
+        <display value="Morganella morganii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="760" />
+        </extension>
+        <code value="243302003" />
+        <display value="Morganella morganii Subspecies morganii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="759" />
+        </extension>
+        <code value="243303008" />
+        <display value="Morganella morganii Subspecies sibonii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="758" />
+        </extension>
+        <code value="28501001" />
+        <display value="Obesumbacterium proteus" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="704" />
+        </extension>
+        <code value="28955009" />
+        <display value="Serratia plymuthica" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="768" />
+        </extension>
+        <code value="29511003" />
+        <display value="Lelliottia nimipressuralis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="835" />
+        </extension>
+        <code value="302568005" />
+        <display value="Erwinia psidii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="888" />
+        </extension>
+        <code value="30854004" />
+        <display value="Cedecea davisae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="774" />
+        </extension>
+        <code value="32547006" />
+        <display value="Kluyvera cryocrescens" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="856" />
+        </extension>
+        <code value="33115003" />
+        <display value="Enterobacter asburiae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="710" />
+        </extension>
+        <code value="33522002" />
+        <display value="Serratia marcescens" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="820" />
+        </extension>
+        <code value="3451006" />
+        <display value="Gattung Buttiauxella" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="763" />
+        </extension>
+        <code value="37107002" />
+        <display value="Moellerella wisconsensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="735" />
+        </extension>
+        <code value="38643006" />
+        <display value="Plesiomonas shigelloides" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="819" />
+        </extension>
+        <code value="3878001" />
+        <display value="Gattung Ewingella" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="833" />
+        </extension>
+        <code value="38865008" />
+        <display value="Gattung Erwinia" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="787" />
+        </extension>
+        <code value="40886007" />
+        <display value="Klebsiella oxytoca" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="716" />
+        </extension>
+        <code value="416096003" />
+        <display value="Raoultella terrigena" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="773" />
+        </extension>
+        <code value="416156003" />
+        <display value="Kluyvera georgiana" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="771" />
+        </extension>
+        <code value="416229008" />
+        <display value="Kosakonia cowanii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="717" />
+        </extension>
+        <code value="416264004" />
+        <display value="Raoultella planticola" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="889" />
+        </extension>
+        <code value="416444007" />
+        <display value="Buttiauxella warmboldiae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="718" />
+        </extension>
+        <code value="416832000" />
+        <display value="Raoultella ornithinolytica" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="894" />
+        </extension>
+        <code value="416844002" />
+        <display value="Buttiauxella brennerae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="892" />
+        </extension>
+        <code value="416852004" />
+        <display value="Buttiauxella gaviniae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="880" />
+        </extension>
+        <code value="416990006" />
+        <display value="Citrobacter gillenii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="891" />
+        </extension>
+        <code value="417035007" />
+        <display value="Buttiauxella izardii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="788" />
+        </extension>
+        <code value="417443008" />
+        <display value="Klebsiella granulomatis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="801" />
+        </extension>
+        <code value="417468005" />
+        <display value="Gattung Raoultella" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="893" />
+        </extension>
+        <code value="417520001" />
+        <display value="Buttiauxella ferragutiae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="878" />
+        </extension>
+        <code value="417581000" />
+        <display value="Citrobacter murliniae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="732" />
+        </extension>
+        <code value="417592004" />
+        <display value="Proteus hauseri" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="757" />
+        </extension>
+        <code value="417937002" />
+        <display value="Ordnung Enterobacteriales" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="829" />
+        </extension>
+        <code value="419388003" />
+        <display value="Escherichia albertii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="799" />
+        </extension>
+        <code value="42025004" />
+        <display value="Gattung Serratia" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="740" />
+        </extension>
+        <code value="420478006" />
+        <display value="Pectobacterium carotovorum" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="900" />
+        </extension>
+        <code value="420490008" />
+        <display value="Brenneria nigrifluens" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="739" />
+        </extension>
+        <code value="420518002" />
+        <display value="Pectobacterium carotovorum Subspecies carotovorum" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="741" />
+        </extension>
+        <code value="420741007" />
+        <display value="Pectobacterium cacticida" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="767" />
+        </extension>
+        <code value="420872003" />
+        <display value="Lonsdalea quercina" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="861" />
+        </extension>
+        <code value="420926001" />
+        <display value="Gattung Dickeya" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="742" />
+        </extension>
+        <code value="420948007" />
+        <display value="Pectobacterium betavasculorum" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="743" />
+        </extension>
+        <code value="421190009" />
+        <display value="Pectobacterium atrosepticum" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="863" />
+        </extension>
+        <code value="421225004" />
+        <display value="Dickeya chrysanthemi" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="752" />
+        </extension>
+        <code value="421499000" />
+        <display value="Pantoea cypripedii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="862" />
+        </extension>
+        <code value="421625009" />
+        <display value="Dickeya paradisiaca" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="736" />
+        </extension>
+        <code value="421786004" />
+        <display value="Pectobacterium wasabiae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="808" />
+        </extension>
+        <code value="422013009" />
+        <display value="Gattung Pectobacterium" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="738" />
+        </extension>
+        <code value="422046003" />
+        <display value="Pectobacterium carotovorum Subspecies odoriferum" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="899" />
+        </extension>
+        <code value="422105006" />
+        <display value="Brenneria rubrifaciens" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="860" />
+        </extension>
+        <code value="4280005" />
+        <display value="Edwardsiella hoshinae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="807" />
+        </extension>
+        <code value="42929008" />
+        <display value="Gattung Plesiomonas" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="898" />
+        </extension>
+        <code value="431100005" />
+        <display value="Brenneria salicis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="836" />
+        </extension>
+        <code value="431272005" />
+        <display value="Erwinia persicina" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="837" />
+        </extension>
+        <code value="431273000" />
+        <display value="Erwinia papayae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="831" />
+        </extension>
+        <code value="431385006" />
+        <display value="Erwinia toletana" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="841" />
+        </extension>
+        <code value="431386007" />
+        <display value="Erwinia aphidicola" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="737" />
+        </extension>
+        <code value="431387003" />
+        <display value="Pectobacterium rhapontici" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="776" />
+        </extension>
+        <code value="431976004" />
+        <display value="Klebsiella variicola" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="772" />
+        </extension>
+        <code value="431977008" />
+        <display value="Kluyvera intermedia" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="840" />
+        </extension>
+        <code value="432735003" />
+        <display value="Erwinia billingiae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="834" />
+        </extension>
+        <code value="432736002" />
+        <display value="Erwinia pyrifoliae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="846" />
+        </extension>
+        <code value="432763001" />
+        <display value="Enterobacter ludwigii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="777" />
+        </extension>
+        <code value="433047006" />
+        <display value="Klebsiella singaporensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="815" />
+        </extension>
+        <code value="43590002" />
+        <display value="Gattung Leclercia" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="700" />
+        </extension>
+        <code value="438199009" />
+        <display value="Serratia quinivorans" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="708" />
+        </extension>
+        <code value="438911005" />
+        <display value="Serratia marcescens marcescens" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="707" />
+        </extension>
+        <code value="438912003" />
+        <display value="Serratia marcescens sakuensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="832" />
+        </extension>
+        <code value="4411000146103" />
+        <display value="Erwinia tasmaniensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="866" />
+        </extension>
+        <code value="444664004" />
+        <display value="Gattung Cronobacter" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="871" />
+        </extension>
+        <code value="445559002" />
+        <display value="Cronobacter dublinensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="869" />
+        </extension>
+        <code value="445560007" />
+        <display value="Cronobacter malonaticus" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="868" />
+        </extension>
+        <code value="445561006" />
+        <display value="Cronobacter muytjensii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="867" />
+        </extension>
+        <code value="445562004" />
+        <display value="Cronobacter sakazakii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="865" />
+        </extension>
+        <code value="445639005" />
+        <display value="Cronobacter turicensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="678" />
+        </extension>
+        <code value="446489003" />
+        <display value="Yersinia massiliensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="446870005" />
+        <display value="Carbapenem-resistente Klebsiella pneumoniae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="684" />
+        </extension>
+        <code value="450391006" />
+        <display value="Yersinia aleksiciae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="674" />
+        </extension>
+        <code value="450392004" />
+        <display value="Yersinia similis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="706" />
+        </extension>
+        <code value="450415000" />
+        <display value="Serratia nematodiphila" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="698" />
+        </extension>
+        <code value="450416004" />
+        <display value="Serratia ureilytica" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="729" />
+        </extension>
+        <code value="45298005" />
+        <display value="Proteus penneri" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="728" />
+        </extension>
+        <code value="45834001" />
+        <display value="Proteus vulgaris" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="726" />
+        </extension>
+        <code value="46349009" />
+        <display value="Providencia alcalifaciens" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="795" />
+        </extension>
+        <code value="4668009" />
+        <display value="Gattung Yersinia" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="725" />
+        </extension>
+        <code value="47300009" />
+        <display value="Providencia heimbachae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="802" />
+        </extension>
+        <code value="48569008" />
+        <display value="Gattung Rahnella" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="842" />
+        </extension>
+        <code value="50097002" />
+        <display value="Erwinia amylovora" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="804" />
+        </extension>
+        <code value="50517009" />
+        <display value="Gattung Proteus" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="811" />
+        </extension>
+        <code value="50713005" />
+        <display value="Gattung Morganella" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="810" />
+        </extension>
+        <code value="50732004" />
+        <display value="Gattung Obesumbacterium" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="720" />
+        </extension>
+        <code value="53013003" />
+        <display value="Pseudescherichia vulneris" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="541051000124105" />
+        <display value="Carbapenem resistant Providencia (organism)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="541111000124108" />
+        <display value="Carbapenem resistant Morganella morganii (organism)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="884" />
+        </extension>
+        <code value="55744003" />
+        <display value="Citrobacter amalonaticus" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="699" />
+        </extension>
+        <code value="55825002" />
+        <display value="Serratia rubidaea" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="896" />
+        </extension>
+        <code value="55851000" />
+        <display value="Gattung Budvicia" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="785" />
+        </extension>
+        <code value="56415008" />
+        <display value="Klebsiella pneumoniae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="748" />
+        </extension>
+        <code value="5681000146105" />
+        <display value="Pantoea septica" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="849" />
+        </extension>
+        <code value="56813009" />
+        <display value="Enterobacter cloacae Subspecies dissolvens" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="870" />
+        </extension>
+        <code value="5711000087108" />
+        <display value="Cronobacter dublinensis Subspecies lausannensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="769" />
+        </extension>
+        <code value="57459006" />
+        <display value="Leclercia adecarboxylata" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="775" />
+        </extension>
+        <code value="58493008" />
+        <display value="Kluyvera ascorbata" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="844" />
+        </extension>
+        <code value="58683007" />
+        <display value="Gattung Enterobacter" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="721" />
+        </extension>
+        <code value="6031000146109" />
+        <display value="Providencia vermicola" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="816" />
+        </extension>
+        <code value="61161003" />
+        <display value="Gattung Kluyvera" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="790" />
+        </extension>
+        <code value="62592009" />
+        <display value="Klebsiella aerogenes" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="881" />
+        </extension>
+        <code value="6265002" />
+        <display value="Citrobacter freundii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="675" />
+        </extension>
+        <code value="64125009" />
+        <display value="Yersinia ruckeri" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="823" />
+        </extension>
+        <code value="64735005" />
+        <display value="Gattung Escherichia" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="783" />
+        </extension>
+        <code value="65186004" />
+        <display value="Klebsiella pneumoniae Subspecies ozaenae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="682" />
+        </extension>
+        <code value="65255000" />
+        <display value="Yersinia enterocolitica" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="859" />
+        </extension>
+        <code value="68227003" />
+        <display value="Edwardsiella ictaluri" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="885" />
+        </extension>
+        <code value="69937007" />
+        <display value="Gattung Cedecea" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="864" />
+        </extension>
+        <code value="707335003" />
+        <display value="Cronobacter universalis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="838" />
+        </extension>
+        <code value="708449009" />
+        <display value="Erwinia oleae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="764" />
+        </extension>
+        <code value="709309007" />
+        <display value="Mixta gaviniae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="765" />
+        </extension>
+        <code value="709310002" />
+        <display value="Mixta calida" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="714007005" />
+        <display value="Carbapenem-resistente Enterobacter cloacae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="715307006" />
+        <display value="Carbapenem-resistente Escherichia coli" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="806" />
+        </extension>
+        <code value="716344002" />
+        <display value="Gattung Pluralibacter" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="734" />
+        </extension>
+        <code value="716346000" />
+        <display value="Pluralibacter gergoviae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="812" />
+        </extension>
+        <code value="71655003" />
+        <display value="Gattung Moellerella" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="754" />
+        </extension>
+        <code value="717167001" />
+        <display value="Pantoea brenneri" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="753" />
+        </extension>
+        <code value="717168006" />
+        <display value="Pantoea conspicua" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="750" />
+        </extension>
+        <code value="717170002" />
+        <display value="Pantoea eucrina" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="792" />
+        </extension>
+        <code value="717644004" />
+        <display value="Hafnia paralvei" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="814" />
+        </extension>
+        <code value="717652001" />
+        <display value="Gattung Lelliottia" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="690" />
+        </extension>
+        <code value="717974005" />
+        <display value="Siccibacter turicensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="791" />
+        </extension>
+        <code value="718798008" />
+        <display value="Hafnia psychrotolerans" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="744" />
+        </extension>
+        <code value="718813007" />
+        <display value="Pectobacterium aroidearum" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="697" />
+        </extension>
+        <code value="718823003" />
+        <display value="Serratia vespertilionis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="719792001" />
+        <display value="Carbapenem-resistente Klebsiella oxytoca" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="850" />
+        </extension>
+        <code value="721950003" />
+        <display value="Enterobacter cloacae Subspecies cloacae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="797" />
+        </extension>
+        <code value="723344008" />
+        <display value="Gattung Siccibacter" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="691" />
+        </extension>
+        <code value="723345009" />
+        <display value="Siccibacter colletis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="826" />
+        </extension>
+        <code value="72461005" />
+        <display value="Escherichia fergusonii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="734200008" />
+        <display value="Carbapenem-resistente Klebsiella aerogenes" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="734201007" />
+        <display value="Carbapenem-resistente-Enterobacter-cloacae-Komplex" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="730" />
+        </extension>
+        <code value="73457008" />
+        <display value="Proteus mirabilis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="845" />
+        </extension>
+        <code value="738504009" />
+        <display value="Enterobacter mori" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="857" />
+        </extension>
+        <code value="74672006" />
+        <display value="Edwardsiella tarda" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="817" />
+        </extension>
+        <code value="75032006" />
+        <display value="Gattung Klebsiella" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="897" />
+        </extension>
+        <code value="75464008" />
+        <display value="Budvicia aquatica" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="875" />
+        </extension>
+        <code value="75972000" />
+        <display value="Gattung Citrobacter" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="749" />
+        </extension>
+        <code value="765101001" />
+        <display value="Pantoea intestinalis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="715" />
+        </extension>
+        <code value="76656001" />
+        <display value="Serratia entomophila" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="793" />
+        </extension>
+        <code value="76694001" />
+        <display value="Hafnia alvei" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="843" />
+        </extension>
+        <code value="768157006" />
+        <display value="Enterobacter xiangfangensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="766" />
+        </extension>
+        <code value="771468005" />
+        <display value="Metakosakonia massiliensis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="780" />
+        </extension>
+        <code value="781054004" />
+        <display value="Klebsiella quasipneumoniae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="778" />
+        </extension>
+        <code value="781055003" />
+        <display value="Klebsiella quasipneumoniae Subspecies similipneumoniae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="779" />
+        </extension>
+        <code value="781056002" />
+        <display value="Klebsiella quasipneumoniae Subspecies quasipneumoniae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="839" />
+        </extension>
+        <code value="79946002" />
+        <display value="Erwinia mallotivora" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="714" />
+        </extension>
+        <code value="802004" />
+        <display value="Serratia ficaria" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="0" />
+        </extension>
+        <code value="816049003" />
+        <display value="Carbapenem-resistente Serratia marcescens" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="770" />
+        </extension>
+        <code value="8181000146108" />
+        <display value="Kosakonia radicincitans" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="686" />
+        </extension>
+        <code value="8301000146102" />
+        <display value="Tatumella terrea" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="687" />
+        </extension>
+        <code value="8311000146100" />
+        <display value="Tatumella punctata" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="689" />
+        </extension>
+        <code value="8321000146105" />
+        <display value="Tatumella citrea" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="692" />
+        </extension>
+        <code value="8361000146103" />
+        <display value="Shimwellia blattae" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="886" />
+        </extension>
+        <code value="83767006" />
+        <display value="Cedecea neteri" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="813" />
+        </extension>
+        <code value="84221003" />
+        <display value="Gattung Lelliottia amnigena" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="681" />
+        </extension>
+        <code value="85159008" />
+        <display value="Yersinia frederiksenii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="825" />
+        </extension>
+        <code value="85786000" />
+        <display value="Escherichia hermannii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="872" />
+        </extension>
+        <code value="86145008" />
+        <display value="Cosenzaea myxofaciens" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="676" />
+        </extension>
+        <code value="87145000" />
+        <display value="Yersinia rohdei" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="673" />
+        </extension>
+        <code value="89477001" />
+        <display value="Yokenella regensburgei" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="677" />
+        </extension>
+        <code value="90530002" />
+        <display value="Yersinia pseudotuberculosis" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="679" />
+        </extension>
+        <code value="91042006" />
+        <display value="Yersinia kristensenii" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="685" />
+        </extension>
+        <code value="91246002" />
+        <display value="Yersinia aldovae" />
+      </concept>
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/answerSetLaboratoryTest-SNOMED" />
+    </include>
+    <include>
+      <valueSet value="https://demis.rki.de/fhir/ValueSet/answerSetResistance-SNOMED" />
+    </include>
+  </compose>
+</ValueSet>

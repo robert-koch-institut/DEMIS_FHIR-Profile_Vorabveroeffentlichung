@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ClusterIdIdentifier"/>
+  <url value="https://demis.rki.de/fhir/StructureDefinition/ClusterIdIdentifier"/>
+  <version value="1.0.0"/>
+  <name value="ClusterIdIdentifier"/>
+  <title value="ClusterID Identifier"/>
+  <status value="active"/>
+  <date value="2025-02-20"/>
+  <publisher value="Robert Koch-Institut"/><contact><telecom><system value="email"/><value value="demis-support@rki.de"/></telecom></contact><description value="Der ClusterIdIdentifier dient der Angabe der ClusterID."/>
+  <jurisdiction><coding><system value="urn:iso:std:iso:3166"/><version value="ALPHA-2"/><code value="DE"/></coding></jurisdiction><copyright value="Copyright (C) 2021-2025 Robert Koch-Institut"/><fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <type value="Identifier"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Identifier.system">
+      <path value="Identifier.system"/>
+      <min value="1"/>
+      <fixedUri value="https://demis.rki.de/fhir/sid/ClusterID"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Identifier.value">
+      <path value="Identifier.value"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>
