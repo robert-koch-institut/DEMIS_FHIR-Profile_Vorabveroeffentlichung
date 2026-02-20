@@ -140,11 +140,18 @@
             <b>Seit 21.10.2025 wird die Version rki.demis.disease-3.0.0-rc.1 in der DEMIS-Testumgebung unterstützt. In dieser Version sind die Ressourcen für den Meldungstyp "Meldungen gemäß IfSG §7 Absatz 3" hinzugefügt worden.</b>
         </p>
          
-            <h3>Version rki.demis.disease-3.0.0-rc.7 (26.02.2026)</h3>
+            <h3>Version rki.demis.disease-3.0.0-rc.7 (03.03.2026)</h3>
             <a class="package-link" href="./rki.demis.disease/rki.demis.disease-3.0.0-rc.7/Home.html">Leitfaden</a>
             <a href="./rki.demis.disease/rki.demis.disease-3.0.0-rc.7/Vorab-rki.demis.disease-3.0.0-rc.7@current.zip">Download ZIP</a>
             <ul>
-                <li>...</li>          
+                <li>feat: Update der Dependencies auf rki.demis.common-3.0.0-rc.6 (und damit Update auf de.basisprofil.r4 Version 1.5.4)</li>
+                <li>feat: Anpassungen der § 7.3-Questionnaires</li>
+                <li>feat: Extension http://hl7.org/fhir/StructureDefinition/entryFormat zur Angabe eines Tooltips für infectProtectFacility in DiseaseQuestionsCommon hinzugefügt</li>
+                <li>feat: Referenz auf NotifiedPersonAnonymous in NotificationLaboratoryNonNominal.subject, Hospitalization.subject, ImmunizationInformation.subject und DiseaseInformationCommon.subject hinzugefügt</li>
+                <li>feat: neue ConceptMap NotificationDiseaseCategoryNonNominalToTransmissionCategory hinzugefügt; diese ordnet die 7.3-Meldetatbestände der Erkrankungsmeldung den 3-Buchstaben-Codes der Übermittlungskategorien aus SurvNet zu; die 7.3-Meldetatbestände wurden entsprechend aus der ConceptMap NotificationDiseaseCategoryToTransmissionCategory entfernt</li>
+                <li>feat: Update auf SNOMED-CT Germany Edition 20251115</li>
+                <li>feat: evidence in DiseaseHIVD gestrichen</li>
+                <li>feat: NotificationBundleDisease: Severity für Constraint notifiedPersonAnonymousAndRelatesToTargetIdentifier von Warning auf Error hochgezogen</li>          
             </ul>
         </blockquote>
         <!-- <blockquote>
