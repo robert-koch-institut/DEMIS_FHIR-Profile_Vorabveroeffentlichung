@@ -1,0 +1,21 @@
+<Immunization xmlns="http://hl7.org/fhir">
+   <id value="36b97d4c-ffed-3f4a-b6bc-27886cc908b8"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/ImmunizationInformationHAVD"></profile>
+   </meta>
+   <status value="completed"></status>
+   <vaccineCode>
+      <coding>
+         <system value="http://snomed.info/sct"></system>
+         <code value="121000221105"></code>
+         <display value="Hepatitis A / Hepatitis B (rDNA) (Virusimpfstoff, inaktiviert) - Erwachsene (Twinrix Erwachsene)"></display>
+      </coding>
+   </vaccineCode>
+   <patient>
+      <reference value="Patient/94093013-3f84-3f26-97c7-4528cf773eb9"></reference>
+   </patient>
+   <occurrenceDateTime value="2002-08-13"></occurrenceDateTime>
+   <note>
+      <text value="-"></text>
+   </note>
+</Immunization>

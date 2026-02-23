@@ -1,0 +1,21 @@
+<Immunization xmlns="http://hl7.org/fhir">
+   <id value="40a850c0-dc42-3ce6-a47b-c8b113d870fe"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/ImmunizationInformationTTVD"></profile>
+   </meta>
+   <status value="completed"></status>
+   <vaccineCode>
+      <coding>
+         <system value="http://snomed.info/sct"></system>
+         <code value="1131000221109"></code>
+         <display value="Tollwut-Impfstoff ( Virusimpfstoff, inaktiviert) (Rabipur,Tollwut-Impfstoff (HDC) inaktiviert)"></display>
+      </coding>
+   </vaccineCode>
+   <patient>
+      <reference value="Patient/3355d427-ea9b-33aa-88da-f48acd78cd73"></reference>
+   </patient>
+   <occurrenceDateTime value="2015-04-13"></occurrenceDateTime>
+   <note>
+      <text value="-"></text>
+   </note>
+</Immunization>

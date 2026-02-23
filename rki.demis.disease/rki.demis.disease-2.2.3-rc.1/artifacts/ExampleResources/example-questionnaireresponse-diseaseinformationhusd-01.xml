@@ -1,0 +1,134 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="c707050d-ca3a-3988-b758-eafe17532402"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationHUSD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsHUSD"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/9ebf11d0-45f4-3e9d-a81b-e2e0601d88af"></reference>
+   </subject>
+   <item>
+      <linkId value="infectionPathKind"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="74964007"></code>
+            <display value="andere/sonstige"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="onsetOfDiseaseHUS"></linkId>
+      <answer>
+         <valueDate value="2023-04-03"></valueDate>
+      </answer>
+   </item>
+   <item>
+      <linkId value="infectionRisk"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="infectionRiskGroup"></linkId>
+            <item>
+               <linkId value="infectionRiskKindAnimal"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="http://snomed.info/sct"></system>
+                     <code value="125099002"></code>
+                     <display value="Schaf"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="infectionAnimalWhere"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="http://snomed.info/sct"></system>
+                     <code value="272504001"></code>
+                     <display value="Bezug landwirschaftlichem Betrieb"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="infectionAnimalWhen"></linkId>
+               <answer>
+                  <valueDate value="2023-03-15"></valueDate>
+               </answer>
+            </item>
+         </item>
+         <item>
+            <linkId value="infectionRiskGroup"></linkId>
+            <item>
+               <linkId value="infectionRiskKindAnimal"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="http://snomed.info/sct"></system>
+                     <code value="125097000"></code>
+                     <display value="Ziege"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="infectionAnimalWhere"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="http://snomed.info/sct"></system>
+                     <code value="272504001"></code>
+                     <display value="Bezug landwirschaftlichem Betrieb"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="infectionAnimalWhen"></linkId>
+               <answer>
+                  <valueDate value="2023-03-15"></valueDate>
+               </answer>
+            </item>
+         </item>
+         <item>
+            <linkId value="infectionRiskGroup"></linkId>
+            <item>
+               <linkId value="infectionRiskKindAnimal"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="http://snomed.info/sct"></system>
+                     <code value="107007004"></code>
+                     <display value="Rind"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="infectionAnimalWhere"></linkId>
+               <answer>
+                  <valueCoding>
+                     <system value="http://snomed.info/sct"></system>
+                     <code value="272504001"></code>
+                     <display value="Bezug landwirschaftlichem Betrieb"></display>
+                  </valueCoding>
+               </answer>
+            </item>
+            <item>
+               <linkId value="infectionAnimalWhen"></linkId>
+               <answer>
+                  <valueDate value="2023-03-15"></valueDate>
+               </answer>
+            </item>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>
