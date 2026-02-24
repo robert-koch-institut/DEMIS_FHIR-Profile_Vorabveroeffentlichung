@@ -1,0 +1,21 @@
+<Immunization xmlns="http://hl7.org/fhir">
+   <id value="01b4ee88-33bd-3e8a-8683-a84cf4920eaa"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/ImmunizationInformationSXXD"></profile>
+   </meta>
+   <status value="completed"></status>
+   <vaccineCode>
+      <coding>
+         <system value="http://snomed.info/sct"></system>
+         <code value="971000221109"></code>
+         <display value="Typhus-Impfstoff, oral,lebend abgeschwächt (Typhoral L)"></display>
+      </coding>
+   </vaccineCode>
+   <patient>
+      <reference value="Patient/198b8948-67bc-3ced-8b37-d3ab6e335f97"></reference>
+   </patient>
+   <occurrenceDateTime value="2022-12-01"></occurrenceDateTime>
+   <note>
+      <text value="-"></text>
+   </note>
+</Immunization>

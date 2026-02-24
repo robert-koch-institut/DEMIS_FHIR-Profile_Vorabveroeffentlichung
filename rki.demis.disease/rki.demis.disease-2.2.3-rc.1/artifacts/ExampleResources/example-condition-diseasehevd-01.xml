@@ -1,0 +1,45 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="ab6240ef-3da1-36d6-8de5-052d50108dfa"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseHEVD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="hevd"></code>
+         <display value="Hepatitis E"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/bba36c43-bbcd-37c8-8313-3f3eae52081a"></reference>
+   </subject>
+   <onsetDateTime value="2023-03-17"></onsetDateTime>
+   <recordedDate value="2023-03-20"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="386661006"></code>
+            <display value="Fieber"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="105721009:363698007=80581009"></code>
+            <display value="Oberbauchbeschwerden"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="Textueller Hinweis"></text>
+   </note>
+</Condition>

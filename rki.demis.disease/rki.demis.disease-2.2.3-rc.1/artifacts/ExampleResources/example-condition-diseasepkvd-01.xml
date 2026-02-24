@@ -1,0 +1,60 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="4682ed0d-2a0b-3e51-bff7-37df546c7748"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseasePKVD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="pkvd"></code>
+         <display value="Pocken"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/a5188cef-b5d7-38c8-a4bd-b0fb1262e4d8"></reference>
+   </subject>
+   <onsetDateTime value="2023-03-05"></onsetDateTime>
+   <recordedDate value="2023-04-06"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="386661006"></code>
+            <display value="Fieber"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="95324001"></code>
+            <display value="Hautläsion"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="66857006"></code>
+            <display value="Bluthusten (Hämoptysen)"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="302227002"></code>
+            <display value="Hauteinblutung, Ekchymosen"></display>
+         </coding>
+      </code>
+   </evidence>
+</Condition>

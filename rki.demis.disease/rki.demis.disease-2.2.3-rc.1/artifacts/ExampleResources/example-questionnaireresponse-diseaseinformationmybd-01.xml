@@ -1,0 +1,21 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="a00b8845-2ebd-3c4d-bfb7-d7fa3d618c63"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationMYBD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsMYBD"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/b2a47276-f22e-3ca9-8f8a-f08729ec7b19"></reference>
+   </subject>
+   <item>
+      <linkId value="reasonTherapyEnd"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="406149000"></code>
+            <display value="Behandlungsverweigerung"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>
