@@ -1,0 +1,21 @@
+<Immunization xmlns="http://hl7.org/fhir">
+   <id value="6c765ea5-1d22-3b0c-b6fb-83a4eff2dbfb"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/ImmunizationInformationVCHD"></profile>
+   </meta>
+   <status value="completed"></status>
+   <vaccineCode>
+      <coding>
+         <system value="http://snomed.info/sct"></system>
+         <code value="1001000221103"></code>
+         <display value="Cholera Impfstoff, inaktiviert, oral (Dukoral)"></display>
+      </coding>
+   </vaccineCode>
+   <patient>
+      <reference value="Patient/be5f358b-d7a7-3ea3-9ad9-efa742153395"></reference>
+   </patient>
+   <occurrenceDateTime value="2020-02-01"></occurrenceDateTime>
+   <note>
+      <text value="-"></text>
+   </note>
+</Immunization>

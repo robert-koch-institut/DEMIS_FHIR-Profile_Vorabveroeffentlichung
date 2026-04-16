@@ -1,0 +1,21 @@
+<Immunization xmlns="http://hl7.org/fhir">
+   <id value="d725011c-c4db-326d-83d7-1d67c3bcc472"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/ImmunizationInformationHEVD"></profile>
+   </meta>
+   <status value="completed"></status>
+   <vaccineCode>
+      <coding>
+         <system value="http://snomed.info/sct"></system>
+         <code value="74964007"></code>
+         <display value="andere/sonstige"></display>
+      </coding>
+   </vaccineCode>
+   <patient>
+      <reference value="Patient/bba36c43-bbcd-37c8-8313-3f3eae52081a"></reference>
+   </patient>
+   <occurrenceDateTime value="2021-09-22"></occurrenceDateTime>
+   <note>
+      <text value="-"></text>
+   </note>
+</Immunization>

@@ -1,0 +1,63 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="e1f11661-3178-30da-9d47-5f4eed981bf0"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseVZZD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="vzzd"></code>
+         <display value="Windpocken"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/486f4d8e-337a-3dd0-83c7-3758273ecd05"></reference>
+   </subject>
+   <onsetDateTime value="2023-03-31"></onsetDateTime>
+   <recordedDate value="2023-04-01"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="386661006"></code>
+            <display value="Fieber"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="418290006"></code>
+            <display value="Jucken"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="271807003:{363698007=244023005,116676008=53788007}"></code>
+            <display value="Ausschlag, einseitig auf Hautsegment beschränkt, bläschenförmig"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="423628002"></code>
+            <display value="Schmerzen im betroffenen Bereich (Zosterneuralgie)"></display>
+         </coding>
+      </code>
+   </evidence>
+   <note>
+      <text value="Textueller Hinweis"></text>
+   </note>
+</Condition>

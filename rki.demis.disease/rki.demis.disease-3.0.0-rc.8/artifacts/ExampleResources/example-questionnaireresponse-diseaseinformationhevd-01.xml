@@ -1,0 +1,82 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="51379f94-053f-3338-831e-bd512e8be1c7"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationHEVD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsHEVD"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/bba36c43-bbcd-37c8-8313-3f3eae52081a"></reference>
+   </subject>
+   <item>
+      <linkId value="immunization"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="immunizationRef"></linkId>
+            <answer>
+               <valueReference>
+                  <reference value="Immunization/d725011c-c4db-326d-83d7-1d67c3bcc472"></reference>
+               </valueReference>
+            </answer>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="infectionRiskKindGroup"></linkId>
+      <item>
+         <linkId value="infectionRiskKindJob"></linkId>
+         <answer>
+            <valueCoding>
+               <system value="http://snomed.info/sct"></system>
+               <code value="34484007"></code>
+               <display value="Förster/-in, Waldarbeiter /-in"></display>
+            </valueCoding>
+         </answer>
+      </item>
+      <item>
+         <linkId value="infectionRiskKindAnimal"></linkId>
+         <answer>
+            <valueCoding>
+               <system value="http://snomed.info/sct"></system>
+               <code value="78678003"></code>
+               <display value="Wildschwein"></display>
+            </valueCoding>
+         </answer>
+      </item>
+      <item>
+         <linkId value="infectionRiskKindOther"></linkId>
+         <answer>
+            <valueCoding>
+               <system value="http://snomed.info/sct"></system>
+               <code value="289925000"></code>
+               <display value="Müll"></display>
+            </valueCoding>
+         </answer>
+      </item>
+   </item>
+   <item>
+      <linkId value="infectionPathKind"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="74964007"></code>
+            <display value="andere/sonstige"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>

@@ -1,0 +1,27 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="4b97f6f0-06c2-3f84-afa6-d8448e802115"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseCDFD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="cdfd"></code>
+         <display value="Clostridioides difficile"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/4e3f1dd5-5267-35d7-b7de-263b49b764b0"></reference>
+   </subject>
+   <onsetDateTime value="2023-04-13"></onsetDateTime>
+   <recordedDate value="2023-04-15"></recordedDate>
+   <note>
+      <text value="Dickdarm-OP am 13.04.2023, seitdem behandlung mit Breitspektrum Antibiotikum (Ciprofloxacin)"></text>
+   </note>
+</Condition>

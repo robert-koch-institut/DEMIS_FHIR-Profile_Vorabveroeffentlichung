@@ -1,0 +1,51 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+   <id value="e69ef9bf-4acf-3db2-a5a0-2a58509e3dc7"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseInformationRUVD"></profile>
+   </meta>
+   <questionnaire value="https://demis.rki.de/fhir/Questionnaire/DiseaseQuestionsRUVD"></questionnaire>
+   <status value="completed"></status>
+   <subject>
+      <reference value="Patient/28604a9b-2bbe-38e3-9bfc-a7c772a8e0c5"></reference>
+   </subject>
+   <item>
+      <linkId value="immunization"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+   <item>
+      <linkId value="pregnancy"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="yes"></code>
+            <display value="Ja"></display>
+         </valueCoding>
+         <item>
+            <linkId value="pregnancyWeek"></linkId>
+            <answer>
+               <valueCoding>
+                  <system value="https://demis.rki.de/fhir/CodeSystem/pregnancyWeek"></system>
+                  <code value="35"></code>
+                  <display value="35"></display>
+               </valueCoding>
+            </answer>
+         </item>
+      </answer>
+   </item>
+   <item>
+      <linkId value="outbreak"></linkId>
+      <answer>
+         <valueCoding>
+            <system value="https://demis.rki.de/fhir/CodeSystem/yesOrNoAnswer"></system>
+            <code value="no"></code>
+            <display value="Nein"></display>
+         </valueCoding>
+      </answer>
+   </item>
+</QuestionnaireResponse>

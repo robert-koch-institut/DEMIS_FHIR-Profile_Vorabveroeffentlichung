@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="answerSetGeographicSubcontinent" />
+  <url value="https://demis.rki.de/fhir/ValueSet/answerSetGeographicSubcontinent" />
+  <version value="1.0.0" />
+  <name value="AnswerSetGeographicSubcontinent" />
+  <title value="Kontinente und Subkontinente" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2026-01-07" />
+  <publisher value="Robert Koch-Institut" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="demis-support@rki.de" />
+    </telecom>
+  </contact>
+  <description value="Das ValueSet GeographicSubcontinent enthält die Codes der Kontinente und Subkontinent." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <version value="ALPHA-2" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <copyright value="(C) 2021-2025 Robert Koch-Institut" />
+  <compose>
+    <include>
+      <system value="https://demis.rki.de/fhir/CodeSystem/geographicRegion" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="17" />
+        </extension>
+        <code value="21000500" />
+        <display value="Ozeanien" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="26" />
+        </extension>
+        <code value="31000009" />
+        <display value="Nordamerika" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="27" />
+        </extension>
+        <code value="31000011" />
+        <display value="Mittelamerika" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="25" />
+        </extension>
+        <code value="31000013" />
+        <display value="Südamerika" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="36" />
+        </extension>
+        <code value="31001112" />
+        <display value="Nordafrika" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="29" />
+        </extension>
+        <code value="31001113" />
+        <display value="Westafrika" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="33" />
+        </extension>
+        <code value="31001114" />
+        <display value="Ostafrika" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="28" />
+        </extension>
+        <code value="31001115" />
+        <display value="Zentralafrika" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="32" />
+        </extension>
+        <code value="31001116" />
+        <display value="Südafrika" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="19" />
+        </extension>
+        <code value="31002847" />
+        <display value="Zentralasien" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="24" />
+        </extension>
+        <code value="31002849" />
+        <display value="Ostasien" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="22" />
+        </extension>
+        <code value="31002850" />
+        <display value="Südostasien" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="23" />
+        </extension>
+        <code value="31002851" />
+        <display value="Südasien" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="20" />
+        </extension>
+        <code value="31002852" />
+        <display value="Vorderasien" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="18" />
+        </extension>
+        <code value="41000006" />
+        <display value="Australien (Subkontinent)" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="16" />
+        </extension>
+        <code value="41000008" />
+        <display value="Mitteleuropa" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="15" />
+        </extension>
+        <code value="41000011" />
+        <display value="Nordeuropa" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="35" />
+        </extension>
+        <code value="41000012" />
+        <display value="Nordostafrika" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="14" />
+        </extension>
+        <code value="41000013" />
+        <display value="Nordosteuropa" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="34" />
+        </extension>
+        <code value="41000014" />
+        <display value="Nordwestafrika" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="13" />
+        </extension>
+        <code value="41000017" />
+        <display value="Osteuropa" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="12" />
+        </extension>
+        <code value="41000022" />
+        <display value="Südeuropa" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="31" />
+        </extension>
+        <code value="41000023" />
+        <display value="Südostafrika" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="11" />
+        </extension>
+        <code value="41000025" />
+        <display value="Südosteuropa" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="30" />
+        </extension>
+        <code value="41000026" />
+        <display value="Südwestafrika" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="21" />
+        </extension>
+        <code value="41000027" />
+        <display value="Südwestasien" />
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="10" />
+        </extension>
+        <code value="41000030" />
+        <display value="Westeuropa" />
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/11000274103/version/20251115" />
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder">
+          <valueInteger value="2" />
+        </extension>
+        <code value="261665006" />
+        <display value="Unbekannt" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

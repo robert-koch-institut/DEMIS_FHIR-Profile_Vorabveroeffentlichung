@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NotificationBundleDiseaseNonNominal" />
+  <url value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundleDiseaseNonNominal" />
+  <version value="1.0.1" />
+  <name value="NotificationBundleDiseaseNonNominal" />
+  <title value="Nichtnamentlicher Ergänzungsmeldevorgang zur nichtnamentlichen Erregernachweismeldung nach § 7 Abs. 3 IfSG" />
+  <status value="active" />
+  <date value="2025-08-12" />
+  <description value="Der nichtnamentliche Ergänzungsmeldevorgang ist vom Meldevorgang abgeleitet und bildet den Container für eine meldetatbestandsspezifische, nichtnamentliche Ergänzungsmeldung (und die darin referenzierten Ressourcen) durch die behandelnde Person, im Rahmen einer nichtnamentlichen Erregernachweismeldung nach § 7 Abs. 3 IfSG." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundle" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle" />
+      <constraint>
+        <key value="maxOneNotifiedPerson" />
+        <severity value="error" />
+        <human value="Im NotificationBundle darf maximal eine betroffene Person (namentlich oder anonym) enthalten sein." />
+        <expression value="(entry.where(resource.meta.profile='https://demis.rki.de/fhir/StructureDefinition/NotifiedPerson').count()&lt;=1) or (entry.where(resource.meta.profile='https://demis.rki.de/fhir/StructureDefinition/NotifiedPersonAnonymous').count()&lt;=1)" />
+      </constraint>
+    </element>
+    <element id="Bundle.meta">
+      <path value="Bundle.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.meta.profile">
+      <path value="Bundle.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://demis.rki.de/fhir/StructureDefinition/NotificationBundleDiseaseNonNominal" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.identifier.system">
+      <path value="Bundle.identifier.system" />
+      <fixedUri value="https://demis.rki.de/fhir/NamingSystem/NotificationBundleId" />
+    </element>
+    <element id="Bundle.entry:notification">
+      <path value="Bundle.entry" />
+      <sliceName value="notification" />
+      <short value="Nichtnamentlicher Ergänzungsmeldevorgang" />
+      <definition value="In einem nichtnamentlichen Ergänzungsmeldevorgang muss genau eine meldetatbestandsspezifische, nichtnamentliche Ergänzungsmeldung enthalten sein." />
+      <max value="1" />
+    </element>
+    <element id="Bundle.entry:notification.resource">
+      <path value="Bundle.entry.resource" />
+      <short value="Enthält die meldetatbestandsspezifische, nichtnamentliche Ergänzungsmeldung zur nichtnamentlichen Erregernachweismeldung nach § 7 Abs. 3 IfSG." />
+      <definition value="Enthält die meldetatbestandsspezifische, nichtnamentliche Ergänzungsmeldung zur nichtnamentlichen Erregernachweismeldung nach § 7 Abs. 3 IfSG." />
+      <min value="1" />
+      <type>
+        <code value="Composition" />
+        <profile value="https://demis.rki.de/fhir/StructureDefinition/NotificationDiseaseNonNominal" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

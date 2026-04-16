@@ -1,0 +1,60 @@
+<Condition xmlns="http://hl7.org/fhir">
+   <id value="3cc61fec-15f0-3acf-9d09-8c2eacdc9e71"></id>
+   <meta>
+      <profile value="https://demis.rki.de/fhir/StructureDefinition/DiseaseMPXD"></profile>
+   </meta>
+   <verificationStatus>
+      <coding>
+         <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"></system>
+         <code value="confirmed"></code>
+      </coding>
+   </verificationStatus>
+   <code>
+      <coding>
+         <system value="https://demis.rki.de/fhir/CodeSystem/notificationDiseaseCategory"></system>
+         <code value="mpxd"></code>
+         <display value="Affenpocken"></display>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/a4f04326-3a2a-3a57-bf40-58a37b29f064"></reference>
+   </subject>
+   <onsetDateTime value="2023-03-12"></onsetDateTime>
+   <recordedDate value="2023-04-11"></recordedDate>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="386661006"></code>
+            <display value="Fieber"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="271807003"></code>
+            <display value="Hautausschlag"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="95324001"></code>
+            <display value="Hautläsion"></display>
+         </coding>
+      </code>
+   </evidence>
+   <evidence>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="276320009"></code>
+            <display value="Schleimhautläsion"></display>
+         </coding>
+      </code>
+   </evidence>
+</Condition>
