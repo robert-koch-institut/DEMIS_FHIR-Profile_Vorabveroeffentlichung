@@ -56,116 +56,32 @@
         <h2>FHIR-Profile Basismeldeinhalte (rki.demis.common)</h2>
         <p>Das Paket rki.demis.common beinhaltet eine Reihe an DEMIS-Basis-Ressourcen wie z.B. betroffene
             Person oder Melder. Spezifische DEMIS-Pakete wie rki.demis.laboratory oder rki.demis.disease binden dieses als Dependency ein.</p>
-        <!--<blockquote>
-
-           
-			<h3>Version rki.demis.common-2.2.1-rc.1 (27.08.2025)</h3>
-			<a class="package-link" href="./rki.demis.common/rki.demis.common-2.2.1-rc.1/Home.html">Leitfaden</a>
-            <a href="./rki.demis.common/rki.demis.common-2.2.1-rc.1/Vorab-rki.demis.common-2.2.1-rc.1@current.zip">Download ZIP</a>
-            <ul>
-                <li>fix: nicht benötigte Codes aus CodeSystem und ValueSet TransmissionCategory entfernt</li>
-                <li>fix: Regex des Constraints validBirthDate in NotifiedPerson und NotifiedPersonAnonymous korrigiert</li>
-                <li>fix: Discriminator für NotifiedPersonAnonymous.address korrigiert</li>
-            </ul>
-            </blockquote>-->
-            <blockquote>
-            <p> 
-                <b>Seit 10.09.2025 wird die Version rki.demis.common-2.2.1 in der DEMIS-Produktivumgebung unterstützt.</b> Bis zur entgültigen Ablösung, voraussichtlich Mitte Juni, ist das entsprechende FHIR-Package auf der <a href="https://robert-koch-institut.github.io/DEMIS_FHIR-Profile_Vorabveroeffentlichung/historie.html">Historienseite</a> einsehbar. </br>
-                <b>Seit 03.03.2026 wird die Version rki.demis.common-3.0.0-rc.6 in der DEMIS-Testumgebung und in der DEMIS-Produktivumgebung unterstützt. Die Version enthält die strikte Profilierung der Basismeldeinhalte.</b> Das entsprechende Simplifier-Projekt <a href="https://simplifier.net/rki.demis.common">https://simplifier.net/rki.demis.common</a> (alte Url: <a href="https://simplifier.net/rki.demis.common.strict">https://simplifier.net/rki.demis.common.strict</a>) wurde aktualisiert.
-            </p>
+        <blockquote>
+            <p>Derzeit liegt keine Vorabversion vor. Die aktuell unterstützte Version ist auf
+                <a href="https://simplifier.net/rki.demis.common">Simplifier</a> einsehbar.</p>
         </blockquote>
-			
-      
         <p></p>
         <h2>FHIR-Profile Erregernachweismeldung (rki.demis.laboratory)</h2>
         <p>Das Paket rki.demis.laboratory beinhaltet die Ressourcen für die Erregernachweismeldung.</p>
-        <!--<blockquote>
-    		<h3>Version rki.demis.laboratory-3.4.0-rc.1 (27.08.2025)</h3>
-            <a class="package-link" href="./rki.demis.laboratory/rki.demis.laboratory-3.4.0-rc.1/Home.html">Leitfaden</a>
-            <a href="./rki.demis.laboratory/rki.demis.laboratory-3.4.0-rc.1/Vorab-rki.demis.laboratory-3.4.0-rc.1@current.zip">Download ZIP</a>	
-            <ul>
-                <li>feat: um Rückwärtskompatibilität zu der strikten Profilierung des Laboratory-Packages, welches derzeit auf der RKI-TEST-Umgebung vorliegt, zu ermöglichen, wurden folgende Änderungen vorgenommen:<ul>
-                <li>feat: Binding von ServiceRequestId in LaboratoryReport.basedOn.identifier.system entfernt; NamingSystem ServiceRequestId entfernt</li>
-                <li>feat: Extension ClusterID in Specimen hinzugefügt</li>
-                <li>feat: NotifiedPersonAnonymous in NotificationLaboratory.subject hinzugefügt</li>
-                <li>feat: HL7-R5-Backport-Extension TriggeredBy in PathogenDetection hinzugefügt</li>
-                <li>feat: Streichung von PathogenDetection.hasMember entfernt</li>
-                </ul>
-                </li>
-                <li>feat: federal-state property für SPYP in CodeSystem NotifcationCategory angepasst (Code Sachsen entfernt)</li>
-                <li>feat: Mapping in ConceptMap NotificationCategoryToTransmissionCategory angepasst</li>
-                <li>feat: Codes in ValueSet MaterialWBKP angepasst</li>
-                </ul>
-			            
-        </blockquote>-->
         <blockquote>
-            <p> 
-                <b>Seit 10.09.2025 wird die Version rki.demis.laboratory-3.4.0 in der DEMIS-Produktivumgebung unterstützt.</b> Bis zur entgültigen Ablösung, voraussichtlich Mitte Juni, ist das entsprechende FHIR-Package auf der <a href="https://robert-koch-institut.github.io/DEMIS_FHIR-Profile_Vorabveroeffentlichung/historie.html">Historienseite</a> einsehbar. </br>
-                <b>Seit 03.03.2026 wird die Version rki.demis.laboratory-5.0.1-alpha.6 in der DEMIS-Testumgebung und in der DEMIS-Produktivumgebung unterstützt. Die Version enthält die strikte Profilierung, in der u.a. kodierte Angaben für den Erregernachweis verpflichtend werden und die § 7.3 Meldungen.</b> Das entsprechende Simplifier-Projekt <a href="https://simplifier.net/rki.demis.laboratory">https://simplifier.net/rki.demis.laboratory</a> (alte Url: <a href="https://simplifier.net/rki.demis.laboratory.strict">https://simplifier.net/rki.demis.laboratory.strict</a>) wurde aktualisiert.
-            </p>
+            <p>Derzeit liegt keine Vorabversion vor. Die aktuell unterstützte Version ist auf
+                <a href="https://simplifier.net/rki.demis.laboratory">Simplifier</a> einsehbar.</p>
         </blockquote>
         <p></p>
         <h2>FHIR-Profile Integrierte Genomische Surveillance (rki.demis.igs)</h2>
         <p>Das Paket rki.demis.igs erweitert die Ressourcen des rki.demis.laboratory-Paketes für die Integrierte
             Genomische Surveillance (IGS).</p>
         <blockquote>
-          <p>Seit 05.02.2026
-                    wird die Version rki.demis.igs-5.0.0 in der DEMIS-Produktivumgebung unterstützt. Das entsprechende
-                    Simplifier-Projekt <a href="https://simplifier.net/rki.demis.igs">https://simplifier.net/rki.demis.igs</a>
-                    wurde aktualisiert.</br>
-          Die Version rki.demis.igs-4.0.0 (nicht strikte Profilierung) ist weiterhin in einer Doppelvalidierung aktiv. Bis zur entgültigen Ablösung der rki.demis.igs-4.0.0 ist das entsprechende FHIR-Package auf der <a href="https://robert-koch-institut.github.io/DEMIS_FHIR-Profile_Vorabveroeffentlichung/historie.html">Historienseite</a> einsehbar.</p>
- 
-        <!--<h3>Version rki.demis.igs-3.0.0-rc.1 (13.12.2024)</h3>
-            <a class="package-link" href="./rki.demis.igs/rki.demis.igs-3.0.0-rc.1/Home.html">Leitfaden</a>
-            <a href="./rki.demis.igs/rki.demis.igs-3.0.0-rc.1/Vorab rki.demis.igs-3.0.0-rc.1@current.zip">Download ZIP</a>
-			<br/>Change log (gegenüber rki.demis.igs-1.0.0-alpha.2):
-			<ul>
-				<li>Canonical von "https://demis.rki.de/fhir/" zu "https://demis.rki.de/fhir/igs/" geändert</li>
-				<li>Sequence.repository.extension:sequenceUploadStatus auf 1..1 gesetzt</li>
-				<li>Sequence.repository.name auf 1..1 gesetzt</li>
-				<li>SequenceDocument.content.attachment.title auf 0..1 gesetzt</li>
-				<li>SequenceDocument.content.attachment.contentType auf 0..1 gesetzt</li>
-				<li>SequenceDocument.content.attachment.hash profiliert (auf mustSupport gesetzt und Constraint für Format hinzugefügt)</li>
-				<li>Update auf SNOMED-Version 20240515 (betrifft ValueSet SequencingReason und UploadStatus)</li>
-				<li>Beschreibung des Up- und Downloadprozesses aktualisiert</li>
-			</ul>
-			<br/>-->
+            <p>Derzeit liegt keine Vorabversion vor. Die aktuell unterstützte Version ist auf
+                <a href="https://simplifier.net/rki.demis.igs">Simplifier</a> einsehbar.</p>
         </blockquote>
+        <p></p>
         <h2>FHIR-Profile Erkrankungsmeldung (rki.demis.disease)</h2>
         <p>Das Paket rki.demis.disease beinhaltet die Ressourcen für die Erkrankungsmeldung.</p>
         <blockquote>
-        <p> 
-            <b>Seit 03.03.2026 wird die Version rki.demis.disease-2.2.3 in der DEMIS-Produktivumgebung unterstützt.</b> Das entsprechende
-                Simplifier-Projekt <a href="https://simplifier.net/rki.demis.disease">https://simplifier.net/rki.demis.disease</a>
-                wurde aktualisiert. </br>
-            <b>Seit 15.04.2026 wird auch die Version rki.demis.disease-3.0.0-rc.8 in der DEMIS-Produktivumgebung im Rahmen der Doppelvalidierung unterstützt. In dieser Version wird rki.demis.disease-2.2.3 um die Ressourcen für den Meldungstyp "Meldungen gemäß IfSG §7 Absatz 3" erweitert.</b>
-        </p>
-         
-            <h3>Version rki.demis.disease-3.0.0-rc.8 (15.04.2026)</h3>
-            <a class="package-link" href="./rki.demis.disease/rki.demis.disease-3.0.0-rc.8/Home.html">Leitfaden</a>
-            <a href="./rki.demis.disease/rki.demis.disease-3.0.0-rc.8/Vorab-rki.demis.disease-3.0.0-rc.8@current.zip">Download ZIP</a>
-            <ul>			
-                <li>fix: in allen § 7.3-Conditions: Condition.evidence.code.coding required gesetzt</li>
-                <li>fix: in allen § 7.3-Conditions: Condition.evidence auf mustSupport gesetzt</li>
-                <li>fix: in allen § 7.3-Conditions: verpflichtende Unterelemente von Condition.evidence auf mustSupport gesetzt</li>
-                <li>feat: Update der Dependencies auf rki.demis.common-3.0.0-rc.6 (und damit Update auf de.basisprofil.r4 Version 1.5.4)</li>
-                <li>feat: Anpassungen der § 7.3-Questionnaires</li>
-                <li>feat: Extension http://hl7.org/fhir/StructureDefinition/entryFormat zur Angabe eines Tooltips für infectProtectFacility in DiseaseQuestionsCommon hinzugefügt</li>
-                <li>feat: Referenz auf NotifiedPersonAnonymous in Hospitalization.subject, ImmunizationInformation.subject und DiseaseInformationCommon.subject hinzugefügt</li>
-                <li>feat: neue ConceptMap NotificationDiseaseCategoryNonNominalToTransmissionCategory hinzugefügt; diese ordnet die 7.3-Meldetatbestände der Erkrankungsmeldung den 3-Buchstaben-Codes der Übermittlungskategorien aus SurvNet zu; die 7.3-Meldetatbestände wurden entsprechend aus der ConceptMap NotificationDiseaseCategoryToTransmissionCategory entfernt</li>
-                <li>feat: Update auf SNOMED-CT Germany Edition 20251115</li>
-                <li>feat: evidence in DiseaseHIVD gestrichen</li>
-                <li>feat: NotificationBundleDisease: Severity für Constraint notifiedPersonAnonymousAndRelatesToTargetIdentifier von Warning auf Error hochgezogen</li>          
-            </ul>
+            <p>Derzeit liegt keine Vorabversion vor. Die aktuell unterstützte Version ist auf
+                <a href="https://simplifier.net/rki.demis.disease">Simplifier</a> einsehbar.</p>
         </blockquote>
-        <!-- <blockquote>
-            <p> 
-                Seit 10.09.2025 wird
-                    die Version rki.demis.disease-2.2.2 von der DEMIS-Produktivumgebung unterstützt. Das entsprechende
-                    Simplifier-Projekt <a href="https://simplifier.net/rki.demis.disease">https://simplifier.net/rki.demis.disease</a>
-                    wurde aktualisiert.
-            </p>
-        </blockquote>-->
     </div>
 </div>
 <script>
